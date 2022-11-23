@@ -1,0 +1,26 @@
+\section{L'elettromagnetismo e le equazioni di Maxwell}
+Per interpretare i fenomeni elettromagnetici, anche in questo caso, è necessario introdurre una serie di osservazioni sperimentali: in primo luogo esiste una proprietà della materia detta carica elettrica che consente ai corpi di interagire con due campi vettoriali: il campo Elettrico $\vec{E}$ e il campo Magnetico $\vec{B}$.\\ Un corpo puntiforme di carica $q$ interagendo con questi subisce un forza data da:
+\begin{equation}
+	\vec{F}=q(\vec{E}(\vec{x},t)+\vec{\dot{x}}\wedge\vec{B}(\vec{x},t))
+	\label{ForzaLorentz}
+\end{equation}
+In secondo luogo gli esperimenti mostrarono che questi due campi rispettano una serie di equazioni dette Equazioni di Maxwell:
+\begin{equation}
+	\begin{gathered}
+		\vec{\nabla}\cdot\vec{E}=\frac{\rho}{\epsilon_0} \qquad \qquad \vec{\nabla}\cdot\vec{B}=0 \\
+		\vec{\nabla}\wedge\vec{E}=-\frac{\partial\vec{B}}{\partial t} \qquad \qquad \vec{\nabla}\wedge\vec{B}=\mu_0\vec{J}+\epsilon_0\mu_0\frac{\partial\vec{E}}{\partial t}
+		\label{EquazioniMaxwell}
+	\end{gathered}
+\end{equation}
+dove $\rho$ è la densità di carica volumetrica, $\vec{J}$ è la densità di corrente superficiale e $\epsilon_0$, $\mu_0$ sono due costanti del vuoto.\\
+
+Il risultato più importante di questa teoria sono indubbiamente le onde elettromagnetiche: è infatti facile ottenere dalle Equazioni di Maxwell (\ref{EquazioniMaxwell}), calcolando il rotore di ambo i membri delle ultime due
+\begin{equation*}
+	\vec{\nabla}\wedge\vec{\nabla}\wedge\vec{E}=-\frac{\partial}{\partial t}\vnabla\wedge\vec{B} \qquad \vec{\nabla}\wedge\vec{\nabla}\wedge\vec{B}=\mu_0\epsilon_0\frac{\partial}{\partial t}\vnabla\wedge\vec{E}
+\end{equation*}
+e supponendo assenza di cariche per cui $\rho=0$ e $\vec{J}=0$, due equazioni che descrivono onde di campo Elettrico e Magnetico nel vuoto:
+\begin{equation}
+	\vnabla^2\vec{E}=\mu_0\epsilon_0\frac{\partial^2\vec{E}}{\partial t^2} \qquad \vnabla^2\vec{B}=\mu_0\epsilon_0\frac{\partial^2\vec{B}}{\partial t^2}
+\end{equation}
+
+Queste onde si propagano con una velocità $\frac{1}{\sqrt{\mu_0\epsilon_0}}=2.99795\ \ 10^8\  \frac{m}{s}$, indipendentemente dal sistema di riferimento e che corrisponde con precisione ai valori sperimentalmente misurati della velocità della luce.  
