@@ -1,20 +1,15 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesi.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
 A level-1 auxiliary file: title.aux
-Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: abstract.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: Introduzione/capitolo_Uno.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
+A level-1 auxiliary file: Introduzione/Main.aux
 The style file: plain.bst
-Reallocating 'name_of_file' (item size: 1) to 4 items.
 I found no \citation commands---while reading file Tesi.aux
 Database file #1: ref.bib
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            500 strings with 4034 characters,
+            500 strings with 4026 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0

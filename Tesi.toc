@@ -1,5 +1,8 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Introduzione}{2}{}%
-\contentsline {section}{\numberline {1.1}La meccanica e le trasformazioni di Galileo}{2}{}%
-\contentsline {section}{\numberline {1.2}L'elettromagnetismo e le equazioni di Maxwell}{4}{}%
+\contentsline {chapter}{\numberline {1}Introduzione}{2}%
+\contentsline {section}{\numberline {1.1}La meccanica e le trasformazioni di Galileo}{2}%
+\contentsline {section}{\numberline {1.2}L'elettromagnetismo e le equazioni di Maxwell}{4}%
+\contentsline {chapter}{\numberline {A}Sulla linearità delle trasformazioni di Lorentz}{5}%
+\contentsline {section}{\numberline {A.1}Prerequisiti matematici}{5}%
+\contentsline {section}{\numberline {A.2}La dimostrazione}{7}%

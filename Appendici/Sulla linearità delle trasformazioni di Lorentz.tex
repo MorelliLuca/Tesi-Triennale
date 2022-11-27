@@ -1,0 +1,211 @@
+\chapter{Sulla linearità delle trasformazioni di Lorentz}
+Le trasformazioni di Lorentz sono una famiglia di trasformazioni affini, ossia composte 
+da una generica traslazione in quattro dimensioni e un'applicazione lineare. 
+Questa loro proprietà è deducibile dai postulati di Einstein e solitamente, nella maggior 
+parte delle trattazioni della teoria della Relatività, è data come proprietà ovvia. 
+Nelle seguenti pagine è presentata la dimostrazione di tale proprietà.\\
+
+\section{Prerequisiti matematici}
+In primo luogo è necessario dimostrare due Lemmi che si rivelano utili anche per altri 
+aspetti della teoria della Relatività.
+
+\begin{lemma}
+    Siano $v,u\in \mathbb{R}^n$ e siano definite $f_u: \mathbb{R}^n\rightarrow\mathbb{R}$, 
+    tale che $f_u(v)=\ <u,v>$, e $q:\mathbb{R}^n\rightarrow\mathbb{R}$ forma quadratica tale che $q
+    (v)=\ <v,Av>$, con $A\in M_{n\times n}(\mathbb{R})$ simmetrica. Se vale che $f_u(\bar{v})=0 \Rightarrow q(\bar{v})=0$
+    allora $\exists \psi\in \mathbb{R}^n$ tale che $q(v)=f_u(v)<\psi,v> \forall v\in \mathbb{R}^n$.
+    \label{lemm:A1}
+\end{lemma}
+\begin{proof}
+    Si osservi che è possibile decomporre $v$ in una componente
+    ortogonale ad $u$ ed una parallela:
+    \begin{equation}
+        v=v^\parallel +v^\bot =\frac{u\ <u,v>}{\|u\|^2}+v-\frac{u\ <u,v>}{\|u\|^2}+
+    \label{Al1Decomposizione}
+    \end{equation}  
+    si esprima quindi $q(v)$ secondo questa decomposizione:
+    \begin{equation*}
+        \begin{gathered}
+            q(v)=\ <v^\parallel +v^\bot,A(v^\parallel +v^\bot)>\\
+            =\ <v^\parallel ,Av^\parallel >+2<v^\bot,Av^\parallel>+<v^\bot,Av^\bot>
+        \end{gathered}
+    \end{equation*}
+    il termine $<v^\bot,Av^\bot>$ è per definizione $q(v^\bot)$ e poichè 
+    per costruzione di $v^\bot$ si ha $f_u(v^\bot)=0$, per le ipotesi $q(v^\bot)$
+    deve annullarsi per cui:
+   \begin{equation*}
+    q(v)=<v^\parallel ,Av^\parallel >+2<v^\bot,Av^\parallel>
+   \end{equation*}
+   sostituiendo le corrette espressioni di $v^\bot$ e $v^\parallel$, espresse nella (\ref{Al1Decomposizione}), si ha:
+   \begin{equation*}
+    \begin{gathered}
+        q(v)=<u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2 +2 <v^\bot,Au> \frac{<u,v>}{\|u\|^2}\\
+        =\ <u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2 +2 <v,Au> \frac{<u,v>}{\|u\|^2} -2<u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2\\
+    \end{gathered}
+   \end{equation*}
+   Infine se si raccoglie un termine $<u,v>$ e si sommano i termini uguali si ottiene un'espressione per $q(v)$ composta da un termine lineare 
+   rispetto a $v$ moltiplicato per il prodotto scalare $<u,v>$:
+   \begin{equation}
+    q(v)=<u,v>\left[2 \frac{<v,Au>}{\|u\|^2}-\frac{<u ,Au ><u,v>}{\|u\|^4} \right] \qquad \forall v\in\mathbb{R}^4
+   \end{equation}
+\end{proof}
+
+\begin{lemma}
+    Sia $v\in\mathbb{R}^4$, per comodità si scriverà $v=(v_0,v_1,v_2,v_3)=(v_0,\vec{v})$, tale che $\vec{v}\neq 0$.\\ Sia quindi $q:\mathbb{R}^4\rightarrow\mathbb{R}$ 
+    una forma quadratica tale che $\bar{v}_0^2-|\vec{\bar{v}}|^2=0 \Rightarrow q(\bar{v})=0$ allora $\exists \lambda $ 
+    tale che $ q(v)=\lambda(v_0^2-|\vec{v}|^2)\ \forall v\in\mathbb{R}^4$.
+    \label{lemm:A2}
+\end{lemma}
+\begin{proof}
+    Si osservi che $q(v)$ può essere scomposto, seguendo le regole del prodotto righe per colonne $q(v)=v^tAv$ (dove 
+    $A\in M_{3x3}(\mathbb{R})$ simmetrica), nella seguente somma:
+    \begin{equation*}
+        q(v)=a_{00}v_0^2+2v_0(a_{01}v_1+a_{02}v_2+a_{03}v_3)+\hat{q}(\vec{v})
+    \end{equation*}
+    dove $\hat{q}$ è ancora una forma quadratica su $\mathbb{R}^3$ che agisce su $\vec{v}$.\\
+    Si consideri ora un vettore $\bar{v}\in \mathbb{R}^4$ e tale che considerando $v$ allora $\bar{v}=(-|\vec{v}|,\vec{v})$; per costruzione
+    $(\bar{v}_0)^2-|\vec{\bar{v}}|^2=|\vec{v}|^2-|\vec{v}|^2=0$, per cui per le ipotesi assunte si ha $q(\bar{v})=0$.\\
+    Essendo $q(\bar{v})=0$ si può scrivere:
+    \begin{equation}
+        \begin{gathered}
+            q(v)=q(v)-q(\bar{v})\\
+            =a_{00}(v_0^2-|\vec{v}|^2)+2(v_0-|\vec{v}|)(a_{01}v_1+a_{02}v_2+a_{03}v_3)+\hat{q}(\vec{v})-\hat{q}(\vec{\bar{v}})\\
+            =a_{00}(v_0^2-|\vec{v}|^2)+2(v_0-|\vec{v}|)(a_{01}v_1+a_{02}v_2+a_{03}v_3)
+        \end{gathered}
+       \label{Al2Decomposizione}
+    \end{equation}
+   inoltre sfruttando la (\ref{Al2Decomposizione}) si ha:
+   \begin{equation*}
+    q(\bar{v})=-2|\vec{v}|(a_{01}v_1+a_{02}v_2+a_{03}v_3)=0
+   \end{equation*}
+   Per ipotesi $|\vec{v}|\neq0$ per cui $a_{01}=a_{02}=a_{03}=0$ che dimostra il lemma poichè implica:
+   \begin{equation}
+    q(v)=a_{00}(v_0^2-|\vec{v}|^2)\quad \forall v\in\mathbb{R}^4
+   \end{equation}
+\end{proof}
+
+\section{La dimostrazione}
+Siano $x,x'\in\mathbb{R}^4$ due vettori dello spazio-tempo misurati rispettivamente in due sistemi di riferimento inerziali $K$ e $K'$, 
+si vogliono determinare le proprietà dell'applicazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$ che trasforma i vettori misurati in $K$ 
+in vettori misurati in $K'$ e viceversa considerando validi il principio di Relatività e il principio di costanza della velocità della luce.\\
+
+Per prima cosa si supporà che $f$ sia sufficentemente regolare, almeno $C^2$, ed è necessario che sia invertibile poichè deve poter 
+trasformare sia da $K$ a $K'$, sia viceversa: questa condizione è equivalente a richiedere che $\det J_f(x)\neq 0\ \forall x\in\mathbb{R}^4$.\\
+
+Si considerino ora $\xi, \gamma \in \mathbb{R}^4$, ripettivamente detti punto iniziale e velocità della parametrizazione, 
+che consentono di parametrizzare un moto rettilineo uniforme nel seguentue modo:
+\begin{equation*}
+    x=\xi+s\gamma \qquad s\in \mathbb{R}
+\end{equation*}
+infatti è possibile esplicitare la dipendenza di $x_0$ da $s$ per ottenere in modo esplicito 
+la forma di un moto rettilineo uniforme, per questo motivo è necessario che $\gamma_0\neq 0$. Secondo il principio di relatività se si calcola $f(x)=x'$ 
+è necessario che $x'=\xi'+s'\gamma'$, così che un moto rettilineo uniforme resti tale in ogni sistema 
+di riferimento inerziale. Derivando $f(\xi+s\gamma)$ rispetto al paramtro $s'$ si ottiene:
+\begin{equation*}
+    \frac{dx'}{ds'}=\gamma'=J_f(\xi+s\gamma)\frac{ds}{ds'}\gamma
+\end{equation*}
+si consideri ora la i-esima componente di $\gamma'$, dove $i=1,2,3$, e la si divida per $\gamma_0$:
+\begin{equation*}
+    \frac{\gamma'_i}{\gamma'_0}=\frac{\sum_{k=0}^4\partial_kf_i(\xi+s\gamma)\gamma_k}{\sum_{k=0}^4\partial_kf_0(\xi+s\gamma)\gamma_k}
+    \label{ARappGamma}
+\end{equation*} 
+dove $\partial_k=\frac{\partial}{\partial x_k}$.\\
+Il rapporto $\frac{\gamma'_i}{\gamma'_0}$ è costante da cui segue immediatamente che $\frac{d}{ds'}\frac{\gamma'_i}{\gamma'_0}=0$  e quindi:
+\begin{equation*}
+    \begin{gathered}
+        \frac{d}{ds'}\frac{\sum_{k=0}^4\partial_kf_i(\xi+s\gamma)\gamma_k}{\sum_{k=0}^4\partial_kf_0(\xi+s\gamma)\gamma_k}=\\
+    \frac{1}{\left(\sum_{k=0}^4\partial_kf_0(\xi+s\gamma)\gamma_k\right)^2}\left[\left(\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_i(\xi+s\gamma)\gamma_h\gamma_n\right)\left(\sum_{k=0}^4\partial_kf_0(\xi+s\gamma)\gamma_k\right)
+    - \left(\sum_{k=0}^4\partial_kf_i(\xi+s\gamma)\gamma_k\right)\left(\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_0(\xi+s\gamma)\gamma_h\gamma_n\right) \right]=0    
+\end{gathered}
+\end{equation*}
+questa condizione è soddisfatta solo se si annulla il secondo fattore moltiplicativo, inoltre preso un $x\in \mathbb{R}^4 $ esistono $ \gamma \in
+\mathbb{R}^4, s \in \mathbb{R}$ tali che $x=\xi+s\gamma$, per cui qui:
+\begin{equation}
+    \left(\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_i(x)\gamma_h\gamma_n\right)\left(\sum_{k=0}^4\partial_kf_0(x)\gamma_k\right)
+    = \left(\sum_{k=0}^4\partial_kf_i(x)\gamma_k\right)\left(\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_0(x)\gamma_h\gamma_n\right) 
+    \label{ABigPSum}
+\end{equation}
+Siccome si è supposto inizialmente $\det J_f(x)\neq 0$ deve necessariamente esietere almeno un $j$ tale che $\sum_{k=0}^{4}\partial_kf_j(x)\gamma_k\neq 0$, 
+inoltre se si suppone di prendere $\bar{\gamma}$ tale che $\sum_{k=0}^4\partial_kf_0(x)\bar{\gamma}_k=0$ allora per la (\ref{ABigPSum}) necessariamente 
+anche $\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$.\\
+
+Si applichi quindi il Lemma (\ref{lemm:A1}) il quale, in virtù del fatto che $\sum_{k=0}^4\partial_kf_0(x)\bar{\gamma}_k=0\Rightarrow 
+\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$, consente di scrivere:
+\begin{equation*}
+    \sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=\ <\psi(x),\gamma>\ (\sum_{k=0}^4\partial_kf_0(x)\bar{\gamma}_k) \qquad \forall \gamma \in \mathbb{R}^4   
+\end{equation*}
+che inserito nella (\ref{ABigPSum}) risulta in:
+\begin{equation*}
+    \left(\sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_i(x)\gamma_h\gamma_n\right)\left(\sum_{k=0}^4\partial_kf_0(x)\gamma_k\right)
+    = \left(\sum_{k=0}^4\partial_kf_i(x)\gamma_k\right)\ <\psi(x),\gamma>\ (\sum_{k=0}^4\partial_kf_0(x)\bar{\gamma}_k)
+\end{equation*}
+infine siccome $\gamma'_0\neq 0$ affinchè sia $x'$ sia un moto rettilneo unfiorme, a maggior ragione $\left(\sum_{k=0}^4\partial_kf_0(x)\gamma_k\right) \neq 0$ 
+e quindi:
+\begin{equation}
+    \sum_{h=0}^4\sum_{n=0}^4\partial^2_{hn}f_i(x)\gamma_h\gamma_n=\left(\sum_{k=0}^4\partial_kf_i(x)\gamma_k\right)\ <\psi(x),\gamma> \qquad i=0,1,2,3 \quad \forall \gamma \in \mathbb{R}^4
+    \label{APArtialScal}
+\end{equation}
+Si osservi che  $\partial^2_{hn}f_i(x)$ è una matrice simmetrica per cui dall'espressione appena ottenuta si può scrivere:
+\begin{equation}
+    \partial^2_{hk}f_i(x)=\frac{1}{2}\left(\partial_kf_i(x)\psi_h(x)+\partial_hf_i(x)\psi_k(x)\right)
+    \label{APArtialScalSimm}
+\end{equation}
+\\
+Si consideri ora $x$ e $x'$ parametrizazioni del moto di un raggio di luce, per il principio di costanza della velocità della luce 
+se in $K$ $x$ è paramtrizzato sul cono di luce, lo stesso deve avvenire in $K'$, il che è esprimibile matematicamente con le due condizioni:
+\begin{equation*}
+    \begin{gathered}
+        \gamma_0^2-(\gamma_1^2+\gamma_2^2+\gamma_3^2)=0\\
+        (\gamma_0')^2-[(\gamma_1')^2+(\gamma_2')^2+(\gamma_3')^2]=0
+    \end{gathered}
+\end{equation*}
+che applicando alla seconda la trasformazione $f$ diventa:
+\begin{equation*}
+    \left(\sum_{k=0}^4\partial_kf_0(x)\gamma_k\right)^2-\left[\sum_{i=1}^3\left(\sum_{k=0}^4\partial_kf_i(x)\gamma_k\right)^2\right]=0
+\end{equation*}
+Il principio di costanza della velocità della luce consente di utilizzare il lemma (\ref{lemm:A2}) poiché l'annullarsi di una
+ forma quadratica implica l'annullarsi dell'altra, da cui si ha che:
+\begin{equation*}
+    \left(\sum_{k=0}^4\partial_kf_0(x)\gamma_k\right)^2-\left[\sum_{i=1}^3\left(\sum_{k=0}^4\partial_kf_i(x)\gamma_k\right)^2\right]=
+    \lambda(x)\left[\gamma_0^2-(\gamma_1^2+\gamma_2^2+\gamma_3^2)=0\right]
+\end{equation*}
+Sia ora $e_i$ un vettore tale per cui $e_0=1$ altrimenti $e_i=-1$, così facendo:
+\begin{equation*}
+    \begin{gathered}
+        \lambda(x)\left[\gamma_0^2-(\gamma_1^2+\gamma_2^2+\gamma_3^2)=0\right]= \lambda(x)e_i\gamma_i^2
+        =e_i\left(\partial_kf_i(x)\gamma_k\right)^2\\
+        \Rightarrow \qquad \lambda(x)e_k\gamma_k\gamma_h\delta_{kh}=e_i\partial_kf_i(x)\partial_hf_i(x)\gamma_h\gamma_k\\
+    \end{gathered}
+\end{equation*}
+\begin{equation}
+    \lambda(x)e_k\delta_{hk}=e_i\partial_kf_i(x)\partial_hf_i(x)
+    \label{APartialDelta}
+\end{equation}
+Si derivi ora rispetto a $x_j$:
+\begin{equation*}
+    2e_i\partial_{kj}^2f_i(x)\partial_hf_i(x)=\partial_j\lambda e_k \delta_{hk}
+\end{equation*}
+utilizando la (\ref{APArtialScalSimm}) si ottiene:
+\begin{equation}
+   e_i\left[\partial_jf_i(x)\psi_k+\partial_kf_i(x)\psi_j\right]\partial_hf_i(x)=\partial_j\lambda e_k\delta_{hk}
+\end{equation}    
+infine applicando la (\ref{APartialDelta}) si ha:
+\begin{equation*}
+    e_j\lambda\delta_{jk}\psi_k+e_k\lambda\delta_{kh}\psi_j=\partial_j\lambda e_k \delta_{hk}
+\end{equation*}
+\begin{itemize}
+    \item Siano $k=h\neq j$ allora:
+    \begin{equation*}
+        \lambda e_k\psi_j=e_k\delta_{hk}\partial_j\lambda \ \Rightarrow \partial_j\lambda=\psi_j\lambda
+    \end{equation*}
+    \item Siano $k=h= j$ allora:
+    \begin{equation*}
+        2\lambda e_k\psi_k=e_k\partial_k\lambda \ \Rightarrow 2\partial_k\lambda=\psi_k\lambda
+    \end{equation*}
+\end{itemize}
+Queste due relazioni appena ottenute implicano però che $\psi_i=0$ per ogni i da $0$ a $3$ e quindi dalla 
+(\ref{APArtialScalSimm}) si ha che:
+\begin{equation}
+    \partial_{kh}^2f_i(x)=0 \qquad \qquad \forall i,k,h=0,1,2,3
+\end{equation}
+per cui $f(x)$ può essere esclusivamente una trasfromazione affine.

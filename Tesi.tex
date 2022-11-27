@@ -5,7 +5,6 @@
 \usepackage{newlfont}
 
 \usepackage{color}
-
 \textwidth=450pt\oddsidemargin=0pt
 
 \usepackage{graphicx}
@@ -13,8 +12,7 @@
 \usepackage{titlesec}
 
 \usepackage{pgfplots}
-
-\pgfplotsset{compat=1.17}
+\pgfplotsset{compat=1.16}
 
 \usepackage[none]{hyphenat}
 
@@ -22,6 +20,9 @@
 
 \usepackage{amsmath}
 
+\usepackage{amsthm}
+\newtheorem{lemma}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
 \numberwithin{equation}{section}
 
 \usepackage{multicol}
@@ -29,24 +30,24 @@
 \usepackage[margin=1.2in]{geometry}
 
 \usepackage{fancyhdr}
-
 \pagestyle{fancy}
-
 \fancyhead[RO,LE]{\textbf{Titolo Tesi}}
-
 \fancyhead[LO,RE]{Luca Morelli}
 
 \newcommand{\vnabla}{\vec{\nabla}}
 
 \begin{document}
 
-\include{title.tex}
+\include{title}
 
-\include{abstract.tex}
+\include{abstract}
 
 \tableofcontents
 
-\include{Introduzione/Main.tex}
+\include{Introduzione/Main}
+
+\appendix
+\input{Appendici/Sulla linearità delle trasformazioni di Lorentz}
 
 \bibliographystyle{plain}
 \bibliography{ref}
