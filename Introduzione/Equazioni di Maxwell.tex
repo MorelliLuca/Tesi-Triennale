@@ -1,7 +1,8 @@
 \section{L'elettromagnetismo e le equazioni di Maxwell}
 Per interpretare i fenomeni elettromagnetici, anche in questo caso, è necessario introdurre
 una serie di osservazioni sperimentali: in primo luogo esiste una proprietà della materia 
-detta carica elettrica che consente ai corpi di interagire con due campi vettoriali: 
+detta carica elettrica, che non dipende dal sistema di riferimento in cui è misurata, che consente 
+ai corpi di interagire con due campi vettoriali: 
 il campo Elettrico $\vec{E}$ e il campo Magnetico $\vec{B}$.\\ Un corpo puntiforme di carica 
 $q$ interagendo con questi subisce un forza data da:
 \begin{equation}
@@ -21,8 +22,7 @@ dette Equazioni di Maxwell:
 dove $\rho$ è la densità di carica volumetrica, $\vec{J}$ è la densità di corrente superficiale e 
 $\epsilon_0$, $\mu_0$ sono due costanti del vuoto.\\
 
-Il risultato più importante di questa teoria sono indubbiamente le onde elettromagnetiche: è infatti 
-facile ottenere dalle Equazioni di Maxwell (\ref{EquazioniMaxwell}), calcolando il rotore di ambo 
+Si può ottenere dalle Equazioni di Maxwell (\ref{EquazioniMaxwell}), calcolando il rotore di ambo 
 i membri delle ultime due
 \begin{equation*}
 	\vec{\nabla}\wedge\vec{\nabla}\wedge\vec{E}=-\frac{\partial}{\partial t}\vnabla\wedge\vec{B} 
@@ -37,5 +37,84 @@ onde di campo Elettrico e Magnetico nel vuoto:
 \end{equation}
 
 Queste onde si propagano con una velocità $\frac{1}{\sqrt{\mu_0\epsilon_0}}=2.99795\ \ 10^8\  \frac{m}{s}$, 
-indipendentemente dal sistema di riferimento e che corrisponde con precisione ai valori
+indipendentemente dal sistema di riferimento, che corrisponde con precisione ai valori
  sperimentalmente misurati della velocità della luce.  
+
+ \section{La non invarianza delle Equazioni di Maxwell}
+
+ Si considerino due sistemi di riferimento $K$ e $K'$, inerziali e reciprocamente in moto a velocità $\vec{V}$, in ogni sistema 
+ si misureranno rispettivamente $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$. Il principio di relatività galileiana impone che 
+ questi due campi, nei loro sistemi di riferimento, rispettino le Equazioni di Maxwell (\ref{EquazioniMaxwell}), inoltre, siccome la forza (\ref{ForzaLorentz})
+ deve essere la medesima in tutti i sistemi di riferimento inerziali, considerando una carica $q$ in moto con velocità $\vec{v}$ 
+ in $K$ e $\vec{V}+\vec{v}$ in $K'$ deve valere:
+ \begin{equation*}
+	\begin{gathered}
+		\vec{F'}=\vec{F}\quad\Rightarrow\quad \vec{E'}+\vec{v}\wedge\vec{B'}=\vec{E}+(\vec{V}+\vec{v})\wedge\vec{B}\\
+         \Rightarrow\quad \vec{E'}+\vec{v}\wedge(\vec{B'}-\vec{B})=\vec{E}+\vec{V}\wedge\vec{B'}
+	\end{gathered}
+ \end{equation*}
+Così facendo si possono ottenere le trasformazioni dei capi Elettrici e Magnetici tra sistemi inerziali che però devono dipendere esclusivamente dai due sistemi di riferimento 
+considerati e nella fattispecie dalla loro velocità reciproca, poichè non ha alcun senso che dipendano dalla velocità di un corpo 
+specifico in uno dei due sistemi, per questo motivo il termine contnente $\vec{v}$ deve annullarsi e così le trasformazioni risultano:
+\begin{equation}
+	\begin{cases}
+		\vec{E'}(\vec{x'},t)=\vec{E}(\vec{x},t)+\vec{V}\wedge\vec{B}(\vec{x},t)\\
+		\vec{B'}(\vec{x'},t)=\vec{B}(\vec{x},t)
+	\end{cases}
+	\label{TrasfGalileoEB}
+\end{equation}
+Bisonga ora studiare come si trasformano le grandezze generatici dei campi:
+$\rho$ e $\vec{J}$. Se si considera una volume $\Delta V$, in cui è presente una carica 
+$\Delta q$, allora la densità di carica è definita come:
+\begin{equation*}
+	\rho=\lim_{\Delta V\rightarrow 0}\frac{\Delta q}{\Delta V}
+\end{equation*}
+Siccome le lunghezze sono assunte essere assolute devono esserlo pure i volumi ed, 
+essendo la carica non dipendente dal sistema di riferimento, si conclude che pure la 
+densità di carica non lo è. Per quanto riguarda la densità di corrente superficiale, 
+definita come $\vec{J}=\rho\vec{v}$,  
+è sufficiente applicare le trasformazioni delle velocità tra due sistemi in moto reciproco 
+a velocità $\vec{V}$ per ottenere:
+\begin{equation}
+	\vec{J'}=\vec{J}-\rho\vec{V}
+\end{equation}
+I risultati appena ottenuti consentono di determinare l'invarianza delle Equazioni di 
+Maxwell per le Trasformazioni di Galileo. Considerando la prima equazione in $K'$, 
+trasformando $E'$ in $E$ e analogmante per gli operatori di differenziazione secondo la (\ref{GalileoDifferenziale}):
+\begin{align*}
+	\vnabla'\cdot\vec{E'}-\frac{\rho}{\epsilon_0}=\vnabla\cdot(\vec{E}+\vec{V}\wedge\vec{B})-\frac{\rho}{\epsilon_0}\\
+	=\left(\vnabla\cdot\vec{E}-\frac{\rho}{\epsilon_0}\right)-\vec{V}\cdot(\vnabla\wedge\vec{B})=-\vec{V}\cdot(\vnabla\wedge\vec{B})
+\end{align*}
+Perchè sia valida questa Equazione di Maxwell in $K'$ deve annullarsi questa quantità: 
+il termine tra parentesi è identicamente nullo poichè valgono le Equazioni di Maxwell in $K$ 
+mentre l'ultimo termine non è sempre nullo, nella fattispecie in presenza di campi eletrici variabili nel tempo, 
+questo implica che quindi la prima Equazione di Maxwell non è invariante per le Trasfromazioni di Galileo.
+Se si studia la seconda con lo stesso procedimento si scopre che questa invece è invariante:
+\begin{equation*}
+	\vnabla'\cdot\vec{B'}=\vnabla\cdot\vec{B}=0
+\end{equation*}
+Analogamente per la terza equazione:
+\begin{align*}
+	\vnabla'\wedge\vec{E'}+\frac{\partial \vec{B'}}{\partial t'}=
+	\vnabla\wedge\vec{E'}+\frac{\partial \vec{B'}}{\partial t}+(\vec{V}\cdot\vnabla)\vec{B'}\\
+	=\vnabla\wedge(\vec{E}+\vec{V}\wedge\vec{B})+\frac{\partial \vec{B}}{\partial t}+(\vec{V}\cdot\vnabla)\vec{B}\\
+	=\left(\vnabla\wedge\vec{E}+\frac{\partial \vec{B}}{\partial t}\right)+\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0
+\end{align*} 
+infatti il termine tra parentesi è identicamente nullo poichè in $K$ vale la terza Equazione di Maxwell 
+e gli addendi restanti si annullano se sviluppati tramite le regole di differenziazione ricordando che $\vec{V}$ è costante:
+\begin{equation*}
+	\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=-(\vec{V}\cdot\vnabla)\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0
+\end{equation*}
+L'ultima Equazione di Maxwell è invece non invariante infatti sempre con il medesimo procedimento si ottiene:
+\begin{align*}
+	\vnabla'\wedge\vec{B'}-\mu_0\epsilon_0\frac{\partial \vec{E'}}{\partial t'}-\mu_0\vec{J'}=
+	\vnabla\wedge\vec{B'}-\mu_0\epsilon_0\frac{\partial \vec{E'}}{\partial t}-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)\vec{E'}-\mu_0\vec{J'}\\
+	=\vnabla\wedge\vec{B}-\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}-\mu_0\epsilon_0\vec{V}\wedge\frac{\partial \vec{B}}{\partial t}-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)(\vec{E}+\vec{V}\wedge\vec{B})-\mu_0\vec{J}+\mu_0\vec{V}\rho\\
+	=\left(\vnabla\wedge\vec{B}-\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}-\mu_0\vec{J}\right)-\mu_0\epsilon_0\vec{V}\wedge\frac{\partial \vec{B}}{\partial t}-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)(\vec{E}+\vec{V}\wedge\vec{B})+\mu_0\vec{V}\rho\\
+	=-\mu_0\epsilon_0\vec{V}\wedge(-\vnabla\wedge\vec{E})-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)(\vec{E}+\vec{V}\wedge\vec{B})+\mu_0\vec{V}\rho\\
+	=-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)(\vec{V}\wedge\vec{B})+\mu_0\vec{V}\rho
+\end{align*}
+che non è nullo in generale con le assunzioni fin qui fatte.\\
+
+Si è quindi giunti alla conclusione che la teoria di Maxwell non è conciliabile con 
+la meccanica di Newton e viceversa.

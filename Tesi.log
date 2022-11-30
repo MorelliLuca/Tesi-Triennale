@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.24)  27 NOV 2022 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.24)  30 NOV 2022 23:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,39 +685,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 [2
 
 
-]
+]) (/home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Equazioni di Maxwell.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3]) (/home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Equazioni di Maxwell.tex
+[3]
 Overfull \hbox (6.40744pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/17.28 L'elettromagnetismo e le equa-zio-ni di Max-well| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
 
-Overfull \hbox (44.16814pt too wide) in paragraph at lines 24--27
-[]\OT1/cmr/m/n/12 Il ri-sul-ta-to pi^^Ru im-por-tan-te di que-sta teo-ria so-no in-dub-bia-men-te le on-de elet-tro-ma-gne-ti-che:
- []
-
-))
-Overfull \hbox (26.79256pt too wide) in paragraph at lines 39--47
+Overfull \hbox (26.79256pt too wide) in paragraph at lines 39--42
 []\OT1/cmr/m/n/12 Queste on-de si pro-pa-ga-no con una ve-lo-cit^^Ra $[] = 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 99795  10[] []$, in-di-pen-den-te-men-te
  []
 
 
-Overfull \hbox (1.21997pt too wide) in paragraph at lines 39--47
-\OT1/cmr/m/n/12 dal si-ste-ma di ri-fe-ri-men-to e che cor-ri-spon-de con pre-ci-sio-ne ai va-lo-ri spe-ri-men-tal-men-te
+Overfull \hbox (0.89359pt too wide) in paragraph at lines 45--50
+\OT1/cmr/m/n/12 (1.2.1[]) de-ve es-se-re la me-de-si-ma in tut-ti i si-ste-mi di ri-fe-ri-men-to iner-zia-li, con-si-de-ran-do
  []
 
-[4] (/home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
+[4] [5]
+Overfull \hbox (4.27968pt too wide) in paragraph at lines 107--109
+\OT1/cmr/m/n/12 L'ultima Equa-zio-ne di Max-well ^^Re in-ve-ce non in-va-rian-te in-fat-ti sem-pre con il me-de-si-mo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+)) [6] (/home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
 Appendice A.
 
 Overfull \hbox (6.76437pt too wide) in paragraph at lines 2--7
@@ -734,7 +739,7 @@ Overfull \hbox (4.08676pt too wide) in paragraph at lines 20--22
 []\OT1/cmr/m/n/12 Si os-ser-vi che ^^Re pos-si-bi-le de-com-por-re $\OML/cmm/m/it/12 v$ \OT1/cmr/m/n/12 in una com-po-nen-te or-to-go-na-le
  []
 
-[5
+[7
 
 
 ]
@@ -747,56 +752,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
-
-Overfull \hbox (278.8563pt too wide) detected at line 120
-[][]
+[8]
+Overfull \hbox (15.43742pt too wide) in paragraph at lines 122--125
+\OT1/cmr/m/n/12 che pu^^Ro an-nul-lar-si so-lo se si an-nul-la il nu-me-ra-to-re del-la fra-zio-ne. Da que-sta os-ser-va-zio-ne
  []
 
 
-Overfull \hbox (15.62039pt too wide) detected at line 127
-[] [] \OT1/cmr/m/n/12 = [] []
+Overfull \hbox (13.6907pt too wide) detected at line 129
+[] [] \OT1/cmr/m/n/12 = [] []  \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 x; ^^M \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[] \OML/cmm/m/it/12 i \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3
  []
 
 
-Overfull \hbox (38.27437pt too wide) in paragraph at lines 127--131
-[][] \OML/cmm/m/it/12 @[]f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[] = 0$ al-lo-ra per la (A.2.1[]) ne-ces-sa-ria-men-te an-che $[][] [][] \OML/cmm/m/it/12 @[]f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[][] =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
-[7]
-Overfull \hbox (39.727pt too wide) detected at line 141
-[] [] \OT1/cmr/m/n/12 = []  \OML/cmm/m/it/12 <  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; ^^M >  \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 @[]f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[])
- []
-
-[8]) (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl [9]
+[9] [10]) (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl [11]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [10
+) [12
 
 ] (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux (/home/lyokol/Scrivania/Tesi-Triennale/title.aux) (/home/lyokol/Scrivania/Tesi-Triennale/abstract.aux) (/home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux)) ) 
 Here is how much of TeX's memory you used:
- 24627 strings out of 481239
- 611630 string characters out of 5920376
+ 24629 strings out of 481239
+ 611668 string characters out of 5920376
  982951 words of memory out of 5000000
- 39438 multiletter control sequences out of 15000+600000
+ 39440 multiletter control sequences out of 15000+600000
  543491 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,127p,807b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/lyokol/Scrivania/Tesi-Triennale/Tesi.pdf (12 pages, 190122 bytes).
+Output written on /home/lyokol/Scrivania/Tesi-Triennale/Tesi.pdf (14 pages, 198868 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

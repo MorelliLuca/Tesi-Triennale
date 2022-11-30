@@ -23,10 +23,10 @@ in maniera univoca l'evoluzione del sistema secondo la legge:
 \end{equation}
 dove $m$ è detta massa inerziale e $\vec{F}$ è una funzione caratteristica del sistema detta forza.\\
 
-Vogliamo quindi identificare quali applicazioni $\varphi:\mathbb{R}^3\times\mathbb{R}\rightarrow
-\mathbb{R}^3\times\mathbb{R}$ ci consentono di cambiare sistema di riferimento inerziale, ossia quali 
+Si vuole quindi identificare quali applicazioni $\varphi:\mathbb{R}^3\times\mathbb{R}\rightarrow
+\mathbb{R}^3\times\mathbb{R}$ consentono di cambiare sistema di riferimento inerziale, ossia quali 
 trasformazioni non variano le leggi della natura. Queste applicazioni si chiamano Trasformazioni di 
-Galileo ed è immediato dalle ipotesi sperimentali concludere che queste sono costituite dalle 
+Galileo e dalle evidenze sperimentali si conclude che queste sono costituite dalle 
 composizioni di tre famiglie di applicazioni:
 \begin{itemize}
 	\item una generica traslazione spazio temporale dell'origine, dedotta dalla proprietà 
@@ -47,8 +47,7 @@ composizioni di tre famiglie di applicazioni:
 	\label{GalileoVelocità}
 \end{equation} 
 \end{itemize}
-Quest'ultima tipologia di trasformazione è la più importante dal punto di vista fisico ed è quella 
-che viene comunemente studiata per caratterizzare le trasformazioni di sistemi inerziali. 
+Quest'ultima tipologia di trasformazione è quella che viene comunemente studiata per caratterizzare le trasformazioni di sistemi inerziali. 
 Consideriamo quindi un sistema $K$, con coordinate $(\vec{x},t)$ e un sistema $k$, con 
 coordinate $(\vec{\xi},\tau)$, in moto a velocità $\vec{v}$ rispetto a $K$, scriveremo allora la 
 (\ref{GalileoVelocità}) come:
@@ -59,7 +58,7 @@ coordinate $(\vec{\xi},\tau)$, in moto a velocità $\vec{v}$ rispetto a $K$, scr
 
 Per determinare l'invarianza di un legge fisica rispetto a queste trasformazioni è necessario 
 studiare come si trasformino gli operatori di differenziazione con la  (\ref{GalileoEasy}). 
-Se vogliamo derivare una $f(\vec{x},t)$, dalla regola di Leibniz, abbiamo:
+Se si vuole derivare una $f(\vec{x},t)$, dalla regola di Leibniz, abbiamo:
 \begin{equation*}
 	\begin{gathered}
 		\frac{\partial}{\partial \tau}=\frac{\partial t}{\partial \tau}\frac{\partial}{\partial t}+
@@ -72,9 +71,16 @@ Se vogliamo derivare una $f(\vec{x},t)$, dalla regola di Leibniz, abbiamo:
 osservando dalla (\ref{GalileoEasy}) che $\frac{\partial t}{\partial \tau}=1$, che 
 $\frac{\partial t}{\partial \xi_i}=0$, che $\frac{\partial x_i}{\partial t}=v_i$ e che 
 $\frac{\partial x_j}{\partial \xi_i}=\delta_{ij}$, dove $\delta_{ij}$ è una delta di Kronecker, 
-otteniamo le trasformazioni degli operatori di differenziazione che stavamo cercando:
+si ottengono le trasformazioni degli operatori di differenziazione desiderate:
 \begin{equation}
 	\frac{\partial}{\partial \tau}=\frac{\partial}{\partial t}+\vec{v}\cdot\vec{\nabla} \qquad \qquad
 	\frac{\partial}{\partial \xi_i}=\frac{\partial}{\partial x_i}
+	\label{GalileoDifferenziale}
 \end{equation}
-\newpage
+
+Si noti inoltre che questa trasformazione, essendo lineare, non muta la forma del vettore $\ddot{\vec{x}}$, infatti:
+\begin{equation*}
+	\frac{d^2}{dt^2}(\vec{\xi})=\frac{d^2}{dt^2}(\vec{x}-\vec{v}t)=\ddot{\vec{x}}+\frac{d}{dt}(\vec{v})=\ddot{\vec{x}}
+\end{equation*} 
+questo fatto, assieme al Principio di Relatività Galileiano applicato alla Legge di Newton (\ref{equazioneDiNewton}), 
+impongono che le forze esercitate su di un punto e misurate in due sistemi inerziali differenti debbano essere le medesime. 
