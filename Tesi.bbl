@@ -1,3 +1,14 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Einstein1905}
+A.~Einstein.
+\newblock Sull'elettrodinamica dei corpi in movimento.
+\newblock {\em Annalen der Physik}, 17:891--921, 1905.
+\newblock Traduzione di S. Antoci.
+
+\bibitem{Fock}
+V.~Fock.
+\newblock {\em The Theory of Space, Time and Gravitation}.
+\newblock Pergamon, 1964.
 
 \end{thebibliography}

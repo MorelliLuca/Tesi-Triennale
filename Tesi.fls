@@ -226,8 +226,8 @@ INPUT /home/lyokol/Scrivania/Tesi-Triennale/title.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/title.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/abstract.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/abstract.aux
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
 OUTPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -292,15 +292,19 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.toc
-OUTPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.tex
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.tex
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Trasformazioni di Galileo.tex
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Trasformazioni di Galileo.tex
+OUTPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Equazioni di Maxwell.tex
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Equazioni di Maxwell.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/I postulati.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/I postulati.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
@@ -311,8 +315,8 @@ INPUT /home/lyokol/Scrivania/Tesi-Triennale/title.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/title.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/abstract.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/abstract.aux
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux
-INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Main.aux
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

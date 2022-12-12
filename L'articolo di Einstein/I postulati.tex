@@ -1,0 +1,63 @@
+\section{I postulati di Einstein}
+Per giungere ad una formulazione coerente della dinamica 
+dei corpi carichi Einstein, nel suo articolo del 1905 \cite{Einstein1905}, 
+propose di modificare gli assunti alla base della meccanica classica per 
+prediligiere il modello suggerito dall'elettromagnetismo di Maxwell.\\
+Infatti all'epoca erano noti alcuni risultati sperimentali che giocavano 
+a sfavore della concezione classica della meccanica, primo fra tutti l'esperimento di 
+Michelson e Morley che avrebbe dovuto consentire di misurare la velocità della Terra 
+rispetto all'Etere Luminifero, detta vento d'etere. L'esperimento ebbe un'esito inaspettato, infatti non fu 
+possibile misurare alcun vento d'etere portando i fisici a tre possibili spiegazioni: 
+o l'Etere si muove assieme alla Terra, o l'apparato sperimentale si contrae lungo la direzione del moto terrestre 
+oppure non esiste alcun Etere e la luce si propaga alla medesima velocità in ogni direzione e per ogni osservatore.\\
+
+Einstein pose a fondamento della sua teoria due postulati:
+\begin{itemize}
+    \item Il Principio di Relatività: basato sull'assunzione che esistano 
+    una serie di sistemi di riferimento detti Inerziali, reciprocamente in moto rettilineo uniforme, in cui le leggi della fisica sono identicamente valide.
+    \item Il Principio di costanza della velocità della luce: il quale asserisce che la luce nello spazio vuoto si propaghi 
+    sempre con velocità determinata ed identica per ogni osservatore inerziale. 
+\end{itemize}
+Il primo chiaramente si rifà al Principio di Relatività Galileiana mentre il secondo è una diretta conseguenza 
+dell'esperimento di Michelson e Morley il cui risultato viene quindi spiegato senza la necessità dell'introduzione 
+dell'Etere e di un sistema di riferimento privilegiato ad esso associato.\\ Inoltre si continua ad intendere spazio e tempo come due enti omogenei e isotropi.
+
+Nel suo articolo Einstein propose, dopo aver enunciato i postulati, un'esperimento mentale che consente di mostrare come questi siano in diretto conflitto con 
+le assunzioni classiche dell'assolutezza del tempo e delle lunghezze. Si considerino due orologi reciprocamente a riposo posizionati in due punti detti $A$ e $B$.
+Einstein osservò che ogni orologio è in grado di misurare intervalli temporali solamente per eventi che avvengono nello stesso punto in cui ognuno è posizionato, poiché è ora necessario 
+tener conto della velocità finita di propagazione dell'informazione, in questo caso la luce.\\ Einstein osservò che il secondo postulato consente di 
+sincronizzare gli orologi così che sia possibile confrontare i tempi misurati in $A$ e in $B$. In primo luogo si ipotizzi di far partire 
+all'istante $t_A=0$, misurato dal primo orologio, un fascio di luce che viaggia da $A$ e giunge in $B$ quando l'orologio posizionato in tale punto segna un tempo $t_B$.
+In $B$ il fascio è riflesso e fa ritorno in $A$ quando il relativo orologio segna un tempo $t_A$. Poiché per il Principio di costanza della velocità della luce il fascio 
+luminoso deve propagarsi in ogni direzione con la stessa velcicità e la distanza tra i due orologi è fissata e costante allora il tempo impiegato dalla luce per andare da 
+$A$ a $B$ e vice versa deve essere il medesimo. Si conclude quindi che i due orologi sono sincronizzati solamente se vale:
+\begin{equation}
+    2t_B=t_A
+    \label{SinconizazioneOrologi}
+\end{equation}
+Chiaramente se l'orologio nel punto $A$ si è rivelato sincrono con quello nel punto $B$, tramite la procedura appena descritta, è chiaro che è altrettanto vero che quello posto in $B$ è sincrono 
+con quello posto in $A$ e che se si considera un orologio posto in un terzo punto $C$ che risulta sincrono con quello posto in $B$ allora questo terzo orologio è sincrono con quello nel punto $A$.\\
+Così facendo è possibile assegnare un immaginario orologio ad ogni punto dello spazio in maniera tale che siano tutti sincroni tra loro e sia possibile determinare quando due eventi lontani fra loro siano simultanei.\\
+
+Si consideri ora un regolo di lunghezza $l$ in un sistema di riferimento ad esso solidale detto $K$. Si considerino anche due orologi sincroni posti nelle due estremità del regolo dette $A$ e $B$. 
+In un sistema $K'$ si osserva il regolo in moto a velocità $v$ lungo la direzione in cui la parte lunga del regolo poggia. Sia detto $A'$ il punto del sistema $K'$ in cui si osserva l'emissione 
+del fascio di luce dalla prima estremità del regolo, $B'$ il punto, sempre in $K'$, in cui si osserva la riflessione del fascio nel secondo estremo del regolo ed infine $C'$ il punto in $K'$ in cui si osserva 
+il fascio fare ritorno alla prima estremità. In ognuno dei tre punti è presente un orologio sincronizzato con gli altri del sistema $K'$ in maniera da osservare 
+l'emissione del fascio ad un tempo $t'_{A'}=0$. Se $t'_{B'}$ è l'istante in cui si osserva la riflessione in $B'$, $t'_{C'}$ è l'istante in cui il fascio fa ritorno al primo estremo del regolo e $l'$ è la lunghezza del 
+regolo misurata nel sistema $K'$ allora è 
+possibile determinare in funzione di questi tempi le distanze tra i punti $A',\ B'$ e $C'$:
+\begin{flalign*}
+    &\Delta x'_{A'B'}=x'_{B'}-x'_{A'}=v(t'_{B'}-t'_{A'})+l'=vt'_{B'}+l'\\
+    &\Delta x'_{B'C'}=x'_{B'}-x'_{C'}=l'-v(t'_{C'}-t'_{B'})
+\end{flalign*}
+Queste due distanze sono quelle percorse dal fascio luminoso rispettivamente in tempi $t'_{B'}$ e $t'_{C'}-t'_{B'}$, 
+per cui si ottiene:
+\begin{flalign*}
+    \Delta x'_{A'B'}=ct'_{B'}=vt'_{B'}+l' \quad &\Rightarrow\qquad t'_{B'}=\frac{l'}{c-v}\\
+    \Delta x'_{B'C'}=c(t'_{C'}-t'_{B'})=l'-v(t'_{C'}-t'_{B'}) \qquad &\Rightarrow\quad t'_{C'}-t'_{B'}=\frac{l'}{c+v}
+\end{flalign*}
+Questa semplice osservazione consente di concludere che i postulati enunciati da Einstein non ammettono la possibilità 
+di assumere tempi assoluti: infatti l'osservatore in $K'$ osserva che il fascio di luce impiega più tempo per giungere al secondo estremo 
+di quanto ne trascorre tra la riflessione e il suo ritorno al primo estremo, mentre invece l'osservatore in $K$, solidale con il regolo, 
+osserva tempi identici per questi due tragitti. Una volta sviluppata matematicamente questa nuova teoria della relatività 
+si osserverà che in maniera analoga pure le lunghezze non possono più essere considerate assolute.

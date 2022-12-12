@@ -1,0 +1,96 @@
+\section{La meccanica e le trasformazioni di Galileo}
+La meccanica classica, in tutte le sue possibili formulazioni, ha come fondamento una serie 
+di osservazioni sperimentali che vengono utilizzate come principi da cui dedurre le leggi del moto.\\
+
+Il primo fatto sperimentale che viene assunto è che lo spazio sia tridimensionale, isotropo, omogeneo e che rispetti la 
+geometria euclidea mentre il tempo sia ad una sola dimensione. Inoltre si assume che le distanze spaziali e il tempo siano assoluti,
+ ossia che ogni osservatore concordi sulla misura di queste.\\
+Sulla base di queste assunzioni si può quindi scegliere un punto dello spazio-tempo come 
+origine di un sistema di riferimento, ossia uno spazio vettoriale 
+$\mathbb{R}^3\times\mathbb{R}$ che ha come vettore nullo il punto scelto. Da questo vengono scelte tre direzioni 
+spaziali arbitrarie lungo cui sono orientati tre assi cartesiani, identificabili con la base di $\mathbb{R}^3$, e 
+dal corrispondente punto temporale si inizia a misurare il tempo. Si osservi che tali scelte sono arbitrarie, 
+come lo è la direzione degli assi corrispondenti ai vettori della base, questo poiché spazio e tempo sono isotropi 
+ed omogenei.\\
+
+Il secondo fatto sperimentale prende il nome di Principio di Relatività Galileiano e consiste 
+nell'assunzione che esistano una serie di sistemi di riferimento detti inerziali, caratterizzati 
+dalla proprietà di essere reciprocamente in moto rettilineo uniforme, in cui le leggi della natura 
+in ogni istante assumono la stessa forma.\\
+
+Infine si assume che, in un riferimento inerziale, le posizioni e le velocità dei punti di un sistema ad un tempo iniziale ne determinino 
+in maniera univoca l'evoluzione secondo la legge:
+\begin{equation}
+	m\ddot{\vec{x}}=\vec{F}(\vec{x},\dot{\vec{x}},t)
+	\label{equazioneDiNewton}
+\end{equation}
+dove $m$ è detta massa inerziale e $\vec{F}$ è una funzione caratteristica del sistema detta forza.\\
+
+Si vuole quindi identificare quali applicazioni $\varphi:\mathbb{R}^3\times\mathbb{R}\rightarrow
+\mathbb{R}^3\times\mathbb{R}$ consentono di cambiare sistema di riferimento inerziale, ossia quali 
+trasformazioni non variano le leggi della natura. Queste applicazioni si chiamano Trasformazioni di 
+Galileo e dalle evidenze sperimentali si conclude che queste sono costituite dalle 
+composizioni di tre famiglie di applicazioni:
+\begin{itemize}
+	\item una generica traslazione spazio temporale dell'origine, dedotta dalla proprietà 
+	di omogeneità dello spazio e del tempo:
+	\begin{equation}
+		\varphi_{\vec{r},s}(\vec{x},t)=(\vec{x}+\vec{r},t+s)
+		\label{GalileoTraslazoine}
+	\end{equation} 
+\item una generica rotazione degli assi spaziali, dovuta alla proprietà di isotropia dello spazio:
+\begin{equation}
+	\varphi_{G}(\vec{x},t)=(G\vec{x},t) \qquad G\in M_{3\times3}(\mathbb{R}):G^{-1}=G^t
+	\label{GalileoRotazione}
+\end{equation} 
+	\item una traslazione di moto rettilineo uniforme, ammissibile grazie alle proprietà dei sistemi 
+	di riferimento inerziali:
+\begin{equation}
+	\varphi_{\vec{v}}(\vec{x},t)=(\vec{x}+\vec{v}t,t)
+	\label{GalileoVelocità}
+\end{equation} 
+\end{itemize}
+Quest'ultima tipologia di trasformazione è quella che viene comunemente studiata per caratterizzare le trasformazioni di sistemi inerziali. 
+Si consideri quindi un sistema $K$, con coordinate $(\vec{x},t)$ e un sistema $K'$, con 
+coordinate $(\vec{x'},t')$, in moto a velocità $\vec{V}$ rispetto a $K$, si scriverà allora la 
+(\ref{GalileoVelocità}) come:
+\begin{equation}
+	\vec{x'}=\vec{x}-\vec{V}t \qquad t'=t
+	\label{GalileoEasy}
+\end{equation}
+Si noti che questa trasformazione, essendo lineare, non muta la forma del vettore $\ddot{\vec{x}}$, infatti:
+\begin{equation*}
+	\frac{d^2}{dt'^2}(\vec{x'})=\frac{d^2}{dt^2}(\vec{x}-\vec{V}t)=\ddot{\vec{x}}+\frac{d}{dt}(\vec{V})=\ddot{\vec{x}}
+\end{equation*} 
+questo fatto, assieme al Principio di Relatività Galileiano applicato alla Legge di Newton (\ref{equazioneDiNewton}), 
+impongono che le forze esercitate su di un punto e misurate in due sistemi inerziali differenti debbano essere le medesime. \\
+
+Analogamente a quanto appena fatto si possono ricavare le trasformazioni per la velocità di un punto:
+\begin{equation}
+	\frac{d}{dt'}(\vec{x'})=\frac{d}{dt}(\vec{x}-\vec{V}t)=\dot{\vec{x}}+\vec{V}
+\end{equation}
+Si osserva che generale le Trasformazioni di Galileo compongono le velocità per somma algebrica.\\
+
+Per determinare l'invarianza di un legge fisica rispetto alle trasformazioni (\ref{GalileoEasy}) può essere necessario 
+studiare come si trasformino gli operatori di differenziazione. 
+Se si vuole derivare una $f(\vec{x},t)$, dalla regola di Leibniz, si ha:
+\begin{equation*}
+	\begin{gathered}
+		\frac{\partial}{\partial t'}=\frac{\partial t}{\partial t'}\frac{\partial}{\partial t}+
+		\sum_{i=1}^{3}\frac{\partial x_i}{\partial t}\frac{\partial t}{\partial t'}
+		\frac{\partial}{\partial x_i} \\
+		\frac{\partial}{\partial x'_i}=\frac{\partial t}{\partial x'_i}\frac{\partial}{\partial t}+
+		\sum_{i=1}^{3}\frac{\partial x_j}{\partial x'_i}\frac{\partial}{\partial x_j}
+	\end{gathered}
+\end{equation*}
+osservando dalla (\ref{GalileoEasy}) che $\frac{\partial t}{\partial t'}=1$, che 
+$\frac{\partial t}{\partial x'_i}=0$, che $\frac{\partial x_i}{\partial t}=V_i$ e che 
+$\frac{\partial x_j}{\partial \xi_i}=\delta_{ij}$, dove $\delta_{ij}$ è una delta di Kronecker, 
+si ottengono le trasformazioni degli operatori di differenziazione desiderate:
+\begin{equation}
+	\frac{\partial}{\partial t'}=\frac{\partial}{\partial t}+\vec{V}\cdot\vec{\nabla} \qquad \qquad
+	\frac{\partial}{\partial x'_i}=\frac{\partial}{\partial x_i}
+	\label{GalileoDifferenziale}
+\end{equation}
+Dalla (\ref{GalileoDifferenziale}) si deduce che tutti gli operatori che comprendono solamente derivate 
+rispetto alle derivate spaziali sono lasciati inalterati dalle Trasformazioni di Galileo, così che per esempio $\vnabla'=\vnabla$.
