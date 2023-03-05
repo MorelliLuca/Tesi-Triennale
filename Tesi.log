@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.24)  11 DEC 2022 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.24)  5 MAR 2023 18:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,105 +404,38 @@ Package: amsthm 2017/10/31 v2.20.4
 )
 \c@lemma=\count288
 \c@sublemma=\count289
- (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count290
-\mult@box=\box60
-\multicol@leftmargin=\dimen272
-\c@unbalance=\count291
-\c@collectmore=\count292
-\doublecol@number=\count293
-\multicoltolerance=\count294
-\multicolpretolerance=\count295
-\full@width=\dimen273
-\page@free=\dimen274
-\premulticols=\dimen275
-\postmulticols=\dimen276
-\multicolsep=\skip57
-\multicolbaselineskip=\skip58
-\partial@page=\box61
-\last@line=\box62
-\maxbalancingoverflow=\dimen277
-\mult@rightbox=\box63
-\mult@grightbox=\box64
-\mult@gfirstbox=\box65
-\mult@firstbox=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\c@minrows=\count296
-\c@columnbadness=\count297
-\c@finalcolumnbadness=\count298
-\last@try=\dimen278
-\multicolovershoot=\dimen279
-\multicolundershoot=\dimen280
-\mult@nat@firstbox=\box104
-\colbreak@box=\box105
-\mc@col@check@num=\count299
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+\c@thm=\count290
+\c@prop=\count291
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count300
-\Gm@cntv=\count301
-\c@Gm@tempcnt=\count302
-\Gm@bindingoffset=\dimen281
-\Gm@wd@mp=\dimen282
-\Gm@odd@mp=\dimen283
-\Gm@even@mp=\dimen284
-\Gm@layoutwidth=\dimen285
-\Gm@layoutheight=\dimen286
-\Gm@layouthoffset=\dimen287
-\Gm@layoutvoffset=\dimen288
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen272
+\Gm@wd@mp=\dimen273
+\Gm@odd@mp=\dimen274
+\Gm@even@mp=\dimen275
+\Gm@layoutwidth=\dimen276
+\Gm@layoutheight=\dimen277
+\Gm@layouthoffset=\dimen278
+\Gm@layoutvoffset=\dimen279
 \Gm@dimlist=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
-\f@nch@headwidth=\skip59
-\f@nch@O@elh=\skip60
-\f@nch@O@erh=\skip61
-\f@nch@O@olh=\skip62
-\f@nch@O@orh=\skip63
-\f@nch@O@elf=\skip64
-\f@nch@O@erf=\skip65
-\f@nch@O@olf=\skip66
-\f@nch@O@orf=\skip67
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 34.
@@ -512,8 +445,8 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count303
-\l__pdf_internal_box=\box106
+\l__kernel_color_stack_int=\count295
+\l__pdf_internal_box=\box60
 ) (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux (/home/lyokol/Scrivania/Tesi-Triennale/title.aux) (/home/lyokol/Scrivania/Tesi-Triennale/abstract.aux) (/home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux))
 \openout1 = `Tesi.aux'.
 
@@ -544,16 +477,16 @@ italian.ldf    on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen289
-\scratchbox=\box107
-\nofMPsegments=\count305
-\nofMParguments=\count306
+\scratchcounter=\count296
+\scratchdimen=\dimen280
+\scratchbox=\box61
+\nofMPsegments=\count297
+\nofMParguments=\count298
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen290
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen281
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -571,15 +504,15 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(86.72377pt, 424.06033pt, 86.72377pt)
-* v-part:(T,H,B)=(86.72377pt, 671.5993pt, 86.72377pt)
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=424.06033pt
-* \textheight=671.5993pt
-* \oddsidemargin=14.45378pt
-* \evensidemargin=14.45378pt
-* \topmargin=-22.54622pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -612,16 +545,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (25.49329pt too wide) in paragraph at lines 4--7
- [] 
- []
-
-
-Overfull \hbox (25.49329pt too wide) in paragraph at lines 4--7
- [] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
@@ -661,23 +584,23 @@ This may cause the page layout to be inconsistent, however.
 
 ]
 Capitolo 1.
-
-Overfull \hbox (9.37544pt too wide) in paragraph at lines 50--56
-\OT1/cmr/m/n/12 Nella se-con-da met^^Ra del di-cian-no-ve-si-mo se-co-lo la fi-si-ca era co-sti-tui-ta fon-da-men-tal-men-te
- []
-
-(/home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
+(/home/lyokol/Scrivania/Tesi-Triennale/Aspetti matematici dei sistemi di riferimento inerziali/Aspetti matemetici dei sistemi di riferimento inerziali.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--15
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--20
+Overfull \hbox (2.81857pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/12 in-di-pen-den-te-men-te dal si-ste-ma in cui so-no de-scrit-te. Que-sti si-ste-mi so-no spe-ri-men-tal-men-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
@@ -685,164 +608,331 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Overfull \hbox (2.29549pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/12 la de-scri-zio-ne di un mo-to in un si-ste-ma di ri-fe-ri-men-to iner-zia-le $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 co-no-scen-do la de-scri-zio-ne
+ []
+
+
+Overfull \hbox (4.72969pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/12 di ta-le mo-to in un pri-mo ri-fe-ri-men-to iner-zia-le $\OML/cmm/m/it/12 K$\OT1/cmr/m/n/12 . In que-sto mo-do la ge-ne-ri-ca tra-sfor-ma-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[4]) (/home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
-Overfull \hbox (6.40744pt too wide) in paragraph at lines 1--1
-|[]\OT1/cmr/bx/n/17.28 L'elettromagnetismo e le equa-zio-ni di Max-well| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 [5]
-Overfull \hbox (8.25386pt too wide) in paragraph at lines 43--47
-[]\OT1/cmr/m/n/12 Queste on-de si pro-pa-ga-no con una ve-lo-cit^^Ra $[] = 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 99795  10[] []$, che cor-ri-spon-de
- []
-
-
-Overfull \hbox (13.62262pt too wide) in paragraph at lines 43--47
-\OT1/cmr/m/n/12 qua-le que-ste on-de pos-sa-no pro-pa-gar-si e ri-spet-to al qua-le la lo-ro ve-lo-cit^^Ra di pro-pa-ga-zio-ne
- []
-
-) [6]
-Capitolo 2.
-(/home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell.tex [7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--53
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Overfull \hbox (4.27968pt too wide) in paragraph at lines 70--72
-\OT1/cmr/m/n/12 L'ultima Equa-zio-ne di Max-well ^^Re in-ve-ce non in-va-rian-te in-fat-ti sem-pre con il me-de-si-mo
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
  []
 
 
-Overfull \hbox (0.29933pt too wide) detected at line 79
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 120--153
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+Overfull \hbox (26.25174pt too wide) detected at line 157
+\OML/cmm/m/it/12 L[]\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 L \OMS/cmsy/m/n/12 ^^N \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^Ly\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^Ly\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 L[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L \OMS/cmsy/m/n/12 ^^N \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L \OMS/cmsy/m/n/12 ^^N \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 ^^Lg\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 ; ^^L \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R
+ []
+
+)
+Overfull \hbox (2.95793pt too wide) in paragraph at lines 58--63
+\OT1/cmr/m/n/12 L'elettromagnetismo in-ve-ce, in se-gui-to a nu-me-ro-si espe-ri-men-ti, ave-va tro-va-to una com-ple-ta
+ []
+
+
+Overfull \hbox (8.67175pt too wide) in paragraph at lines 58--63
+\OT1/cmr/m/n/12 mec-ca-ni-ca, sia al-l'e-let-tro-ma-gne-ti-smo, si pro-ce-der^^Ra il-lu-stran-do bre-ve-men-te i lo-ro fon-da-men-ti. 
+ []
+
+(/home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex [7]
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Overfull \hbox (4.39635pt too wide) in paragraph at lines 15--20
+\OT1/cmr/m/n/12 ap-pli-ca-zio-ni af-fi-ni. Una ge-ne-ri-ca tra-sfor-ma-zio-ne di Ga-li-leo ^^Re quin-di da-ta dal-la com-po-si-zio-ne
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+) (/home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
+Overfull \hbox (5.50606pt too wide) in paragraph at lines 81--1
+\OT1/cmr/m/n/12 al-le coor-di-na-te spa-zia-li so-no la-scia-ti inal-te-ra-ti dal-le tra-sfor-ma-zio-ni di Ga-li-leo. In par-ti-co-la-re
+ []
+
+[9]
+Overfull \hbox (4.03708pt too wide) in paragraph at lines 33--41
+\OT1/cmr/m/n/12 ge-ne-ra-to dal-la ca-ri-ca de-ve es-se-re ra-dia-le e co-stan-te su su-per-fi-ci sfe-ri-che cen-tra-te nel-l'o-ri-gi-ne.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+[10]) (/home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell.tex
+Overfull \hbox (12.84949pt too wide) in paragraph at lines 69--1
+\OT1/cmr/m/n/12 do-vet-te-ro ri-va-lu-ta-re i prin-ci-pi al-la ba-se del-le leg-gi del-la na-tu-ra fi-no a quan-do l'in-com-pa-ti-bi-lit^^Ra
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+
+Overfull \hbox (3.90236pt too wide) in paragraph at lines 43--45
+\OT1/cmr/m/n/12 Max-well e gli ad-den-di re-stan-ti si an-nul-la-no se svi-lup-pa-ti tra-mi-te le re-go-le di dif-fe-ren-zia-zio-ne
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
 ) (/home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/I postulati.tex
-Overfull \hbox (5.07132pt too wide) in paragraph at lines 2--13
-\OT1/cmr/m/n/12 nel suo ar-ti-co-lo del 1905 [[]], pro-po-se di mo-di-fi-ca-re gli as-sun-ti al-la ba-se del-la mec-ca-ni-ca
+Overfull \hbox (11.6745pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/12 che avreb-be do-vu-to con-sen-ti-re di mi-su-ra-re la ve-lo-cit^^Ra del-la Ter-ra ri-spet-to al-l'e-te-re lu-mi-ni-fe-ro,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--13
-
- []
-
-
-Overfull \hbox (7.80879pt too wide) in paragraph at lines 16--18
-\OT1/cmr/m/n/12 si-ste-mi di ri-fe-ri-men-to det-ti Iner-zia-li, re-ci-pro-ca-men-te in mo-to ret-ti-li-neo uni-for-me,
- []
-
-
-Overfull \hbox (3.20468pt too wide) in paragraph at lines 25--34
-[]\OT1/cmr/m/n/12 Nel suo ar-ti-co-lo Ein-stein pro-po-se, do-po aver enun-cia-to i po-stu-la-ti, un'e-spe-ri-men-to
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
-
- []
-
-[10])
-Overfull \hbox (6.53798pt too wide) in paragraph at lines 58--70
-\OT1/cmr/m/n/12 Ein-stein non am-met-to-no la pos-si-bi-lit^^Ra di as-su-me-re tem-pi as-so-lu-ti: in-fat-ti l'os-ser-va-to-re
- []
-
-(/home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex [11]
-Appendice A.
-
-Overfull \hbox (6.76437pt too wide) in paragraph at lines 2--8
-\OT1/cmr/m/n/12 Le tra-sfor-ma-zio-ni di Lo-ren-tz so-no una fa-mi-glia di tra-sfor-ma-zio-ni af-fi-ni, os-sia com-po-ste
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--8
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
-Overfull \hbox (4.08676pt too wide) in paragraph at lines 21--23
-[]\OT1/cmr/m/n/12 Si os-ser-vi che ^^Re pos-si-bi-le de-com-por-re $\OML/cmm/m/it/12 v$ \OT1/cmr/m/n/12 in una com-po-nen-te or-to-go-na-le
+Overfull \hbox (11.34395pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/12 Il pri-mo si rif^^Ra al prin-ci-pio di re-la-ti-vit^^Ra ga-li-leia-no men-tre il se-con-do ^^Re una di-ret-ta con-se-guen-za
  []
 
-[12
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Overfull \hbox (15.43742pt too wide) in paragraph at lines 117--120
-\OT1/cmr/m/n/12 che pu^^Ro an-nul-lar-si so-lo se si an-nul-la il nu-me-ra-to-re del-la fra-zio-ne. Da que-sta os-ser-va-zio-ne
+Overfull \hbox (0.28157pt too wide) in paragraph at lines 17--20
+\OT1/cmr/m/n/12 Fatta pro-pria que-sta os-ser-va-zio-ne ^^Re pos-si-bi-le pro-ce-de-re ana-liz-zan-do l'e-spe-ri-men-to men-ta-le:
+ []
+
+[14]) (/home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Derivazione.tex
+Overfull \hbox (11.63562pt too wide) in paragraph at lines 79--1
+\OT1/cmr/m/n/12 In que-sta se-zio-ne si pro-ce-der^^Ra a ri-ca-va-re le tra-sfor-ma-zio-ni di Lo-ren-tz se-guen-do i ra-gio-na-men-ti
  []
 
 
-Overfull \hbox (13.6907pt too wide) detected at line 124
-[] [] \OT1/cmr/m/n/12 = [] []  \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 x; ^^M \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[] \OML/cmm/m/it/12 i \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3
+Overfull \hbox (11.18285pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/12 Si vo-glio-no tro-va-re le tra-sfor-ma-zio-ni che, ri-spet-tan-do i due po-stu-la-ti di Ein-stein, tra-sfor-ma-no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[14] [15]) (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl [16]) [17
+[15]
+Overfull \hbox (4.5593pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/12 even-to non so-no pi^^Ru as-so-lu-ti e di-ver-si os-ser-va-to-ri di di-ver-si si-ste-mi di ri-fe-ri-men-to po-treb-be-ro
+ []
+
+
+Overfull \hbox (2.73703pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/12 sug-ge-ri-sco-no di uti-liz-za-re co-me qua-dri-vet-to-re $\OML/cmm/m/it/12 r \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ct; x; y; z\OT1/cmr/m/n/12 )$ poich^^Se cos^^R^^P fa-cen-do ^^Re pos-si-bi-le
+ []
+
+
+Overfull \hbox (15.00363pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/n/12 e in tal mo-do si de-scri-ver^^Ra un qua-dri-vet-to-re rap-pre-sen-tan-te una tra-iet-to-ria nel-lo spazio-tempo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Overfull \hbox (13.82826pt too wide) in paragraph at lines 49--50
+\OT1/cmr/m/n/12 ri-fe-ri-men-to $\OML/cmm/m/it/12 K$ \OT1/cmr/m/n/12 ad uno $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 sia vi-ce-ver-sa. Que-sta tra-sfor-ma-zio-ne de-ve es-se-re una tra-sfor-ma-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+[16]
+Overfull \hbox (9.19397pt too wide) in paragraph at lines 54--56
+\OT1/cmr/m/n/12 sa-reb-be pos-si-bi-le de-fi-ni-re una di-re-zio-ne pre-fe-ren-zia-le vio-lan-do l'i-so-tro-pia del-lo spazio-tempo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+[18]
+Overfull \hbox (15.54114pt too wide) in paragraph at lines 168--170
+\OT1/cmr/m/n/12 Ga-li-leo, per que-sto mo-ti-vo la mec-ca-ni-ca clas-si-ca ri-sul-ta so-la-men-te una pri-ma ap-pros-si-ma-zio-ne
+ []
+
+) (/home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Contrazioni e dilatazioni.tex
+Overfull \hbox (2.44829pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/n/12 Si pos-so-no quin-di cor-re-la-re i tem-pi di emis-sio-ne mi-su-ra-ti in $\OML/cmm/m/it/12 K$ \OT1/cmr/m/n/12 con quel-li in $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 con-si-de-ran-do
+ []
+
+
+Overfull \hbox (18.4495pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/n/12 la tra-sfor-ma-zio-ne di Lo-ren-tz ri-spet-to al cor-po po-sto nel-l'o-ri-gi-ne del si-ste-ma $\OML/cmm/m/it/12 K[]$ \OT1/cmr/m/n/12 (r'=(ct',0,0,0)): 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+) (/home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Trasfromazione Velocità.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+[20]
+Overfull \hbox (23.8466pt too wide) in paragraph at lines 61--63
+\OT1/cmr/m/n/12 ve-lo-cit^^Ra (1.4.11[]), que-ste in-fat-ti non so-no al-tre che le tra-sfor-ma-zio-ni di Lo-ren-tz del qua-dri-vet-to-re
+ []
+
+) [21]
+Capitolo 2.
+[22
+
+]
+Capitolo 3.
+(/home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex [23
+
+]
+Appendice A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[24
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Overfull \hbox (1.07155pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/12 Per pri-ma co-sa si sup-por^^Ra che $\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 sia suf-fi-cen-te-men-te re-go-la-re, al-me-no $\OML/cmm/m/it/12 C[]$\OT1/cmr/m/n/12 , ed ^^Re ne-ces-sa-rio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+[26]
+Overfull \hbox (10.69118pt too wide) in paragraph at lines 152--154
+\OT1/cmr/m/n/12 sostituendo la de-ri-va-ta se-con-da par-zia-le tra-mi-te la (A.2.3[]) que-sta espres-sio-ne ^^Re sem-pli-fi-ca-bi-le
+ []
+
+[27]) (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl [28]) [29
 
 ] (/home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux (/home/lyokol/Scrivania/Tesi-Triennale/title.aux) (/home/lyokol/Scrivania/Tesi-Triennale/abstract.aux) (/home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux)) ) 
 Here is how much of TeX's memory you used:
- 24648 strings out of 481239
- 612639 string characters out of 5920376
- 986951 words of memory out of 5000000
- 39449 multiletter control sequences out of 15000+600000
- 543491 words of font info for 68 fonts, out of 8000000 for 9000
+ 24681 strings out of 481239
+ 614702 string characters out of 5920376
+ 988951 words of memory out of 5000000
+ 39464 multiletter control sequences out of 15000+600000
+ 545695 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,12n,127p,807b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/lyokol/Scrivania/Tesi-Triennale/Tesi.pdf (19 pages, 213142 bytes).
+ 73i,14n,127p,1574b,761s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/lyokol/Scrivania/Tesi-Triennale/Tesi.pdf (31 pages, 310588 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 185 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

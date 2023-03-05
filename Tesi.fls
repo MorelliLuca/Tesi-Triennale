@@ -208,8 +208,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -296,8 +294,21 @@ OUTPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.aux
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Introduzione/Introduzione.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Aspetti matematici dei sistemi di riferimento inerziali/Aspetti matemetici dei sistemi di riferimento inerziali.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Aspetti matematici dei sistemi di riferimento inerziali/Aspetti matemetici dei sistemi di riferimento inerziali.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Trasformazioni di Galileo.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Fatti di Meccanica Classica/Equazioni di Maxwell.tex
@@ -305,9 +316,14 @@ INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianz
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/I postulati.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/L'articolo di Einstein/I postulati.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Derivazione.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Derivazione.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Contrazioni e dilatazioni.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Contrazioni e dilatazioni.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Trasfromazione Velocità.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Trasformazioni di Lorentz/Trasfromazione Velocità.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux
@@ -322,11 +338,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb

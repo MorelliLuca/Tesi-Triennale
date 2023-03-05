@@ -23,15 +23,15 @@
 \usepackage{amsthm}
 \newtheorem{lemma}{Lemma}
 \newtheorem{sublemma}{Lemma}[section]
+\newtheorem{thm}{Teorema}
+\newtheorem{prop}{Proposizione}
 \numberwithin{equation}{section}
 
-\usepackage{multicol}
-
-\usepackage[margin=1.2in]{geometry}
+\usepackage[margin=1in]{geometry}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[RO,LE]{\textbf{Titolo Tesi}}
+\fancyhead[RO,LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
 \fancyhead[LO,RE]{Luca Morelli}
 
 \newcommand{\vnabla}{\vec{\nabla}}
@@ -46,28 +46,48 @@
 
 \include{Introduzione/Introduzione}
 
-\chapter{Fatti di Fisica Classica}
+\chapter{Fondamenti di relatività speciale}
+
+\section{La matematica dei sistemi di riferimento inerziali}
+\label{sec:MathSDRI}
+Prima di poter descrivere la teoria della relatività ristretta e l'iter che portò alla sua fondazione è necessario definire e studiare i sistemi di riferimento. Di seguito si mostrerà quale struttura matematica è necessaria per descrivere tali sistemi e le loro proprietà. Infine si studierà le loro trasformazioni. Tutta la trattazione è finalizzata ad essere il più generale possibile così da essere valida sia classicamente parlando che nel campo della relatività ristretta.
+\input{Aspetti matematici dei sistemi di riferimento inerziali/Aspetti matemetici dei sistemi di riferimento inerziali}
+
+
+\section{Fatti di Fisica Classica}
 Nella seconda metà del diciannovesimo secolo la fisica era costituita fondamentalmente dalla meccanica, 
-dalla termodinamica e dall'elettromagnetismo.\\ La meccanica, fondata da Newton e Galileo, descriveva il 
-moto dei corpi e di fatto fungeva da modello per tutta la fisica.\\L'elettromagnetismo invece, in seguito 
-a numerosi esperimenti, aveva trovato una completa spiegazione nelle Equazioni di Maxwell.\\
-Poichè la nascita della Teoria della Relatività Speciale è strettamente connessa a queste due branche della fisica 
-è necessario illustrare brevemente i loro fondamenti. 
+dalla termodinamica e dall'elettromagnetismo.\\ La meccanica, fondata da Newton e Galileo, si occupava di studiare il 
+moto dei corpi e fungeva da modello per tutta la fisica.\\La termodinamica, grazie a molteplici risultati sperimentali, era riuscita a descrivere molti fenomeni tramite i così detti principi della termodinamica, la cui origine però non era ancora del tutto chiara.\\L'elettromagnetismo invece, in seguito 
+a numerosi esperimenti, aveva trovato una completa descrizione nelle equazioni di Maxwell.\\
+Poiché la nascita della teoria della relatività speciale è strettamente connessa sia alla meccanica, sia all'elettromagnetismo, si procederà illustrando brevemente i loro fondamenti. 
 
 
 \input{Fatti di Meccanica Classica/Trasformazioni di Galileo}
 \input{Fatti di Meccanica Classica/Equazioni di Maxwell}
 
-\chapter{L'articolo del 1905}
-La Meccanica Newtoniana e l'Elettromagnetismo di Maxwell si rivelarono a gli occhi dei fisici dell'ottocento 
+\section{L'articolo del 1905}
+La Meccanica newtoniana e l'elettromagnetismo di Maxwell si rivelarono a gli occhi dei fisici dell'ottocento 
 incompatibili fra loro, 
-poichè le Equazioni di Maxwell non risultarono invarianti per le trasformazioni di Galileo. 
+poiché le equazioni di Maxwell non risultarono invarianti per le trasformazioni di Galileo. 
 Proprio per questo motivo i fisici dell'epoca dovettero rivalutare i principi alla base delle leggi 
-della natura fino a quando l'incompatibilità trovò una soluzione nel 1905 con la Relatività Ristretta di Einstein.
- Si ripercorreranno ora i passi che Einstein stesso indicò nel suo articolo del 1905 \cite{Einstein1905}.
+della natura fino a quando l'incompatibilità trovò una soluzione nel 1905 con la relatività ristretta di Einstein.
+ Si ripercorreranno ora i passi che Einstein stesso indicò nel suo articolo del 1905$^{\cite{Einstein1905}}$.
 \input{L'articolo di Einstein/Non invarianza delle Equazioni di Maxwell}
 \input{L'articolo di Einstein/I postulati}
 
+\section{Le trasformazioni di Lorentz}
+Come si è già visto, i postulati di Einstein non risultano compatibili con le trasformazioni di Galileo, 
+per questo motivo il primo passo compiuto da Einstein stesso fu quello di identificare matematicamente quali siano 
+le nuove trasformazioni dei sistemi di riferimento inerziali che derivano direttamente dai nuovi postulati.\\
+In questa sezione si procederà a ricavare le trasformazioni di Lorentz seguendo i ragionamenti di Fock$^{\cite{Fock}}$ e di Landau$ ^{\cite{Landau}}$, 
+per poi discuterne le implicazioni.  
+\input{Trasformazioni di Lorentz/Derivazione}
+\input{Trasformazioni di Lorentz/Contrazioni e dilatazioni}
+\input{Trasformazioni di Lorentz/Trasfromazione Velocità}
+
+\chapter{Meccanica relativistica}
+
+\chapter{L'elettromagnetismo nella teoria della relatività}
 
 \appendix
 \input{Appendici/Sulla linearità delle trasformazioni di Lorentz}

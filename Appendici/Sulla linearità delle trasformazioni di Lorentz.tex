@@ -1,25 +1,16 @@
 \chapter{Sulla linearità delle trasformazioni di Lorentz}
-Le trasformazioni di Lorentz sono una famiglia di trasformazioni affini, ossia composte 
-da una generica traslazione in quattro dimensioni e un'applicazione lineare. 
-Questa loro proprietà è deducibile dai postulati di Einstein e solitamente, nella maggior 
-parte delle trattazioni della teoria della Relatività, è data come proprietà ovvia. 
-Nelle seguenti pagine è presentata la dimostrazione di tale proprietà seguendo la dimostrazione 
-riportata da Fock nel suo manuale \cite{Fock}.\\
+\label{chap:LinearitàLorentz}
+Le trasformazioni di Lorentz sono una famiglia di trasformazioni affini, ossia composte da una generica traslazione in quattro dimensioni e un'applicazione lineare. Questa loro proprietà è deducibile dai postulati di Einstein e solitamente, nella maggior parte delle trattazioni della teoria della relatività, è data come proprietà ovvia. Nelle seguenti pagine è presentata la dimostrazione di tale proprietà seguendo la dimostrazione riportata da Fock nel suo manuale \cite{Fock}.\\
 
 \section{Prerequisiti matematici}
-In primo luogo è necessario dimostrare due Lemmi che si rivelano utili anche per altri 
-aspetti della teoria della Relatività.
+In primo luogo è necessario dimostrare due Lemmi che si rivelano utili anche per altri aspetti della teoria della relatività.
 
 \begin{lemma}
-    Siano $v,u\in \mathbb{R}^n$, $<,>$ sia il prodotto scalare euclideo e siano definite $f_u: \mathbb{R}^n\rightarrow\mathbb{R}$, 
-    tale che $f_u(v)=\ <u,v>$, e $q:\mathbb{R}^n\rightarrow\mathbb{R}$ forma quadratica tale che $q
-    (v)=\ <v,Av>$, con $A\in M_{n\times n}(\mathbb{R})$ simmetrica. Se, fissato $\bar{v}$ tale che $f_u(\bar{v})=0$ implica che $q(\bar{v})=0$,
-    allora $\exists \psi\in \mathbb{R}^n$ tale che $q(v)=f_u(v)<\psi,v> \forall v\in \mathbb{R}^n$.
+    Siano $v,u\in \mathbb{R}^n$, $<,>$ sia il prodotto scalare euclideo e siano definite $f_u: \mathbb{R}^n\rightarrow\mathbb{R}$, tale che $f_u(v)=\ <u,v>$, e $q:\mathbb{R}^n\rightarrow\mathbb{R}$ forma quadratica tale che $q(v)=\ <v,Av>$, con $A\in M_{n\times n}(\mathbb{R})$ simmetrica. Se, fissato $\bar{v}$ tale che $f_u(\bar{v})=0$ implica che $q(\bar{v})=0$,allora $\exists \psi\in \mathbb{R}^n$ tale che $q(v)=f_u(v)<\psi,v> \forall v\in \mathbb{R}^n$.
     \label{lemm:A1}
 \end{lemma}
 \begin{proof}
-    Si osservi che è possibile decomporre $v$ in una componente
-    ortogonale ad $u$ ed una parallela:
+    Si osservi che è possibile decomporre $v$ in una componente ortogonale ad $u$ ed una parallela:
     \begin{equation}
         v=v^\parallel +v^\bot =\frac{u\ <u,v>}{\|u\|^2}+v-\frac{u\ <u,v>}{\|u\|^2}+
     \label{Al1Decomposizione}
@@ -29,9 +20,7 @@ aspetti della teoria della Relatività.
             &q(v)=\ <v^\parallel +v^\bot,A(v^\parallel +v^\bot)>\\
             &=\ <v^\parallel ,Av^\parallel >+2<v^\bot,Av^\parallel>+<v^\bot,Av^\bot>
     \end{flalign*}
-    il termine $<v^\bot,Av^\bot>$ è per definizione $q(v^\bot)$ e poichè 
-    per costruzione di $v^\bot$ si ha $f_u(v^\bot)=0$, per le ipotesi $q(v^\bot)$
-    deve annullarsi per cui:
+    il termine $<v^\bot,Av^\bot>$ è per definizione $q(v^\bot)$ e poichè per costruzione di $v^\bot$ si ha $f_u(v^\bot)=0$, per le ipotesi $q(v^\bot)$deve annullarsi per cui:
    \begin{equation*}
     q(v)=<v^\parallel ,Av^\parallel >+2<v^\bot,Av^\parallel>
    \end{equation*}
@@ -40,29 +29,22 @@ aspetti della teoria della Relatività.
         &q(v)=<u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2 +2 <v^\bot,Au> \frac{<u,v>}{\|u\|^2}\\
         &=\ <u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2 +2 <v,Au> \frac{<u,v>}{\|u\|^2} -2<u ,Au >\left(\frac{<u,v>}{\|u\|^2} \right)^2\\
    \end{flalign*}
-   Infine se si raccoglie un termine $<u,v>$ e si sommano i termini uguali si ottiene un'espressione per $q(v)$ composta da un termine lineare 
-   rispetto a $v$ moltiplicato per il prodotto scalare $<u,v>$:
+   Infine se si raccoglie un termine $<u,v>$ e si sommano i termini uguali si ottiene un'espressione per $q(v)$ composta da un termine lineare rispetto a $v$ moltiplicato per il prodotto scalare $<u,v>$:
    \begin{equation}
     q(v)=<u,v>\left[2 \frac{<v,Au>}{\|u\|^2}-\frac{<u ,Au ><u,v>}{\|u\|^4} \right] \qquad \forall v\in\mathbb{R}^4
    \end{equation}
 \end{proof}
 
 \begin{lemma}
-    Sia $v\in\mathbb{R}^4$, per comodità si scriverà $v=(v_0,v_1,v_2,v_3)=(v_0,\vec{v})$, tale che $\vec{v}\neq 0$. Sia quindi $q:\mathbb{R}^4\rightarrow\mathbb{R}$ 
-    una forma quadratica tale che, se fissato $\bar{v}$ con $\bar{v}_0^2-|\vec{\bar{v}}|^2=0$ implica $ q(\bar{v})=0$, allora $\exists \lambda $ 
-    tale che $ q(v)=\lambda(v_0^2-|\vec{v}|^2)\ \forall v\in\mathbb{R}^4$.
+    Sia $v\in\mathbb{R}^4$, per comodità si scriverà $v=(v_0,v_1,v_2,v_3)=(v_0,\vec{v})$, tale che $\vec{v}\neq 0$. Sia quindi $q:\mathbb{R}^4\rightarrow\mathbb{R}$ una forma quadratica tale che, se fissato $\bar{v}$ con $\bar{v}_0^2-|\vec{\bar{v}}|^2=0$ implica $ q(\bar{v})=0$, allora $\exists \lambda $ tale che $ q(v)=\lambda(v_0^2-|\vec{v}|^2)\ \forall v\in\mathbb{R}^4$.
     \label{lemm:A2}
 \end{lemma}
 \begin{proof}
-    Si osservi che $q(v)$ può essere scomposto, seguendo le regole del prodotto righe per colonne $q(v)=v^tAv$ (dove 
-    $A\in M_{3x3}(\mathbb{R})$ simmetrica), nella seguente somma:
+    Si osservi che $q(v)$ può essere scomposto, seguendo le regole del prodotto righe per colonne $q(v)=v^tAv$ (dove $A\in M_{3x3}(\mathbb{R})$ simmetrica), nella seguente somma:
     \begin{equation*}
         q(v)=a_{00}v_0^2+2v_0(a_{01}v_1+a_{02}v_2+a_{03}v_3)+\hat{q}(\vec{v})
     \end{equation*}
-    dove $\hat{q}$ è ancora una forma quadratica in $\mathbb{R}^3$ che agisce su $\vec{v}$.\\
-    Si consideri ora un vettore $\bar{v}\in \mathbb{R}^4$ e tale che considerando $v$ allora $\bar{v}=(-|\vec{v}|,\vec{v})$; per costruzione
-    $(\bar{v}_0)^2-|\vec{\bar{v}}|^2=|\vec{v}|^2-|\vec{v}|^2=0$, per cui per le ipotesi assunte si ha $q(\bar{v})=0$.\\
-    Essendo $q(\bar{v})=0$ si può scrivere:
+    dove $\hat{q}$ è ancora una forma quadratica in $\mathbb{R}^3$ che agisce su $\vec{v}$.\\Si consideri ora un vettore $\bar{v}\in \mathbb{R}^4$ e tale che considerando $v$ allora $\bar{v}=(-|\vec{v}|,\vec{v})$; per costruzione$(\bar{v}_0)^2-|\vec{\bar{v}}|^2=|\vec{v}|^2-|\vec{v}|^2=0$, per cui per le ipotesi assunte si ha $q(\bar{v})=0$.\\Essendo $q(\bar{v})=0$ si può scrivere:
     \begin{flalign}
         \label{Al2Decomposizione}
             &q(v)=q(v)-q(\bar{v})\\\nonumber
@@ -73,22 +55,18 @@ aspetti della teoria della Relatività.
    \begin{equation*}
     q(\bar{v})=-2|\vec{v}|(a_{01}v_1+a_{02}v_2+a_{03}v_3)=0
    \end{equation*}
-   Per ipotesi $|\vec{v}|\neq0$ per cui $a_{01}=a_{02}=a_{03}=0$ che dimostra il lemma poichè implica:
+   Per ipotesi $|\vec{v}|\neq0$ per cui $a_{01}=a_{02}=a_{03}=0$ che dimostra il lemma poiché implica:
    \begin{equation}
     q(v)=a_{00}(v_0^2-|\vec{v}|^2)\quad \forall v\in\mathbb{R}^4
    \end{equation}
 \end{proof}
 
 \section{La dimostrazione}
-Siano $x,x'\in\mathbb{R}^4$ due vettori dello spazio-tempo misurati in due sistemi di riferimento inerziali $K$ e $K'$, 
-si vogliono determinare le proprietà dell'applicazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$ che trasforma i vettori misurati in $K$ 
-negli stessi vettori misurati in $K'$ e viceversa considerando validi il principio di Relatività e il principio di costanza della velocità della luce.\\
+Siano $x,x'\in\mathbb{R}^4$ due vettori dello spazio-tempo misurati in due sistemi di riferimento inerziali $K$ e $K'$, si vogliono determinare le proprietà dell'applicazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$ che trasforma i vettori misurati in $K$ negli stessi vettori misurati in $K'$ e viceversa considerando validi il principio di Relatività e il principio di costanza della velocità della luce.\\
 
-Per prima cosa si supporà che $f$ sia sufficentemente regolare, almeno $C^2$, ed è necessario che sia invertibile poichè deve poter 
-trasformare sia da $K$ a $K'$, sia viceversa: questa condizione è equivalente a richiedere che $\det J_f(x)\neq 0\ \forall x\in\mathbb{R}^4$.\\
+Per prima cosa si supporà che $f$ sia sufficentemente regolare, almeno $C^2$, ed è necessario che sia invertibile poichè deve poter trasformare sia da $K$ a $K'$, sia viceversa: questa condizione è equivalente a richiedere che $\det J_f(x)\neq 0\ \forall x\in\mathbb{R}^4$.\\
 
-Si considerino ora $\xi, \gamma \in \mathbb{R}^4$, ripettivamente detti punto iniziale e velocità della parametrizazione, 
-che consentono di parametrizzare un moto rettilineo uniforme nel seguentue modo:
+Si considerino ora $\xi, \gamma \in \mathbb{R}^4$, rispettivamente detti punto iniziale e velocità della parametrizzazione, che consentono di parametrizzare un moto rettilineo uniforme nel seguente modo:
 \begin{equation*}
     x=\xi+s\gamma \qquad s\in \mathbb{R}
 \end{equation*}
@@ -96,8 +74,7 @@ infatti è possibile esplicitare la dipendenza di $x_0$ da $s$ per ottenere la f
 \begin{equation*}
     s=\frac{x_0-\xi_0}{\gamma_0} \qquad \Rightarrow \qquad x_i=\xi_i+\frac{x_0-\xi_0}{\gamma_0}\gamma_i \qquad i=1,2,3
 \end{equation*}
-Secondo il principio di relatività se si calcola $f(x)=x'$ è necessario che $x'=\xi'+s'\gamma'$ così che un moto rettilineo uniforme resti tale in ogni sistema 
-di riferimento inerziale. Derivando $f(\xi+s\gamma)$ rispetto al parametro $s'$ si ottiene:
+Secondo il principio di relatività se si calcola $f(x)=x'$ è necessario che $x'=\xi'+s'\gamma'$ così che un moto rettilineo uniforme resti tale in ogni sistema di riferimento inerziale. Derivando $f(\xi+s\gamma)$ rispetto al parametro $s'$ si ottiene:
 \begin{equation*}
     \frac{dx'}{ds'}=\gamma'=J_f(\xi+s\gamma)\frac{ds}{ds'}\gamma
 \end{equation*}
@@ -106,8 +83,7 @@ si consideri ora la i-esima componente di $\gamma'$, dove $i=0,1,2,3$, e la si d
     \frac{\gamma'_i}{\gamma'_0}=\frac{\sum_{k=0}^3\partial_kf_i(\xi+s\gamma)\gamma_k}{\sum_{k=0}^3\partial_kf_0(\xi+s\gamma)\gamma_k}
     \label{ARappGamma}
 \end{equation*} 
-dove $\partial_k=\frac{\partial}{\partial x_k}$. Da ora in poi si utilizzerà la convenzione degli indici ripetuti di Einstein per cui $\sum_k x_k y_k=x_k y_k$.\\
-Il rapporto $\frac{\gamma'_i}{\gamma'_0}$ è costante da cui segue immediatamente che $\frac{d}{ds}\frac{\gamma'_i}{\gamma'_0}=0$  e quindi:
+dove $\partial_k=\frac{\partial}{\partial x_k}$. Da ora in poi si utilizzerà la convenzione degli indici ripetuti di Einstein per cui $\sum_k x_k y_k=x_k y_k$.\\Il rapporto $\frac{\gamma'_i}{\gamma'_0}$ è costante da cui segue immediatamente che $\frac{d}{ds}\frac{\gamma'_i}{\gamma'_0}=0$  e quindi:
 \begin{equation*}
     \begin{gathered}
         \frac{d}{ds}\frac{\partial_kf_i(\xi+s\gamma)\gamma_k}{\partial_jf_0(\xi+s\gamma)\gamma_j}\\
@@ -115,19 +91,15 @@ Il rapporto $\frac{\gamma'_i}{\gamma'_0}$ è costante da cui segue immediatament
     - \left(\partial_kf_i(\xi+s\gamma)\gamma_k\right)\left(\partial^2_{hn}f_0(\xi+s\gamma)\gamma_h\gamma_n\right)}{\left(\partial_jf_0(\xi+s\gamma)\gamma_j\right)^2}=0    
 \end{gathered}
 \end{equation*}
-che può annullarsi solo se si annulla il numeratore della frazione. Da questa osservazione e dal fatto che preso un $x\in \mathbb{R}^4 $ esistono $ \gamma \in
-\mathbb{R}^4, s \in \mathbb{R}$ tali che $x=\xi+s\gamma$ si ottiene:
+che può annullarsi solo se si annulla il numeratore della frazione. Da questa osservazione e dal fatto che preso un $x\in \mathbb{R}^4 $ esistono $ \gamma \in\mathbb{R}^4, s \in \mathbb{R}$ tali che $x=\xi+s\gamma$ si ottiene:
 \begin{equation}
     \left(\partial^2_{hn}f_i(x)\gamma_h\gamma_n\right)\left(\partial_kf_0(x)\gamma_k\right)
     = \left(\partial_kf_i(x)\gamma_k\right)\left(\partial^2_{hn}f_0(x)\gamma_h\gamma_n\right) \qquad \forall x,\gamma\in \mathbb{R}^4 \quad i=0,1,2,3  
     \label{ABigPSum}
 \end{equation}
-Siccome si è supposto inizialmente $\det J_f(x)\neq 0$ deve necessariamente esistere almeno un $j$ tale che $ \forall\gamma\in \mathbb{R}^4\quad\partial_kf_j(x)\gamma_k\neq 0$, 
-inoltre se si suppone di prendere $\bar{\gamma}$ tale che $\partial_kf_0(x)\bar{\gamma}_k=0$ allora per la (\ref{ABigPSum}) necessariamente 
-anche $\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$.\\
+Siccome si è supposto inizialmente $\det J_f(x)\neq 0$ deve necessariamente esistere almeno un $j$ tale che $ \forall\gamma\in \mathbb{R}^4\quad\partial_kf_j(x)\gamma_k\neq 0$, inoltre se si suppone di prendere $\bar{\gamma}$ tale che $\partial_kf_0(x)\bar{\gamma}_k=0$ allora per la (\ref{ABigPSum}) necessariamente anche $\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$.\\
 
-Si applichi quindi il Lemma (\ref{lemm:A1}) il quale, in virtù del fatto che $\partial_kf_0(x)\bar{\gamma}_k=0\Rightarrow 
-\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$, consente di scrivere:
+Si applichi quindi il Lemma (\ref{lemm:A1}) il quale, in virtù del fatto che $\partial_kf_0(x)\bar{\gamma}_k=0\Rightarrow \partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$, consente di scrivere:
 \begin{equation*}
     \partial^2_{hn}f_0(x)\gamma_h\gamma_n=\ <\psi(x),\gamma>\ (\partial_kf_0(x)\gamma_k) \qquad   \forall x,\gamma\in \mathbb{R}^4 \quad i=0,1,2,3  
 \end{equation*}
@@ -136,8 +108,7 @@ che inserito nella (\ref{ABigPSum}) risulta in:
     \left(\partial^2_{hn}f_i(x)\gamma_h\gamma_n\right)\left(\partial_kf_0(x)\gamma_k\right)
     = \left(\partial_kf_i(x)\gamma_k\right)\ <\psi(x),\gamma>\ (\partial_kf_0(x)\bar{\gamma}_k)
 \end{equation*}
-infine siccome $\gamma'_0\neq 0$ affinchè sia $x'$ sia un moto rettilneo unfiorme, a maggior ragione la su espressione data dalla jacobiana di $f$ soddisfa $(\partial_kf_0(x)\gamma_k\frac{ds}{ds'})\neq 0$ 
-ed è quindi possibile elidere da ambo i lati tale membro:
+infine siccome $\gamma'_0\neq 0$ affinché sia $x'$ sia un moto rettilineo uniforme, a maggior ragione la su espressione data dalla jacobiana di $f$ soddisfa $(\partial_kf_0(x)\gamma_k\frac{ds}{ds'})\neq 0$ ed è quindi possibile elidere da ambo i lati tale membro:
 \begin{equation}
     \partial^2_{hn}f_i(x)\gamma_h\gamma_n=\left(\partial_kf_i(x)\gamma_k\right)\ <\psi(x),\gamma> \qquad   \forall x,\gamma\in \mathbb{R}^4 \quad i=0,1,2,3
     \label{APArtialScal}
@@ -148,21 +119,18 @@ Si osservi che  $\partial^2_{hn}f_i(x)$ è una matrice simmetrica per il teorema
     \label{APArtialScalSimm}
 \end{equation}
 
-Si consideri ora $x$ e $x'$ parametrizazioni del moto di un raggio di luce, per il principio di costanza della velocità della luce 
-se in $K$ $x$ è paramtrizzato sul cono di luce, lo stesso deve avvenire in $K'$, il che è esprimibile matematicamente con le due condizioni:
+Si consideri ora $x$ e $x'$ parametrizzazioni del moto di un raggio di luce, per il principio di costanza della velocità della luce se in $K$ $x$ è parametrizzato sul cono di luce, lo stesso deve avvenire in $K'$, il che è esprimibile matematicamente con le due condizioni:
 \begin{equation*}
     \begin{gathered}
         \gamma_0^2-(\gamma_1^2+\gamma_2^2+\gamma_3^2)=0\\
         (\gamma_0')^2-[(\gamma_1')^2+(\gamma_2')^2+(\gamma_3')^2]=0
     \end{gathered}
 \end{equation*}
-e poichè si può esprimere ogni componente di $\gamma'$ tramite la jacobiana di $f$ e $\gamma$, come già 
-si è fatto calcolando $\frac{\gamma'_i}{\gamma'_0}$:
+e poiché si può esprimere ogni componente di $\gamma'$ tramite la jacobiana di $f$ e $\gamma$, come già si è fatto calcolando $\frac{\gamma'_i}{\gamma'_0}$:
 \begin{equation*}
     \left(\partial_kf_0(x)\gamma_k\right)^2-\left[\sum_{i=1}^3\left(\partial_kf_i(x)\gamma_k\right)^2\right]=0
 \end{equation*}
-Il principio di costanza della velocità della luce consente di utilizzare il lemma (\ref{lemm:A2}) poiché l'annullarsi di una
- forma quadratica implica l'annullarsi dell'altra, da cui si ha che:
+Il principio di costanza della velocità della luce consente di utilizzare il lemma (\ref{lemm:A2}) poiché l'annullarsi di una forma quadratica implica l'annullarsi dell'altra, da cui si ha che:
 \begin{equation*}
     \left(\partial_kf_0(x)\gamma_k\right)^2-\left[\sum_{i=1}^3\left(\partial_kf_i(x)\gamma_k\right)^2\right]=
     \lambda(x)\left[\gamma_0^2-(\gamma_1^2+\gamma_2^2+\gamma_3^2)\right]
@@ -190,7 +158,7 @@ infine applicando nuovamente la (\ref{APartialDelta}) si possono sostituire tutt
 \begin{equation*}
     g_{hk} \partial_s\lambda =g_{kh}\lambda\psi_s+g_{sh}\lambda \psi_k
 \end{equation*}
-Si considerino queste due differenti casitiche:
+Si considerino queste due differenti casistiche:
 \begin{itemize}
     \item Siano $k=h\neq s$ allora:
     \begin{equation*}
@@ -201,11 +169,8 @@ Si considerino queste due differenti casitiche:
         g_{hk} \partial_s\lambda =2g_{kh}\lambda\psi_s \Rightarrow \partial_s\lambda=2\psi_s\lambda
     \end{equation*}
 \end{itemize}
-Queste due relazioni appena ottenute implicano però che $\lambda\psi_i=0$ per $i=0,1,2,3$, $\lambda$ però 
-non può annullarsi altrimenti la trasformazione $f$ mapperebbe ogni moto in un moto a velocità luminare, il che 
-viola il Principio di Relatività.\\
-Segue quindi che $\psi_i=0$ per $i=0,1,2,3$, per cui dalla (\ref{APArtialScalSimm}) risulta:
+Queste due relazioni appena ottenute implicano però che $\lambda\psi_i=0$ per $i=0,1,2,3$, $\lambda$ però non può annullarsi altrimenti la trasformazione $f$ mapperebbe ogni moto in un moto a velocità luminare, il che viola il Principio di Relatività.\\Segue quindi che $\psi_i=0$ per $i=0,1,2,3$, per cui dalla (\ref{APArtialScalSimm}) risulta:
 \begin{equation}
     \partial_{kh}^2f_i(x)=0 \qquad \qquad \forall i,k,h=0,1,2,3 \forall x \quad\in \mathbb{R}^4
 \end{equation}
-per cui $f(x)$ può essere esclusivamente una trasfromazione affine.
+per cui $f(x)$ può essere esclusivamente una trasformazione affine.

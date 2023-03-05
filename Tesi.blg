@@ -6,44 +6,44 @@ A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: Introduzione/Introduzione.aux
 The style file: plain.bst
 Database file #1: ref.bib
-You've used 2 entries,
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            515 strings with 4235 characters,
-and the built_in function-call counts, 538 in all, are:
-= -- 53
-> -- 14
+            531 strings with 4449 characters,
+and the built_in function-call counts, 1040 in all, are:
+= -- 101
+> -- 28
 < -- 0
-+ -- 7
-- -- 4
-* -- 29
-:= -- 98
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 7
++ -- 13
+- -- 8
+* -- 58
+:= -- 184
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 23
-empty$ -- 49
-format.name$ -- 4
-if$ -- 109
+cite$ -- 4
+duplicate$ -- 46
+empty$ -- 98
+format.name$ -- 8
+if$ -- 216
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 14
-num.names$ -- 4
-pop$ -- 9
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 24
+num.names$ -- 8
+pop$ -- 19
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 12
 quote$ -- 0
-skip$ -- 13
+skip$ -- 26
 stack$ -- 0
-substring$ -- 36
-swap$ -- 2
+substring$ -- 67
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 12
 warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 25
+while$ -- 11
+width$ -- 5
+write$ -- 46
