@@ -29,14 +29,24 @@
 
 \usepackage[margin=1in]{geometry}
 
+\usepackage{multicol}
+
+\usepackage{float}
+
+\usepackage{blindtext}
+\parindent=0pt
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[RO,LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
 \fancyhead[LO,RE]{Luca Morelli}
 
+\usepackage[perpage]{footmisc}
+
 \newcommand{\vnabla}{\vec{\nabla}}
 
 \begin{document}
+\begin{sloppypar}
 
 \include{title}
 
@@ -46,18 +56,18 @@
 
 \include{Introduzione/Introduzione}
 
-\chapter{Fondamenti di relatività speciale}
+\chapter{Fondamenti di relatività ristretta}
 
 \section{La matematica dei sistemi di riferimento inerziali}
 \label{sec:MathSDRI}
-Prima di poter descrivere la teoria della relatività ristretta e l'iter che portò alla sua fondazione è necessario definire e studiare i sistemi di riferimento. Di seguito si mostrerà quale struttura matematica è necessaria per descrivere tali sistemi e le loro proprietà. Infine si studierà le loro trasformazioni. Tutta la trattazione è finalizzata ad essere il più generale possibile così da essere valida sia classicamente parlando che nel campo della relatività ristretta.
+Prima di poter trattare la teoria della relatività ristretta è necessario fornire alcuni strumenti base. Di seguito si mostrerà quale struttura matematica è necessaria per descrivere i sistemi di riferimento e le loro proprietà, per poi studiarne le trasformazioni.
 \input{Aspetti matematici dei sistemi di riferimento inerziali/Aspetti matemetici dei sistemi di riferimento inerziali}
 
 
 \section{Fatti di Fisica Classica}
 Nella seconda metà del diciannovesimo secolo la fisica era costituita fondamentalmente dalla meccanica, 
 dalla termodinamica e dall'elettromagnetismo.\\ La meccanica, fondata da Newton e Galileo, si occupava di studiare il 
-moto dei corpi e fungeva da modello per tutta la fisica.\\La termodinamica, grazie a molteplici risultati sperimentali, era riuscita a descrivere molti fenomeni tramite i così detti principi della termodinamica, la cui origine però non era ancora del tutto chiara.\\L'elettromagnetismo invece, in seguito 
+moto dei corpi e fungeva da modello per tutta la fisica. La termodinamica, grazie a molteplici risultati sperimentali, era riuscita a descrivere molti fenomeni tramite i così detti principi della termodinamica, la cui origine però non era ancora del tutto chiara L'elettromagnetismo invece, in seguito 
 a numerosi esperimenti, aveva trovato una completa descrizione nelle equazioni di Maxwell.\\
 Poiché la nascita della teoria della relatività speciale è strettamente connessa sia alla meccanica, sia all'elettromagnetismo, si procederà illustrando brevemente i loro fondamenti. 
 
@@ -85,6 +95,12 @@ per poi discuterne le implicazioni.
 \input{Trasformazioni di Lorentz/Contrazioni e dilatazioni}
 \input{Trasformazioni di Lorentz/Trasfromazione Velocità}
 
+\section{Quadrivettori e spazio-tempo}
+\input{Quadrivettori e spaziotempo/Quadrivettori.tex}
+
+\section{Trasformazioni del campo elettromagnetico}
+\input{L'articolo di Einstein/Trafsormazione dei campi elettromagetici}
+
 \chapter{Meccanica relativistica}
 
 \chapter{L'elettromagnetismo nella teoria della relatività}
@@ -95,4 +111,5 @@ per poi discuterne le implicazioni.
 \bibliographystyle{plain}
 \bibliography{ref}
 
+\end{sloppypar}
 \end{document}

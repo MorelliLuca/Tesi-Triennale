@@ -1,7 +1,7 @@
 \subsection{Trasformazione delle velocità}
 Si è già osservato che le trasformazioni di Galileo non risultano compatibili con i postulati di Einstein in quanto ammettono che un osservatore potrebbe misurare la velocità della luce con un valore differente da $c$. Dalle trasformazioni di Lorentz è possibile ricavare quali sono le effettive trasformazioni delle velocità nella teoria della relatività.\\
 
-Per prima cosa è necessario studiare come si trasformi un generico moto $(ct,\vec r(t))$ quando si cambia sistema di riferimento da $K$ a $K'$, per cui nel secondo il primo si muove a velocità $V$ lungo l'asse $x'$, si avrà allora la trasformazione:
+Per prima cosa è necessario studiare come si trasformi un generico moto $(ct,\vec r(t))$ quando si cambia sistema di riferimento da $K$ a $K'$, tale per cui nel primo il secondo si muove a velocità $V$ lungo l'asse $x$, si avrà allora la trasformazione:
 \begin{equation*}
     \begin{cases}
         t=(t'+\frac{V}{c^2}r'_x(t'))\gamma\\
@@ -16,55 +16,49 @@ Per prima cosa è necessario studiare come si trasformi un generico moto $(ct,\v
         r_y'=r_y(t)\\
         r_z'=r_z(t)
     \end{cases}
-    \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}
+    \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}.
 \end{equation*}
 Se si calcolano le componenti della velocità in $K'$ facendo uso della regola di Leibniz e delle trasformazioni di $(ct,\vec r(t))$ si ottiene:
-
 \begin{flalign*}
-    &v_{x'}'=\frac{dr'_{x'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_x(t)-Vt)=\gamma^2(1+\frac{Vv_x'}{c^c})(v_x-V)\\
-    &v_{y'}'=\frac{dr'_{y'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_y(t))=\gamma^2(1+\frac{Vv_x'}{c^c})v'_y\\
-    &v_{z'}'=\frac{dr'_{z'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_z(t))=\gamma^2(1+\frac{Vv_x'}{c^c})v'_z\\
-    &\frac{d t}{dt'}=\gamma(1+\frac{Vv_x'}{c^2})
+    &v_{x'}'=\frac{dr'_{x'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_x(t)-Vt)=\gamma^2\bigg(1+\frac{Vv_{x'}'}{c^c}\bigg)(v_x-V)\\
+    &v_{y'}'=\frac{dr'_{y'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_y(t))=\gamma^2\bigg(1+\frac{Vv_{x'}'}{c^c}\bigg)v_y\\
+    &v_{z'}'=\frac{dr'_{z'}}{dt'}=\gamma\frac{dt}{d t'}\frac{d}{d t}(r_z(t))=\gamma^2\bigg(1+\frac{Vv_{x'}'}{c^c}\bigg)v_z\\
+    &\frac{d t}{dt'}=\gamma\bigg(1+\frac{Vv_{x'}'}{c^2}\bigg).
 \end{flalign*}
-Con un po' di algebra si ottengono le trasformazioni delle velocità:
+Risolvendo algebricamente per le componenti $v_{x'}',\ v_{y'}'$ e $v_{z'}'$ si ottengono le trasformazioni:
 \begin{equation}
     \begin{cases}
         v_{x'}'=\frac{v_x-V}{1-\frac{Vv_x}{c^2}}\\
     v_{y'}'=\frac{v_y}{\gamma(1-\frac{Vv_x}{c^2})}\\
     v_{z'}'=\frac{v_z}{\gamma(1-\frac{Vv_x}{c^2})}
     \end{cases}
-    \qquad \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}
+    \qquad \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}.
     \label{TrasformazioniVelocitàLorentz}
 \end{equation}
 
-Si noti che queste trasformazioni per le velocità rispettano il principio di costanza della velocità della luce: si consideri il moto di un raggio di luce lungo l'asse $x$ di $K$.\footnote{Questo caso in realtà è generale poiché è sufficiente comporre la trasformazione di Lorentz con una rotazione degli assi spaziali perché ci si riconduca a questo caso.} 
+Si noti che queste trasformazioni per le velocità rispettano il principio di costanza della velocità della luce: se si considera il moto di un raggio di luce lungo l'asse $x$ di $K$ si ha\footnote{Questo caso in realtà è generale poiché è sufficiente comporre la trasformazione di Lorentz con una rotazione degli assi spaziali perché ci si riconduca a questo caso.} 
 \begin{equation*}
-    v'=\frac{c-V}{1-\frac{Vc}{c^2}}=\frac{c-V}{c-V}c=c
+    v'=\frac{c-V}{1-\frac{Vc}{c^2}}=\frac{c-V}{c-V}c=c.
 \end{equation*}
 
 Infine si consideri un corpo in moto $\vec r(t)$ in $K$ e si derivi il quadrivettore posizione rispetto al tempo proprio del corpo $\tau$:
 \begin{equation}
-    u=\frac{d }{d\tau}(ct,\vec r(t))=(c\frac{dt}{d\tau},\vec v\frac{dt}{d\tau})=(c,\vec v)\gamma_0 \qquad \gamma_0=\frac{1}{\sqrt{1-\frac{|\vec v|^2}{c^2}}}
+    u=\frac{d }{d\tau}(ct,\vec r(t))=\bigg(c\frac{dt}{d\tau},\vec v\frac{dt}{d\tau}\bigg)=(c,\vec v)\gamma_0 \qquad \gamma_0=\frac{1}{\sqrt{1-\frac{|\vec v|^2}{c^2}}}
     \label{defQuadrivelocità}
 \end{equation}
 dove $\frac{dt}{d\tau}$ è stato calcolato dalla (\ref{dilatazioneTempi}).\\
-Se si calcola la trasformazione di $u$ da $K$ a $K'$ si ottiene:
+Siccome le trasfromazioni di Lorentz sono applicazioni lineari e non dipendono da $\tau$ è possibile trasformare il quadrivettore posizione prima di derivarlo così che sia possibile trasformare $u$ da $K$ a $K'$ tramite la matrice $\Lambda$ (\ref{TrasformazioneLorentz}), in tal caso si ottiene:
 \begin{equation*}
        (c,  v_x',  v_y', v_z')\gamma_0'=\Lambda    
     \begin{pmatrix}
         c \\ v_x \\ v_y \\ v_z
-     \end{pmatrix}\gamma_0=((c-\frac{Vv_x}{c})\gamma, (v_x-V)\gamma, v_y,  v_z)\gamma_0
+     \end{pmatrix}\gamma_0=\bigg(\bigg(c-\frac{Vv_x}{c}\bigg)\gamma, (v_x-V)\gamma, v_y,  v_z\bigg)\gamma_0
 \end{equation*}
-e dalla prima componente si ottiene che:
+dove $\gamma$ dipende dalla velocità reciproca dei sistemi di rifermento mentre $\gamma_0$ e $\gamma'_0$ dipendono dalla velocità del corpo in $K$ e $K'$. Dalla prima componente trasformata si ottiene che:
 \begin{equation}
-    \frac{\gamma_0'}{\gamma_0}=(1-\frac{Vv_x}{c^2})\gamma
+    \frac{\gamma_0'}{\gamma_0}=\bigg(1-\frac{Vv_x}{c^2}\bigg)\gamma
 \end{equation}
-che se sostituita nelle altre componenti spaziali si ottengono le trasformazioni delle velocità (\ref{TrasformazioniVelocitàLorentz}), queste infatti non sono altre che le trasformazioni di Lorentz del quadrivettore $u$, chiamato quadrivelocità. Si osservi che il modulo quadro di $u$ è costante:
+che se sostituita nelle altre componenti spaziali consente di ottenere le trasformazioni delle velocità (\ref{TrasformazioniVelocitàLorentz}), queste infatti non sono altro che le trasformazioni di Lorentz del quadrivettore $u$, chiamato quadrivelocità. Si osservi che il modulo quadro di $u$ è costante:
 \begin{equation*}
-    |u|^2=\frac{c^2-|\vec v|^2}{1-\frac{|\vec v|^2}{c^2}}=c^2
+    |u|^2=\frac{c^2-|\vec v|^2}{1-\frac{|\vec v|^2}{c^2}}=c^2.
 \end{equation*} 
-
-Infine si può iterare questo procedimento riderivando $u$ rispetto al tempo proprio per ottenere la quadriaccelerazione.
-\begin{equation}
-    w=\frac{du}{d\tau}
-\end{equation}

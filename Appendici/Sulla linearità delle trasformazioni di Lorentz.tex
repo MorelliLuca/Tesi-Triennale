@@ -1,9 +1,8 @@
-\chapter{Sulla linearità delle trasformazioni di Lorentz}
+\chapter{Lemmi e teoremi per le trasformazioni di Lorentz}
 \label{chap:LinearitàLorentz}
-Le trasformazioni di Lorentz sono una famiglia di trasformazioni affini, ossia composte da una generica traslazione in quattro dimensioni e un'applicazione lineare. Questa loro proprietà è deducibile dai postulati di Einstein e solitamente, nella maggior parte delle trattazioni della teoria della relatività, è data come proprietà ovvia. Nelle seguenti pagine è presentata la dimostrazione di tale proprietà seguendo la dimostrazione riportata da Fock nel suo manuale \cite{Fock}.\\
+ Nelle seguenti pagine sono riportati alcuni risultati utili per la derivazione delle trasformazioni di Lorentz tra cui una dimostrazione dell'affinità delle trasformazioni di Lorentz riportata da Fock nel suo manuale$^{\cite{Fock}}$.\\
 
-\section{Prerequisiti matematici}
-In primo luogo è necessario dimostrare due Lemmi che si rivelano utili anche per altri aspetti della teoria della relatività.
+\section{Risultati generali}
 
 \begin{lemma}
     Siano $v,u\in \mathbb{R}^n$, $<,>$ sia il prodotto scalare euclideo e siano definite $f_u: \mathbb{R}^n\rightarrow\mathbb{R}$, tale che $f_u(v)=\ <u,v>$, e $q:\mathbb{R}^n\rightarrow\mathbb{R}$ forma quadratica tale che $q(v)=\ <v,Av>$, con $A\in M_{n\times n}(\mathbb{R})$ simmetrica. Se, fissato $\bar{v}$ tale che $f_u(\bar{v})=0$ implica che $q(\bar{v})=0$,allora $\exists \psi\in \mathbb{R}^n$ tale che $q(v)=f_u(v)<\psi,v> \forall v\in \mathbb{R}^n$.
@@ -61,7 +60,7 @@ In primo luogo è necessario dimostrare due Lemmi che si rivelano utili anche pe
    \end{equation}
 \end{proof}
 
-\section{La dimostrazione}
+\section{Una dimostrazione della linearità delle trasformazioni di Lorentz}
 Siano $x,x'\in\mathbb{R}^4$ due vettori dello spazio-tempo misurati in due sistemi di riferimento inerziali $K$ e $K'$, si vogliono determinare le proprietà dell'applicazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$ che trasforma i vettori misurati in $K$ negli stessi vettori misurati in $K'$ e viceversa considerando validi il principio di Relatività e il principio di costanza della velocità della luce.\\
 
 Per prima cosa si supporà che $f$ sia sufficentemente regolare, almeno $C^2$, ed è necessario che sia invertibile poichè deve poter trasformare sia da $K$ a $K'$, sia viceversa: questa condizione è equivalente a richiedere che $\det J_f(x)\neq 0\ \forall x\in\mathbb{R}^4$.\\

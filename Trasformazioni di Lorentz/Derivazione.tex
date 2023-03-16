@@ -1,4 +1,5 @@
 \subsection{Derivazione}
+\label{sec:DervTrasfLorentz}
 Si vogliono trovare le trasformazioni che, rispettando i due postulati di Einstein, trasformano i vettori dello spazio-tempo $\mathbb{R}\times\mathbb{R}^3$  misurati in un sistema di riferimento inerziale $K$ in quelli misurati in un secondo sistema di riferimento inerziale $K'$. Il principio di relatività impone che tutte le leggi della fisica siano valide sia in $K$ che in $K'$ e in modo particolare il principio di costanza della velocità della luce. Si può richiedere questa condizione nel seguente modo: sia emesso rispetto a $K$ un segnale luminoso all'istante $t_0$ e nel punto $\vec{r}_0$, allora in un istante $t_1$ si osserverà il segnale in $\vec{r}_1$ tale che rispettando il secondo postulato, la propagazione avvenga a velocità con modulo costante e pari a $c$, così che:
 \begin{equation}
     |\vec{r}_1-\vec{r}_0|^2=(x_1-x_0)^2+(y_1-y_0)^2+(z_1-z_0)^2=c^2(t_1-t_0)^2
@@ -48,13 +49,13 @@ e in tal modo si descriverà un quadrivettore rappresentante una traiettoria nel
 
 La trasformazione che si vuole trovare è quindi una trasformazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$, invertibile e che trasforma quadrivettori con norma nulla in altri quadrivettori con norma nulla. L'invertibilità è necessaria affinché sia possibile trasformare sia da un sistema di riferimento $K$ ad uno $K'$ sia viceversa. Questa trasformazione deve essere una trasformazione affine affinché il principio di relatività si soddisfatto, come si è dimostrato nella sezione \ref{sec:MathSDRI}; un'ulteriore dimostrazione, valida solamente per la relatività speciale, è fornita nell'appendice \ref{chap:LinearitàLorentz}.\\
 
-Si osservi che la proprietà di mantenere la norma nulla, che è equivalente alla richiesta di soddisfare i postulati di Einstein, implica che  $|f(r)|^2=\lambda |r|^2$, con $\lambda$ costante, questo fatto algebrico è dimostrato nel lemma \ref{lemm:A2} dell'appendice \ref{chap:LinearitàLorentz}. Si considerino $3$ sistemi di riferimento $ K, K_1$ e $K_2$, tali per cui in $K$ l'origine di $K_1$ risulti in moto a velocità $\vec{v}_1$ e l'origine di $K_2$ risulti in moto a velocità $\vec{v}_2$. Sia $r$ un quadrivettore misurato in $K$ e $r_1$ e $r_2$ il medesimo quadrivettore misurato rispettivamente in $K_1$ e $K_2$, è possibile considerare tre trasformazioni $f_1$, $f_2$ $f_{12}$ tali che $f_1(r_1)=f_2(r_2)=r$ e $f_{12}(r_1)=r_2$ e per quanto detto si avrà:
+Si osservi che la proprietà di mantenere la norma nulla, che è equivalente alla richiesta di soddisfare i postulati di Einstein, implica che  $|f(r)|^2=\lambda |r|^2$, con $\lambda$ costante, questo fatto algebrico è dimostrato nel lemma \ref{lemm:A2} dell'appendice \ref{chap:LinearitàLorentz}. Si considerino $3$ sistemi di riferimento $ K, K_1$ e $K_2$, tali per cui in $K$ l'origine di $K_1$ risulti in moto a velocità $\vec{v}_1$ e l'origine di $K_2$ risulti in moto a velocità $\vec{v}_2$. Sia $r$ un quadrivettore in $K$ e $r_1$ e $r_2$ il medesimo quadrivettore rispettivamente in $K_1$ e $K_2$, è possibile considerare tre trasformazioni $f_1$, $f_2$ $f_{12}$, tali che $f_1(r_1)=f_2(r_2)=r$ e $f_{12}(r_1)=r_2$, per cui si avrà:
 \begin{equation*}
-    |r_1|^2=\lambda_1 |r|^2 \quad |r_2|^2=\lambda_2 |r|^2 \quad |r_1|^2=\lambda_{12} |r_2|^2 \quad  \Rightarrow |r_1|^2=\frac{\lambda_1}{\lambda_2}|r_2|^2=\lambda_{12}|r_2|^2
+    |r_1|^2=\lambda_1 |r|^2 \quad |r_2|^2=\lambda_2 |r|^2 \quad |r_1|^2=\lambda_{12} |r_2|^2 \quad  \Rightarrow |r_1|^2=\frac{\lambda_1}{\lambda_2}|r_2|^2=\lambda_{12}|r_2|^2.
 \end{equation*}
 Ogni costante $\lambda$ può dipendere esclusivamente dalla trasformazione considerata, ossia dalle velocità reciproche dei sistemi di riferimento tra cui questa agisce, infatti non è possibile ammettere una dipendenza da un qualche quadrivettore $r$ siccome questa violerebbe la proprietà di omogeneità dello spazio-tempo. Analogamente non è possibile supporre che $\lambda$ dipenda dalla direzione o dal verso delle velocità reciproche altrimenti sarebbe possibile definire una direzione preferenziale violando l'isotropia dello spazio-tempo. Si conclude che deve quindi valere la seguente relazione:
 \begin{equation}
-    \frac{\lambda(|\vec{v_1}|)}{\lambda(|\vec{v_2}|)}=\lambda(|\vec{v}_{12}|)
+    \frac{\lambda(|\vec{v_1}|)}{\lambda(|\vec{v_2}|)}=\lambda(|\vec{v}_{12}|).
     \label{fraclambda}
 \end{equation} 
 Infine si osservi che la norma della velocità reciproca $|\vec{v}_{12}|$ dipenderà dalle direzioni in cui sono orientate le velocità $\vec{v}_1$ e $\vec{v}_2$, infatti se le due sono identiche la velocità reciproca dovrà essere nulla mentre se sono in norma uguale ma in direzioni differenti sarà possibile ottenere solamente velocità non nulle. Nella relazione (\ref{fraclambda}), appena ottenuta, $\lambda(|\vec{v}_{12}|)$ è quindi dipendente dalle direzioni di $\vec{v}_1$ e $\vec{v}_2$ mentre il rapporto $\frac{\lambda(|\vec{v_1}|)}{\lambda(|\vec{v_2}|)}$ permane di valore fissato al variare dell'angolo tra $\vec{v}_1$ e $\vec{v}_2$. Si conclude quindi che $\lambda$ deve assumere un valore costante indipendentemente dalla trasformazione considerata, inoltre dalla (\ref{fraclambda}) è immediato concludere che tale costante è proprio pari a $1$.\\
@@ -64,7 +65,7 @@ La trasformazione $f$ deve quindi anche conservare le norme dei vettori $r$ dell
     r^2=(ict)^2+x^2+y^2+z^2=R^2
     \label{4-sfera}
 \end{equation} 
-e questo insieme di punti permane una 4-sfera solo per rotazioni e traslazioni, per cui l'applicazione lineare della trasformazione affine che si sta cercando deve essere una rotazione. Questa generica rotazione può essere decomposta in rotazioni nei piani $xy,$ $xz,$ $yz,$ $xt,$ $yt$ e $yt$: le rotazioni nei primi tre piani corrispondono chiaramente alle classiche rotazioni spaziali mentre sono le ultime tre quelle più peculiari.\\ Si consideri ora una rotazione nel piano $xt$, le altre due rotazioni sono analizzabili in maniera del tutto analoga, questa può essere facilmente espressa nella forma:
+e questo insieme di punti permane una 4-sfera solo per rotazioni e traslazioni, per cui l'applicazione lineare della trasformazione affine che si sta cercando deve essere una rotazione. Questa generica rotazione può essere decomposta in rotazioni nei piani $xy,$ $xz,$ $yz,$ $xt,$ $yt$ e $yt$: le rotazioni nei primi tre piani corrispondono alle classiche rotazioni spaziali mentre sono le ultime tre quelle più peculiari.\\ Si consideri ora una rotazione nel piano $xt$, le altre due rotazioni sono analizzabili in maniera del tutto analoga, questa può essere facilmente espressa nella forma:
 \begin{equation*}
    \begin{pmatrix}
     ict'\\x'\\y'\\z'
@@ -86,7 +87,7 @@ e questo insieme di punti permane una 4-sfera solo per rotazioni e traslazioni, 
     z'=z
    \end{cases}
 \end{equation*}
-dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle misurate in $K$. Siccome si sta studiando la trasformazione tra due sistemi inerziali e quindi in moto rettilineo uniforme l'uno rispetto l'altro, solamente nel piano $xt$ è naturale porre l'origine di $K'$ in moto a velocità costante $V$ lungo l'asse $x$, coincidente con $x'$ siccome non si sono effettuate rotazioni spaziali. Se si considera la trasformazione del punto che ha come immagine l'origine di $K'$ si ottiene:
+dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle misurate in $K$. Siccome si sta studiando la trasformazione tra due sistemi inerziali e quindi in moto rettilineo uniforme l'uno rispetto l'altro solamente nel piano $xt$, è naturale porre l'origine di $K'$ in moto a velocità costante $V$ lungo l'asse $x$, coincidente con $x'$ siccome non si sono effettuate rotazioni spaziali. Se si considera la trasformazione del punto che ha come immagine l'origine di $K'$ si ottiene:
 \begin{equation*}
     \begin{cases}
         t'=t\cos\theta+i\frac{x}{c}\sin\theta\\
@@ -99,7 +100,7 @@ dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle m
     \begin{cases}
         \cos\theta=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}\\
         \sin\theta=\frac{i\frac{V}{c}}{\sqrt{1-\frac{V^2}{c^2}}}
-    \end{cases}
+    \end{cases}.
 \end{equation*}
 Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazione diventa:
 \begin{equation*}
@@ -121,7 +122,7 @@ Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazion
      x'=(x-Vt)\gamma\\
      y'=y\\
      z'=z
-    \end{cases}
+    \end{cases}.
  \end{equation*}
  Siccome la convenzione $r=(ict,x,y,z)$ non è quella comunemente utilizzata ma è stata adoperata solamente per evidenziare il carattere geometrico della trasformazione, è necessario ricondursi alla convenzione consueta dove $r=(ct,x,y,z)$ e come si è già detto è necessario effettuare un cambio di base tramite le matrici della (\ref{PiP}):
  \begin{equation*}
@@ -136,9 +137,9 @@ Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazion
         -\frac{V}{c}\gamma & \gamma & 0 & 0\\
         0& 0 & 1 & 0\\
         0& 0 & 0 & 1\\
-       \end{pmatrix}
+       \end{pmatrix}.
  \end{equation*}
- questa è convenzionalmente riconosciuta come la trasformazione di Lorentz\footnote{Una trasformazione di Lorentz di questo tipo è più propriamente detta Boost di Lorentz.} $\Lambda$ da $K$ a $K'$ con $K'$ in moto a velocità $v$ lungo l'asse $x$ rispetto a $K$:
+ Questa è convenzionalmente riconosciuta come la trasformazione di Lorentz\footnote{Una trasformazione di Lorentz di questo tipo è più propriamente detta Boost di Lorentz.} $\Lambda$ da $K$ a $K'$ con $K'$ in moto a velocità $v$ lungo l'asse $x$ rispetto a $K$:
  \begin{equation}
     \Lambda=
     \begin{pmatrix}
@@ -154,16 +155,17 @@ Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazion
         y'=y\\
         z'=z
        \end{cases}
-       \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}
+       \qquad \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}.
        \label{TrasformazioneLorentz}
  \end{equation}
 Come si è già detto la trasformazione inversa di $\Lambda$, che consente di trasformare i vettori di $K'$ in quelli di $K$, è ricavabile invertendo la matrice appena ottenuta.\\
 
 Analoghe considerazioni possono essere fare per sistemi in moto in direzioni differenti a qui corrisponderanno trasformazioni descritte da rotazioni di piani differenti. Inoltre è possibile comporre tutte le trasformazioni di Lorentz tramite il prodotto righe per colonne con altre trasformazioni di Lorentz o rotazioni spaziali così da ottenere arbitrarie trasformazioni dei sistemi di riferimento inerziali.\\
 Si osservi che in tutte queste trasformazioni appare un fattore che si è chiamato $\gamma$, caratteristico della trasformazione che si sta considerando. Questo fattore è dipendente esclusivamente dal modulo della velocità reciproca dei due sistemi di riferimento e assume un comportamento caratteristico e fondamentale per la teoria della relatività: in generale $\gamma\geq 1$ ed è pari a $1$ solo per $V=0$ mentre tende ad $\infty$ per $V$ che tendono a $\pm c$.\\
+Per $|V|>c$ il fattore $\gamma\in\mathbb{C}$, in questo modo ipotetici sistemi di riferimento in moto a velocità superluminare darebbero origine a trasformazioni che includono coordinate complesse e quindi di senso non fisico, questo suggerisce, come si osserverà più avanti, che $c$ costituisca la velocità limite del moto.\\
 Per piccoli valori di $V$ rispetto a $c$, ossia nel limite in cui $c$ è infinitamente grande, detto limite classico poiché coincide con la descrizione classica secondo cui la luce si propaga istantaneamente:
 \begin{equation}
-    \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}=1+\frac12\frac{V^2}{c^2}+\frac38\frac{V^4}{c^4}+o\bigg(\frac{V^4}{c^4}\bigg)
+    \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}=1+\frac12\frac{V^2}{c^2}+\frac38\frac{V^4}{c^4}+o\bigg(\frac{V^4}{c^4}\bigg).
     \label{limiteClassicoGamma}
 \end{equation}
 Così facendo, considerando $c\rightarrow\infty$, le trasformazioni di Lorentz divengono quelle di Galileo, per questo motivo la meccanica classica risulta solamente una prima approssimazione della corretta descrizione delle realtà.
