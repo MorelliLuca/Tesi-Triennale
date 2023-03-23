@@ -1,2 +1,5 @@
 Maxwell
 controvarianti
+lagrangiana
+lagrangiane
+lagrangiano

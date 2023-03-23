@@ -1,0 +1,62 @@
+\section{La lagrangiana relativistica}
+Si procederà in questa sezione ricavando la lagrangiana relativistica e quanto segue dalla forma di questa. Nella fattispecie tenendo conto che una generica lagrangiana è data dalla somma di una parte puramente di corpo libero $\mathcal{L}_{lib}$ con una seconda che tiene conto delle interazioni del sistema con sistemi esterni $\mathcal{L}_{int}$\footnote{Questo fatto è riportato come proprietà delle lagrangiane nel } è opportuno in primis dedurre la forma di $\mathcal{L}_{lib}$ studiando una particella libera.
+\subsection{La particella libera}
+Per dedurre la forma dell'azione relativistica per un particella libera in realtà, poiché si sta tentando di dare vita a nuove leggi fisiche, è solamente possibile ipotizzare, in base a quanto si conosce dai fondamenti della teoria della relatività, quale possa essere la sua forma per poi verificare in seguito se questa è quella corretta studiando cosa accade nel limite classico.\\ Si osservi che l'azione in generale deve essere invariante per le trasformazioni di Lorentz, questo suggerisce che per una particella libera l'azione possa essere un multiplo della lunghezza della traiettoria nello spazio-tempo siccome è noto che tale grandezza è indipendente dal sistema di coordinate e dalla parametrizzazione che si utilizza. Presa la curva che descrive un moto nello spazio-tempo è quindi lecito considerarla parametrizzata dal tempo misurato nel sistema in cui si osserva il moto, così facendo la curva sarà data dal 4-vettore posizione $x^\mu(t)=(ct,\vec{x}(t))$. La lunghezza della curva, e la supposta azione, è quindi data da:
+\begin{equation}
+    \mathcal{S}[x^\mu(t)]=\alpha\int_{t_1}^{t_2} \dot{|x^\mu(t)|}\ dt= \alpha c\int_{t_1}^{t_2} \sqrt{1-\frac{|\vec{v}|^2}{c^2}}\ dt
+\end{equation}
+dove si è indicato $\vec{v}=\dot{\vec{x}}$ che corrisponde al vettore tridimensionale velocità.\\
+
+A questo punto, come si è già detto, è opportuno studiare il limite classico, ossia quando il rapporto $\frac{|\vec{v}|^2}{c^2}$ tende a $0$, ricordando che la lagrangiana classica della particella libera è data da $\frac{m|\vec{v}|^2}{2} $:
+\begin{equation*}
+    \mathcal{L} =\alpha c \sqrt{1-\frac{|\vec{v}|^2}{c}}\longrightarrow \alpha c - \frac{\alpha |\vec{v}|^2}{2c^2},
+\end{equation*}
+che a meno di costanti moltiplicative e additive, che non mutano la forma delle soluzioni delle equazioni di Eulero Lagrange, è riconducibile alla lagrangiana classica se $\alpha=-mc$.\\
+Questa evidenza quindi corrobora l'ipotesi iniziale così che sia lecito affermare che la lagrangiana relativistica della particella libera sia:
+\begin{equation}\label{FreeLagRel}
+    \mathcal{L} = -mc^2\sqrt{1-\frac{|\vec{v}|^2}{c}}.
+\end{equation}
+\subsection{Energia e momenti}
+Identificata la lagrangiana relativistica per la particella libera è ora possibile sfruttare tutti gli strumenti di questo formalismo per studiare grandezze quali l'energia e i momenti di un sistema. Da adesso in poi si considererà una particella descritta da tale lagrangiana.\\
+
+La prima quantità che si può studiare è il vettore impulso, in coordinate cartesiane questo è il vettore  $(\frac{\partial \mathcal{L} }{\partial v_x},\ \frac{\partial \mathcal{L} }{\partial v_y},\ \frac{\partial \mathcal{L} }{\partial v_z})$ che se applicato alla (\ref{FreeLagRel}) risulta:
+\begin{equation}
+    \vec{p}=m\vec{v}\gamma=\frac{m\vec{v}}{\sqrt{1-\frac{|\vec{v}|^2}{c^2}}}.
+\end{equation}
+Anche relativisticamente l'impulso di una particella libera risulta conservato, infatti tutte le coordinate della particella libera sono cicliche.\\
+Si osservi che nel limite classico, in cui $|\vec{v}|<<c$, l'impulso diviene la classica espressione $\vec p=m\vec v$, mentre per velocità tendenti in modulo a $c$ l'impulso tende ad infinito.\\
+
+Analogamente è possibile calcolare l'energia della particella libera $E = \vec{p}\cdot\vec{v}-\mathcal{L} $ che risulta una quantità conservata poiché non vi è dipendenza esplicita dal tempo nella lagrangiana. Calcolandola dalla (\ref{FreeLagRel}) si ottiene:
+\begin{equation}
+    E = mc^2\gamma=\frac{mc^2}{\sqrt{1-\frac{|\vec{v}|^2}{c^2}}}.\label{energiaRel}
+\end{equation}
+In questo caso è opportuno osservare che per corpi liberi a riposo l'energia non è nulla, come accade in meccanica classica, bensì assume il valore $E_0=mc^2$ noto come energia a riposo della particella. Sottraendo all'energia totale del corpo il termine di energia a riposo si ottiene la quantità di energia esclusivamente dovuta al moto, ossia l'energia cinetica:
+\begin{equation}
+    T=mc^2\gamma-mc^2=mc^2(\gamma-1)
+\end{equation}
+Anche in questo caso studiando il limite classico si ritrova l'energia cinetica classica mentre nel limite di velocità prossime a $c$ si ottiene che l'energia del corpo tende ad infinito. Quest'ultima osservazione consente di affermare senza alcuna ombra di dubbio che $c$ è la velocità limite di ogni moto, infatti un qualsiasi corpo dotato di massa necessita di un'energia infinita per poter essere accelerato fino a tale velocità.\\
+
+Si consideri ora il 4-gradiente della funzione d'azione, siccome $S(q,t)$ è uno scalare Lorentz invariante, questo è un 4-vettore covariante. Come si è mostrato nella sezione \ref{sec:MinimaAzione} l'azione è legata ad energia e momenti dalle sue derivate parziali: $\frac{\partial S }{\partial \vec{x}}=-\vec{p}$ e $\frac{\partial S }{\partial t}=E$. Facendo uso di queste relazioni si ottiene che:
+\begin{equation*}
+    \frac{\partial S }{\partial x^\mu} =\bigg(\frac{1}{c}\frac{\partial S }{\partial t},\frac{\partial S }{\partial x},\frac{\partial S }{\partial y},\frac{\partial S }{\partial z}\bigg)=\bigg(\frac{E}{c},-\vec{p}\bigg),
+\end{equation*}
+l'analogo controvariante di questo 4-vettore presenta quindi come componente temporale il rapporto tra l'energia della particella e la velocità della luce $\frac{E}{c}$ e come componenti spaziali le componenti del suo impulso $\vec p$, per questo è detto 4-impulso:
+\begin{equation}
+    p^\mu=\frac{\partial S }{\partial x_\mu}=\bigg(\frac{E}{c},\vec{p}\bigg).
+\end{equation}
+Poiché energia ed impulso costituiscono un 4-vettore è opportuno, analogamente a quanto accade per la 4-velocità, determinare come queste due quantità si trasformino con un cambio di riferimento. Considerando la trasformazione $p'^\mu=\Lambda_\nu^\mu p^\nu$ si ha:
+\begin{equation}
+    p'_x=\bigg(p_x-\frac{V}{c^2}E\bigg)\gamma,\qquad p'_y=p_y,\qquad p'_z=p_z,\qquad E'=(E-Vp_x)\gamma.
+\end{equation}
+Il formalismo quadrivettoriale garantisce che il modulo del 4-impulso sia Lorentz invariante, è quindi utile determinare tale quantità in un sistema di riferimento inerziale solidale al moto della particella, in questo sistema l'impulso e l'energia cinetica sono nulli per cui, detto $p'^\mu$ il 4-impulso in tale sistema, si ha
+\begin{equation*}
+    p'^\mu p'_\mu=m^2c^2.
+\end{equation*}  
+Siccome tale modulo è lo stesso in ogni sistema di riferimento inerziale si ottene la relazione tra l'energia e l'impulso di una particella:
+\begin{equation}
+    p^\mu p_\mu=\frac{E^2}{c^2}-p^2=m^2c^2.
+\end{equation}
+Da quest'ultima relazione, se non si determinano i valori delle derivate parziali dell'azione, è possibile ottenere \emph{l'equazione di Hamilton Jacobi} relativistica:
+\begin{equation}
+    p^\mu p_\mu=\frac{\partial S }{\partial x^\mu}\frac{\partial S }{\partial x_\mu}=\bigg(\frac{1}{c}\frac{\partial S }{\partial t}\bigg)^2-\bigg(\frac{\partial S }{\partial x}\bigg)^2-\bigg(\frac{\partial S }{\partial y}\bigg)^2-\bigg(\frac{\partial S }{\partial z}\bigg)^2=m^2c^2.
+\end{equation}
