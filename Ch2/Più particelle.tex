@@ -1,0 +1,40 @@
+\section{Sistemi di più particelle}
+Si vuole adesso studiare un insieme di $N$ particelle che formano un sistema isolato.\\
+Per cominciare si consideri una sola particella delle $N$ descritta del 4-vettore $x^\mu$, se a tutto il sistema di fa compiere una rotazione infinitesima nello spazio-tempo questo 4-vettore muterà di una quantità infinitesima. La variazione di questo 4-vettore può essere espressa in termini di una trasformazione lineare con coefficienti infinitesimi:
+\begin{equation*}
+    \delta x^\mu=x_\nu\delta \Omega^{\mu\nu}.
+\end{equation*}
+Una rotazione quadridimensionale non varia le lunghezze del 4-vettore posizione così, trascurando termini infinitesimi di ordine superiore al primo, si ha: 
+\begin{equation*}
+    x^\mu x_\mu=(x^\mu+\delta x_\mu)(x_\mu+\delta x^\mu)= x^\mu x_\mu+2x^\mu \delta x_\mu+ \delta x_\mu\delta x_\mu\ \Rightarrow \ x^\mu x^\nu \delta \Omega_{\mu \nu}=0.
+\end{equation*}
+Poiché $x^\mu$ non è stato scelto in maniera specifica quanto appena detto vale per ogni vettore in $\mathbb{R}^4$. Si osservi che siccome $x^\mu x^\nu$ forma un tensore simmetrico e la sua contrazione su $\delta \Omega_{\mu \nu}$ è nulla allora quest'ultimo deve esse un tensore antisimmetrico\footnote{minidimostrazione.}:
+\begin{equation}
+    \delta\Omega_{\mu \nu}=-\delta\Omega_{\nu \mu}.
+\end{equation}
+Si è mostrato nella sezione \ref{sec:MinimaAzione} che una variazione delle coordinate spaziotemporali rispetto alle quali è calcolata la funzione d'azione genera una variazione di questa. Considerando le precedenti osservazioni per ogni particella del sistema in questo caso si ottiene:
+\begin{equation*}
+    \delta S=-\sum_{\text{Particelle}}p^\mu \delta x_\mu=-\delta \Omega_{\mu \nu}\sum_{\text{Particelle}}p^\mu x^\nu.\footnote{In questa formula, e da qui in avanti, sono omessi gli indici che indicano la particella di appartenenza per evitare confusioni con gli indici delle componenti, ogni sommatoria sottintende che questa avviene su ogni particella del sistema.}
+\end{equation*} 
+Se si scompone il tensore $p^\mu x^\nu$ nella somma di una parte simmetrica e una antisimmetrica, siccome questo è contratto su un tensore antisimmetrico, si ottiene che la sola parte antisimmetrica da un contributo non nullo: 
+\begin{equation*}
+    \delta S=-\frac{\delta \Omega_{\mu \nu}}{2}\sum_{\text{Particelle}}(p^\mu x^\nu-x^\nu p^\mu).
+\end{equation*}
+Poiché lo spazio-tempo è isotropo qualsiasi rotazione di tutto il sistema, che è isolato, non ne genera una mutazione, per questo motivo se si considerano $\Omega_{\mu\nu}$ come alcune coordinate generalizzate queste non possono apparire in $\mathcal{L} $, il che le rende coordinate cicliche. Ne segue che il loro momento associato $\frac{\partial S}{\partial\Omega_{\mu \nu}}$ deve conservarsi.\\Definendo 4-tensore \emph{momento angolare} la quantità:
+\begin{equation}
+    M^{\mu\nu}=\sum_{\text{Particelle}}(p^\mu x^\nu-x^\nu p^\mu )
+\end{equation}
+questa deve essere conservata durante l'evoluzione del sistema. Si osservi che questo tensore è composto in alcune componenti dalla definizione classica di momento angolare $\vec{M}$, nella fattispecie:
+\begin{equation*}
+    M_x=M^{23},\ M_y=-M^{13},\ M_z=M^{12}.
+\end{equation*}
+Le componenti $M^{01},\ M^{02},\ M^{03}$ formano un secondo vettore pari a $\sum(t\vec{p}-\frac{E\vec{x}}{c^2})$. Siccome deve conservarsi il 4-tensore momento angolare anche questi due vettori dovranno conservarsi. Nella fattispecie, siccome anche l'energia del sistema deve conservarsi, il secondo vettore diviso per l'energia totale del sistema deve essere ancora un vettore costante:
+\begin{equation}
+    \frac{\sum E \vec{x}}{\sum E}- t\frac{c^2\sum\vec{p}}{\sum E}=\text{costante}.\label{MotocmRelativ}
+\end{equation}
+Si definiscono rispettivamente i vettori
+\begin{equation}
+    \vec x_{CM}=\frac{\sum E \vec{x}}{\sum E} \qquad \vec v_{CM}=\frac{c^2\sum\vec{p}}{\sum E}\label{cmRelativ}
+\end{equation}
+centro di massa relativistico e velocità del centro di massa relativistica. Dalla (\ref{MotocmRelativ}) si ha che il vettore $\vec x_{CM}$ consente di descrivere il moto traslazionale dell'intero sistema come di un solo punto che si muove alla velocità $\vec v_{CM}$.\\
+ Qual'ora le velocità dei punti del sistema fossero piccole rispetto a $c$ l'energia a riposo di ogni particella risulterebbe molto maggiore di quella cinetica e la formula delle coordinate del centro di massa relativistico tenderebbero a quella classica $\frac{\sum m\vec{x}}{\sum m}$. 

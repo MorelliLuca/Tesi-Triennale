@@ -2,13 +2,14 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesi.aux
 A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: Introduzione/Notazioni.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: Introduzione/Introduzione.aux
 The style file: plain.bst
 Database file #1: ref.bib
 You've used 4 entries,
             2118 wiz_defined-function locations,
-            531 strings with 4449 characters,
+            532 strings with 4475 characters,
 and the built_in function-call counts, 1040 in all, are:
 = -- 101
 > -- 28

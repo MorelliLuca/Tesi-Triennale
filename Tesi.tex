@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{book}
 
 \usepackage[italian]{babel}
 
@@ -38,8 +38,13 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[RO,LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
-\fancyhead[LO,RE]{Luca Morelli}
+\fancyhead[LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
+\fancyhead[RE]{Luca Morelli}
+\fancyhead[RO]{\textbf{\nouppercase{\leftmark}}}
+\fancyhead[LO]{}
+\fancyfoot[LE,RO]{\thepage}
+\cfoot{}
+\fancypagestyle{plain}{}
 
 \usepackage[perpage]{footmisc}
 
@@ -58,12 +63,12 @@ urlcolor=black, linkcolor=black, citecolor=black, pagecolor=black,%}
 
 \begin{document}
 \begin{sloppypar}
-
+\frontmatter
 \include{title}
-
+\include{Introduzione/Notazioni} 
 \include{abstract}
-
 \tableofcontents
+\mainmatter
 
 \include{Introduzione/Introduzione}
 
@@ -104,6 +109,7 @@ per poi discuterne le implicazioni.
 \input{Ch1/Trasformazioni di Lorentz/Trasfromazione Velocità}
 
 \section{Quadrivettori e spazio-tempo}
+\label{sec:4-vettori}
 \input{Ch1/Quadrivettori e spaziotempo/Quadrivettori.tex}
 
 \section{Trasformazioni del campo elettromagnetico}
@@ -113,6 +119,7 @@ per poi discuterne le implicazioni.
 \section{Il principio di minima azione}
 \input{Ch2/Minima Azione}
 \input{Ch2/Particella libera}
+\input{Ch2/Più particelle}
 
 \chapter{L'elettromagnetismo nella teoria della relatività}
 
