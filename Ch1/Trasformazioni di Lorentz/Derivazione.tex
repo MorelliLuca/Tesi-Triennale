@@ -5,14 +5,14 @@ Si vogliono trovare le trasformazioni che, rispettando i due postulati di Einste
     |\vec{r}_1-\vec{r}_0|^2=(x_1-x_0)^2+(y_1-y_0)^2+(z_1-z_0)^2=c^2(t_1-t_0)^2
     \label{luceK}
 \end{equation}
-e se in $K'$ si osserva lo stesso fascio di luce emesso all'istante $t_0'$ nel punto $\vec{r'}_0$ analogamente in un istante $t_1'$ il segnale giungerà in $\vec{r'}_1$ e per il principio di costanza della velocità della luce anche in questo sistema di riferimento deve valere la seguente espressione.
+e se in $K'$ si osserva lo stesso fascio di luce emesso all'istante $t_0'$ nel punto $\vec{r'}_0$ analogamente in un istante $t_1'$ il segnale giungerà in $\vec{r'}_1$ e per il principio di costanza della velocità della luce anche in questo sistema di riferimento varrà la seguente espressione.
 \begin{equation}
     |\vec{r'}_1-\vec{r'}_0|^2=(x'_1-x'_0)^2+(y'_1-y'_0)^2+(z'_1-z'_0)^2=c^2(t'_1-t'_0)^2
     \label{luceK'}
 \end{equation}
 Il luogo dei punti in $\mathbb{R}\times\mathbb{R}^3$ che soddisfa queste relazioni è detto cono di luce ed è la rappresentazione spaziotemporale del moto luminare. I postulati di Einstein impongono che la trasformazione che si sta cercando trasformi sempre punti del cono di luce in $K$ in altri punti del cono di luce in $K'$.\\ 
 
-Come si è visto nella sezione \ref{Sec:postulati} gli istanti temporali in cui si verifica un preciso evento non sono più assoluti e diversi osservatori di diversi sistemi di riferimento potrebbero non concordare sulla loro misura, per questo motivo è importate iniziare a ragionare utilizzando vettori appartenenti a $\mathbb{R}^4$, detti quadrivettori\footnote{Poiché con l'uso dei quadrivettori la coordinata temporale è considerata al pari di quelle spaziali si dirà da ora in poi che questi appartengono a $\mathbb{R}^4$ e non a $\mathbb{R}\times\mathbb{R}^3$, seppur queste due notazioni rappresentino lo stesso spazio vettoriale.}. Le relazioni (\ref{luceK}) e (\ref{luceK'}) suggeriscono di utilizzare come quadrivettore $r=(ct,x,y,z)$ poiché così facendo è possibile definire la norma quadra di un quadrivettore tramite il prodotto righe per colonne con una matrice $g$ detta matrice metrica
+Come si è visto nella sezione \ref{Sec:postulati} gli istanti temporali in cui si verifica un preciso evento non sono più assoluti e diversi osservatori di diversi sistemi di riferimento potrebbero non concordare sulla loro misura. Per questo motivo è importate iniziare a ragionare utilizzando vettori appartenenti a $\mathbb{R}^4$, detti quadrivettori\footnote{Poiché con l'uso dei quadrivettori la coordinata temporale è considerata al pari di quelle spaziali si dirà da ora in poi che questi appartengono a $\mathbb{R}^4$ e non a $\mathbb{R}\times\mathbb{R}^3$, seppur queste due notazioni rappresentino lo stesso spazio vettoriale.}, così da considerare trasformazioni anche della coordinata temporale. Le relazioni (\ref{luceK}) e (\ref{luceK'}) suggeriscono di utilizzare come quadrivettore $r=(ct,x,y,z)$ poiché così facendo è possibile definire la norma quadra di un quadrivettore tramite il prodotto righe per colonne con una matrice $g$ detta matrice metrica
 \begin{flalign*}
     g = \begin{pmatrix}
         1 & 0 & 0 & 0\\
@@ -29,7 +29,7 @@ Come si è visto nella sezione \ref{Sec:postulati} gli istanti temporali in cui 
         \end{pmatrix}
         =c^2t^2-x^2-y^2-z^2
 \end{flalign*}
-e in tal modo si descriverà un quadrivettore rappresentante una traiettoria nello spazio-tempo di un fascio di luce indicando che la sua norma deve essere nulla.\\ Un secondo modo equivalente consiste nel considerare il vettore $r=(ict,x,y,z)$, dove $i^2=-1$, il che consente di poter utilizzare il regolare prodotto scalare euclideo per definire la norma di un quadrivettore ottenendo la stessa espressione della precedente convenzione. Per passare da una convenzione all'altra è sufficiente far uso di un cambio di base $P$ che mappi i vettori della base canonica in una nuova base $\{e_0'=ie_0,\ e_1'=e_1,\ e_2'=e_2,\ e_3'=e_3\}$.
+e in tal modo si descriverà un quadrivettore rappresentante una traiettoria nello spazio-tempo di un fascio di luce indicando che la sua norma deve essere nulla.\\ Un secondo modo equivalente consiste nel considerare il quadrivettore $r=(ict,x,y,z)$, dove $i^2=-1$, il che consente di poter utilizzare il regolare prodotto scalare euclideo per definire la norma di un quadrivettore ottenendo la stessa espressione della precedente convenzione. Per passare da una convenzione all'altra è sufficiente far uso di un cambio di base $P$ che mappi i vettori della base canonica in una nuova base $\{e_0'=ie_0,\ e_1'=e_1,\ e_2'=e_2,\ e_3'=e_3\}$.
 \begin{equation}
     P=\begin{pmatrix}
         i & 0 & 0 & 0\\
@@ -48,8 +48,7 @@ e in tal modo si descriverà un quadrivettore rappresentante una traiettoria nel
 \end{equation}\\
 
 La trasformazione che si vuole trovare è quindi una trasformazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$, invertibile e che trasforma quadrivettori con norma nulla in altri quadrivettori con norma nulla. L'invertibilità è necessaria affinché sia possibile trasformare sia da un sistema di riferimento $K$ ad uno $K'$ sia viceversa. Questa trasformazione deve essere una trasformazione affine affinché il principio di relatività si soddisfatto, come si è dimostrato nella sezione \ref{sec:MathSDRI}; un'ulteriore dimostrazione, valida solamente per la relatività speciale, è fornita nell'appendice \ref{chap:LinearitàLorentz}.\\
-
-Si osservi che la proprietà di mantenere la norma nulla, che è equivalente alla richiesta di soddisfare i postulati di Einstein, implica che  $|f(r)|^2=\lambda |r|^2$, con $\lambda$ costante, questo fatto algebrico è dimostrato nel lemma \ref{lemm:A2} dell'appendice \ref{chap:LinearitàLorentz}. Si considerino $3$ sistemi di riferimento $ K, K_1$ e $K_2$, tali per cui in $K$ l'origine di $K_1$ risulti in moto a velocità $\vec{v}_1$ e l'origine di $K_2$ risulti in moto a velocità $\vec{v}_2$. Sia $r$ un quadrivettore in $K$ e $r_1$ e $r_2$ il medesimo quadrivettore rispettivamente in $K_1$ e $K_2$, è possibile considerare tre trasformazioni $f_1$, $f_2$ $f_{12}$, tali che $f_1(r_1)=f_2(r_2)=r$ e $f_{12}(r_1)=r_2$, per cui si avrà:
+La proprietà di mantenere la norma nulla, che è equivalente alla richiesta di soddisfare i postulati di Einstein, implica che  $|f(r)|^2=\lambda |r|^2$, con $\lambda$ costante, questo fatto algebrico è dimostrato nel lemma \ref{lemm:A2} dell'appendice \ref{chap:LinearitàLorentz}.\\ Si considerino $3$ sistemi di riferimento $ K, K_1$ e $K_2$, tali per cui in $K$ l'origine di $K_1$ risulti in moto a velocità $\vec{v}_1$ e l'origine di $K_2$ risulti in moto a velocità $\vec{v}_2$. Sia $r$ un quadrivettore in $K$ e $r_1$ e $r_2$ il medesimo quadrivettore rispettivamente in $K_1$ e $K_2$, è possibile considerare tre trasformazioni $f_1$, $f_2$ $f_{12}$, tali che $f_1(r_1)=f_2(r_2)=r$ e $f_{12}(r_1)=r_2$, per cui si avrà:
 \begin{equation*}
     |r_1|^2=\lambda_1 |r|^2 \quad |r_2|^2=\lambda_2 |r|^2 \quad |r_1|^2=\lambda_{12} |r_2|^2 \quad  \Rightarrow |r_1|^2=\frac{\lambda_1}{\lambda_2}|r_2|^2=\lambda_{12}|r_2|^2.
 \end{equation*}
@@ -87,7 +86,7 @@ e questo insieme di punti permane una 4-sfera solo per rotazioni e traslazioni, 
     z'=z
    \end{cases}
 \end{equation*}
-dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle misurate in $K$. Siccome si sta studiando la trasformazione tra due sistemi inerziali e quindi in moto rettilineo uniforme l'uno rispetto l'altro solamente nel piano $xt$, è naturale porre l'origine di $K'$ in moto a velocità costante $V$ lungo l'asse $x$, coincidente con $x'$ siccome non si sono effettuate rotazioni spaziali. Se si considera la trasformazione del punto che ha come immagine l'origine di $K'$ si ottiene:
+dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle misurate in $K$. Siccome si sta studiando la trasformazione tra due sistemi inerziali e quindi in moto rettilineo uniforme l'uno rispetto l'altro solamente nel piano $xt$ è naturale porre l'origine di $K'$ in moto a velocità costante $V$ lungo l'asse $x$, coincidente con $x'$ siccome non si sono effettuate rotazioni spaziali. Se si considera la trasformazione del punto che ha come immagine l'origine di $K'$ si ottiene:
 \begin{equation*}
     \begin{cases}
         t'=t\cos\theta+i\frac{x}{c}\sin\theta\\
@@ -102,7 +101,7 @@ dove $t',x',y',z'$ sono le coordinate misurate in $K'$ e $t,x,y,z$ sono quelle m
         \sin\theta=\frac{i\frac{V}{c}}{\sqrt{1-\frac{V^2}{c^2}}}
     \end{cases}.
 \end{equation*}
-Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazione diventa:
+Definendo $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazione diventa:
 \begin{equation*}
     \begin{pmatrix}
      ict'\\x'\\y'\\z'
@@ -161,6 +160,7 @@ Se si definisce ora $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$ la trasformazion
 Come si è già detto la trasformazione inversa di $\Lambda$, che consente di trasformare i vettori di $K'$ in quelli di $K$, è ricavabile invertendo la matrice appena ottenuta.\\
 
 Analoghe considerazioni possono essere fare per sistemi in moto in direzioni differenti a qui corrisponderanno trasformazioni descritte da rotazioni di piani differenti. Inoltre è possibile comporre tutte le trasformazioni di Lorentz tramite il prodotto righe per colonne con altre trasformazioni di Lorentz o rotazioni spaziali così da ottenere arbitrarie trasformazioni dei sistemi di riferimento inerziali.\\
+
 Si osservi che in tutte queste trasformazioni appare un fattore che si è chiamato $\gamma$, caratteristico della trasformazione che si sta considerando. Questo fattore è dipendente esclusivamente dal modulo della velocità reciproca dei due sistemi di riferimento e assume un comportamento caratteristico e fondamentale per la teoria della relatività: in generale $\gamma\geq 1$ ed è pari a $1$ solo per $V=0$ mentre tende ad $\infty$ per $V$ che tendono a $\pm c$.\\
 Per $|V|>c$ il fattore $\gamma\in\mathbb{C}$, in questo modo ipotetici sistemi di riferimento in moto a velocità superluminare darebbero origine a trasformazioni che includono coordinate complesse e quindi di senso non fisico, questo suggerisce, come si osserverà più avanti, che $c$ costituisca la velocità limite del moto.\\
 Per piccoli valori di $V$ rispetto a $c$, ossia nel limite in cui $c$ è infinitamente grande, detto limite classico poiché coincide con la descrizione classica secondo cui la luce si propaga istantaneamente:
@@ -168,5 +168,5 @@ Per piccoli valori di $V$ rispetto a $c$, ossia nel limite in cui $c$ è infinit
     \gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}=1+\frac12\frac{V^2}{c^2}+\frac38\frac{V^4}{c^4}+o\bigg(\frac{V^4}{c^4}\bigg).
     \label{limiteClassicoGamma}
 \end{equation}
-Così facendo, considerando $c\rightarrow\infty$, le trasformazioni di Lorentz divengono quelle di Galileo, per questo motivo la meccanica classica risulta solamente una prima approssimazione della corretta descrizione delle realtà.
+Così facendo, considerando $c\rightarrow\infty$ e la (\ref{limiteClassicoGamma}) al prim'ordine, le trasformazioni di Lorentz divengono quelle di Galileo, per questo motivo la meccanica classica risulta solamente una prima approssimazione della corretta descrizione delle realtà.
 

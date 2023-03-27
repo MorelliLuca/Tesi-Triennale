@@ -3,3 +3,4 @@ controvarianti
 lagrangiana
 lagrangiane
 lagrangiano
+spazio-tempo

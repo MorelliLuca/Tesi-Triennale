@@ -8,14 +8,14 @@
 \contentsline {subsection}{\numberline {1.2.1}La meccanica e le trasformazioni di Galileo}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}L'elettromagnetismo e le equazioni di Maxwell}{9}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}L'articolo del 1905}{10}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}La non invarianza delle Equazioni di Maxwell}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}La non invarianza delle Equazioni di Maxwell}{10}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}I postulati di Einstein}{12}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Le trasformazioni di Lorentz}{14}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Le trasformazioni di Lorentz}{15}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Derivazione}{15}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Contrazione delle lunghezze e dilatazione dei tempi}{18}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Trasformazione delle velocità}{19}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.3}Trasformazione delle velocità}{20}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Quadrivettori e spazio-tempo}{21}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Trasformazioni del campo elettromagnetico}{22}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Trasformazioni del campo elettromagnetico}{23}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Meccanica relativistica}{25}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Il principio di minima azione}{25}{section.2.1}%
 \contentsline {section}{\numberline {2.2}La lagrangiana relativistica}{27}{section.2.2}%
