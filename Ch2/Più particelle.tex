@@ -1,6 +1,8 @@
 \section{Sistemi di più particelle}
-Si vuole adesso studiare un insieme di $N$ particelle che formano un sistema isolato.\\
-Per cominciare si consideri una sola particella delle $N$ descritta del 4-vettore $x^\mu$, se a tutto il sistema di fa compiere una rotazione infinitesima nello spazio-tempo questo 4-vettore muterà di una quantità infinitesima. La variazione di questo 4-vettore può essere espressa in termini di una trasformazione lineare con coefficienti infinitesimi:
+Si vuole adesso studiare un insieme di $N$ particelle non interagenti che formano un sistema isolato.
+Questo è quindi composto da $N$ particelle libere, siccome non vi sono interazioni, perciò si ha che le energie e i momenti delle singole particelle si conservano.\\
+
+Per studiare questo tipo di sistemi è opportuno fare uso di coordinate e momenti ad hoc. Si consideri una sola particella delle $N$ descritta del 4-vettore $x^\mu$, se a tutto il sistema si fa compiere una rotazione infinitesima nello spazio-tempo questo 4-vettore muterà di una quantità infinitesima. La variazione di questo 4-vettore può essere espressa in termini di una trasformazione lineare con coefficienti infinitesimi:
 \begin{equation*}
     \delta x^\mu=x_\nu\delta \Omega^{\mu\nu}.
 \end{equation*}
@@ -8,7 +10,7 @@ Una rotazione quadridimensionale non varia le lunghezze del 4-vettore posizione 
 \begin{equation*}
     x^\mu x_\mu=(x^\mu+\delta x_\mu)(x_\mu+\delta x^\mu)= x^\mu x_\mu+2x^\mu \delta x_\mu+ \delta x_\mu\delta x_\mu\ \Rightarrow \ x^\mu x^\nu \delta \Omega_{\mu \nu}=0.
 \end{equation*}
-Poiché $x^\mu$ non è stato scelto in maniera specifica quanto appena detto vale per ogni vettore in $\mathbb{R}^4$. Si osservi che siccome $x^\mu x^\nu$ forma un tensore simmetrico e la sua contrazione su $\delta \Omega_{\mu \nu}$ è nulla allora quest'ultimo deve esse un tensore antisimmetrico\footnote{Presi due tensori $A$ e $B$, rispettivamente simmetrico e antisimmetrico, possono essere scritti come: $A^{\mu\nu}=\frac{1}{2}(A^{\mu\nu}+A^{\nu\mu})$ e $B^{\mu\nu}=\frac{1}{2}(B^{\mu\nu}-B^{\nu\mu})$. Allora $A^{\mu\nu}B^{\mu\nu}=\frac{1}{4}(A^{\mu\nu}B^{\mu\nu}-A^{\mu\nu}B^{\nu\mu}+A^{\nu\mu}-A^{\nu\mu}B^{\nu\mu})=0$.}:
+Poiché $x^\mu$ non è stato scelto in maniera specifica quanto appena detto vale per ogni vettore in $\mathbb{R}^4$. Si osservi che siccome $x^\mu x^\nu$, arbitrario, forma un tensore simmetrico e la sua contrazione su $\delta \Omega_{\mu \nu}$ è nulla, allora quest'ultimo deve esse un tensore antisimmetrico\footnote{Presi due tensori $A$ e $B$, rispettivamente simmetrico e antisimmetrico, possono essere scritti come: $A^{\mu\nu}=\frac{1}{2}(A^{\mu\nu}+A^{\nu\mu})$ e $B^{\mu\nu}=\frac{1}{2}(B^{\mu\nu}-B^{\nu\mu})$. Allora $A^{\mu\nu}B^{\mu\nu}=\frac{1}{4}(A^{\mu\nu}B^{\mu\nu}-A^{\mu\nu}B^{\nu\mu}+A^{\nu\mu}-A^{\nu\mu}B^{\nu\mu})=0$.}:
 \begin{equation}
     \delta\Omega_{\mu \nu}=-\delta\Omega_{\nu \mu}.
 \end{equation}
@@ -22,13 +24,13 @@ Se si scompone il tensore $p^\mu x^\nu$ nella somma di una parte simmetrica e un
 \end{equation*}
 Poiché lo spazio-tempo è isotropo qualsiasi rotazione di tutto il sistema, che è isolato, non ne genera una mutazione, per questo motivo se si considerano $\Omega_{\mu\nu}$ come alcune coordinate generalizzate queste non possono apparire in $\mathcal{L} $, il che le rende coordinate cicliche. Ne segue che il loro momento associato $\frac{\partial S}{\partial\Omega_{\mu \nu}}$ deve conservarsi.\\Definendo 4-tensore \emph{momento angolare} la quantità:
 \begin{equation}
-    M^{\mu\nu}=\sum_{\text{Particelle}}(p^\mu x^\nu-x^\nu p^\mu )
+    M^{\mu\nu}=\sum_{\text{Particelle}}(p^\nu x^\mu-x^\mu p^\nu )
 \end{equation}
 questa deve essere conservata durante l'evoluzione del sistema. Si osservi che questo tensore è composto in alcune componenti dalla definizione classica di momento angolare $\vec{M}$, nella fattispecie:
 \begin{equation*}
     M_x=M^{23},\ M_y=-M^{13},\ M_z=M^{12}.
 \end{equation*}
-Le componenti $M^{01},\ M^{02},\ M^{03}$ formano un secondo vettore pari a $\sum(t\vec{p}-\frac{E\vec{x}}{c^2})$. Siccome deve conservarsi il 4-tensore momento angolare anche questi due vettori dovranno conservarsi. Nella fattispecie, siccome anche l'energia del sistema deve conservarsi, il secondo vettore diviso per l'energia totale del sistema deve essere ancora un vettore costante:
+Le componenti $M^{01},\ M^{02},\ M^{03}$ formano un secondo vettore pari a $\sum(ct\vec{p}-\frac{E\vec{x}}{c})$. Siccome deve conservarsi il 4-tensore momento angolare anche questi due vettori dovranno conservarsi. Nella fattispecie, siccome anche l'energia di ogni particella deve conservarsi, il secondo vettore diviso per l'energia totale del sistema deve essere ancora un vettore costante:
 \begin{equation}
     \frac{\sum E \vec{x}}{\sum E}- t\frac{c^2\sum\vec{p}}{\sum E}=\text{costante}.\label{MotocmRelativ}
 \end{equation}

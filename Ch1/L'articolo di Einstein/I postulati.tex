@@ -10,7 +10,7 @@ Il primo si è lo stesso principio della meccanica classica mentre il secondo è
 
 La primissima conseguenza dell'assunzione di questi due postulati è la non validità delle trasformazioni di Galileo. Infatti secondo queste un moto di velocità $\vec{v}$ in un sistema $K$, se osservato in un sistema $K'$, nel quale $K$ si muove a velocità $\vec{V}$, risulterà in un moto a velocità $\vec{v}+\vec{V}$. Il secondo postulato però richiede che se tale moto è di un fascio di luce questo debba risultare sia in $K$ che in $K'$ in un moto con modulo della velocità pari a $c$, in totale disaccordo con le trasformazioni di Galileo.\\
 
-Inoltre nel suo articolo Einstein stesso propose, dopo aver enunciato i postulati, un'esperimento mentale che consente di mostrare come questi siano in diretto conflitto con le assunzioni classiche dell'assolutezza del tempo e delle lunghezze. Si considerino due orologi reciprocamente a riposo posizionati in due punti detti $A$ e $B$. Einstein osservò che ogni orologio è in grado di misurare intervalli temporali solamente per eventi che avvengono nello stesso punto in cui ognuno è posizionato, questo poiché diventa necessario tener conto della velocità finita della luce che quindi non propagandosi istantaneamente genera dei ritardi nella percezione degli eventi lontani.\\ Il secondo postulato consente però di sincronizzare gli orologi così che sia possibile confrontare i tempi misurati in $A$ e in $B$. In primo luogo si ipotizzi di far partire all'istante $t_A=0$, misurato dal primo orologio, un fascio di luce che viaggia da $A$ e giunge in $B$ quando l'orologio posizionato in tale punto segna un tempo $t_B$. In $B$ il fascio è riflesso e fa ritorno in $A$ quando il relativo orologio segna un tempo $t_A$. Poiché per il principio di costanza della velocità della luce il fascio luminoso deve propagarsi in ogni direzione con la stessa velocità e la distanza tra i due orologi è fissata e costante allora il tempo impiegato dalla luce per andare da $A$ a $B$ e vice versa deve essere il medesimo. Si conclude quindi che i due orologi sono sincronizzati solamente se vale:
+Inoltre nel suo articolo Einstein stesso propose, dopo aver enunciato i postulati, un esperimento mentale che consente di mostrare come questi siano in diretto conflitto con le assunzioni classiche dell'assolutezza del tempo e delle lunghezze. Si considerino due orologi reciprocamente a riposo posizionati in due punti detti $A$ e $B$. Einstein osservò che ogni orologio è in grado di misurare intervalli temporali solamente per eventi che avvengono nello stesso punto in cui ognuno è posizionato, questo poiché diventa necessario tener conto della velocità finita della luce che quindi non propagandosi istantaneamente genera dei ritardi nella percezione degli eventi lontani.\\ Il secondo postulato consente però di sincronizzare gli orologi così che sia possibile confrontare i tempi misurati in $A$ e in $B$. In primo luogo si ipotizzi di far partire all'istante $t_A=0$, misurato dal primo orologio, un fascio di luce che viaggia da $A$ e giunge in $B$ quando l'orologio posizionato in tale punto segna un tempo $t_B$. In $B$ il fascio è riflesso e fa ritorno in $A$ quando il relativo orologio segna un tempo $t_A$. Poiché per il principio di costanza della velocità della luce il fascio luminoso deve propagarsi in ogni direzione con la stessa velocità e la distanza tra i due orologi è fissata e costante allora il tempo impiegato dalla luce per andare da $A$ a $B$ e vice versa deve essere il medesimo. Si conclude quindi che i due orologi sono sincronizzati solamente se vale:
 \begin{equation}
     2t_B=t_A.
     \label{SinconizazioneOrologi}
@@ -22,7 +22,7 @@ Fatta propria questa osservazione è possibile procedere analizzando l'esperimen
     \begin{tikzpicture}
         \draw[->,black] (0,0)node [anchor=north east]{$K$} -- (4,0) node[anchor=north ]{$x$};
         \draw[->,black] (0,0) -- (0,2) node[anchor= east]{$y$};
-        \draw[fill=blue] (0.5,0) rectangle (3,1);
+        \draw[fill=blue] (0.5,0) rectangle node[anchor=north,scale=0.8,white]{Regolo} (3,1);
         \draw[black] (0.5,-0.1) node[anchor=north]{$x_A$} -- (0.5,0.1);
         \draw[black] (3,-0.1) node[anchor=north]{$x_B$} -- (3,0.1);
         \draw[yellow,->,thick] (0.5,1.4) -- (3,1.4);
@@ -30,7 +30,7 @@ Fatta propria questa osservazione è possibile procedere analizzando l'esperimen
 
         \draw[->,black] (0+7,0)node [anchor=north east]{$K'$} -- (4.5+7,0) node[anchor=north ]{$x'$};
         \draw[->,black] (0+7,0) -- (0+7,2) node[anchor= east]{$y'$};
-        \draw[fill=blue] (1.5+7,0) rectangle (3.5+7,1);
+        \draw[fill=blue] (1.5+7,0) rectangle node[anchor=north,scale=0.8,white]{Regolo} (3.5+7,1);
         \draw[black] (1+7,-0.1) node[anchor=north]{$x_{A'}'$} -- (1+7,0.1);
         \draw[black] (1.5+7,-0.1) node[anchor=north west]{$x_{C'}'$} -- (1.5+7,0.1);
         \draw[black] (3+7,-0.1) node[anchor=north]{$x_{B'}'$} -- (3+7,0.1);
