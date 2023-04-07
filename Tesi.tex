@@ -1,41 +1,28 @@
 \documentclass[12pt,a4paper]{book}
 
 \usepackage[italian]{babel}
-
 \usepackage{newlfont}
-
 \usepackage{color}
 \textwidth=450pt\oddsidemargin=0pt
-
 \usepackage{graphicx}
-
 \usepackage{titlesec}
-
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
-
 \usepackage[none]{hyphenat}
-
 \usepackage{amssymb}
-
 \usepackage{amsmath}
-
 \usepackage{amsthm}
 \newtheorem{lemma}{Lemma}
 \newtheorem{sublemma}{Lemma}[section]
 \newtheorem{thm}{Teorema}
 \newtheorem{prop}{Proposizione}
 \numberwithin{equation}{section}
-
 \usepackage[margin=1in]{geometry}
-
 \usepackage{multicol}
-
 \usepackage{float}
-
+\usepackage{subcaption}
 \usepackage{blindtext}
 \parindent=0pt
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
@@ -45,11 +32,8 @@
 \fancyfoot[LE,RO]{\thepage}
 \cfoot{}
 \fancypagestyle{plain}{}
-
 \usepackage[perpage]{footmisc}
-
 \newcommand{\vnabla}{\vec{\nabla}}
-
 \usepackage{hyperref}
 \hypersetup{
 pdfauthor={Luca Morelli},
@@ -60,7 +44,7 @@ plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
 hypertexnames=true, pdfhighlight=/O,%
 urlcolor=black, linkcolor=black, citecolor=black, pagecolor=black,%}
 }
-
+\usetikzlibrary{decorations.pathmorphing,patterns}
 \begin{document}
 \begin{sloppypar}
 \frontmatter
@@ -119,9 +103,14 @@ per poi discuterne le implicazioni.
 \section{Il principio di minima azione}
 \input{Ch2/Minima Azione}
 \input{Ch2/Particella libera}
+%\input{Ch2/Meccanica covariante}
 \input{Ch2/Più particelle}
 
 \chapter{L'elettromagnetismo nella teoria della relatività}
+\section{La lagrangiana di interazione}
+\input{Ch3/La forza di Lorentz.tex}
+\section{Il moto di particelle cariche in campi costanti}
+\input{Ch3/Moto di cariche}
 
 \appendix
 \input{Appendici/Sulla linearità delle trasformazioni di Lorentz}

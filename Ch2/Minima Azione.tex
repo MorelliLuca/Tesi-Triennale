@@ -25,11 +25,13 @@ Poiché questo integrale deve annullarsi per ogni $\delta q$ che rispetti le ipo
 Date le coordinate generalizzate $q(t)=(q_1(t),...,q_n(t))$ si definisco i momenti generalizzati associati a tali coordinate 
 \begin{equation}
     p_{q_i}=\frac{\partial\mathcal{L} }{\partial \dot{q}_i}.
+    \label{DefMomentoGeneralizzato}
 \end{equation}
 Se la lagrangiana non dipende esplicitamente da una coordinata $q_i(t)$ allora si dice che questa è una coordinata ciclica e dalle equazioni di Eulero Lagrange segue che sulla curva del moto il momento associato a tale coordinata resta costante nel tempo.\\
 Oltre ai momenti è utile definire l'energia meccanica del sistema
 \begin{equation}
     E=\sum_i \frac{\partial\mathcal{L} }{\partial \dot{q}_i}\dot{q}_i-\mathcal{L},
+    \label{DefEnergiaMeccanica}
 \end{equation}
 che risulta una quantità conservata durante il moto se $\mathcal{L}$ non dipende esplicitamente dal tempo, infatti derivando rispetto al tempo la lagrangiana sulla curva del moto si ha:
 \begin{flalign*}
@@ -49,8 +51,8 @@ Ricordando che questo integrale è calcolato su curve del moto si ha che l'integ
 \begin{equation*}
     \delta S=\sum_{i=1}^n\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta q_i\bigg|_{t_2}\ \Rightarrow\ \frac{\partial S}{\partial \tilde q_i}= \frac{\partial\mathcal{L} }{\partial \dot q_i}=p_{q_i}.
 \end{equation*}
-Se ora si considera la derivata totale rispetto al tempo di $S(q,t)$, per il teorema fondamentale del calcolo integrale, si ha che questa è proprio la lagrangiana $\mathcal{L} $ e quindi :
+Se ora si considera la derivata totale rispetto al tempo di $S(q,t)$, per il teorema fondamentale del calcolo integrale, si ha che questa è proprio la lagrangiana $\mathcal{L} $ e quindi:
 \begin{equation*}
     \frac{dS}{dt}=\sum_{i=1}^n\frac{\partial S }{\partial  q_i}\dot{q_i}+\frac{\partial S }{\partial t}=\mathcal{L}\quad \Rightarrow\quad \frac{\partial S }{\partial t}=\mathcal{L} -\sum_{i=1}^n\frac{\partial S }{\partial  q_i}\dot{q_i}=-E.
-\end{equation*}
+\end{equation*} 
 Si osservi che quanto appena descritto necessita solamente del principio di minima azione e di nessun'altra assunzione sperimentale. Per questo motivo questa trattazione della meccanica è utilizzabile anche nell'ambito della relatività dove sarà la lagrangiana a dover tenere conto di quanto descritto nel capitolo 1.

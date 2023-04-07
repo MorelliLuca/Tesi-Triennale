@@ -4,3 +4,4 @@ lagrangiana
 lagrangiane
 lagrangiano
 spazio-tempo
+Lagrange

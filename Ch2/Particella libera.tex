@@ -4,6 +4,7 @@ Si procederà in questa sezione ricavando la lagrangiana relativistica e quanto 
 Si consideri il moto di una particella nello spazio tempo, il principio di minima azione determina tale moto indipendentemente dalla scelta del sistema di riferimento in cui esso è descritto.
 Come si è già visto nella sezione \ref{sec:DervTrasfLorentz} le trasformazioni di Lorentz conservano le lunghezze nello spazio-tempo, per questo motivo tale lunghezza per una curva del moto è un candidato ad essere l'azione relativistica. Una curva di questo tipo può essere parametrizzata dal tempo misurato nel sistema in cui si osserva il moto, così facendo la curva sarà data dal 4-vettore posizione $x^\mu(t)=(ct,\vec{x}(t))$. La lunghezza della curva, e la supposta azione, è quindi:
 \begin{equation}
+    \label{azioneRel}
     \mathcal{S}[x^\mu(t)]=\alpha\int_{t_1}^{t_2} |\dot{x}^\mu(t)|\ dt= \alpha c\int_{t_1}^{t_2} \sqrt{1-\frac{|\vec{v}|^2}{c^2}}\ dt=\alpha c\int_{\tau_1}^{\tau_2}d\tau,
 \end{equation}
 dove si è indicato $\vec{v}=\dot{\vec{x}}$ che corrisponde al vettore tridimensionale velocità e con $\tau$ il tempo proprio della particella (sezione \ref{sec:ContrazioneDilatazione}), ossia il tempo misurato in un sistema di riferimento inerziale istantanemtne solidale al moto, ossia nel quale la velocità è nulla.\\
@@ -23,6 +24,7 @@ Identificata la lagrangiana relativistica per la particella libera è ora possib
 La prima quantità che si può studiare è il momento associato alle coordinate cartesiane, questo è il vettore  $(\frac{\partial \mathcal{L} }{\partial v_x},\ \frac{\partial \mathcal{L} }{\partial v_y},\ \frac{\partial \mathcal{L} }{\partial v_z})$ noto come impulso $\vec p$: dalla (\ref{FreeLagRel}) risulta
 \begin{equation}
     \vec{p}=m\vec{v}\gamma=\frac{m\vec{v}}{\sqrt{1-\frac{|\vec{v}|^2}{c^2}}}.
+    \label{impulsoRel}
 \end{equation}
 Anche relativisticamente, come in meccanica classica, l'impulso di una particella libera risulta conservato, infatti tutte le coordinate della particella libera sono cicliche. Questo implica che il moto di una particella libera è rettilineo ed uniforme.\\
 Si osservi che nel limite classico, in cui $|\vec{v}|<<c$, l'impulso diviene la classica espressione $\vec p=m\vec v$, mentre per velocità tendenti in modulo a $c$ l'impulso tende ad infinito.\\
@@ -37,17 +39,41 @@ In questo caso è opportuno osservare che per particelle libere a riposo l'energ
 \end{equation}
 Anche in questo caso studiando il limite classico si ritrova l'energia cinetica classica mentre nel limite di velocità prossime a $c$ si ottiene che l'energia del corpo tende ad infinito. Quest'ultima osservazione consente di affermare senza alcuna ombra di dubbio che $c$ è la velocità limite di ogni moto, infatti un qualsiasi corpo dotato di massa necessita di un'energia infinita per poter essere accelerato fino a tale velocità.\\
 
-Si consideri ora il 4-gradiente della funzione d'azione, siccome $S(q,t)$ è uno scalare Lorentz invariante, questo è un 4-vettore covariante (sezione \ref{sec:4-vettori}). Come si è mostrato nella sezione \ref{sec:MinimaAzione}, l'azione è legata ad energia e momenti dalle sue derivate parziali: $\vnabla S=\vec{p}$ e $\frac{\partial S }{\partial t}=-E$. Facendo uso di queste relazioni si ottiene che:
-\begin{equation*}
-   \frac{\partial S}{\partial x^\mu}= \bigg(\frac{1}{c}\frac{\partial S }{\partial t},\frac{\partial S }{\partial x},\frac{\partial S }{\partial y},\frac{\partial S }{\partial z}\bigg)=\bigg(-\frac{E}{c},\vec{p}\bigg),
-\end{equation*}
-si definisce l'analogo 4-vettore controvariante e cambiato di segno 4-impulso
+Talvolta è utile, per ottenere equazioni differenziali di più facile risoluzione di quelle date dalle equazioni di Eulero Lagrange, esprimere il vettore velocità facendo uso dell'impulso e dell'energia, infatti dalle \eqref{impulsoRel} \eqref{energiaRel} si ha che:
 \begin{equation}
-    p^\mu=-\frac{\partial S }{\partial x_\mu}=\bigg(\frac{E}{c},\vec{p}\bigg).
+    \vec v=\frac{\vec p}{m\gamma}=\frac{c^2\vec p}{mc^2\gamma}=\frac{c^2\vec p}{E}.\label{velPE}
+\end{equation}    
+Questa espressione è indipendente dal fattore $\gamma$ e se di determinano $\vec p$ e $E$ in funzione del tempo è integrabile per ottenere l'equazione del moto.\\
+
+Si consideri ora il 4-gradiente della funzione d'azione, siccome $S(q,t)$ è uno scalare Lorentz invariante, questo è un 4-vettore covariante (sezione \ref{sec:4-vettori}). Come si è mostrato nella sezione \ref{sec:MinimaAzione}, l'azione è legata ad energia e momenti dalle sue derivate parziali: $\vnabla S=\vec{p}$ e $\frac{\partial S }{\partial t}=-E$. Facendo uso di queste relazioni si ottiene la definizione del \emph{4-impulso}:
+\begin{equation}
+   \frac{\partial S}{\partial x^\mu}= \bigg(\frac{1}{c}\frac{\partial S }{\partial t},\frac{\partial S }{\partial x},\frac{\partial S }{\partial y},\frac{\partial S }{\partial z}\bigg)=\bigg(-\frac{E}{c},\vec{p}\bigg)\quad \Rightarrow \quad
+   p^\mu=-\frac{\partial S }{\partial x_\mu}=\bigg(\frac{E}{c},\vec{p}\bigg).
 \end{equation}
-Poiché energia ed impulso costituiscono un 4-vettore è opportuno, analogamente a quanto accade per la 4-velocità, determinare come queste due quantità si trasformino con un cambio di riferimento. Considerando la trasformazione $p'^\mu=\Lambda_\nu^\mu p^\nu$ si ha:
+Studiando la variazione dell'azione \eqref{azioneRel} per variazioni della curva del moto nello spazio-tempo è possibile determinare alcune informazioni utili sul 4-impulso e sul moto delle particelle libere.
+Considerazioni di carattere variazionale di questo tipo sono compatibili con il principio di minima azione, infatti la curva del moto $\vec{q}(t)$, se espressa in coordinate cartesiane, è rappresentata nello spazio-tempo dal 4-vettore $x^\mu(t)=(ct,\vec{x}(t))$. Di questa si possono considerare variazioni $\delta x^\mu(t)$ che soddisfino le ipotesi del principio di minima azione $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, allora:
+\begin{equation*}
+    \mathcal{S}[x^\mu(t)]=-mc \int_{t_1}^{t_2} |\dot{x}^\mu(t)|\ dt=-mc \int_{t_1}^{t_2} \sqrt{\frac{d x^\mu}{dt}\frac{d x_\mu}{dt}}\ dt.
+\end{equation*}
+La variazione prima di questo integrale, sviluppando l'integrando in serie di Taylor al prim'ordine rispetto a $\frac{d x^\mu}{dt}$ e integrando per parti, risulta:
+\begin{flalign}
+    \delta \mathcal{S}&=-mc \int_{t_1}^{t_2} \frac{1}{2|\dot{x}^\mu(t)|}2\frac{dx^\mu}{dt}\frac{d}{dt}\delta x_\mu(t)\ dt\nonumber\\&=-\frac{mc}{|\dot{x}^\mu(t)|}\frac{dx^\mu}{dt}\delta x_\mu(t)\bigg|_{t_1}^{t_2}+mc \int_{t_1}^{t_2}\delta x_\mu(t) \frac{d}{dt}\bigg(\frac{1}{|\dot{x}^\mu(t)|}\frac{dx^\mu}{dt}\bigg)\ dt.\label{dSFreePart}
+\end{flalign}
+Si osservi che si fissa $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, come si è fatto per determinare le equazioni di Eulero Lagrange nella sezione \ref{sec:MinimaAzione}, il primo addendo si annulla, quindi, poiché per il principio di minima azione $\delta \mathcal{S}$ deve essere nullo, l'integrando del secondo addendo della \eqref{dSFreePart} deve annullarsi $\forall \delta x_\mu$. Osservando che $\frac{1}{|\dot{x}^\mu(t)|}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$, dove $\tau$ indica il tempo proprio, si ottiene:
+\begin{equation}
+    \frac{d}{dt}\bigg(\frac{\gamma}{c} \frac{dx^\mu}{dt}\bigg)=\frac{d}{dt}\bigg(\frac{1}{c} \frac{dx^\mu}{d\tau}\bigg)=\frac{1}{c}\frac{du^\mu}{dt}=0\label{mru4-d},
+\end{equation}
+ovvero che la 4-velocità è costante e la traiettoria nello spazio-tempo è quindi una retta per particelle libere, poichè la 4-velocità è tangente a tale curva.\\
+
+Si consideri invece il caso in cui l'integrale d'azione sia calcolato sulla traiettoria del moto ma il secondo estremo d'integrazione non sia fissato, in questo caso il primo addendo della \eqref{dSFreePart} non si annulla in $t_2$ mentre ad annullarsi, per la \eqref{mru4-d}, è l'integrale a secondo addendo. Ricordando $\frac{1}{|\dot{x}^\mu(t)|}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$ si ha che il 4-impulso è quindi il prodotto tra la 4-velocità è la massa della particella libera:
+\begin{equation}
+    \delta S=-m\gamma\frac{dx^\mu}{dt}\delta x_\mu=-m\frac{dx^\mu}{d\tau}\delta x_\mu=-m u^\mu\delta x_\mu \quad \Rightarrow \quad p^\mu=m u^\mu,
+\end{equation}
+
+Poiché come si è visto energia ed impulso costituiscono un 4-vettore è opportuno, analogamente a quanto accade per la 4-velocità, determinare come queste due quantità si trasformino. Considerando la trasformazione di Lorentz $p'^\mu=\Lambda_\nu^\mu p^\nu$ si ha:
 \begin{equation}
     p'_x=\bigg(p_x-\frac{V}{c^2}E\bigg)\gamma,\qquad p'_y=p_y,\qquad p'_z=p_z,\qquad E'=(E-Vp_x)\gamma.
+    \label{TrasfLorentzEI}
 \end{equation}
 Il formalismo quadrivettoriale garantisce che il modulo del 4-impulso sia Lorentz invariante, è quindi utile determinare tale quantità in un sistema di riferimento inerziale solidale al moto della particella, in questo sistema l'impulso e l'energia cinetica sono nulli per cui, detto $p'^\mu$ il 4-impulso in tale sistema, si ha
 \begin{equation*}
@@ -56,6 +82,7 @@ Il formalismo quadrivettoriale garantisce che il modulo del 4-impulso sia Lorent
 Siccome tale modulo è lo stesso in ogni sistema di riferimento inerziale si ottene la relazione tra l'energia e l'impulso di una particella:
 \begin{equation}
     p^\mu p_\mu=\frac{E^2}{c^2}-|\vec p |^2=m^2c^2.
+    \label{relazioneEnergiaImpulso}
 \end{equation}
 Da quest'ultima relazione, se non si determinano i valori delle derivate parziali dell'azione, è possibile ottenere \emph{l'equazione di Hamilton Jacobi} relativistica:
 \begin{equation}
