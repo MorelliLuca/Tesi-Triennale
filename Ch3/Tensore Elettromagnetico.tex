@@ -1,0 +1,54 @@
+\section{Il tensore elettromagnetico}
+\subsection{Il 4-potenziale}
+Nella sezione \ref{sec:trasfEM} si è mostrato come il campo elettrico e il campo magnetico si trasformino, è quindi opportuno mostrare come il potenziale $\varphi$ e il potenziale vettore $\vec A$ si trasformino di conseguenza.\\Se si considera una trasformazione di Lorentz tra due sistemi di riferimento in moto reciproco a velocità $V$ lungo l'asse $x$ si hanno le seguenti trasformazioni degli operatori di differenziazione e del campo elettrico:
+\begin{flalign}
+    &\frac{\partial}{\partial x}=\gamma\frac{\partial}{\partial x'}-\gamma \frac{V}{c^2}\frac{\partial}{\partial t'},\qquad \frac{\partial}{\partial y}=\frac{\partial}{\partial y'},\qquad \frac{\partial}{\partial z}=\frac{\partial}{\partial z'},\quad \frac{\partial}{\partial t}=\gamma \frac{\partial}{\partial t'}-\gamma V\frac{\partial}{\partial x'}\label{lorentzdiff3}&&\\
+    & E_x=E'_{x'},\qquad E_{y}=(E'_{y'}+VB'_{z'})\gamma,\qquad E_{z}=(E_{z'}'-VB_{y'}')\gamma,&&\label{trasfE3}\\
+   &B_x=B'_{x'} \qquad B_{y}=(B_{y'}'-\frac{V}{c^2}E_{z}')\gamma,\qquad B_{z}=(B_{z'}'+\frac{V}{c^2}E_{y'}')\gamma.&&
+\end{flalign}
+Nel sistema $K'$ sono definiti dalla \eqref{PotenzialiEM} i potenziali $\varphi'$ e $\vec{A'}$, questi danno origine ai campi $\vec{E'}$ e $\vec{B'}$, utilizzando le trasformazioni \eqref{lorentzdiff3} nella definizione del potenziale \eqref{PotenzialiEM} si ottiene per la prima componente del campo elettrico nel sistema $K$:
+\begin{flalign}
+    E_x&=-\frac{\partial\varphi}{\partial x}-\frac{\partial A_x}{\partial t}=-\gamma\frac{\partial\varphi}{\partial x'}+\gamma\frac{V}{c^2}\frac{\partial\varphi}{\partial t'}-\gamma\frac{\partial A_x}{\partial t'}+\gamma V\frac{\partial A_x}{\partial x'}&&\nonumber\\&=-\frac{\partial}{\partial x'}\bigg[\varphi-VA_x\bigg]\gamma-\frac{\partial}{\partial t'}\bigg[A_x-\frac{V}{c^2}\varphi\bigg]\gamma,&&\label{trasfExPhiA}
+\end{flalign}
+ si osservi che per la \eqref{trasfE3} questa si trasforma tramite l'identità, per cui la relazione \eqref{trasfExPhiA}, appena ottenuta, è pari a $E'_{x'}$. Questa relazione è in forma equivalente alla definizione dei potenziali \eqref{PotenzialiEM} per cui si ha che:
+\begin{equation}
+    \varphi'=\gamma\bigg(\varphi-VA_x\bigg),\qquad A_{x'}'=\gamma\bigg(A_x-\frac{V}{c^2}\varphi\bigg)
+\end{equation} 
+Trasformando la componente $E_y$ secondo la \eqref{trasfE3} e facendo uso delle definizioni dei potenziali \eqref{PotenzialiEM} in $K'$ si ottiene un'espressione riconducibile alle definizioni dei potenziali in $K$ tramite le trasformazioni degli operatori di differenziazione \eqref{lorentzdiff3}:
+\begin{flalign*}
+    E_y&=\gamma(E'_{y'}+VB'_{z'})=\gamma\bigg[-\frac{\partial\varphi'}{\partial y'}-\frac{\partial A_{y'}'}{\partial t'}+V\frac{\partial A_{y'}'}{\partial x'}-V\frac{\partial A_{x'}'}{\partial y'}\bigg] &&\\ &=-\frac{\partial}{\partial y'}\bigg[\varphi'+VA'_{x'}\bigg]\gamma-\frac{\partial A_{y'}'}{\partial t'}\gamma+V\frac{\partial A_{y'}'}{\partial x'}\gamma=-\frac{\partial}{\partial y}\bigg[\varphi'+VA'_{x'}\bigg]\gamma-\frac{\partial A_{y'}'}{\partial t}.&&
+\end{flalign*}
+Da questo segue che: 
+\begin{equation}
+    \varphi=\gamma\bigg(\varphi'+VA_{x'}'\bigg),\qquad A_y=A_{y'}'.
+\end{equation}
+Analoghe considerazioni sulla componente $E_z$ consentono di determinare che $A_z=A_{z'}'$, così facendo si è mostrato che il potenziale scalare e il potenziale vettore si trasformano come un 4-vettore, si può infatti costruire il \emph{4-potenziale}:
+\begin{equation}
+    A^\mu=\bigg(\frac{\varphi}{c},\vec A\bigg),\qquad A_\mu=\bigg(\frac{\varphi}{c},-\vec A\bigg).\label{4-potenziale}
+\end{equation}
+
+\subsection{Equazioni del moto 4-vettoriali}
+Utilizzando il 4-potenziale \eqref{4-potenziale} è possibile esprimere l'azione \eqref{AzioneFree+Int} di un particella interagente con campo elettromagnetici, infatti:
+\begin{equation*}
+    q\phi-\vec v\cdot \vec A=\frac{1}{\gamma}A^\mu u_\mu=A^\mu\frac{dx_\mu}{dt} \qquad \Rightarrow \qquad  \mathcal{S} [x^\mu(t)]=-\int_{t_1}^{t_2}\bigg(mc|\dot x^\mu(t)|+qA^\mu \dot x_\mu(t)\bigg)\ dt
+\end{equation*}
+in questo modo è evidente che questa azione sia ancora Lorentz invariante siccome parametrizzando la curva d'integrazione rispetto al tempo proprio\footnote{La scelta della parametrizzazione è arbitraria.} ci si riconduce ad un prodotto scalare integrato rispetto ad una quantità invariante, che è quindi a sua volta Lorentz invariante.\\
+
+Si vogliono ora studiare le variazioni dell'azione $\delta \mathcal{S}$ dovute a variazioni della traiettoria del corpo $\delta x^\mu(t)$, queste danno luogo a variazioni $\delta \dot x^\mu(t)=\frac{d}{dt}\delta x^\mu(t)$ e $\delta A^\mu=\frac{\partial A^\mu}{\partial x^\nu}\delta x^\nu$, poiché il 4-potenziale dipende dal punto nello spazio-tempo in cui è calcolato.\\ Per utilizzare il principio di minima azione si calcola la variazione prima che è  data da:
+\begin{equation*}
+    \delta \mathcal{S} [x^\mu(t)]=-\int_{t_1}^{t_2}\bigg(mc\frac{\dot x^\mu(t)\delta\dot x_\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\delta \dot x_\mu(t)+q\dot x_\mu(t)\frac{\partial A^\mu}{\partial x_\nu}\delta x_\nu\bigg)\ dt
+\end{equation*} 
+ottenuta dall'espansione in serie di Taylor dell'integrando rispetto a $x^\mu$ e $\dot x^\mu(t)$.\\
+Integrando per parti i primi due addendi dell'integrando si ottiene:
+\begin{equation*}
+    \int_{t_1}^{t_2}\bigg(mc\frac{d}{dt}\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+\frac{d}{dt}qA^\mu-q\dot x_\nu(t)\frac{\partial A^\nu}{\partial x_\mu}\bigg)\delta x_\mu(t)\ dt-\bigg(mc\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\bigg)\delta x_\mu(t)\bigg|_{t_1}^{t_2},
+\end{equation*} 
+dove il termine dopo l'integrale si annulla siccome per le ipotesi del principio di minima azione $\delta x_\mu(t_1)=\delta x_\mu(t_2)=0$. A questo punto affinché $x^\mu(t)$ renda estremale l'azione per $\delta x_\mu(t)$ arbitrario è necessario che tutto il termine tra parentesi tonde nell'integrando si annulli identicamente. Esplicitando, tramite la regola della derivata composta, la derivata totale rispetto al tempo di $A^\mu$ e ricordando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e si ottiene:
+\begin{equation*}
+    \frac{mc}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{d}{dt}A^\mu-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=m\gamma\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{\partial A^\mu}{\partial x_\nu}\frac{dx_\nu}{dt}-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=0.
+\end{equation*}
+Infine moltiplicando tutta l'ultima uguaglianza per $\gamma$ e facendo uso della relazione $\frac{d}{d\tau}=\gamma\frac{d}{dt}$ di ricava l'equazione di Newton\footnote{L'equazione \eqref{4-EqNewton4EM} è così chiamata poiché ricorda in forma l'equazione di Newton classica.} 4-dimensionale:
+\begin{equation}
+    m\frac{du^\mu}{d\tau}=q\bigg(\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}\bigg)u_\nu=qF^{\nu\mu}\ u_\nu,\label{4-EqNewton4EM}
+\end{equation}
+dove è stato introdotto il \emph{4-tensore elettromagnetico} $F^{\nu\mu}=\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}$.

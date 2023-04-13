@@ -1,4 +1,4 @@
-Si consideri una carica $q$ piccola\footnote{Questa assunzione è necessaria in quanto si vuole considerare inizialmente che la carica non modifichi il campo elettromagnetico che ne influenza il moto.}, a questa è associata una lagrangiana $\mathcal{L} $ costituita da una parte di corpo libero e una parte d'interazione con i campi elettrici e magnetici esterni, si vuole ricavare la forma di questa seconda parte.\\Come si è detto nella sezione \ref{sec:EquazioniMaxwell} tale carica subisce la forza di Lorentz e siccome la relatività assume la formulazione dell'elettromagnetico di Maxwell come la formulazione corretta si può procedere ricavando la forma della lagrangiana d'interazione tra carica e campi da questa forza. Secondo la teoria di Maxwell è possibile descrivere i due campi tramite un potenziale scalare $\phi(t,\vec x)$ e un potenziale vettore $\vec{A}(t,\vec x)$ tali che:
+Si consideri una carica $q$ piccola\footnote{Questa assunzione è necessaria in quanto si vuole considerare inizialmente che la carica non modifichi il campo elettromagnetico che ne influenza il moto.}, a questa è associata una lagrangiana $\mathcal{L} $ costituita da una parte di corpo libero e una parte d'interazione con i campi elettrici e magnetici esterni, si vuole ricavare la forma di questa seconda parte.\\Come si è detto nella sezione \ref{sec:EquazioniMaxwell} tale carica subisce la forza di Lorentz e siccome la relatività assume la formulazione dell'elettromagnetico di Maxwell come la formulazione corretta si può procedere ricavando la forma della lagrangiana d'interazione tra carica e campi da questa forza. Secondo la teoria di Maxwell è possibile descrivere i due campi tramite un \emph{potenziale scalare} $\phi(t,\vec x)$ e un \emph{potenziale vettore} $\vec{A}(t,\vec x)$ tali che:
 \begin{equation}
     \vec{E}=-\vnabla\varphi-\frac{\partial \vec{A}}{\partial t} \qquad \vec B=\vnabla\wedge\vec A.\label{PotenzialiEM}
 \end{equation}
@@ -12,11 +12,12 @@ Sfruttando questi due potenziali la forza di Lorentz assume la forma:
 \end{flalign}
 Si noti che nella \eqref{FLorentzLagrangiana} si è ottenuta una quantità scalare su cui agisce l'operatore di Eulero Lagrange in forma vettoriale (sezione \ref{sec:MinimaAzione}). Infatti in meccanica lagrangiana tale operatore agendo sulla lagrangiana d'interazione fornisce proprio la forza che media l'interazione, cambiata di segno.\\ La lagrangiana d'interazione elettromagnetica è quindi
 \begin{equation}
+    \label{lagrangianaInt}
     \mathcal{L}_{Int}=-q\varphi(t,\vec x)+q\vec v\cdot\vec A(t,\vec x),
 \end{equation}
 nota questa l'azione è data dall'integrale della somma di questa con la lagrangiana di corpo libero:
 \begin{equation}
-    \mathcal{S} [\vec x(t)]=\int_{t_1}^{t_2}\bigg(-mc^2\sqrt{1-\frac{|\vec v|^2}{c^2}}-q\varphi(t,\vec x)+q\vec v\cdot\vec A(t,\vec x)\bigg)\ dt.\label{lagrangianaInt}
+    \mathcal{S} [\vec x(t)]=\int_{t_1}^{t_2}\bigg(-mc^2\sqrt{1-\frac{|\vec v|^2}{c^2}}-q\varphi(t,\vec x)+q\vec v\cdot\vec A(t,\vec x)\bigg)\ dt.\label{AzioneFree+Int}
 \end{equation}
 Come si è fatto per il caso della particella libera si può procedere calcolando il vettore impulso generalizzato e l'energia della particella carica interagente con campi elettrici e magnetici. Dalle definizioni \eqref{DefMomentoGeneralizzato} e \eqref{DefEnergiaMeccanica} utilizzate con $\mathcal{L} =\mathcal{L}_{Libera}+\mathcal{L}_{Int}$ si ottiene:
 \begin{equation}

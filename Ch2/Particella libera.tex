@@ -57,9 +57,9 @@ Considerazioni di carattere variazionale di questo tipo sono compatibili con il 
 \end{equation*}
 La variazione prima di questo integrale, sviluppando l'integrando in serie di Taylor al prim'ordine rispetto a $\frac{d x^\mu}{dt}$ e integrando per parti, risulta:
 \begin{flalign}
-    \delta \mathcal{S}&=-mc \int_{t_1}^{t_2} \frac{1}{2|\dot{x}^\mu(t)|}2\frac{dx^\mu}{dt}\frac{d}{dt}\delta x_\mu(t)\ dt\nonumber\\&=-\frac{mc}{|\dot{x}^\mu(t)|}\frac{dx^\mu}{dt}\delta x_\mu(t)\bigg|_{t_1}^{t_2}+mc \int_{t_1}^{t_2}\delta x_\mu(t) \frac{d}{dt}\bigg(\frac{1}{|\dot{x}^\mu(t)|}\frac{dx^\mu}{dt}\bigg)\ dt.\label{dSFreePart}
+    \delta \mathcal{S}&=-mc \int_{t_1}^{t_2} \frac{1}{2\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}2\frac{dx^\mu}{dt}\frac{d}{dt}\delta x_\mu(t)\ dt\nonumber\\&=-\frac{mc}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{dx^\mu}{dt}\delta x_\mu(t)\bigg|_{t_1}^{t_2}+mc \int_{t_1}^{t_2}\delta x_\mu(t) \frac{d}{dt}\bigg(\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{dx^\mu}{dt}\bigg)\ dt.\label{dSFreePart}
 \end{flalign}
-Si osservi che si fissa $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, come si è fatto per determinare le equazioni di Eulero Lagrange nella sezione \ref{sec:MinimaAzione}, il primo addendo si annulla, quindi, poiché per il principio di minima azione $\delta \mathcal{S}$ deve essere nullo, l'integrando del secondo addendo della \eqref{dSFreePart} deve annullarsi $\forall \delta x_\mu$. Osservando che $\frac{1}{|\dot{x}^\mu(t)|}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$, dove $\tau$ indica il tempo proprio, si ottiene:
+Si osservi che si fissa $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, come si è fatto per determinare le equazioni di Eulero Lagrange nella sezione \ref{sec:MinimaAzione}, il primo addendo si annulla, quindi, poiché per il principio di minima azione $\delta \mathcal{S}$ deve essere nullo, l'integrando del secondo addendo della \eqref{dSFreePart} deve annullarsi $\forall \delta x_\mu$. Osservando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$, dove $\tau$ indica il tempo proprio, si ottiene:
 \begin{equation}
     \frac{d}{dt}\bigg(\frac{\gamma}{c} \frac{dx^\mu}{dt}\bigg)=\frac{d}{dt}\bigg(\frac{1}{c} \frac{dx^\mu}{d\tau}\bigg)=\frac{1}{c}\frac{du^\mu}{dt}=0\label{mru4-d},
 \end{equation}

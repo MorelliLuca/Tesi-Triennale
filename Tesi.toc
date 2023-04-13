@@ -27,6 +27,9 @@
 \contentsline {section}{\numberline {3.2}Il moto di particelle cariche in campi costanti}{34}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Campo elettrico costante}{35}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Campo magnetico costante}{36}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{37}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Risultati generali}{37}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{38}{section.Alph1.2}%
+\contentsline {section}{\numberline {3.3}Il tensore elettromagnetico}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Il 4-potenziale}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Equazioni del moto 4-vettoriali}{38}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{39}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Risultati generali}{39}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{40}{section.Alph1.2}%
