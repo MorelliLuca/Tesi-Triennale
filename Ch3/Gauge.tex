@@ -1,0 +1,103 @@
+\section{Trasformazioni di gauge}
+Come si è già osservato nella sezione \ref{sec:LagEMInt}, le definizioni \eqref{PotenzialiEM} dei potenziali $\varphi$ e $\vec A$ non determinano in maniera univoca il campo elettrico e il campo magnetico. Nella fattispecie il potenziale vettore, come già detto, è definito a meno di un gradiente di un campo scalare $\xi(t,\vec x)$, così che la trasformazione
+\begin{equation}
+     \vec{A}\longrightarrow\vec {A'}=\vec A + \vnabla \xi \label{trasfGauge1}
+\end{equation}
+lascia invariato il campo magnetico, poiché il rotore di un gradiente è una quantità identicamente nulla: 
+\begin{equation*}
+    \vec B\longrightarrow\vec{B'}=\vnabla\wedge\vec {A'}=\vnabla\wedge[\vec A + \vnabla \xi]=\vnabla\wedge\vec A + \vnabla\wedge\vnabla \xi=\vec B.
+\end{equation*}
+La trasformazione \eqref{trasfGauge1} può però modificare la forma del campo elettrico, infatti $\xi$ può dipendere dal tempo e tramite la definizione dei potenziali \eqref{PotenzialiEM} si ha che:
+\begin{equation*}
+    \vec E\longrightarrow\vec{E'}=-\vnabla \varphi-\frac{\partial\vec A'}{\partial t}=-\vnabla \varphi-\frac{\partial\vec A}{\partial t}-\frac{\partial}{\partial t}\vnabla\xi=\vec{E}-\frac{\partial}{\partial t}\vnabla\xi.
+\end{equation*}
+Per ovviare a questo problema si consideri una seconda trasformazione da utilizzare assieme alla \eqref{trasfGauge1}
+\begin{equation}
+    \varphi \longrightarrow \varphi'=\varphi-\frac{\partial\xi}{\partial t}
+    \label{trasfGauge2}
+\end{equation}
+in questo modo, supponendo sufficiente regolarità di $\xi$ per scambiare l'ordine delle derivate parziali, la trasformazione del campo elettrico risulta:
+\begin{equation*}
+    \vec E\longrightarrow\vec{E'}=-\vnabla \varphi'-\frac{\partial\vec A'}{\partial t}=-\vnabla \varphi+\frac{\partial}{\partial t}\vnabla\xi-\frac{\partial\vec A}{\partial t}-\frac{\partial}{\partial t}\vnabla\xi=\vec{E}.
+\end{equation*}
+Le due trasformazioni \eqref{trasfGauge1} e \eqref{trasfGauge2} lasciano quindi invariati campo elettrico e magnetico e prendono il nome di \emph{trasformazioni di gauge}. Si osservi che queste trasformazioni sarebbero potute esser ricavate considerando quali trasformazioni del 4-potenziale non mutano la lagrangiana di interazione \eqref{lagrangianaInt}. È noto infatti che la lagrangiana è definita a meno di derivate totali rispetto al tempo, questo consente di trasformare 
+\begin{equation*}
+    \mathcal{L} \longrightarrow\mathcal{L} '=\mathcal{L} +q\frac{d\xi}{dt},
+\end{equation*}
+dove $\xi(t,\vec x)$ è una funzione scalare. Ne consegue che esplicitando la lagrangiana di interazione si ottiene
+\begin{equation*}
+    \mathcal{L}' =-q\varphi+\vec v\cdot\vec A+q\bigg(\frac{\partial \xi}{\partial t}+\vnabla\xi\cdot\vec v\bigg)=-q\bigg(\varphi-\frac{\partial \xi}{\partial t}\bigg)+\vec v\cdot\bigg(\vec A+\vnabla\xi\bigg)
+\end{equation*}
+ossia le trasformazioni \eqref{trasfGauge1} e \eqref{trasfGauge2}.\\Infine si osservi che queste trasfromazioni in forma 4-vettoriale diventano:
+\begin{equation}
+     A'^\mu=A^\mu-\frac{\partial \xi}{\partial x_\mu}=A^\mu-\partial^\mu\xi.\label{4-trasfGauge}
+\end{equation}
+
+Questo tipo di trasformazioni può essere molto utile per semplificare la risoluzione delle equazioni di Maxwell, infatti sostituendo i potenziali \eqref{PotenzialiEM} nella prima e ultima equazione di Maxwell \eqref{EquazioniMaxwell} si ottengono due equazioni differenziali che se risolte determinano i potenziali stessi:
+\begin{flalign}
+    &\vnabla^2\varphi+\vnabla\cdot \frac{\partial \vec A}{\partial t}=-\frac{\rho}{\epsilon_0},\label{MaxwellPote1}\\
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}-\vnabla\bigg(\vnabla\cdot\vec A +\epsilon_0\mu_0\frac{\partial \varphi}{\partial t}\bigg)=-\mu_0\vec J.\label{MaxwellPote2}
+\end{flalign}
+Le trasformazioni di gauge semplificano queste due equazioni consentendo di annullare identicamente alcuni addendi, in funzione di quale di questi si vuole annullare si hanno diverse trasformazioni:
+
+\subsection{Gauge di Lorentz}
+Il gauge di Lorentz è la richiesta che valga
+\begin{equation}
+    \vnabla \cdot \vec A+\epsilon_0\mu_0\frac{\partial \varphi}{\partial t}=0.\label{gaugediLorentz}
+\end{equation}
+Questa condizione è la richiesta che si annulli identicamente tutto l'addendo tra parentesi tonde dell'equazione di Maxwell \eqref{MaxwellPote2} che diventa un'equazione delle onde non omogenea. Analogamente se si suppone una sufficiente regolarità dei potenziali, affinché sia possibile scambiare l'ordine derivate parziali temporali e spaziali\footnote{Questa condizione nella trattazione dei prossimi gauge, per non doversi ripetere, sarà sottointesa.}, e si sostituisce il gauge di Lorentz nella equazione \eqref{MaxwellPote1} anche questa diviene un'equazione delle onde non omogenea:
+\begin{flalign*}
+    &\vnabla^2\varphi-\epsilon_0\mu_0\frac{\partial^2 \varphi}{\partial t^2}=-\frac{\rho}{\epsilon_0},\\
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}=-\mu_0\vec J.
+\end{flalign*}
+Inoltre se si suppone l'assenza di termini di sorgente di campo si ottengono due equazioni equivalente alle equazioni delle onde elettromagnetiche nel vuoto \eqref{OndeEMVuoto}.\\
+
+Si osservi che in questo caso si ha il vantaggio di avere un'invarianza relativistica di questa condizione: infatti utilizzando il 4-potenziale e ricordando che $\epsilon_0\mu_0=\frac{1}{c^2}$, la condizione \eqref{gaugediLorentz} diventa $\partial_\mu A^\mu=0$ che è un'equazione invariante sotto trasformazioni di Lorentz.\\ Infine si osservi che questo gauge mantiene un certo grado di libertà nella scelta dei potenziali, infatti se si compie un'ulteriore trasfromazione di gauge $\varphi,\ \vec A\longrightarrow\varphi',\ \vec{A'}$ la condizione di gauge di Lorentz diviene:
+\begin{equation*}
+    \vnabla \cdot \vec A+\vnabla^2\xi+\epsilon_0\mu_0\frac{\partial \varphi}{\partial t}-\epsilon_0\mu_0\frac{\partial^2 \xi}{\partial t^2}=0
+\end{equation*}
+che è riconducibile nuovamente al gauge di Lorentz solo se $\xi$ soddisfa anch'essa un'equazione delle onde, così che tutti i termini dove questa compare nell'ultima equazione ricavata si annullino. Sotto questa condizione è quindi possibili applicare altre trasformazioni che semplifichino ulteriormente il problema.
+\subsection{Gauge di Coulomb}
+Il gauge di Coulomb consiste nella condizione:
+\begin{equation}
+    \vnabla\cdot{\vec A}=0,\label{gaugediCoulomb}
+\end{equation}
+questa non è Lorentz invariante a differenza del gauge di Lorentz. Sostituendo questa nelle equazioni del potenziale \eqref{MaxwellPote1} e \eqref{MaxwellPote2} si ottengono le seguenti:
+\begin{flalign*}
+    &\vnabla^2\varphi=-\frac{\rho}{\epsilon_0},\\
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}-\epsilon_0\mu_0\vnabla\frac{\partial \varphi}{\partial t}=-\mu_0\vec J,
+\end{flalign*}
+dove la prima equazione è anche nota come equazione di Poisson.\\
+
+In questo caso esiste un unico potenziale vettore che soddisfa il gauge di Coulomb: infatti affinché una trasformazione di gauge $\vec A\longrightarrow\vec{A'}$ soddisfi la \eqref{gaugediCoulomb} deve valere dappertutto
+\begin{equation*}
+    \vnabla\cdot\vec{A'}=\vnabla\cdot(\vec A + \vnabla\xi)=\vnabla^2\xi=0
+\end{equation*}
+ma questa condizione è soddisfatta se $\xi$ è ovunque spazialmente costante, il che rende la trasformazione di gauge $\vec{A'}=\vec{A}$. Lo stesso non vale per $\varphi$ e per la dipendenza temporale di $\xi$. 
+\subsection{Gauge temporale}
+Il gauge temporale è dato dalla condizione
+\begin{equation}
+    \varphi=0, \label{gaugeTemporale}
+\end{equation}
+anch'essa non Lorentz invariante, se sostituita nelle \eqref{MaxwellPote1} e \eqref{MaxwellPote2} risulta nelle equazioni:
+\begin{flalign*}
+    &\vnabla\cdot \frac{\partial \vec A}{\partial t}=-\frac{\rho}{\epsilon_0},\\
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}-\vnabla(\vnabla\cdot\vec A)=-\mu_0\vec J.
+\end{flalign*}
+\subsection{Gauge di radiazione}
+Infine il gauge di radiazione consiste nella richiesta simultanea del gauge di Coulomb \eqref{gaugediCoulomb} e del gauge temporale \eqref{gaugeTemporale} 
+\begin{equation}
+    \vnabla\cdot\vec A=0,\qquad\qquad\qquad\varphi=0,\label{gaugediRadiazione}
+\end{equation}
+queste condizioni sono compatibili tra di loro se vale $\rho=0$. Infatti imponendo prima la condizione del gauge di Coulomb si ha la relazione:
+\begin{equation*}
+    \vnabla^2\varphi=-\frac{\rho}{\epsilon_0}.
+\end{equation*}
+Come si è mostrato discutendo del gauge di Coulomb, questa prima condizione determina univocamente $\vec A$ ma non $\varphi$, in virtù di questo fatto si può scegliere $\varphi=0$ ma dalla relazione appena ricavata si ha che deve valere anche $\rho=0$.\\
+
+Le condizioni \eqref{gaugediRadiazione} applicate alle equazioni di Maxwell per i potenziali \eqref{MaxwellPote1} e \eqref{MaxwellPote2} risultano in una sola equazione:
+\begin{flalign*}
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}=0
+\end{flalign*}
+questa da origine ad un potenziale vettore che descrive un'onda elettromagnetica.
+

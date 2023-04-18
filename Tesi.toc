@@ -30,6 +30,12 @@
 \contentsline {section}{\numberline {3.3}Il tensore elettromagnetico}{37}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Il 4-potenziale}{37}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Equazioni del moto 4-vettoriali}{38}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{39}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Risultati generali}{39}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{40}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {3.3.3}Invarianti del campo elettromagnetico}{39}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Trasformazioni di gauge}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Gauge di Lorentz}{42}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Gauge di Coulomb}{42}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Gauge temporale}{43}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Gauge di radiazione}{43}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{45}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Risultati generali}{45}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{46}{section.Alph1.2}%
