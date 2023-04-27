@@ -1,0 +1,84 @@
+\section{Elettromagnetismo in forma 4-vettoriale}
+Nella Sezione \ref{sec:4-equazioniMotoEM} è stato ricavato il 4-tenosre elettromagnetico $F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu\ $\footnote{In questa formula si è adottata la notazione alternativa, che verrà utilizzata anche successivamente, per le derivate parziali, già introdotta nella Sezione \ref{sec:4-vettori}, secondo la quale: $\partial^\mu=\frac{\partial\ }{\partial x_\mu}$ e $\partial_\mu=\frac{\partial\ }{\partial x^\mu}$.}:
+\begin{equation*}
+        F^{\mu\nu}=
+    \begin{pmatrix}
+        0&-E_x/c&-E_y/c&-E_z/c\\
+        E_x/c&0&-B_z&B_y\\
+        E_y/c&B_z&-0&-B_x\\
+        E_z/c&-B_y&B_x&-0\\
+ \end{pmatrix}\qquad
+ F_{\mu\nu}=
+ \begin{pmatrix}
+     0&E_x/c&E_y/c&E_z/c\\
+     -E_x/c&0&-B_z&B_y\\
+     -E_y/c&B_z&-0&-B_x\\
+     -E_z/c&-B_y&B_x&-0\\
+\end{pmatrix},
+\end{equation*}
+questo tensore fa le veci dei campi elettromagnetici nel formalismo 4-vettoriale dello spazio-tempo della relatività.
+È quindi ora opportuno ricavare anche la forma delle equazioni di Maxwell \eqref{EquazioniMaxwell} 4-vettoriale così da completare il quadro dell'elettromagnetismo nel formalismo della relatività.
+\subsection{4-corrente}
+Nella Sezione \ref{sec:EquazioniMaxwell} si è già illustrato come sperimentalmente la carica elettrica sia una quantità invariante sotto cambio di sistema di riferimento. Questo, essendo un fatto sperimentale, continua a valere anche per nella relatività. Sempre nella Sezione \ref{sec:EquazioniMaxwell} sono state introdotte due quantità sorgenti del campo elettro magnetico: la densità di carica volumetrica e la densità di corrente superficiale. Rispettivamente:
+\begin{equation}
+    \rho=\lim_{\Delta V\rightarrow 0}\frac{\Delta q}{\Delta V},\qquad\qquad \vec J=\rho\vec v(t,\vec x),\label{defRhoJ}
+\end{equation}
+dove $\Delta q$ è la carica contenuta nel volume $\Delta V$ e $\vec v$ è il campo di velocità dato dal moto delle singole cariche che compongono la distribuzione descritta da $\rho$.\\
+
+Si supponga di avere due sistemi di riferimento: $K^0$ nel quale tutte le cariche sono ferme e un secondo $K$ nel quale queste si muovono a velocità $\vec{v}$. In questo modo dalla \eqref{defRhoJ} si possono definire due densità di carica, $\rho_0$ in $K^0$ e $\rho$ in $K$, tali che presa una regione di spazio $\mathcal{V}_0$ e la sua trasformata secondo un boost di Lorentz $\mathcal{V}$ si abbia:
+\begin{equation*}
+    Q=\int_{\mathcal{V}_0}\rho_0(t^{(0)},\vec{ x^{(0)}})\ d^3x^{(0)}=\int_{\mathcal{V}}\rho(t,\vec x)\ d^3x.
+\end{equation*}
+Nella Sezione \ref{sec:ContrazioneDilatazione} si è mostrato che un parallelepipedo, in seguito ad un boost di Lorentz, subisce una contrazione del suo volume di un fattore $\gamma$. Questo stesso ragionamento può essere applicato all'elemento di volume infinitesimo in coordinate cartesiane che si trasforma: $d^3x^{(0)}=d^3x\gamma$. Così facendo si ottiene, dai due integrali sopra, considerando che il dominio di integrazione è arbitrario:
+\begin{equation}
+    \int_{\mathcal{V}}\gamma\rho_0(\Lambda^{-1}(t,\vec{ x}))\ d^3x-\int_{\mathcal{V}}\rho(t,\vec x)\ d^3x=0\quad\Rightarrow\quad\gamma\rho_0=\rho.
+\end{equation}
+Questa è la trasformazione della densità di carica da un sistema solidale alle cariche ad un altro sistema di rifeirmento inerziale. Si osservi che per questa trasformazione $\rho_0$ è uno scalare Lorentz invariante al pari del tempo proprio (infatti in ogni sistema di riferimento inerziale è possibile, misurando $\rho$ e la velocità del moto delle cariche, ottenere il valore di $\rho_0$ e che risulta il medesimo per tutti gli osservatori).\\
+Dalla definizione di densità di corrente superficiale \eqref{defRhoJ} si ha quindi che nel sistema di riferimento $K$ vale $\vec{J}=\rho\vec v=\rho_0\gamma\vec{v}$.\\
+Se ora si considera il 4-vettore velocità e lo si moltiplica per $\rho_0$ si ottiene un secondo 4-vettore (poiché quest'ultima è un invariante):
+\begin{equation}
+    J^\mu=u^\mu\rho_0=(\rho_0c,\vec v\rho_0)\gamma=(\rho c,\vec J),\label{4-corrente}
+\end{equation} 
+questo 4-vettore è chiamato \emph{4-corrente}.\\
+Si osservi che se si calcola la 4-divergenza della 4-corrente si ottiene:
+\begin{equation}
+    \partial_\mu J^\mu=\frac{\partial \rho}{\partial t}+\vnabla\cdot\vec J,\label{continuitàCarica}
+\end{equation}
+che è \emph{l'equazione di continuità della carica}. Inoltre questa quantità è uno scalare Lorentz invariante\footnote{In questo caso accade che trasformando la 4-corrente e gli operatori di differenziazione si ha: $\partial'_\mu J'^\mu=\partial_\nu (\Lambda^{-1})_\mu^\nu \Lambda_\lambda^\mu J^\lambda=\partial_\nu \delta_\lambda^\nu J^\lambda=\partial_\nu J^\nu$.}, per cui se si calcola la \eqref{continuitàCarica} nel sistema $K^0$ (dove risulta nulla poiché essendo le cariche in tale sistema immobili non si hanno correnti e tanto meno variazioni della densità di carica) si ha che l'equazione di continuità deve essere valida in ogni riferimento inerziale.
+
+\subsection{Equazioni di Maxwell 4-vettoriali}
+Si procederà ora a ricavare la forma 4-vettoriale delle equazioni di Maxwell. Per farlo si considerino le equazioni di Maxwell in cui sono state sostituiti il potenziale $\varphi$ e il potenziale vettore $\vec A$ (ottenute nella Sezione \ref{sec:gauge}, Eq. \eqref{MaxwellPote1} e Eq. \eqref{MaxwellPote2}):
+\begin{flalign*}
+    &\vnabla^2\varphi+\vnabla\cdot \frac{\partial \vec A}{\partial t}=-\frac{\rho}{\epsilon_0},\\
+    &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}-\vnabla\bigg(\vnabla\cdot\vec A +\epsilon_0\mu_0\frac{\partial \varphi}{\partial t}\bigg)=-\mu_0\vec J.
+\end{flalign*}
+Le restanti equazioni di Maxwell, sostituendovici i potenziai si riducono a semplici identità.\\
+Indicando con lettere latine i soli indici ${1,2,3}$ gli operatori di differenziazione che appaiono nelle equazioni precedenti diventano:
+\begin{equation*}
+    \vnabla=\partial_i,\qquad \vnabla^2=\partial_i\partial_i,\qquad\frac{\partial}{\partial t}=c\partial_0.
+\end{equation*}
+In questo modo e utilizzando il potenziale vettore $A^\mu=(\frac{\varphi}{c},\vec A)$ le due equazioni di Maxwell \eqref{MaxwellPote1} e \eqref{MaxwellPote2} divengono:
+\begin{flalign*}
+    &\partial_i\partial_i A^0+\partial_i\partial_0A^i=-\frac{\rho}{\epsilon_0}c,\\
+    &\partial_i\partial_iA^k-\frac{\epsilon_0\mu_0}{c^2}\partial_0\partial_0A^k-\partial_k\bigg(\partial_iA^i +\frac{\epsilon_0\mu_0}{c^2}\partial_0A^0\bigg)=-\mu_0J^k,
+\end{flalign*}
+Ricordando che $\epsilon_0\mu_0=\frac{1}{c^2}$ e che passando da vettori covarianti a controvarianti la matrice metrica cambia solo il segno delle componenti spaziali del 4-vettore si ottiene:
+\begin{flalign*}
+    &-\partial_i\partial^i A^0+\partial_i\partial^0A^i=\partial_i\partial^0A^i-\partial_i\partial^i A^0=-\mu_0\rho c,\\
+    &-\partial_i\partial^iA^k-\partial_0\partial^0A^k+\partial^k(\partial_iA^i +\partial_0A^0)=\partial^k\partial_\mu A^\mu-\partial_\mu\partial^\mu A^k=-\mu_0J^k.
+\end{flalign*}
+A questo punto è necessario supporre che i potenziali abbiano sempre una regolarità tale da soddisfare le ipotesi del teorema di Schwarz, così che si possa scambiare l'ordine delle derivate parziali. Così facendo e sommando e sottraendo nella prima equazione opportuni termini si ottiene:
+\begin{flalign*}
+    &\partial_i\partial^0A^i-\partial_i\partial^i A^0+\partial_0\partial^0A^0-\partial_0\partial^0A^0=\partial_\mu\partial^0A^\mu-\partial_\mu\partial^\mu A^0=-\mu_0\rho c,\\
+    &\partial^k\partial_\mu A^\mu-\partial_\mu\partial^\mu A^k=\partial_\mu\partial ^kA^\mu-\partial_\mu\partial^\mu A^k=-\mu_0J^k.
+\end{flalign*}
+Infine riconoscendo in queste equazioni che $\partial^\nu A^\mu-\partial^\mu A^\nu=-F^{\mu\nu}\ $\footnote{$F^{\mu\nu}$ dalla sua definizione è antisimmetrico per cui $F^{\mu\nu}=-F^{\nu\mu}$} e $\rho c=J^0$ si ottiene
+\begin{flalign*}
+    &\partial_\mu(\partial^0A^\mu-\partial^\mu A^0)=-\partial_\mu F^{\mu 0}=-\mu_0 J^0,\\
+    &\partial_\mu(\partial ^kA^\mu-\partial^\mu A^k)=-\partial_\mu F^{\mu k}=-\mu_0J^k.
+\end{flalign*}
+Queste se riunite in un'unica equazione rappresentano la forma 4-vettore delle equazioni di Maxwell:
+\begin{equation}
+    \partial_\mu F^{\mu\nu}=\mu_0J^\nu.
+\end{equation} 
+Così facendo si è palesata la covarianza di queste equazioni, che è stata richiesta in primo luogo per ricavare la relatività speciale.

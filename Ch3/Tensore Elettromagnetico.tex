@@ -1,20 +1,19 @@
 \section{Il tensore elettromagnetico}
 \subsection{Il 4-potenziale}
-Nella sezione \ref{sec:trasfEM} si è mostrato come il campo elettrico e il campo magnetico si trasformino nel passaggio tra sistemi di riferimento inerziali, è quindi opportuno mostrare come il potenziale $\varphi$ e il potenziale vettore $\vec A$ si trasformino di conseguenza.\\Se si considera una trasformazione di Lorentz tra due sistemi di riferimento in moto reciproco a velocità $V$ lungo l'asse $x$ si hanno le seguenti trasformazioni degli operatori di differenziazione e del campo elettrico:
+Nella Sezione \ref{sec:trasfEM} si è mostrato in che modo il campo elettrico e il campo magnetico si trasformino nel passaggio tra sistemi di riferimento inerziali. È quindi opportuno mostrare come il potenziale $\varphi$ e il potenziale vettore $\vec A$ si trasformino di conseguenza.\\Se si considera una trasformazione di Lorentz tra due sistemi di riferimento ($K$ e $K'$) in moto reciproco, a velocità $V$ lungo l'asse $x$, si hanno le seguenti trasformazioni degli operatori di differenziazione e del campo elettrico:
 \begin{flalign}
-    &\frac{\partial}{\partial x}=\gamma\frac{\partial}{\partial x'}-\gamma \frac{V}{c^2}\frac{\partial}{\partial t'},\qquad \frac{\partial}{\partial y}=\frac{\partial}{\partial y'},\qquad \frac{\partial}{\partial z}=\frac{\partial}{\partial z'},\quad \frac{\partial}{\partial t}=\gamma \frac{\partial}{\partial t'}-\gamma V\frac{\partial}{\partial x'}\label{lorentzdiff3}&&\\
-    & E_x=E'_{x'},\qquad E_{y}=(E'_{y'}+VB'_{z'})\gamma,\qquad E_{z}=(E_{z'}'-VB_{y'}')\gamma,&&\label{trasfE3}\\
-   &B_x=B'_{x'} \qquad B_{y}=(B_{y'}'-\frac{V}{c^2}E_{z}')\gamma,\qquad B_{z}=(B_{z'}'+\frac{V}{c^2}E_{y'}')\gamma.&&
+    &\frac{\partial}{\partial x}=\gamma\frac{\partial}{\partial x'}-\gamma \frac{V}{c^2}\frac{\partial}{\partial t'},\qquad \frac{\partial}{\partial y}=\frac{\partial}{\partial y'},\qquad \frac{\partial}{\partial z}=\frac{\partial}{\partial z'},\quad \frac{\partial}{\partial t}=\gamma \frac{\partial}{\partial t'}-\gamma V\frac{\partial}{\partial x'},\label{lorentzdiff3}&&\\
+    & E_x=E'_{x'},\qquad E_{y}=(E'_{y'}+VB'_{z'})\gamma,\qquad E_{z}=(E_{z'}'-VB_{y'}')\gamma.&&\label{trasfE3}
 \end{flalign}
-Nel sistema $K'$ sono definiti dalla \eqref{PotenzialiEM} i potenziali $\varphi'$ e $\vec{A'}$, questi danno origine ai campi $\vec{E'}$ e $\vec{B'}$, utilizzando le trasformazioni \eqref{lorentzdiff3} nella definizione del potenziale \eqref{PotenzialiEM} si ottiene per la prima componente del campo elettrico nel sistema $K$:
+Nel sistema $K'$ sono definiti dalla \eqref{PotenzialiEM} i potenziali $\varphi'$ e $\vec{A'}$, questi danno origine ai campi $\vec{E'}$ e $\vec{B'}$. Utilizzando le trasformazioni \eqref{lorentzdiff3} nella definizione del potenziale \eqref{PotenzialiEM} si ottiene, per la prima componente del campo elettrico nel sistema $K$, che
 \begin{flalign}
-    E_x&=-\frac{\partial\varphi}{\partial x}-\frac{\partial A_x}{\partial t}=-\gamma\frac{\partial\varphi}{\partial x'}+\gamma\frac{V}{c^2}\frac{\partial\varphi}{\partial t'}-\gamma\frac{\partial A_x}{\partial t'}+\gamma V\frac{\partial A_x}{\partial x'}&&\nonumber\\&=-\frac{\partial}{\partial x'}\bigg[\varphi-VA_x\bigg]\gamma-\frac{\partial}{\partial t'}\bigg[A_x-\frac{V}{c^2}\varphi\bigg]\gamma,&&\label{trasfExPhiA}
+    E_x&=-\frac{\partial\varphi}{\partial x}-\frac{\partial A_x}{\partial t}=-\gamma\frac{\partial\varphi}{\partial x'}+\gamma\frac{V}{c^2}\frac{\partial\varphi}{\partial t'}-\gamma\frac{\partial A_x}{\partial t'}+\gamma V\frac{\partial A_x}{\partial x'}&&\nonumber\\&=-\frac{\partial}{\partial x'}\bigg[\varphi-VA_x\bigg]\gamma-\frac{\partial}{\partial t'}\bigg[A_x-\frac{V}{c^2}\varphi\bigg]\gamma.&&\label{trasfExPhiA}
 \end{flalign}
- si osservi che per la \eqref{trasfE3} questa si trasforma tramite l'identità, per cui la relazione \eqref{trasfExPhiA}, appena ottenuta, è pari a $E'_{x'}$. Questa relazione è in forma equivalente alla definizione dei potenziali \eqref{PotenzialiEM} per cui si ha che:
+ Si osservi che per la \eqref{trasfE3} $E_x$ si trasforma tramite l'identità, per cui la relazione \eqref{trasfExPhiA}, appena ottenuta, è pari a $E'_{x'}$. Questa è in forma equivalente alla definizione dei potenziali \eqref{PotenzialiEM}, per cui si ha che:
 \begin{equation}
-    \varphi'=\gamma\bigg(\varphi-VA_x\bigg),\qquad A_{x'}'=\gamma\bigg(A_x-\frac{V}{c^2}\varphi\bigg)
+    \varphi'=\gamma\bigg(\varphi-VA_x\bigg),\qquad A_{x'}'=\gamma\bigg(A_x-\frac{V}{c^2}\varphi\bigg).
 \end{equation} 
-Trasformando la componente $E_y$ secondo la \eqref{trasfE3} e facendo uso delle definizioni dei potenziali \eqref{PotenzialiEM} in $K'$ si ottiene un'espressione riconducibile alle definizioni dei potenziali in $K$ tramite le trasformazioni degli operatori di differenziazione \eqref{lorentzdiff3}:
+Trasformando la componente $E_y$ secondo la \eqref{trasfE3} e facendo uso delle definizioni dei potenziali \eqref{PotenzialiEM} in $K'$ si ottiene, tramite le trasformazioni degli operatori di differenziazione \eqref{lorentzdiff3}, un'espressione riconducibile alle definizioni dei potenziali in $K$:
 \begin{flalign*}
     E_y&=\gamma(E'_{y'}+VB'_{z'})=\gamma\bigg[-\frac{\partial\varphi'}{\partial y'}-\frac{\partial A_{y'}'}{\partial t'}+V\frac{\partial A_{y'}'}{\partial x'}-V\frac{\partial A_{x'}'}{\partial y'}\bigg] &&\\ &=-\frac{\partial}{\partial y'}\bigg[\varphi'+VA'_{x'}\bigg]\gamma-\frac{\partial A_{y'}'}{\partial t'}\gamma+V\frac{\partial A_{y'}'}{\partial x'}\gamma=-\frac{\partial}{\partial y}\bigg[\varphi'+VA'_{x'}\bigg]\gamma-\frac{\partial A_{y'}'}{\partial t}.&&
 \end{flalign*}
@@ -22,19 +21,20 @@ Da questo segue che:
 \begin{equation}
     \varphi=\gamma\bigg(\varphi'+VA_{x'}'\bigg),\qquad A_y=A_{y'}'.
 \end{equation}
-Analoghe considerazioni sulla componente $E_z$ consentono di determinare che $A_z=A_{z'}'$, così facendo si è mostrato che il potenziale scalare e il potenziale vettore si trasformano come un 4-vettore, si può infatti costruire il \emph{4-potenziale}:
+Analoghe considerazioni sulla componente $E_z$ consentono di determinare che $A_z=A_{z'}'$. Così facendo si è mostrato che il potenziale scalare e il potenziale vettore si trasformano come un 4-vettore. Si può infatti costruire il \emph{4-potenziale}:
 \begin{equation}
     A^\mu=\bigg(\frac{\varphi}{c},\vec A\bigg),\qquad A_\mu=\bigg(\frac{\varphi}{c},-\vec A\bigg).\label{4-potenziale}
 \end{equation}
 
 \subsection{Equazioni del moto 4-vettoriali}
-Utilizzando il 4-potenziale \eqref{4-potenziale} è possibile esprimere l'azione \eqref{AzioneFree+Int} di un particella interagente con campi elettromagnetici tramite l'uso di 4-vettori, infatti:
+\label{sec:4-equazioniMotoEM}
+Utilizzando il 4-potenziale \eqref{4-potenziale} è possibile esprimere l'azione \eqref{AzioneFree+Int}, di un particella interagente con campi elettromagnetici, tramite l'uso di 4-vettori. Infatti:
 \begin{equation*}
     q\phi-\vec v\cdot \vec A=\frac{1}{\gamma}A^\mu u_\mu=A^\mu\frac{dx_\mu}{dt} \qquad \Rightarrow \qquad  \mathcal{S} [x^\mu(t)]=-\int_{t_1}^{t_2}\bigg(mc|\dot x^\mu(t)|+qA^\mu \dot x_\mu(t)\bigg)\ dt
 \end{equation*}
-in questo modo è evidente che questa azione sia ancora Lorentz invariante siccome parametrizzando la curva d'integrazione rispetto al tempo proprio\footnote{La scelta della parametrizzazione è arbitraria.} ci si riconduce ad un prodotto scalare integrato rispetto ad una quantità invariante, che è quindi a sua volta Lorentz invariante.\\
+in questo modo è evidente che questa azione sia ancora Lorentz invariante (siccome parametrizzando la curva d'integrazione rispetto al tempo proprio\footnote{La scelta della parametrizzazione è arbitraria.} ci si riconduce ad un prodotto scalare integrato rispetto ad una quantità invariante, che è quindi a sua volta Lorentz invariante).\\
 
-Si vogliono ora studiare le variazioni dell'azione $\delta \mathcal{S}$ dovute a variazioni della traiettoria del corpo $\delta x^\mu(t)$, queste danno luogo a variazioni $\delta \dot x^\mu(t)=\frac{d}{dt}\delta x^\mu(t)$ e $\delta A^\mu=\frac{\partial A^\mu}{\partial x^\nu}\delta x^\nu$, poiché il 4-potenziale dipende dal punto nello spazio-tempo in cui è calcolato.\\ Per utilizzare il principio di minima azione si calcola la variazione prima che è  data da:
+Si vogliono ora studiare le variazioni dell'azione $\delta \mathcal{S}$ dovute a variazioni della traiettoria del corpo $\delta x^\mu(t)$. Queste danno luogo a variazioni $\delta \dot x^\mu(t)=\frac{d}{dt}\delta x^\mu(t)$ e $\delta A^\mu=\frac{\partial A^\mu}{\partial x^\nu}\delta x^\nu$, (poiché il 4-potenziale dipende dal punto nello spazio-tempo in cui è calcolato).\\ Per utilizzare il principio di minima azione si calcola la variazione prima che è data da:
 \begin{equation*}
     \delta \mathcal{S} [x^\mu(t)]=-\int_{t_1}^{t_2}\bigg(mc\frac{\dot x^\mu(t)\delta\dot x_\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\delta \dot x_\mu(t)+q\dot x_\mu(t)\frac{\partial A^\mu}{\partial x_\nu}\delta x_\nu\bigg)\ dt
 \end{equation*} 
@@ -43,15 +43,15 @@ Integrando per parti i primi due addendi dell'integrando si ottiene:
 \begin{equation*}
     \int_{t_1}^{t_2}\bigg(mc\frac{d}{dt}\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+\frac{d}{dt}qA^\mu-q\dot x_\nu(t)\frac{\partial A^\nu}{\partial x_\mu}\bigg)\delta x_\mu(t)\ dt-\bigg(mc\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\bigg)\delta x_\mu(t)\bigg|_{t_1}^{t_2},
 \end{equation*} 
-dove il termine dopo l'integrale si annulla siccome per le ipotesi del principio di minima azione $\delta x_\mu(t_1)=\delta x_\mu(t_2)=0$. A questo punto affinché $x^\mu(t)$ renda estremale l'azione per $\delta x_\mu(t)$ arbitrario è necessario che tutto il termine tra parentesi tonde nell'integrando si annulli identicamente. Esplicitando, tramite la regola della derivata composta, la derivata totale rispetto al tempo di $A^\mu$ e ricordando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e si ottiene:
+dove il termine dopo l'integrale si annulla (siccome per le ipotesi del principio di minima azione $\delta x_\mu(t_1)=\delta x_\mu(t_2)=0$). A questo punto affinché $x^\mu(t)$ renda estremale l'azione per $\delta x_\mu(t)$ arbitrario è necessario che tutto il termine tra parentesi tonde nell'integrando si annulli identicamente. Esplicitando, tramite la regola della derivata composta, la derivata totale rispetto al tempo di $A^\mu$ e ricordando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e si ottiene:
 \begin{equation*}
     \frac{mc}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{d}{dt}A^\mu-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=m\gamma\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{\partial A^\mu}{\partial x_\nu}\frac{dx_\nu}{dt}-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=0.
 \end{equation*}
-Infine moltiplicando tutta l'ultima uguaglianza per $\gamma$ e facendo uso della relazione $\frac{d}{d\tau}=\gamma\frac{d}{dt}$ di ricava l'equazione di Newton\footnote{L'equazione \eqref{4-EqNewton4EM} è così chiamata poiché ricorda in forma l'equazione di Newton classica.} 4-dimensionale:
+Infine moltiplicando tutta l'ultima uguaglianza per $\gamma$ e facendo uso della relazione $\frac{d}{d\tau}=\gamma\frac{d}{dt}$ si ricava l'equazione di Newton\footnote{L'equazione \eqref{4-EqNewton4EM} è così chiamata poiché ricorda in forma l'equazione di Newton classica.} 4-dimensionale:
 \begin{equation}
-    m\frac{du^\mu}{d\tau}=q\bigg(\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}\bigg)u_\nu=qF^{\nu\mu}\ u_\nu,\label{4-EqNewton4EM}
+    m\frac{du^\mu}{d\tau}=q\bigg(\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}\bigg)u_\nu=qF^{\mu\nu}\ u_\nu,\label{4-EqNewton4EM}
 \end{equation}
-dove è stato introdotto il \emph{4-tensore elettromagnetico} $F^{\nu\mu}=\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}$. Se si calcolano esplicitamente tutte le derivate parziali di questo 4-tensore, dalla \eqref{PotenzialiEM}, si ha:
+dove è stato introdotto il \emph{4-tensore elettromagnetico} $F^{\mu\nu}=\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}$. Se si calcolano esplicitamente tutte le derivate parziali di questo 4-tensore, dalla \eqref{PotenzialiEM}, si ha:
 \begin{equation}
     \label{4-tensoreEM}
     F^{\mu\nu}=
@@ -70,13 +70,13 @@ dove è stato introdotto il \emph{4-tensore elettromagnetico} $F^{\nu\mu}=\frac{
 \end{pmatrix}
 \end{equation}
 
-Si osservi che per $\mu=1,2,3$ la \eqref{4-EqNewton4EM} esprime proprio la forza di Lorentz \eqref{ForzaLorentz} mentre per $\mu=0$ si ottiene
+Si osservi che, per $\mu=1,2,3$, la \eqref{4-EqNewton4EM} esprime proprio la forza di Lorentz \eqref{ForzaLorentz}.\\ Per $\mu=0$ si ottiene
 \begin{equation}
     \frac{d}{d\tau}(mc\gamma)=\frac{q}{c}\bigg[\frac{\partial \vec A}{\partial t}-\vnabla \varphi\bigg]\cdot \vec v\gamma \qquad \Rightarrow \qquad \frac{d}{dt}(mc^2\gamma)=q\frac{\partial \vec A}{\partial t}\cdot \vec v - q\vnabla \varphi\cdot \vec v
 \end{equation}
 che esprime la variazione di energia di corpo libero del sistema, ossia la potenza.\\
 
-Se invece si valuta la variazione dell'azione variando il secondo estremo di integrazione e integrando su una curva del moto, come si è già fatto nella sezione \ref{sec:LagRelEnMo}, si ottiene:
+Se invece si valuta la variazione dell'azione variando il secondo estremo di integrazione e integrando su una curva del moto (come si è già fatto nella Sezione \ref{sec:LagRelEnMo}) si ottiene:
 \begin{equation*}
     \delta S=-\bigg(mc\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\bigg)\delta x_\mu=-(mu^\mu+qA^\mu)\delta x_\mu \quad \Rightarrow \quad -\frac{\partial S}{\partial x_\mu}=mu^\mu+qA^\mu.
 \end{equation*}
@@ -86,33 +86,33 @@ Il 4-gradiente dell'azione consente quindi di definire il 4-momento generalizzat
 \end{equation}
 che come nel caso della particella libera ha come componenti l'energia del sistema e il suo momento generalizzato, già calcolati nella \eqref{energiaImpulsoIntEM}.
 \subsection{Invarianti del campo elettromagnetico}
-Come si è fatto per i 4-vettori si vogliono identificare le quantità caratteristiche del 4-tensore elettromagnetico \eqref{4-tensoreEM} che sono invarianti per trasformazioni di Lorentz: il modo più semplice di ottenere tali quantità è di contrarre il 4-tensore su altre quantità tensoriali opportune.\\
+Come si è fatto per i 4-vettori, si vogliono identificare le quantità caratteristiche del 4-tensore elettromagnetico \eqref{4-tensoreEM} che sono invarianti per trasformazioni di Lorentz. Il modo più semplice per ottenere tali quantità è di contrarre il 4-tensore elettromagnetico su altre quantità tensoriali opportune.\\
 
-In primo luogo è possibile contrarre un 4-tensore elettromagnetico controvariante con uno covariante, come si è già visto nella sezione \ref{sec:4-vettori} questa è una quantità Lorentz invariante:
+In primo luogo è possibile contrarre il 4-tensore elettromagnetico controvariante con quello covariante (come si è già visto nella Sezione \ref{sec:4-vettori} questa è una quantità Lorentz invariante):
 \begin{equation}
     F^{\mu\nu}F_{\mu\nu}=2\biggl(|\vec B|^2-\frac{|\vec E|^2}{c^2}\biggr)=\text{invariante}.
 \end{equation}
-Questo implica direttamente che se in un sistema di riferimento vale $|\vec B|^2c^2\geq|\vec E|^2$, oppure $|\vec B|^2c^2\leq|\vec E|^2$, allora questa relazione vale anche per ogni altra coppia di campi elettrici e magnetici in ogni altro sistema di riferimento inerziale.\\
+Questo implica direttamente che se in un sistema di riferimento vale $|\vec B|^2c^2\geq|\vec E|^2$ (oppure $|\vec B|^2c^2\leq|\vec E|^2$) allora questa relazione vale anche per ogni altra coppia di campi elettrici e magnetici in ogni altro sistema di riferimento inerziale.\\
 
-Un secondo invariante può essere costruito contraendo un 4-tensore elettromagnetico controvariante e uno covariante con il simbolo di Levi-Civita, quest'ultimo è un oggetto a più indici così definito in ogni sistema di riferimento:
+Un secondo invariante può essere costruito contraendo il 4-tensore elettromagnetico controvariante e quello covariante con il simbolo di Levi-Civita. Quest'ultimo è un oggetto a più indici così definito in ogni sistema di riferimento:
 \begin{equation}
     e^{\mu\nu\delta\lambda}=\begin{cases}
         1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione pari di}\ (0,1,2,3)\\
         -1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione dispari di}\ (0,1,2,3)\\
-        0 \text{se almeno due indici sono uguali}
+        0\ \text{se almeno due indici sono uguali}
     \end{cases}.\label{LeviCivita}
 \end{equation}
-Si ha quindi che contraendo quantità covarianti con quantità controvarianti, anche in questo, è Lorentz invariante:
+Si ha quindi che è Lorentz invariante (siccome si sta contraendo quantità covarianti con quantità controvarianti):
 \begin{equation}
     e^{\mu\nu\delta\lambda}F_{\mu\nu}F^{\delta\lambda}=-8\frac{\vec E\cdot\vec B}{c}=\text{invariante}.
 \end{equation}
-Questa seconda quantità invariante consente di affermare che: se in un sistema di riferimento il campo elettrico è normale a quello magnetico allora in ogni altro sistema di riferimento si avranno campi perpendicolari.\\ È utile osservare che facendo uso delle trasformazioni di Lorentz per i campi elettromagnetici ricavate nella sezione \ref{sec:trasfEM} è possibile scegliere arbitrariamente un secondo sistema di riferimento inerziale in cui i valori assunti dai due campi sono di più facile utilizzo, gli unici vincoli su questa scelta sono proprio dati dalle due quantità invarianti determinate. In questo modo se $\vec E \cdot \vec B\neq0$ si può identificare un riferimento in cui i due campi sono paralleli mentre se $\vec E \cdot \vec B=0$ è possibile identificare un riferimento nel quale uno dei due campi è identicamente nullo.\\
+Questa seconda quantità invariante consente di affermare che: se in un sistema di riferimento il campo elettrico è normale a quello magnetico allora in ogni altro sistema di riferimento si avranno campi perpendicolari.\\ È utile osservare che, facendo uso delle trasformazioni di Lorentz per i campi elettromagnetici (ricavate nella Sezione \ref{sec:trasfEM}), è possibile scegliere arbitrariamente un secondo sistema di riferimento inerziale in cui i valori assunti dai due campi sono di più facile utilizzo. Gli unici vincoli su questa scelta sono proprio dati dalle due quantità invarianti determinate. In questo modo se $\vec E \cdot \vec B\neq0$ si può identificare un riferimento in cui i due campi sono paralleli mentre se $\vec E \cdot \vec B=0$ è possibile identificare un riferimento nel quale uno dei due campi è identicamente nullo.\\
 
-Per quanto detto fino ad ora non è chiaro se di questi invarianti ve ne possano essere altri, per rendere evidente che quelli trovati sono gli unici è possibile ragionare nel seguente modo: per prima cosa si osservi che gli invarianti che si sono individuati sono propri dei campi e quindi slegati dal formalismo che si utilizza, per questo motivo è utile introdurre il seguente vettore a componenti complesse:
+Per quanto detto fino ad ora non è chiaro se di questi invarianti ve ne possano essere altri. Per rendere evidente che quelli trovati sono gli unici è possibile ragionare nel seguente modo: per prima cosa si osservi che gli invarianti che si sono individuati sono propri dei campi e quindi slegati dal formalismo che si utilizza. Per questo motivo è utile introdurre il seguente vettore a componenti complesse che ancora rappresenta il tensore elettromagnetico ma con un formalismo alternativo:
 \begin{equation*}
     \vec{F}=\frac{\vec E}{c} +i\vec B \qquad i^2=-1.
 \end{equation*}
-Utilizzando le trasformazioni del campo elettrico e magnetico ricavate nella sezione \ref{sec:trasfEM} si possono ottenere le trasformazioni per questo vettore:
+Utilizzando le trasformazioni del campo elettrico e magnetico (ricavate nella Sezione \ref{sec:trasfEM}) si possono ottenere le trasformazioni per questo vettore:
 \begin{equation*}
     \begin{cases}
         F'_x=\frac{E_x}{c}+iB_x\\
@@ -127,10 +127,10 @@ Utilizzando le trasformazioni del campo elettrico e magnetico ricavate nella sez
     \end{pmatrix}
     \begin{pmatrix}
         F_x\\F_y\\F_z
-    \end{pmatrix}
+    \end{pmatrix}.
 \end{equation*}
-Questa trasformazione è una rotazione delle componenti $y$ e $z$ di $\vec{F}$, infatti il determinante della matrice che esprime la trasformazione è identicamente pari a $1$. Un vettore conserva una sola quantità sotto rotazioni ossia il suo modulo, in questo caso questo è pari a:
+Questa trasformazione è una rotazione delle componenti $y$ e $z$ di $\vec{F}$ (infatti il determinante della matrice che esprime la trasformazione è identicamente pari a $1$). Un vettore conserva una sola quantità sotto rotazioni, ossia il suo modulo, che in questo caso questo è pari a:
 \begin{equation*}
-    |\vec F|^2=\frac{|\vec E|^2}{c^2}-|\vec B|^2+2i\frac{\vec E\cdot\vec B}{c},
+    |\vec F|^2=\frac{|\vec E|^2}{c^2}-|\vec B|^2+2i\frac{\vec E\cdot\vec B}{c}.
 \end{equation*}
-siccome questa quantità è complessa si ha che per essere invariante devono essere indipendentemente invarianti la sua parte reale e la sua parte immaginaria, che sono proprio, a meno di fattori moltiplicativi, gli invarianti precedentemente individuati.
+Siccome questa quantità è complessa si ha che per essere invariante devono essere indipendentemente invarianti la sua parte reale e la sua parte immaginaria. Queste sono proprio, a meno di fattori moltiplicativi, gli invarianti precedentemente individuati.

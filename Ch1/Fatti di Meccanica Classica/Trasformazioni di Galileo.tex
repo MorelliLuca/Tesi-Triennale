@@ -1,49 +1,49 @@
-\subsection{La meccanica e le trasformazioni di Galileo}\label{sec:MC}
-Per delineare gli schemi della meccanica classica, oltre a quanto assunto nella sezione \ref{sec:MathSDRI}, ossia che lo spazio sia tridimensionale, isotropo, omogeneo e che rispetti la geometria euclidea mentre il tempo sia ad una sola dimensione, si prende come assioma che le distanze spaziali e temporali siano assolute, ossia che ogni osservatore concordi sulla misura di queste.\\
-Inoltre si assume che, in un riferimento inerziale, le posizioni e le velocità dei punti di un sistema ad un tempo iniziale ne determinino in maniera univoca l'evoluzione $\vec x(t)\in \mathbb{R}^3$ secondo la legge:
+\subsection{La meccanica e le trasformazioni di Galilei}\label{sec:MC}
+Per delineare gli schemi della meccanica classica, oltre a quanto assunto nella Sezione \ref{sec:MathSDRI}, ossia che lo spazio sia tridimensionale, isotropo, omogeneo e che sia modellizzabile con la geometria euclidea mentre il tempo sia ad una sola dimensione, si prende come assioma che le distanze spaziali e temporali siano assolute, ossia che ogni osservatore concordi sulla misura di queste.\\
+Inoltre si assume che, in un riferimento inerziale, le posizioni e le velocità dei punti di un sistema ad un tempo iniziale ne determinino in maniera univoca l'evoluzione $\vec x(t)\in \mathbb{R}^3$ secondo la legge di Newton:
 \begin{equation}
-	m\ddot{\vec{x}}(t)=\vec{F}(t,\vec{x},\dot{\vec{x}})
+	m\ddot{\vec{x}}(t)=\vec{F}(t,\vec{x},\dot{\vec{x}}),
 	\label{equazioneDiNewton}
 \end{equation}
 dove $m$ è detta massa inerziale e $\vec{F}$ è una funzione caratteristica del sistema detta forza.\\
 
 Si vuole quindi identificare quali applicazioni $\varphi:\mathbb{R}^3\times\mathbb{R}\rightarrow
-\mathbb{R}^3\times\mathbb{R}$ consentono di cambiare sistema di riferimento inerziale, ossia quali 
-trasformazioni non variano le leggi della natura. Queste applicazioni si chiamano trasformazioni di 
-Galileo e, come si è dimostrato nella sezione \ref{sec:MathSDRI}, per soddisfare il principio di relatività devono essere applicazioni affini.
-Una generica trasformazione di Galileo è quindi data dalla composizione di tre famiglie di applicazioni:
+\mathbb{R}^3\times\mathbb{R}$ consentono di cambiare sistema di riferimento inerziale, ossia sotto quali 
+trasformazioni le leggi della natura non variano. Queste applicazioni si chiamano trasformazioni di 
+Galilei e, come si è dimostrato nella Sezione \ref{sec:MathSDRI}, per soddisfare il principio di relatività devono essere applicazioni affini.
+Una generica trasformazione di Galilei è quindi data dalla composizione di tre famiglie di applicazioni:
 \begin{itemize}
 	\item una generica traslazione spazio temporale dell'origine, dedotta dalla proprietà 
 	di omogeneità dello spazio e del tempo:
 	\begin{equation}
 		\varphi_{\vec{r},s}(t,\vec{x})=(t+s,\vec{x}+\vec{r})
-		\label{GalileoTraslazoine}
+		\label{GalileiTraslazoine}
 	\end{equation} 
 \item una generica rotazione degli assi spaziali, dovuta alla proprietà di isotropia dello spazio:
 \begin{equation}
 	\varphi_{G}(t,\vec{x})=(t,G\vec{x}) \qquad G\in M_{3\times3}(\mathbb{R}):G^{-1}=G^t
-	\label{GalileoRotazione}
+	\label{GalileiRotazione}
 \end{equation} 
-	\item una traslazione di moto rettilineo uniforme, ammissibile grazie alle proprietà di muoversi di tale moto dei sistemi 
-	di riferimento inerziali:
+	\item una traslazione di moto rettilineo uniforme (ammissibile grazie alle proprietà di muoversi di tale moto dei sistemi 
+	di riferimento inerziali):
 \begin{equation}
-	\varphi_{\vec{v}}(t,\vec{x})=(t,\vec{x}+\vec{v}t)
-	\label{GalileoVelocità}
+	\varphi_{\vec{v}}(t,\vec{x})=(t,\vec{x}+\vec{v}t).
+	\label{GalileiVelocità}
 \end{equation} 
 \end{itemize}
-Si osservi che la rotazione (\ref{GalileoRotazione}) può avvenire solamente rispetto alle direzioni spaziali, infatti se fosse una rotazione di tutto lo spazio-tempo le lunghezze e gli intervalli di tempo non sarebbero più assoluti.\\
+Si osservi che la rotazione (\ref{GalileiRotazione}) può avvenire solamente rispetto alle direzioni spaziali, infatti se fosse una rotazione di tutto lo spazio-tempo le lunghezze e gli intervalli di tempo non sarebbero più assoluti.\\
 
-La trasformazione (\ref{GalileoVelocità}) è quella che viene comunemente studiata per caratterizzare le trasformazioni di sistemi inerziali. 
+La trasformazione (\ref{GalileiVelocità}) è quella che viene comunemente studiata per caratterizzare le trasformazioni di sistemi inerziali. 
 Si consideri quindi un sistema $K$, con coordinate $(t,\vec{x})$ e un sistema $K'$, con 
 coordinate $(t',\vec{x'})$, in moto a velocità $\vec{V}$ rispetto a $K$, si scriverà allora la 
-(\ref{GalileoVelocità}) come:
+(\ref{GalileiVelocità}) come:
 \begin{equation}
 	\vec{x'}=\vec{x}-\vec{V}t, \qquad t'=t.
-	\label{GalileoEasy}
+	\label{GalileiEasy}
 \end{equation}
-Il principio di relatività impone l'invarianza di ogni legge fisica rispetto alla trasformazione (\ref{GalileoEasy}), è quindi opportuno
+Il principio di relatività impone l'invarianza di ogni legge fisica rispetto alla trasformazione (\ref{GalileiEasy}), è quindi opportuno
 studiare come si trasformino gli operatori di differenziazione con questa.
-Se si vuole derivare una $f(\vec{x},t)$, dalla regola della catena, si ha:
+Dalla regola della catena, si ha:
 \begin{equation*}
 		\frac{\partial}{\partial t'}=\frac{\partial t}{\partial t'}\frac{\partial}{\partial t}+
 		\sum_{i=1}^{3}\frac{\partial x_i}{\partial t}\frac{\partial t}{\partial t'}
@@ -51,29 +51,28 @@ Se si vuole derivare una $f(\vec{x},t)$, dalla regola della catena, si ha:
 		\frac{\partial}{\partial x'_i}=\frac{\partial t}{\partial x'_i}\frac{\partial}{\partial t}+
 		\sum_{i=1}^{3}\frac{\partial x_j}{\partial x'_i}\frac{\partial}{\partial x_j}
 \end{equation*}
-dove $\frac{\partial}{\partial t}$ è la derivata parziale rispetto al tempo nel sistema $K$, $\frac{\partial}{\partial t'}$ è la derivata parziale rispetto al tempo nel sistema $K'$, $\frac{\partial}{\partial x_i}$ è la derivata parziale rispetto alla coordinata i-esima del sistema $K$ e $\frac{\partial}{\partial x_i'}$ è la derivata parziale rispetto alla coordinata i-esima del sistema $K'$.\\Osservando dalla (\ref{GalileoEasy}) che $\frac{\partial t}{\partial t'}=1$, che 
+dove $\frac{\partial}{\partial t}$ è la derivata parziale rispetto al tempo nel sistema $K$, $\frac{\partial}{\partial t'}$ è la derivata parziale rispetto al tempo nel sistema $K'$, $\frac{\partial}{\partial x_i}$ è la derivata parziale rispetto alla coordinata i-esima del sistema $K$ e $\frac{\partial}{\partial x_i'}$ è la derivata parziale rispetto alla coordinata i-esima del sistema $K'$.\\Osservando dalla (\ref{GalileiEasy}) che $\frac{\partial t}{\partial t'}=1$, che 
 $\frac{\partial t}{\partial x'_i}=0$, che $\frac{\partial x_i}{\partial t}=V_i$ e che 
-$\frac{\partial x_j}{\partial x'_i}=\delta_{ij}$, dove $\delta_{ij}$ è una delta di Kronecker, 
+$\frac{\partial x_j}{\partial x'_i}=\delta_{ij}$, dove $\delta_{ij}$ è la delta di Kronecker, 
 si ottengono le trasformazioni degli operatori di differenziazione:
 \begin{equation}
 	\frac{\partial}{\partial t'}=\frac{\partial}{\partial t}+\vec{V}\cdot\vec{\nabla}, \qquad \qquad
-	\frac{\partial}{\partial x'_i}=\frac{\partial}{\partial x_i}
-	\label{GalileoDifferenziale}
+	\frac{\partial}{\partial x'_i}=\frac{\partial}{\partial x_i},
+	\label{GalileiDifferenziale}
 \end{equation}
-dove $\vnabla=(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z})$.\\
-Dalla (\ref{GalileoDifferenziale}) si deduce che tutti gli operatori che comprendono solamente derivate 
-rispetto alle coordinate spaziali sono lasciati inalterati dalle trasformazioni di Galileo. In particolare si ha che $\vnabla'=(\frac{\partial }{\partial x'},\frac{\partial }{\partial y'},\frac{\partial }{\partial z'})=\vnabla$.\\
+dove $\vnabla=(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z})=(\frac{\partial }{\partial x_1},\frac{\partial }{\partial x_2},\frac{\partial }{\partial x_3})$.\\
+Dalla (\ref{GalileiDifferenziale}) si deduce che tutti gli operatori che comprendono solamente derivate 
+rispetto alle coordinate spaziali sono lasciati inalterati dalle trasformazioni di Galilei. In particolare si ha che $\vnabla'=(\frac{\partial }{\partial x'},\frac{\partial }{\partial y'},\frac{\partial }{\partial z'})=\vnabla$.\\
 
-Note queste trasformazioni è possibile osservare che il vettore accelerazione $\ddot{\vec{x}}$ risulta galileo invariante, infatti considerando una traiettoria $\vec{x}(t)$:
+Note queste trasformazioni è possibile osservare che il vettore accelerazione $\ddot{\vec{x}}$ risulta Galilei invariante\footnote{Con Galilei invariante si intende invariante sotto trasformazioni di Galilei}, infatti considerando una traiettoria $\vec{x}(t)$:
 \begin{equation*}
 	\frac{d^2}{dt'^2}(\vec{x'}(t))=\frac{d^2}{dt^2}(\vec{x}(t)-\vec{V}t)=\ddot{\vec{x}}(t)+\frac{d}{dt}(\vec{V})=\ddot{\vec{x}}(t).
 \end{equation*} 
 Questo fatto, assieme al principio di relatività galileiano applicato alla legge di Newton (\ref{equazioneDiNewton}), 
 impone che le forze esercitate su di un punto e misurate in due sistemi inerziali differenti debbano essere le medesime. \\
-
 Analogamente a quanto appena fatto si possono ricavare le trasformazioni per la velocità di un punto in moto con traiettoria $\vec{x}(t)$:
 \begin{equation}
-	\frac{d}{dt'}(\vec{x'}(t))=\frac{d}{dt}(\vec{x}(t)-\vec{V}t)=\dot{\vec{x}}(t)+\vec{V}.
+	\frac{d}{dt'}(\vec{x'}(t))=\frac{d}{dt}(\vec{x}(t)-\vec{V}t)=\dot{\vec{x}}(t)+\vec{V}.\label{trasfGalVel}
 \end{equation}
-Per cui si ottiene dalle trasformazioni di Galileo che le velocità si compongono per somma algebrica.\\
+Dalla \eqref{trasfGalVel} si ottiene che classicamente le velocità si compongono per somma algebrica.\\
 

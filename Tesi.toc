@@ -1,14 +1,17 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
+\contentsline {section}{Notazioni utilizzate}{ii}{Doc-Start}%
+\contentsline {section}{Abstract}{iii}{Doc-Start}%
+\contentsline {section}{Introduzione}{1}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Fondamenti di relatività ristretta}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}La matematica dei sistemi di riferimento inerziali}{3}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}I sistemi di riferimento inerziali}{3}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Trasformazioni di sistemi di riferimento inerziali}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Fatti di Fisica Classica}{7}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}La meccanica e le trasformazioni di Galileo}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}La meccanica e le trasformazioni di Galilei}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}L'elettromagnetismo e le equazioni di Maxwell}{9}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}L'articolo del 1905}{10}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}La non invarianza delle Equazioni di Maxwell}{10}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}La non invarianza delle equazioni di Maxwell}{10}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}I postulati di Einstein}{12}{subsection.1.3.2}%
 \contentsline {section}{\numberline {1.4}Le trasformazioni di Lorentz}{15}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Derivazione}{15}{subsection.1.4.1}%
@@ -36,6 +39,9 @@
 \contentsline {subsection}{\numberline {3.4.2}Gauge di Coulomb}{42}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Gauge temporale}{43}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Gauge di radiazione}{43}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{45}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Risultati generali}{45}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{46}{section.Alph1.2}%
+\contentsline {section}{\numberline {3.5}Elettromagnetismo in forma 4-vettoriale}{44}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}4-corrente}{44}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Equazioni di Maxwell 4-vettoriali}{45}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{47}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Risultati generali}{47}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{48}{section.Alph1.2}%

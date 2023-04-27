@@ -1,6 +1,6 @@
 \subsection{L'elettromagnetismo e le equazioni di Maxwell}\label{sec:EquazioniMaxwell}
 Per interpretare i fenomeni elettromagnetici, anche in questo caso, è necessario introdurre
-una serie di osservazioni sperimentali: in primo luogo esiste una proprietà della materia, 
+una serie di osservazioni sperimentali. In primo luogo esiste una proprietà della materia, 
 detta carica elettrica, che non dipende dal sistema di riferimento in cui è misurata e che consente 
 ai corpi di interagire con due campi vettoriali: 
 il campo elettrico $\vec{E}$ e il campo magnetico $\vec{B}$. Un corpo puntiforme di carica 
@@ -10,8 +10,7 @@ $q$ subisce quindi un forza $\vec{F}$ data da:
 	\label{ForzaLorentz}
 \end{equation}
 dove $\vec{v}$ è il vettore velocità di tale corpo.\\
-In secondo luogo gli esperimenti mostrarono che questi due campi rispettano una serie di equazioni 
-dette equazioni di Maxwell:
+In secondo luogo gli esperimenti mostrarono che questi due campi sono soluzione di un sistema di equazioni differenziali dette equazioni di Maxwell:
 \begin{equation}
 	\begin{gathered}
 		\vec{\nabla}\cdot\vec{E}=\frac{\rho}{\epsilon_0}, \qquad \qquad \vec{\nabla}\cdot\vec{B}=0, \\
@@ -25,38 +24,39 @@ $\epsilon_0$, $\mu_0$ sono due costanti del vuoto.\\
 
 Dalle equazioni di Maxwell (\ref{EquazioniMaxwell}) segue che le cariche sono sorgenti del campo 
 elettrico mentre le correnti lo sono per 
-il campo Magnetico. Per esempio è possibile mostrare che una carica puntiforme è sorgente di campo elettrico e 
-tramite la forza di Lorentz (\ref{ForzaLorentz}) è possibile derivare la legge sperimentale di Coulomb.\\
-Si consideri una carica puntiforme $Q$ posta nell'origine di un sistema di riferimento e si prenda una sfera $\mathcal{S}$ di raggio $R$ 
+il campo magnetico. Per esempio è possibile mostrare che una carica puntiforme è una sorgente di campo elettrico e, 
+tramite la forza di Lorentz (\ref{ForzaLorentz}), è possibile derivare la legge sperimentale di Coulomb.\\
+Per far questo si consideri una carica puntiforme $Q$ posta nell'origine di un sistema di riferimento e si prenda una sfera $\mathcal{S}$ di raggio $R$ 
 contenete tale carica. Integrando la prima equazione di Maxwell e facendo uso del teorema di Gauss si ottiene:
 \begin{equation*}
 	\int_\mathcal{S}\vec{\nabla}\cdot\vec{E}\ d^3x=\int_\mathcal{S}\frac{\rho}{\epsilon_0}\ d^3x=\frac{Q}{\epsilon_0}=\oint_{\partial\mathcal{S}}\vec{E}\cdot\hat{n}\ d\Sigma
 \end{equation*}
-dove si è indicato con $\hat{n}$ il versore normale alla superficie $\mathcal{S}$ nel punto in cui si valuta l'integrando.\\
-Si osservi che essendo lo spazio 
-isotropo e la carica puntiforme allora qualsiasi rotazione degli assi coordinati mantiene immutato il sistema, ne segue che 
-il Campo Elettrico generato dalla carica deve essere radiale e costante su superfici sferiche centrate nell'origine. Infatti un'ipotetica seconda carica 
-fissa a distanza $R$ dall'origine del sistema di riferimento deve percepire sempre la medesima forza, indipendentemente dalla rotazione effettuata, 
-che risulta connessa al campo elettrico per mezzo della (\ref{ForzaLorentz}), inoltre sempre dalle Equazioni di Maxwell, supponendo assenza di correnti 
-si ha che il rotore di $\vec{E}$ risulta nullo. Grazie a queste deduzioni l'integrale di superficie si riduce a:
+dove si è indicato con $\hat{n}$ il versore normale esterno alla superficie $\mathcal{S}$ nel punto in cui si valuta l'integrando.\\
+Si osservi che, essendo lo spazio 
+isotropo e la carica puntiforme, qualsiasi rotazione degli assi coordinati mantiene immutato il sistema. Quindi
+il campo elettrico generato dalla carica deve essere radiale e costante su superfici sferiche centrate nell'origine. Infatti un'ipotetica seconda carica, 
+fissa a distanza $R$ dall'origine del sistema di riferimento, deve percepire sempre la medesima forza, indipendentemente dalla rotazione effettuata.
+Tale forza risulta connessa al campo elettrico per mezzo della (\ref{ForzaLorentz}). Dalle Equazioni di Maxwell, supponendo assenza di correnti, 
+si ha che il rotore di $\vec{E}$ risulta nullo. Quindi l'integrale di superficie si riduce a:
 \begin{equation*}
 	\oint_{\partial\mathcal{S}}\vec{E}\cdot\hat{n}\ d\Sigma=4\pi R^2|\vec{E}|=\frac{Q}{\epsilon_0}.
 \end{equation*}	
-Tenendo conto che $\vec{E}$ è radiale, come si è dedotto, si ha la legge di Coulomb
+Ricordando che $\vec{E}$ ha simmetria radiale si ha la legge di Coulomb:
 \begin{equation}
-	\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{Q}{R^2}\hat{r} \quad \Rightarrow \quad \vec{F}=q\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{qQ}{R^2}\hat{r}
+	\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{Q}{R^2}\hat{r} \quad \Rightarrow \quad \vec{F}=q\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{qQ}{R^2}\hat{r},\label{leggeCoulomb}
 \end{equation} 
-dove si è indicato con $\hat{r}$ il versore radiale in coordinate sferiche.\\
+dove si è indicato con $\hat{r}$ il versore radiale.\\
+Si noti che la legge di Coulomb, nella sua interpretazione classica, prevede una propagazione dell'interazione istantanea. Infatti dalla \eqref{leggeCoulomb} si ha che uno spostamento della carica $Q$ modificherebbe istantaneamente il campo di forza in ogni suo punto.\\
 
-Infine è importante per trattare la teoria della relatività osservare che è possibile ottenere, calcolando il rotore di ambo 
+Si osservi infine che applicando il rotore ad ambo 
 i membri delle ultime due equazioni di Maxwell
 \begin{equation*}
 	\vec{\nabla}\wedge\vec{\nabla}\wedge\vec{E}=-\frac{\partial}{\partial t}\vnabla\wedge\vec{B},
 	\qquad \vec{\nabla}\wedge\vec{\nabla}\wedge\vec{B}=\mu_0\epsilon_0\frac{\partial}{\partial t}
 	\vnabla\wedge\vec{E},
 \end{equation*}
-e supponendo assenza di cariche, per cui $\rho=0$ e $\vec{J}=0$, due equazioni che descrivono 
-onde di campo elettrico e magnetico nel vuoto:
+e supponendo assenza di cariche (per cui $\rho=0$ e $\vec{J}=0$) si ottengono due equazioni delle onde che descrivono 
+il campo elettrico e magnetico nel vuoto:
 \begin{equation}
 	\vnabla^2\vec{E}=\mu_0\epsilon_0\frac{\partial^2\vec{E}}{\partial t^2} \qquad \vnabla^2\vec{B}=
 	\mu_0\epsilon_0\frac{\partial^2\vec{B}}{\partial t^2}
@@ -64,6 +64,6 @@ onde di campo elettrico e magnetico nel vuoto:
 \end{equation}
 dove si è indicato l'operatore laplaciano con la notazione $\vnabla^2=(\frac{\partial^2 }{\partial x^2},\frac{\partial^2 }{\partial y^2},\frac{\partial^2 }{\partial z^2})$.\\
 Queste onde si propagano con una velocità $\frac{1}{\sqrt{\mu_0\epsilon_0}}=299792458\  \frac{m}{s}$, 
-che corrisponde con precisione ai valori sperimentalmente misurati della velocità della luce.\\ Maxwell stesso suppose allora che questa fosse quindi da intendere come un fenomeno elettromagnetico e successivi esperimenti, come quelli di Hertz, confermarono tale ipotesi.\\
+che corrisponde con precisione ai valori sperimentalmente misurati della velocità della luce.\\ Maxwell stesso suppose allora che la luce fosse da intendere come un fenomeno elettromagnetico e, successivi esperimenti come quelli di Hertz, confermarono tale ipotesi.\\
 Sulla base della teoria ondulatoria classica è però necessario identificare un mezzo nel quale queste onde possano 
 propagarsi e rispetto al quale la loro velocità di propagazione debba essere intesa. Per questo motivo alla fine dell'ottocento venne ipotizzata l'esistenza di tale mezzo detto etere luminifero.

@@ -1,39 +1,45 @@
-\BOOKMARK [0][]{chapter.1}{1 Fondamenti di relativit\340 ristretta}{}% 1
-\BOOKMARK [1][-]{section.1.1}{1.1 La matematica dei sistemi di riferimento inerziali}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 I sistemi di riferimento inerziali}{section.1.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Trasformazioni di sistemi di riferimento inerziali}{section.1.1}% 4
-\BOOKMARK [1][-]{section.1.2}{1.2 Fatti di Fisica Classica}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 La meccanica e le trasformazioni di Galileo}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 L'elettromagnetismo e le equazioni di Maxwell}{section.1.2}% 7
-\BOOKMARK [1][-]{section.1.3}{1.3 L'articolo del 1905}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 La non invarianza delle Equazioni di Maxwell}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 I postulati di Einstein}{section.1.3}% 10
-\BOOKMARK [1][-]{section.1.4}{1.4 Le trasformazioni di Lorentz}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Derivazione}{section.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Contrazione delle lunghezze e dilatazione dei tempi}{section.1.4}% 13
-\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Trasformazione delle velocit\340}{section.1.4}% 14
-\BOOKMARK [1][-]{section.1.5}{1.5 Quadrivettori e spazio-tempo}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.6}{1.6 Trasformazioni del campo elettromagnetico}{chapter.1}% 16
-\BOOKMARK [0][]{chapter.2}{2 Meccanica relativistica}{}% 17
-\BOOKMARK [1][-]{section.2.1}{2.1 Il principio di minima azione}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.2}{2.2 La lagrangiana relativistica}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 La particella libera}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Energia e momenti}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{2.3 Sistemi di pi\371 particelle}{chapter.2}% 22
-\BOOKMARK [0][]{chapter.3}{3 L'elettromagnetismo nella teoria della relativit\340}{}% 23
-\BOOKMARK [1][-]{section.3.1}{3.1 La lagrangiana di interazione}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{3.2 Il moto di particelle cariche in campi costanti}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Campo elettrico costante}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Campo magnetico costante}{section.3.2}% 27
-\BOOKMARK [1][-]{section.3.3}{3.3 Il tensore elettromagnetico}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Il 4-potenziale}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Equazioni del moto 4-vettoriali}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Invarianti del campo elettromagnetico}{section.3.3}% 31
-\BOOKMARK [1][-]{section.3.4}{3.4 Trasformazioni di gauge}{chapter.3}% 32
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Gauge di Lorentz}{section.3.4}% 33
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Gauge di Coulomb}{section.3.4}% 34
-\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Gauge temporale}{section.3.4}% 35
-\BOOKMARK [2][-]{subsection.3.4.4}{3.4.4 Gauge di radiazione}{section.3.4}% 36
-\BOOKMARK [0][]{appendix.Alph1}{A Lemmi e teoremi per le trasformazioni di Lorentz}{}% 37
-\BOOKMARK [1][-]{section.Alph1.1}{A.1 Risultati generali}{appendix.Alph1}% 38
-\BOOKMARK [1][-]{section.Alph1.2}{A.2 Una dimostrazione della linearit\340 delle trasformazioni di Lorentz}{appendix.Alph1}% 39
+\BOOKMARK [1][-]{Doc-Start}{Notazioni utilizzate}{}% 1
+\BOOKMARK [1][-]{Doc-Start}{Abstract}{}% 2
+\BOOKMARK [1][-]{chapter*.2}{Introduzione}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 Fondamenti di relativit\340 ristretta}{}% 4
+\BOOKMARK [1][-]{section.1.1}{1.1 La matematica dei sistemi di riferimento inerziali}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 I sistemi di riferimento inerziali}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Trasformazioni di sistemi di riferimento inerziali}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{1.2 Fatti di Fisica Classica}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 La meccanica e le trasformazioni di Galilei}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 L'elettromagnetismo e le equazioni di Maxwell}{section.1.2}% 10
+\BOOKMARK [1][-]{section.1.3}{1.3 L'articolo del 1905}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 La non invarianza delle equazioni di Maxwell}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 I postulati di Einstein}{section.1.3}% 13
+\BOOKMARK [1][-]{section.1.4}{1.4 Le trasformazioni di Lorentz}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Derivazione}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Contrazione delle lunghezze e dilatazione dei tempi}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Trasformazione delle velocit\340}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{1.5 Quadrivettori e spazio-tempo}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.6}{1.6 Trasformazioni del campo elettromagnetico}{chapter.1}% 19
+\BOOKMARK [0][]{chapter.2}{2 Meccanica relativistica}{}% 20
+\BOOKMARK [1][-]{section.2.1}{2.1 Il principio di minima azione}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.2}{2.2 La lagrangiana relativistica}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 La particella libera}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Energia e momenti}{section.2.2}% 24
+\BOOKMARK [1][-]{section.2.3}{2.3 Sistemi di pi\371 particelle}{chapter.2}% 25
+\BOOKMARK [0][]{chapter.3}{3 L'elettromagnetismo nella teoria della relativit\340}{}% 26
+\BOOKMARK [1][-]{section.3.1}{3.1 La lagrangiana di interazione}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{3.2 Il moto di particelle cariche in campi costanti}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Campo elettrico costante}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Campo magnetico costante}{section.3.2}% 30
+\BOOKMARK [1][-]{section.3.3}{3.3 Il tensore elettromagnetico}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Il 4-potenziale}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Equazioni del moto 4-vettoriali}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Invarianti del campo elettromagnetico}{section.3.3}% 34
+\BOOKMARK [1][-]{section.3.4}{3.4 Trasformazioni di gauge}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Gauge di Lorentz}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Gauge di Coulomb}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Gauge temporale}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.4}{3.4.4 Gauge di radiazione}{section.3.4}% 39
+\BOOKMARK [1][-]{section.3.5}{3.5 Elettromagnetismo in forma 4-vettoriale}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 4-corrente}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Equazioni di Maxwell 4-vettoriali}{section.3.5}% 42
+\BOOKMARK [0][]{appendix.Alph1}{A Lemmi e teoremi per le trasformazioni di Lorentz}{}% 43
+\BOOKMARK [1][-]{section.Alph1.1}{A.1 Risultati generali}{appendix.Alph1}% 44
+\BOOKMARK [1][-]{section.Alph1.2}{A.2 Una dimostrazione della linearit\340 delle trasformazioni di Lorentz}{appendix.Alph1}% 45
