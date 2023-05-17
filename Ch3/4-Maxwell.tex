@@ -1,5 +1,5 @@
 \section{Elettromagnetismo in forma 4-vettoriale}
-Nella Sezione \ref{sec:4-equazioniMotoEM} è stato ricavato il 4-tenosre elettromagnetico $F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu\ $\footnote{In questa formula si è adottata la notazione alternativa, che verrà utilizzata anche successivamente, per le derivate parziali, già introdotta nella Sezione \ref{sec:4-vettori}, secondo la quale: $\partial^\mu=\frac{\partial\ }{\partial x_\mu}$ e $\partial_\mu=\frac{\partial\ }{\partial x^\mu}$.}:
+Nella Sezione \ref{sec:4-equazioniMotoEM} è stato ricavato il 4-tensore elettromagnetico $F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu\ $\footnote{In questa formula si è adottata la notazione alternativa, che verrà utilizzata anche successivamente, per le derivate parziali, già introdotta nella Sezione \ref{sec:4-vettori}, secondo la quale: $\partial^\mu=\frac{\partial\ }{\partial x_\mu}$ e $\partial_\mu=\frac{\partial\ }{\partial x^\mu}$.}:
 \begin{equation*}
         F^{\mu\nu}=
     \begin{pmatrix}
@@ -7,18 +7,18 @@ Nella Sezione \ref{sec:4-equazioniMotoEM} è stato ricavato il 4-tenosre elettro
         E_x/c&0&-B_z&B_y\\
         E_y/c&B_z&-0&-B_x\\
         E_z/c&-B_y&B_x&-0\\
- \end{pmatrix}\qquad
+ \end{pmatrix},\qquad
  F_{\mu\nu}=
  \begin{pmatrix}
      0&E_x/c&E_y/c&E_z/c\\
      -E_x/c&0&-B_z&B_y\\
      -E_y/c&B_z&-0&-B_x\\
      -E_z/c&-B_y&B_x&-0\\
-\end{pmatrix},
+\end{pmatrix}.
 \end{equation*}
-questo tensore fa le veci dei campi elettromagnetici nel formalismo 4-vettoriale dello spazio-tempo della relatività.
+Questo tensore fa le veci dei campi elettromagnetici nel formalismo 4-vettoriale dello spazio-tempo della relatività.
 È quindi ora opportuno ricavare anche la forma delle equazioni di Maxwell \eqref{EquazioniMaxwell} 4-vettoriale così da completare il quadro dell'elettromagnetismo nel formalismo della relatività.
-\subsection{4-corrente}
+\subsection{4-corrente}\label{sec:4-corrente}
 Nella Sezione \ref{sec:EquazioniMaxwell} si è già illustrato come sperimentalmente la carica elettrica sia una quantità invariante sotto cambio di sistema di riferimento. Questo, essendo un fatto sperimentale, continua a valere anche per nella relatività. Sempre nella Sezione \ref{sec:EquazioniMaxwell} sono state introdotte due quantità sorgenti del campo elettro magnetico: la densità di carica volumetrica e la densità di corrente superficiale. Rispettivamente:
 \begin{equation}
     \rho=\lim_{\Delta V\rightarrow 0}\frac{\Delta q}{\Delta V},\qquad\qquad \vec J=\rho\vec v(t,\vec x),\label{defRhoJ}
@@ -46,7 +46,7 @@ Si osservi che se si calcola la 4-divergenza della 4-corrente si ottiene:
 \end{equation}
 che è \emph{l'equazione di continuità della carica}. Inoltre questa quantità è uno scalare Lorentz invariante\footnote{In questo caso accade che trasformando la 4-corrente e gli operatori di differenziazione si ha: $\partial'_\mu J'^\mu=\partial_\nu (\Lambda^{-1})_\mu^\nu \Lambda_\lambda^\mu J^\lambda=\partial_\nu \delta_\lambda^\nu J^\lambda=\partial_\nu J^\nu$.}, per cui se si calcola la \eqref{continuitàCarica} nel sistema $K^0$ (dove risulta nulla poiché essendo le cariche in tale sistema immobili non si hanno correnti e tanto meno variazioni della densità di carica) si ha che l'equazione di continuità deve essere valida in ogni riferimento inerziale.
 
-\subsection{Equazioni di Maxwell 4-vettoriali}
+\subsection{Equazioni di Maxwell 4-vettoriali}\label{sec:4-Maxwell}
 Si procederà ora a ricavare la forma 4-vettoriale delle equazioni di Maxwell. Per farlo si considerino le equazioni di Maxwell in cui sono state sostituiti il potenziale $\varphi$ e il potenziale vettore $\vec A$ (ottenute nella Sezione \ref{sec:gauge}, Eq. \eqref{MaxwellPote1} e Eq. \eqref{MaxwellPote2}):
 \begin{flalign*}
     &\vnabla^2\varphi+\vnabla\cdot \frac{\partial \vec A}{\partial t}=-\frac{\rho}{\epsilon_0},\\
@@ -79,6 +79,6 @@ Infine riconoscendo in queste equazioni che $\partial^\nu A^\mu-\partial^\mu A^\
 \end{flalign*}
 Queste se riunite in un'unica equazione rappresentano la forma 4-vettore delle equazioni di Maxwell:
 \begin{equation}
-    \partial_\mu F^{\mu\nu}=\mu_0J^\nu.
+    \partial_\mu F^{\mu\nu}=\mu_0J^\nu.\label{4-Maxwell}
 \end{equation} 
 Così facendo si è palesata la covarianza di queste equazioni, che è stata richiesta in primo luogo per ricavare la relatività speciale.

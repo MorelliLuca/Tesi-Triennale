@@ -13,10 +13,9 @@ Per poter formulare delle leggi che descrivano la realtà fisica risulta necessa
 \end{equation}
 dove $\vec x$ rappresenta un punto nello spazio, $t$ un istante di tempo e $\vec v$ la velocità (costante) reciproca dei due sistemi di riferimento.\\
 Una volta identificati questi particolari sistemi  si può enunciare il principio di relatività: \emph{in ogni sistema di riferimento inerziale tutte le leggi della fisica sono identiche}.\\
-\textbf{Invarianti VS Covarianti}
 
 \subsection{Trasformazioni di sistemi di riferimento inerziali}
-Si vuole ora studiare quali siano le più generiche trasformazioni che consentono di ottenere la descrizione di un fenomeno in un sistema di riferimento inerziale $K'$ conoscendo la descrizione di tale fenomeno in un primo riferimento inerziale $K$. In questo modo la generica trasformazione da $K$ a $K'$ sarà un'applicazione $f:\mathbb{R}\times \mathbb{R}^3\rightarrow\mathbb{R}\times \mathbb{R}^3$ invertibile; quest'ultima proprietà è necessaria poiché, come deve essere possibile passare da $K$ a $K'$, deve essere possibile fare anche il contrario.\\
+Si vuole ora studiare quali siano le più generali trasformazioni che consentono di ottenere la descrizione di un fenomeno in un sistema di riferimento inerziale $K'$ conoscendo la descrizione di tale fenomeno in un primo riferimento inerziale $K$. In questo modo la generica trasformazione da $K$ a $K'$ sarà un'applicazione $f:\mathbb{R}\times \mathbb{R}^3\rightarrow\mathbb{R}\times \mathbb{R}^3$ invertibile; quest'ultima proprietà è necessaria poiché, come deve essere possibile passare da $K$ a $K'$, deve essere possibile fare anche il contrario.\\
 Per poter caratterizzare le proprietà di tale applicazione è ora necessario tradurre matematicamente la richiesta imposta dal principio di relatività. Si osservi che, per tale principio e per la definizione di sistema inerziale, è necessario che in seguito ad una trasformazione tutti i sistemi inerziali restino tali. In altre parole $f$ deve trasformare tutte le rette in rette (nello spazio-tempo), questa condizione consente di utilizzare un teorema di geometria che consente di identificare la famiglia di queste trasformazioni (si seguirà la dimostrazione data in \cite{LostThmOfGeometry}). 
 
 \begin{thm}
@@ -25,7 +24,7 @@ Sia $f:\mathbb{R}^n\rightarrow\mathbb{R}^n\ (n>1)$ una funzione biettiva che tra
 \end{thm}
 Per procedere alla dimostrazione di questo teorema è utile iniziare dimostrandone un caso particolare, ossia il caso $n=2$. Per questo caso particolare è però necessario dimostrare in primo luogo un risultato preliminare:
 \begin{prop}
-	Sia $\varphi:\mathbb{R}\rightarrow\mathbb{R}$ un automorfismo di campo\footnote{$\varphi$ è un automorfismo di campo se presi $x,y\in \mathbb{R}$ valgano $\varphi(x+y)=\varphi(x)+\varphi(y)$ e $\varphi(xy)=\varphi(x)\varphi(y)$}, allora $\varphi=\text{id}$.
+	Sia $\varphi:\mathbb{R}\rightarrow\mathbb{R}$ un automorfismo di campo\footnote{$\varphi$ è un automorfismo di campo se $\forall x,y\in \mathbb{R}$ valgano $\varphi(x+y)=\varphi(x)+\varphi(y)$ e $\varphi(xy)=\varphi(x)\varphi(y)$.}, allora $\varphi=\text{id}$.
 \end{prop}	
 \begin{proof}
 	Si osservi che $\varphi(1)=1$ (infatti se $x\neq0$ allora $\varphi(x)=\varphi(1\cdot x)=\varphi(1)\varphi(x)$). Inoltre $\varphi(0)=0$ (infatti $\forall x\in\mathbb{R}$ vale $\varphi(0\cdot x)=\varphi(0)\varphi(x)=\varphi(0)$, questa equazione implica $\varphi(0)(\varphi(x)-1)=0$ che risulta soddisfatta per ogni $x$ solo se $\varphi(0)$ è identicamente nullo). Queste proprietà garantiscono che $\varphi(-1)=-1$ (infatti $\varphi(1-1)=\varphi(1)+\varphi(-1)=\varphi(0)=0$).\\
@@ -111,10 +110,10 @@ Si procederà ora generalizzando questo teorema con la dimostrazione del Teorema
 
 \begin{proof}[Dimostrazione Teorema \ref{thm:LinGenMain} $(n>2)$]
 	Si consideri la traslazione $T:\mathbb{R}^n \rightarrow\mathbb{R}^n$ tale che $(T\circ f)(0)=0$ e si definisca $g=T\circ f$.\\
-	Siano $x,y\in\mathbb{R}^n$ e $\pi$ un piano tale che $x,y\in\pi$. Si prendano due rette $r_1,r_2\in\pi$ e incidenti in $0$, e un punto $P\in\pi$. Se si considerano altre due rette $r_3$ e $r_4$ passanti per $P$ e tali che $r_3$ sia parallela a $r_1$ e $r_4$ lo sia per $r_2$, così che $r_3$ intersecherà $r_2$ in un punto $P_2$ e analogamente $r_4$ intersecherà $r_1$ in un punto $P_1$, è possibile costruire un parallelogrammo con vertice $P$ e lati giacenti sulle rette considerate.
-	\begin{figure}[h!]
+	Siano $x,y\in\mathbb{R}^n$ e $\pi$ un piano tale che $x,y\in\pi$. Si prendano due rette $r_1,r_2\in\pi$ e incidenti in $0$, e un punto $P\in\pi$. Se si considerano altre due rette $r_3$ e $r_4$ passanti per $P$ e tali che $r_3$ sia parallela a $r_1$ e $r_4$ lo sia per $r_2$, così che $r_3$ intersecherà $r_2$ in un punto $P_2$ e analogamente $r_4$ intersecherà $r_1$ in un punto $P_1$, è possibile costruire un parallelogrammo con vertice $P$ e lati giacenti sulle rette considerate (Fig. \ref{Fig:PianoLinGen2}).\\
+	\begin{figure}[H]
 		\centering
-		\begin{tikzpicture}[scale=0.8]
+		\begin{tikzpicture}[scale=0.785]
 		\filldraw[black] (0,0) circle (1pt) node[anchor=south east]{$0$};
 		\filldraw[black] (.5,2) circle (1pt) node[anchor=south east]{$P_1$};
 		\filldraw[black] (2,.5) circle (1pt) node[anchor=north west]{$P_2$};
@@ -144,7 +143,7 @@ Si procederà ora generalizzando questo teorema con la dimostrazione del Teorema
 	\caption{Rappresentazione grafica di come agisce la funzione $g$ nel piano}
 	\label{Fig:PianoLinGen2}
 \end{figure}
-	 Poiché $g$ è biettiva e trasforma rette in rette allora, come si è già visto per dimostrare il Teorema \ref{thm:LinGen2}, questo parallelogrammo deve essere trasformato in un nuovo parallelogrammo con i lati giacenti sulle immagini delle precedenti rette e con i vertici dati dalle immagini dei vertici del precedente parallelogrammo. Detto $\pi'$ il piano contente le immagini di $r_1$ e $r_2$ allora, per costruzione del parallelogrammo, si avrà che $g(P)\in \pi'$ e poiché $P\in\pi$ è arbitrario si deduce che ogni punto di $\pi$ è mappato in $\pi'$ ossia $g$ trasforma piani in altri piani.\\
+	 Poiché $g$ è biettiva e trasforma rette in rette allora, come si è già visto per dimostrare il Teorema \ref{thm:LinGen2}, questo parallelogrammo deve essere trasformato in un nuovo parallelogrammo con i lati giacenti sulle immagini delle precedenti rette e con i vertici dati dalle immagini dei vertici del precedente parallelogrammo. Detto $\pi'$ il piano contente le immagini di $r_1$ e $r_2$ allora, per costruzione del parallelogrammo, si avrà che $g(P)\in \pi'$ e, poiché $P\in\pi$ è arbitrario, si deduce che ogni punto di $\pi$ è mappato in $\pi'$ ossia $g$ trasforma piani in piani.\\
 
 	Si consideri ora un'applicazione lineare invertibile $L$ tale che $(L\circ g)(\pi)=\pi$, in questo modo $L\circ g\big|_{\pi}:\mathbb{R} ^2\rightarrow\mathbb{R} ^2$ è biettiva e trasforma rette in rette, per il Teorema \ref{thm:LinGen2} allora questa è un'applicazione affine, nella fattispecie poiché $g(0)=0$ per costruzione e $L$ è lineare allora $(L\circ g)(0)=0$, per cui $L\circ g$ è lineare. Risulta a questo punto sufficiente far uso dell'inversa di $L$ per ottenere:
 	\begin{flalign*}

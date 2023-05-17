@@ -1,0 +1,64 @@
+\subsection{Il modello della corda vibrante}
+Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei campi è la corda omogenea vibrante. Un sistema di questo tipo è modellizzato come un corpo elastico esteso in una dimensione e di grandezza trascurabile nelle direzioni a questa trasversali. La corda, disposta orizzontalmente come in Figura \ref{fig:corda}, può quindi oscillare verticalmente. Per descrivere tale oscillazione si definisce un campo scalare $\varphi(t,x)$ che descrive lo spostamento del punto $x$ della corda dall'equilibrio all'istante $t$.
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[pattern=north west lines, pattern color=black!30,draw=white] (0,-1.2) rectangle (-1.7,1.2);
+        \draw[pattern=north west lines, pattern color=black!30,draw=white] (12,-1.2) rectangle (12+1.7,1.2);
+        \draw[dashed,gray,thick](0,0)node[black,anchor=east]{$x=0$}--(12,0)node[black,anchor=west]{$x=L$};
+        \draw[black,ultra thick](0,-1.2)--(0,1.2);
+        \draw[black,ultra thick](12,-1.2)--(12,1.2);
+        \draw[blue,thick] (0,0) .. controls (4.7,2) and (5.4,-1.5) .. (12,0);
+        \draw[<->](2.3,0)node[anchor=north]{$x$}--(2.3,.6)node[anchor=south]{$\varphi(t,x)$};
+    \end{tikzpicture}
+    \caption{Schema del sistema corda e del campo degli spostamenti $\varphi$.}
+    \label{fig:corda}
+\end{figure} 
+Si osservi che è necessario che la corda (di lunghezza finita) sia vincolata ai suoi estremi, infatti tale richiesta rende soddisfatta l'ipotesi che il campo degli spostamenti si annulli sulla frontiera del dominio ove esso è definito. \\
+
+Classicamente la lagrangiana meccanica del sistema è data da un termine di energia cinetica $T(v)$ ed un termine di energia potenziale $U(x)$:
+\begin{equation*}
+    \mathcal{S} =\int_{t_1}^{t_2}[T-U]\ dt.
+\end{equation*}
+Si possono valutare questi due termini considerando il contributo di ogni punto della corda. Il campo degli spostamenti $\varphi(t,x)$ definisce il campo delle velocità di ogni punto della corda $v(t,x)=\frac{\partial \varphi}{\partial t}(t,x)$, così facendo il contributo cinetico è dato da:
+\begin{equation*}
+    T=\int_{0}^{L}\frac{\rho}{2}v^2(t,x)\ dx=\int_{0}^{L}\frac{\rho}{2}\bigg[\frac{\partial \varphi}{\partial t}(t,x)\bigg]^2\ dx,
+\end{equation*}
+dove $\rho$ è la densità di massa lineare della corda.\\
+Per determinare il termine potenziale è necessario fare alcune assunzioni che semplifichino la trattazione. In primo Luogo si considererà un potenziale elastico che dipende dall'allungamento che subisce la corda. In questo modo, considerando un tratto di corda compreso tra $x$ e $x+\Delta x$, l'allungamento di tale tratto, durante un'oscillazione, è:
+\begin{flalign*}
+    \Delta l=\Delta x\sqrt{\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
+    \bigg)^2+1}-\Delta x.
+\end{flalign*}
+Il potenziale del tratto $\Delta x$ di corda è invece:
+\begin{equation*}
+    U_{\Delta x}=\frac{k}{2}(\Delta l)^2,
+\end{equation*}
+dove $k$ è la constante elastica di quel preciso tratto.\\
+In secondo luogo si suppone che la vibrazione della corda dia origine a piccole oscillazioni, tali che, su un tratto di corda definito come prima, valga $\varphi(t,x+\Delta x)-\varphi(t,x)\ll\Delta x$. Così facendo l'allungamento di questo tratto è approssimatile secondo Taylor con:
+\begin{equation*}
+    \Delta l\approx\Delta x\bigg[\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
+    \bigg)^2+1\bigg]-\Delta x=\Delta x\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
+    \bigg)^2.
+\end{equation*}
+Infine è necessario studiare cosa accade nel limite in cui questo tratto di corda tende ad essere infinitesimo, così da poter studiare le proprietà puntuali della corda e non di singoli tratti. In questo limite si ha che :
+\begin{equation*}
+    \lim_{\Delta x\rightarrow 0}\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}=\frac{\partial \varphi}{\partial x}.
+\end{equation*}
+Inoltre va osservato che la costante elastica $k$ dipende dal tratto di corda considerato (nella fattispecie dalla sua lunghezza siccome la corda è omogenea). Questo giustifica l'introduzione di un nuovo parametro definito come:
+\begin{equation*}
+    a=\lim_{\Delta x\rightarrow 0}k\Delta x.
+\end{equation*}
+In questo modo il contributo di energia potenziale diviene (considerando $a$ costante per omogeneità della corda)
+\begin{equation*}
+    U=\int_{0}^{L} \frac{a}{2}\bigg(\frac{\partial \varphi}{\partial x}\bigg)^2\ dx
+\end{equation*}
+e quindi l'azione del sistema diviene:
+\begin{equation}
+    \mathcal{S} =\int_{t_1}^{t_2}\int_{0}^{L}\bigg[ \frac{\rho}{2}\bigg(\frac{\partial \varphi}{\partial t}\bigg)^2-\frac{a}{2}\bigg(\frac{\partial \varphi}{\partial x}\bigg)^2\bigg]\ dx\ dt.
+\end{equation}
+In questo modo si è ottenuta una densità di lagrangiana con la quale è possibile utilizzare le equazioni di Eulero-Lagrnage, dalle quali si ottiene l'equazione differenziale delle onde su corda:
+\begin{equation*}
+    \frac{\partial^2 \varphi}{\partial t^2}=\frac{a}{\rho}\frac{\partial^2 \varphi}{\partial x^2}.
+\end{equation*}
+Le soluzioni di questa equazione sono onde che si propagano a velocità $\sqrt{\frac{a}{\rho}}$ sulla corda.

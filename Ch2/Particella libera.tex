@@ -7,13 +7,13 @@ Come si è già visto nella Sezione \ref{sec:DervTrasfLorentz} le trasformazioni
     \label{azioneRel}
     \mathcal{S}[x^\mu(t)]=\alpha\int_{t_1}^{t_2} |\dot{x}^\mu(t)|\ dt= \alpha c\int_{t_1}^{t_2} \sqrt{1-\frac{|\vec{v}|^2}{c^2}}\ dt=\alpha c\int_{\tau_1}^{\tau_2}d\tau,
 \end{equation}
-dove si è indicato $\vec{v}=\dot{\vec{x}}$ che corrisponde al vettore tridimensionale velocità e con $\tau$ il tempo proprio della particella (Sezione \ref{sec:ContrazioneDilatazione}), ossia il tempo misurato in un sistema di riferimento inerziale istantanemtne solidale al moto, nel quale la velocità è nulla.\\
+dove si è indicato $\vec{v}=\dot{\vec{x}}$ che corrisponde al vettore tridimensionale velocità e con $\tau$ il tempo proprio della particella (Sezione \ref{sec:ContrazioneDilatazione}), ossia il tempo misurato in un sistema di riferimento inerziale istantaneamente solidale al moto, nel quale la velocità è nulla.\\
 
 A questo punto si deve verificare se questa azione, nel limite classico (ossia quando il rapporto $\frac{|\vec{v}|^2}{c^2}$ tende a $0$), è riconducibile all'azione classica. Ricordando che la lagrangiana classica della particella libera è data da $\frac{m|\vec{v}|^2}{2} $:
 \begin{equation*}
     \mathcal{L} =\alpha c \sqrt{1-\frac{|\vec{v}|^2}{c^2}}\longrightarrow \alpha c - \frac{\alpha |\vec{v}|^2}{2c^2}\qquad \text{per}\ \frac{|\vec{v}|^2}{c^2}\rightarrow 0.
 \end{equation*}
-A meno di costanti moltiplicative e additive (che non mutano la forma delle soluzioni delle equazioni di Eulero Lagrange), il limite classico ottenuto è quindi riconducibile alla lagrangiana classica se $\alpha=-mc$.\\
+A meno di costanti moltiplicative e additive (che non mutano la forma delle soluzioni delle equazioni di Eulero-Lagrange), il limite classico ottenuto è quindi riconducibile alla lagrangiana classica se $\alpha=-mc$.\\
 Questa evidenza quindi corrobora\footnote{In realtà solamente un confronto tra i risultati teorici che si dedurranno e quelli sperimentali può giustificare l'ipotesi iniziale.} l'ipotesi iniziale così che sia lecito affermare che la lagrangiana relativistica della particella libera sia:
 \begin{equation}\label{FreeLagRel}
     \mathcal{L} = -mc^2\sqrt{1-\frac{|\vec{v}|^2}{c^2}}.
@@ -26,7 +26,7 @@ La prima quantità che si può studiare è il momento associato alle coordinate 
     \vec{p}=m\vec{v}\gamma=\frac{m\vec{v}}{\sqrt{1-\frac{|\vec{v}|^2}{c^2}}}.
     \label{impulsoRel}
 \end{equation}
-Anche relativisticamente, come in meccanica classica, l'impulso di una particella libera risulta conservato, (infatti tutte le coordinate della particella libera sono cicliche). Questo implica che il moto di una particella libera è rettilineo ed uniforme.\\
+Anche relativisticamente, come in meccanica classica, l'impulso di una particella libera risulta conservato (infatti tutte le coordinate della particella libera sono cicliche). Questo implica che il moto di una particella libera è rettilineo ed uniforme.\\
 Si osservi che, nel limite classico in cui $|\vec{v}|<<c$, l'impulso diviene la classica espressione $\vec p=m\vec v$, mentre per velocità tendenti in modulo a $c$ l'impulso tende ad infinito.\\
 
 Analogamente è possibile calcolare l'energia della particella libera ($E = \vec{p}\cdot\vec{v}-\mathcal{L} $) che risulta una quantità conservata (poiché non vi è dipendenza esplicita dal tempo nella lagrangiana). Calcolandola dalla (\ref{FreeLagRel}) si ottiene:
@@ -39,13 +39,13 @@ In questo caso è opportuno osservare che per particelle libere a riposo l'energ
 \end{equation}
 Anche in questo caso studiando il limite classico si ritrova l'energia cinetica classica mentre nel limite di velocità prossime a $c$ si ottiene che l'energia del corpo tende ad infinito. Quest'ultima osservazione consente di affermare che $c$ è la velocità limite di ogni moto (infatti un qualsiasi corpo dotato di massa necessita di un'energia infinita per poter essere accelerato fino a tale velocità).\\
 
-Talvolta è utile, per ottenere equazioni differenziali di più facile risoluzione di quelle date dalle equazioni di Eulero Lagrange, esprimere il vettore velocità facendo uso dell'impulso e dell'energia. Dalle \eqref{impulsoRel} \eqref{energiaRel} si ha che:
+Talvolta è utile, per ottenere equazioni differenziali di più facile risoluzione di quelle date dalle equazioni di Eulero-Lagrange, esprimere il vettore velocità facendo uso dell'impulso e dell'energia. Dalle \eqref{impulsoRel} \eqref{energiaRel} si ha che:
 \begin{equation}
     \vec v=\frac{\vec p}{m\gamma}=\frac{c^2\vec p}{mc^2\gamma}=\frac{c^2\vec p}{E}.\label{velPE}
 \end{equation}    
 Questa espressione è indipendente dal fattore $\gamma$ e se si determinano $\vec p$ e $E$ in funzione del tempo è integrabile per ottenere le equazioni del moto.\\
 
-Si consideri ora il 4-gradiente della funzione d'azione, siccome $S(q,t)$ è uno scalare Lorentz invariante, questo è un 4-vettore covariante (Sezione \ref{sec:4-vettori}). Come si è mostrato nella Sezione \ref{sec:MinimaAzione}, l'azione è legata ad energia e momenti dalle sue derivate parziali( $\vnabla S=\vec{p}$ e $\frac{\partial S }{\partial t}=-E$). Facendo uso di queste relazioni si ottiene la definizione del \emph{4-impulso}:
+Si consideri ora il 4-gradiente della funzione d'azione, siccome $S(q,t)$ è uno scalare Lorentz invariante, questo è un 4-vettore covariante (Sezione \ref{sec:4-vettori}). Come si è mostrato nella Sezione \ref{sec:MinimaAzione}, l'azione è legata ad energia e momenti dalle sue derivate parziali ($\vnabla S=\vec{p}$ e $\frac{\partial S }{\partial t}=-E$). Facendo uso di queste relazioni si ottiene la definizione del \emph{4-impulso}:
 \begin{equation}
    \frac{\partial S}{\partial x^\mu}= \bigg(\frac{1}{c}\frac{\partial S }{\partial t},\frac{\partial S }{\partial x},\frac{\partial S }{\partial y},\frac{\partial S }{\partial z}\bigg)=\bigg(-\frac{E}{c},\vec{p}\bigg)\quad \Rightarrow \quad
    p^\mu=-\frac{\partial S }{\partial x_\mu}=\bigg(\frac{E}{c},\vec{p}\bigg).
@@ -57,11 +57,11 @@ La curva del moto $\vec{q}(t)$, se espressa in coordinate cartesiane, è rappres
 \begin{equation*}
     \mathcal{S}[x^\mu(t)]=-mc \int_{t_1}^{t_2} |\dot{x}^\mu(t)|\ dt=-mc \int_{t_1}^{t_2} \sqrt{\frac{d x^\mu}{dt}\frac{d x_\mu}{dt}}\ dt.
 \end{equation*}
-La variazione prima di questo integrale, sviluppando l'integrando in serie di Taylor al prim'ordine rispetto a $\frac{d x^\mu}{dt}$ e integrando per parti, risulta:
+La variazione prima di questo integrale, sviluppando l'integrando seconso Taylor al prim'ordine rispetto a $\frac{d x^\mu}{dt}$ e integrando per parti, risulta:
 \begin{flalign}
     \delta \mathcal{S}&=-mc \int_{t_1}^{t_2} \frac{1}{2\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}2\frac{dx^\mu}{dt}\frac{d}{dt}\delta x_\mu(t)\ dt\nonumber\\&=-\frac{mc}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{dx^\mu}{dt}\delta x_\mu(t)\bigg|_{t_1}^{t_2}+mc \int_{t_1}^{t_2}\delta x_\mu(t) \frac{d}{dt}\bigg(\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{dx^\mu}{dt}\bigg)\ dt.\label{dSFreePart}
 \end{flalign}
-Si osservi che si fissa $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, come si è fatto per determinare le equazioni di Eulero Lagrange nella Sezione \ref{sec:MinimaAzione}, il primo addendo si annulla. Poiché per il principio di minima azione $\delta \mathcal{S}$ deve essere nullo, l'integrando del secondo addendo della \eqref{dSFreePart} deve annullarsi $\forall \delta x_\mu$. Osservando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$, dove $\tau$ indica il tempo proprio, si ottiene:
+Si osservi che si fissa $\delta x^\mu(t_1)=\delta x^\mu(t_2)=0$, come si è fatto per determinare le equazioni di Eulero-Lagrange nella Sezione \ref{sec:MinimaAzione}, il primo addendo si annulla. Poiché per il principio di minima azione $\delta \mathcal{S}$ deve essere nullo, l'integrando del secondo addendo della \eqref{dSFreePart} deve annullarsi $\forall \delta x_\mu$. Osservando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e $\frac{d}{d\tau}=\gamma\frac{d}{dt}$, dove $\tau$ indica il tempo proprio, si ottiene:
 \begin{equation}
     \frac{d}{dt}\bigg(\frac{\gamma}{c} \frac{dx^\mu}{dt}\bigg)=\frac{d}{dt}\bigg(\frac{1}{c} \frac{dx^\mu}{d\tau}\bigg)=\frac{1}{c}\frac{du^\mu}{dt}=0\label{mru4-d}.
 \end{equation}

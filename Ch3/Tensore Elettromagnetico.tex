@@ -35,14 +35,14 @@ Utilizzando il 4-potenziale \eqref{4-potenziale} è possibile esprimere l'azione
 in questo modo è evidente che questa azione sia ancora Lorentz invariante (siccome parametrizzando la curva d'integrazione rispetto al tempo proprio\footnote{La scelta della parametrizzazione è arbitraria.} ci si riconduce ad un prodotto scalare integrato rispetto ad una quantità invariante, che è quindi a sua volta Lorentz invariante).\\
 
 Si vogliono ora studiare le variazioni dell'azione $\delta \mathcal{S}$ dovute a variazioni della traiettoria del corpo $\delta x^\mu(t)$. Queste danno luogo a variazioni $\delta \dot x^\mu(t)=\frac{d}{dt}\delta x^\mu(t)$ e $\delta A^\mu=\frac{\partial A^\mu}{\partial x^\nu}\delta x^\nu$, (poiché il 4-potenziale dipende dal punto nello spazio-tempo in cui è calcolato).\\ Per utilizzare il principio di minima azione si calcola la variazione prima che è data da:
-\begin{equation*}
+\begin{flalign*}
     \delta \mathcal{S} [x^\mu(t)]=-\int_{t_1}^{t_2}\bigg(mc\frac{\dot x^\mu(t)\delta\dot x_\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\delta \dot x_\mu(t)+q\dot x_\mu(t)\frac{\partial A^\mu}{\partial x_\nu}\delta x_\nu\bigg)\ dt
-\end{equation*} 
+\end{flalign*} 
 ottenuta dall'espansione in serie di Taylor dell'integrando rispetto a $x^\mu$ e $\dot x^\mu(t)$.\\
 Integrando per parti i primi due addendi dell'integrando si ottiene:
-\begin{equation*}
-    \int_{t_1}^{t_2}\bigg(mc\frac{d}{dt}\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+\frac{d}{dt}qA^\mu-q\dot x_\nu(t)\frac{\partial A^\nu}{\partial x_\mu}\bigg)\delta x_\mu(t)\ dt-\bigg(mc\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\bigg)\delta x_\mu(t)\bigg|_{t_1}^{t_2},
-\end{equation*} 
+\begin{flalign*}
+    \int_{t_1}^{t_2}\resizebox{0.9\hsize}{!}{$\bigg(mc\frac{d}{dt}\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+\frac{d}{dt}qA^\mu-q\dot x_\nu(t)\frac{\partial A^\nu}{\partial x_\mu}\bigg)\delta x_\mu(t)\ dt-\bigg(mc\frac{\dot x^\mu(t)}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}+qA^\mu\bigg)\delta x_\mu(t)\bigg|_{t_1}^{t_2},$}
+\end{flalign*} 
 dove il termine dopo l'integrale si annulla (siccome per le ipotesi del principio di minima azione $\delta x_\mu(t_1)=\delta x_\mu(t_2)=0$). A questo punto affinché $x^\mu(t)$ renda estremale l'azione per $\delta x_\mu(t)$ arbitrario è necessario che tutto il termine tra parentesi tonde nell'integrando si annulli identicamente. Esplicitando, tramite la regola della derivata composta, la derivata totale rispetto al tempo di $A^\mu$ e ricordando che $\frac{1}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}=\frac{\gamma}{c}$ e si ottiene:
 \begin{equation*}
     \frac{mc}{\sqrt{\dot x^\nu(t)\dot x_\nu(t)}}\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{d}{dt}A^\mu-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=m\gamma\frac{d}{dt}\frac{dx^\mu}{dt}+q\frac{\partial A^\mu}{\partial x_\nu}\frac{dx_\nu}{dt}-q\frac{dx_\nu}{dt} \frac{\partial A^\nu}{\partial x_\mu}=0.
@@ -54,20 +54,20 @@ Infine moltiplicando tutta l'ultima uguaglianza per $\gamma$ e facendo uso della
 dove è stato introdotto il \emph{4-tensore elettromagnetico} $F^{\mu\nu}=\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}$. Se si calcolano esplicitamente tutte le derivate parziali di questo 4-tensore, dalla \eqref{PotenzialiEM}, si ha:
 \begin{equation}
     \label{4-tensoreEM}
-    F^{\mu\nu}=
+    \resizebox{0.9\hsize}{!}{$F^{\mu\nu}=
     \begin{pmatrix}
         0&-E_x/c&-E_y/c&-E_z/c\\
         E_x/c&0&-B_z&B_y\\
         E_y/c&B_z&-0&-B_x\\
         E_z/c&-B_y&B_x&-0\\
- \end{pmatrix}\qquad
+ \end{pmatrix}\ 
  F_{\mu\nu}=
  \begin{pmatrix}
      0&E_x/c&E_y/c&E_z/c\\
      -E_x/c&0&-B_z&B_y\\
      -E_y/c&B_z&-0&-B_x\\
      -E_z/c&-B_y&B_x&-0\\
-\end{pmatrix}
+\end{pmatrix}$}
 \end{equation}
 
 Si osservi che, per $\mu=1,2,3$, la \eqref{4-EqNewton4EM} esprime proprio la forza di Lorentz \eqref{ForzaLorentz}.\\ Per $\mu=0$ si ottiene
@@ -85,7 +85,7 @@ Il 4-gradiente dell'azione consente quindi di definire il 4-momento generalizzat
     P^\mu=mu^\mu+qA^\mu=\bigg(\frac{mc^2\gamma+q\varphi}{c},\vec p+q\vec A\bigg)
 \end{equation}
 che come nel caso della particella libera ha come componenti l'energia del sistema e il suo momento generalizzato, già calcolati nella \eqref{energiaImpulsoIntEM}.
-\subsection{Invarianti del campo elettromagnetico}
+\subsection{Invarianti del campo elettromagnetico}\label{sec:invariantiEM}
 Come si è fatto per i 4-vettori, si vogliono identificare le quantità caratteristiche del 4-tensore elettromagnetico \eqref{4-tensoreEM} che sono invarianti per trasformazioni di Lorentz. Il modo più semplice per ottenere tali quantità è di contrarre il 4-tensore elettromagnetico su altre quantità tensoriali opportune.\\
 
 In primo luogo è possibile contrarre il 4-tensore elettromagnetico controvariante con quello covariante (come si è già visto nella Sezione \ref{sec:4-vettori} questa è una quantità Lorentz invariante):
@@ -97,10 +97,10 @@ Questo implica direttamente che se in un sistema di riferimento vale $|\vec B|^2
 Un secondo invariante può essere costruito contraendo il 4-tensore elettromagnetico controvariante e quello covariante con il simbolo di Levi-Civita. Quest'ultimo è un oggetto a più indici così definito in ogni sistema di riferimento:
 \begin{equation}
     e^{\mu\nu\delta\lambda}=\begin{cases}
-        1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione pari di}\ (0,1,2,3)\\
-        -1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione dispari di}\ (0,1,2,3)\\
-        0\ \text{se almeno due indici sono uguali}
-    \end{cases}.\label{LeviCivita}
+        1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione pari di}\ (0,1,2,3),\\
+        -1\ \text{se}\ (\mu,\nu,\delta,\lambda)\ \text{sono un permutazione dispari di}\ (0,1,2,3),\\
+        0\ \text{se almeno due indici sono uguali.}
+    \end{cases}\label{LeviCivita}
 \end{equation}
 Si ha quindi che è Lorentz invariante (siccome si sta contraendo quantità covarianti con quantità controvarianti):
 \begin{equation}

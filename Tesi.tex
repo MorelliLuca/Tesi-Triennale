@@ -25,7 +25,7 @@
 \parindent=0pt
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[LE]{\textbf{Aspetti fisici e matematici della teoria della relatività ristretta}}
+\fancyhead[LE]{\textbf{Aspetti fisici e matematici della relatività ristretta}}
 \fancyhead[RE]{Luca Morelli}
 \fancyhead[RO]{\textbf{\nouppercase{\leftmark}}}
 \fancyhead[LO]{}
@@ -45,12 +45,14 @@ hypertexnames=true, pdfhighlight=/O,%
 urlcolor=black, linkcolor=black, citecolor=black, pagecolor=black,%}
 }
 \usetikzlibrary{decorations.pathmorphing,patterns}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
 \begin{document}
 \begin{sloppypar}
 \frontmatter
-\include{title}
-\include{Introduzione/Notazioni} 
+\include{title}\null\newpage
 \include{abstract}
+\include{Introduzione/Notazioni} 
 \tableofcontents
 \mainmatter
 
@@ -114,6 +116,11 @@ per poi discuterne le implicazioni.
 \input{Ch3/Tensore Elettromagnetico}
 \input{Ch3/Gauge}
 \input{Ch3/4-Maxwell}
+\chapter{Introduzione alla teoria dei campi}
+
+\input{Ch4/Formalismo Lagrangiano}
+\input{Ch4/Modello0}
+\input{Ch4/Lagrangiana del campo EM}
 
 \appendix
 \input{Appendici/Sulla linearità delle trasformazioni di Lorentz}

@@ -8,7 +8,7 @@ Per studiare questo tipo di sistemi è opportuno fare uso di coordinate e moment
 \end{equation*}
 Una rotazione quadridimensionale non varia la lunghezza del 4-vettore posizione così che, trascurando termini infinitesimi di ordine superiore al primo, si ha: 
 \begin{equation*}
-    x^\mu x_\mu=(x^\mu+\delta x_\mu)(x_\mu+\delta x^\mu)= x^\mu x_\mu+2x^\mu \delta x_\mu+ \delta x_\mu\delta x_\mu\ \Rightarrow \ x^\mu x^\nu \delta \Omega_{\mu \nu}=0.
+    x^\mu x_\mu=(x^\mu+\delta x^\mu)(x_\mu+\delta x_\mu)= x^\mu x_\mu+2x^\mu \delta x_\mu+ \delta x^\mu\delta x_\mu\ \Rightarrow \ x^\mu x^\nu \delta \Omega_{\mu \nu}=0.
 \end{equation*}
 Poiché $x^\mu$ non è stato scelto in maniera specifica, quanto appena detto vale per ogni vettore in $\mathbb{R}^4$. Si osservi che siccome $x^\mu x^\nu$ (arbitrario) forma un tensore simmetrico e la sua contrazione su $\delta \Omega_{\mu \nu}$ è nulla, allora quest'ultimo deve esse un tensore antisimmetrico\footnote{Presi due tensori $A$ e $B$, rispettivamente simmetrico e antisimmetrico, possono essere scritti come: $A^{\mu\nu}=\frac{1}{2}(A^{\mu\nu}+A^{\nu\mu})$ e $B^{\mu\nu}=\frac{1}{2}(B^{\mu\nu}-B^{\nu\mu})$. Allora $A^{\mu\nu}B^{\mu\nu}=\frac{1}{4}(A^{\mu\nu}B^{\mu\nu}-A^{\mu\nu}B^{\nu\mu}+A^{\nu\mu}-A^{\nu\mu}B^{\nu\mu})=0$.}:
 \begin{equation}
@@ -18,7 +18,7 @@ Si è mostrato nella Sezione \ref{sec:MinimaAzione} che una variazione delle coo
 \begin{equation*}
     \delta S=-\sum_{\text{Particelle}}p^\mu \delta x_\mu=-\delta \Omega_{\mu \nu}\sum_{\text{Particelle}}p^\mu x^\nu.\footnote{In questa formula e da qui in avanti sono omessi gli indici che indicano la particella di appartenenza, ogni sommatoria sottintende che questa avviene su ogni particella del sistema.}
 \end{equation*} 
-Se si scompone il tensore $p^\mu x^\nu$ nella somma di una parte simmetrica e una antisimmetrica, siccome questo è contratto su un tensore antisimmetrico, si ottiene che la sola parte antisimmetrica da un contributo non nullo: 
+Se si scompone il tensore $p^\mu x^\nu$ nella somma di una parte simmetrica e una antisimmetrica, siccome questo è contratto su un tensore antisimmetrico, si ottiene che la sola parte antisimmetrica dà un contributo non nullo: 
 \begin{equation*}
     \delta S=-\frac{\delta \Omega_{\mu \nu}}{2}\sum_{\text{Particelle}}(p^\mu x^\nu-x^\nu p^\mu).
 \end{equation*}
@@ -39,7 +39,7 @@ Si definiscono rispettivamente i vettori
     \vec x_{CM}=\frac{\sum E \vec{x}}{\sum E} \qquad \vec v_{CM}=\frac{c^2\sum\vec{p}}{\sum E}\label{cmRelativ}
 \end{equation}
 centro di massa relativistico e velocità del centro di massa relativistica. Dalla (\ref{MotocmRelativ}) si ha che il vettore $\vec x_{CM}$ consente di descrivere il moto traslazionale dell'intero sistema come di un solo punto che si muove a velocità  costante $\vec v_{CM}$.\\
- Qual'ora le velocità dei punti del sistema fossero piccole rispetto a $c$ l'energia a riposo di ogni particella risulterebbe molto maggiore di quella cinetica. Così la formula delle coordinate del centro di massa relativistico tenderebbe a quella classica $\frac{\sum m\vec{x}}{\sum m}$.\\
+ Qualora le velocità dei punti del sistema fossero piccole rispetto a $c$ l'energia a riposo di ogni particella risulterebbe molto maggiore di quella cinetica. Così la formula delle coordinate del centro di massa relativistico tenderebbe a quella classica $\frac{\sum m\vec{x}}{\sum m}$.\\
 
 Si consideri la trasformazione di Lorentz da un sistema arbitrario ad un sistema in moto a velocità $\vec v_{CM}$. Siccome $p_{tot}^\mu=\sum p^\mu$ \footnote{La somma di 4-vettori è ancora un 4-vettore.} e considerando che le trasformazioni di Lorentz sono lineari, si ha che questo si trasforma nella somma dei 4-impulsi del nuovo sistema di riferimento:
 \begin{equation*}

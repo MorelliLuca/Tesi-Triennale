@@ -1,0 +1,72 @@
+\section{Densità di lagrangiana elettromagnetica}
+Una volta delineato il formalismo che sta alla base della teoria dei campi è possibile applicare i risultati ottenuti al campo elettromagnetico. Per prima cosa si procederà identificando quale possa essere la densità di lagrangiana di tale campo.
+\subsection{Campo elettromagnetico libero}
+Come si è fatto per la lagrangiana meccanica della particella libera, anche in questo caso non è possibile dimostrare matematicamente quale debba essere la densità di lagrangiana corretta. Infatti tale procedimento è riservato agli esperimenti (tant'è vero che da questa si ritroveranno le equazioni di Maxwell che sono di natura sperimentale). \\
+Per procedere è quindi necessario fare un'ipotesi che consentirà di determinare la forma di $\mathfrak{L}$. Infatti si è già osservato che l'azione di una particella interagente con un campo elettromagnetico esterno è uno scalare Lorentz Invariante. È ragionevole supporre che quindi anche l'azione del campo elettromagnetico libero debba essere uno scalare Lorentz invariante. Nella Sezione \ref{sec:invariantiEM} si sono identificate due quantità invarianti proprie del campo elettromagnetico:
+\begin{equation*}
+   F^{\mu\nu} F_{\mu\nu},\qquad e^{\mu\nu\delta\lambda}F_{\mu\nu}F_{\delta \lambda}.
+\end{equation*}
+Si osservi però che la seconda di queste due non può essere utilizzata all'interno dell'integrale \eqref{azioneCampo}. Infatti, ricordando che il 4-tensore elettromagnetico è definito come $F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu$, si può esprimere questa come una 4-divergenza:
+\begin{flalign*}
+    e^{\mu\nu\delta\lambda}F_{\mu\nu}F_{\delta \lambda}&=e^{\mu\nu\delta\lambda}(\partial_\mu A_\nu-\partial_\nu A_\mu) (\partial_\delta A_\lambda-\partial_\lambda A_\delta)\\&=e^{\mu\nu\delta\lambda}\partial_\mu A_\nu\partial_\delta A_\lambda-e^{\mu\nu\delta\lambda}\partial_\nu A_\mu\partial_\delta A_\lambda-e^{\mu\nu\delta\lambda}\partial_\mu A_\nu\partial_\lambda A_\delta+e^{\mu\nu\delta\lambda}\partial_\nu A_\mu\partial_\lambda A_\delta\\&=4e^{\mu\nu\delta\lambda}\partial_\mu A_\nu\partial_\delta A_\lambda=4e^{\mu\nu\delta\lambda}\partial_\mu A_\nu\partial_\delta A_\lambda+4e^{\mu\nu\delta\lambda} A_\nu\partial_\mu\partial_\delta A_\lambda-e^{\mu\nu\delta\lambda} A_\nu\partial_\mu\partial_\delta A_\lambda\\&=4\partial_\mu(e^{\mu\nu\delta\lambda} A_\nu\partial_\delta A_\lambda)-e^{\mu\nu\delta\lambda} A_\nu\partial_\mu\partial_\delta A_\lambda=4\partial_\mu(e^{\mu\nu\delta\lambda} A_\nu\partial_\delta A_\lambda),
+\end{flalign*}
+dove si è fatto uso del Teorema si Schwarz per riconoscere $e^{\mu\nu\delta\lambda} A_\nu\partial_\mu\partial_\delta A_\lambda=0$. Infatti $A_\nu\partial_\mu\partial_\delta A_\lambda$ è simmetrico rispetto a $\mu,\ \delta$ e risulta quindi nullo nella contrazione con un 4-tensore antisimmetrico.\\
+Come si è visto, all'interno dell'integrale d'azione \eqref{azioneCampo} termini di questo tipo non influenzano l'evoluzione del sistema.\\
+Per questo motivo si può ipotizzare che la densità di lagrangiana sia:
+\begin{equation}
+    \mathfrak{L} =\alpha F^{\mu\nu} F_{\mu\nu},\label{lagEM}
+\end{equation}
+dove $\alpha$ è un fattore da determinare sperimentalmente.\\
+Si possono quindi utilizzare le equazioni di Eulero-Lagrange \eqref{euleroLagrnageCampi} per ottenere le equazioni differenziali la cui soluzione determinerà il campo elettromagnetico. Si osservi in primo luogo che la lagrangiana \eqref{lagEM} è esprimibile in funzione del 4-potenziale (questo è un insieme di soli 4 campi scalari):
+\begin{flalign*}
+    \alpha F^{\mu\nu} F_{\mu\nu}&=\alpha(\partial^\mu A^\nu-\partial^\nu A^\mu)(\partial_\mu A_\nu-\partial_\nu A_\mu)\\&=\alpha(\partial^\mu A^\nu\partial_\mu A_\nu-\partial^\mu A^\nu\partial_\nu A_\mu-\partial^\nu A^\mu\partial_\mu A_\nu+\partial^\nu A^\mu\partial_\nu A_\mu)\\&=2\alpha(\partial^\mu A^\nu\partial_\mu A_\nu-\partial^\mu A^\nu\partial_\nu A_\mu)=2\alpha(\partial^\mu A^\nu\partial_\mu A_\nu-\partial_\mu A_\nu\partial^\nu A^\mu)
+\end{flalign*}
+Utilizzando le equazioni \eqref{euleroLagrnageCampi} per il 4-potenziale (osservando che non vi è dipendenza esplicita da $A_\nu$) si ottiene:
+\begin{flalign*}
+    \partial_\mu\frac{\partial\mathfrak{L} }{\partial\partial_\mu A_\nu}-\frac{\partial\mathfrak{L} }{\partial A_\nu}=4\alpha\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)=4\alpha\partial_\mu F^{\mu\nu}=0.
+\end{flalign*}
+Come si è visto nella Sezione \ref{sec:4-Maxwell}, le equazioni così ottenute sono proprio le equazioni di Maxwell \eqref{4-Maxwell} in assenza di cariche:
+\begin{equation*}
+    \partial_\mu F^{\mu\nu}=0.
+\end{equation*}
+\subsection{Campo elettromagnetico interagente con cariche}
+Come si è fatto per la lagrangiana meccanica di corpo libero è ora necessario considerare le interazioni del campo con particelle cariche. Anche in questo caso è necessario ipotizzare la forma della densità di lagrangiana di interazione.\\
+È ragionevole ipotizzare che questo termine sia il medesimo responsabile dell'interazione di una particella con un campo tramite la forza di Lorentz \eqref{lagrangianaInt}. Utilizzando la 4-corrente (introdotta nella Sezione \ref{sec:4-corrente}) è possibile riconoscere in tale termine una densità di lagrangiana, infatti:
+\begin{equation*}
+    \int_{t_1}^{t_2} q\dot{x}^\mu A_\mu\ dt=\int_{t_1}^{t_2} \dot{x}^\mu A_\mu\ \int_{\mathcal{V} }\rho\ d^3x\ dt=\int_{t_1}^{t_2} \int_{\mathcal{V} }\rho \dot{x}^\mu A_\mu\ d^3x\ dt=\int_{t_1}^{t_2} \int_{\mathcal{V} }J^\mu A_\mu\ d^3x\ dt,
+\end{equation*}
+dove $\mathcal{V}$ è il volume in cui si vuole determinare il campo e $\rho$ la densità di carica.\\
+La densità di lagrangiana diventa quindi:
+\begin{equation}
+    \mathfrak{L}=\alpha F^{\mu\nu} F_{\mu\nu}-J^\mu A_\mu.
+\end{equation}
+Non resta quindi che utilizzare le equazioni di Eulero-Lagrange \eqref{euleroLagrnageCampi} per verificare se le ipotesi fatte sono corrette e per determinare $\alpha$. Il primo addendo di ogni equazione di Eulero-Lagrange restituisce lo stesso termine del caso di campo libero. Il secondo addendo è invece ora non nullo e contribuisce nel seguente modo:
+\begin{equation*}
+    \partial_\mu\frac{\partial\mathfrak{L} }{\partial\partial_\mu A_\nu}-\frac{\partial\mathfrak{L} }{\partial A_\nu}=4\alpha\partial_\mu F^{\mu\nu}+J^\nu=0.
+\end{equation*}
+Ponendo $\alpha=-\frac{1}{4\mu_0}$ queste sono le equazioni di Maxwell \eqref{4-Maxwell}. La densità di lagrangiana di un campo elettromagnetico in presenza di cariche è quindi:
+\begin{equation}
+    \mathfrak{L}=-\frac{1}{4\mu_0} F^{\mu\nu} F_{\mu\nu}-J^\mu A_\mu.
+\end{equation}
+L'azione complessiva del sistema risulta invece:
+\begin{equation}
+    \mathcal{S} =-\int_{t_1}^{t_2}\bigg[mc\sqrt{\dot x^\mu\dot x_\mu} +\int_{\mathcal{V} }\bigg(\frac{1}{4\mu_0} F^{\mu\nu} F_{\mu\nu}+J^\mu A_\mu\bigg)\ d^3x\bigg]\ dt.
+\end{equation}
+Questa determina contemporaneamente il moto di un particella carica, dovuto al campo elettromagnetico, e l'evoluzione di quest'ultimo in seguito al moto della particella.
+\subsection{Campi coniugati e densità di energia}
+Per concludere si vuole applicare il formalismo descritto nella Sezione \ref{sec:lagCampi} per calcolare la densità di energia di un campo elettromagnetico. Per prima cosa si determineranno i campi coniugati al 4-potenziale. Dalla definizione \eqref{campo coniugato} e ricordando la forma del 4-tensore elettromagnetico \eqref{4-tensoreEM} si ha:
+\begin{flalign*}
+    \pi^\nu(x^\mu)&=-\frac{1}{4\mu_0} \frac{\partial F^{\mu\nu} F_{\mu\nu}}{\partial\partial_{0}A_\nu}=-\frac{1}{4\mu_0} \frac{\partial }{\partial\partial_{0}A_\nu}[(\partial^\mu A^\nu-\partial^\nu A^\mu)(\partial_\mu A_\nu-\partial_\nu A_\mu)]\\&=-\frac{1}{4\mu_0} \frac{\partial }{\partial\partial_{0}A_\nu}(\partial^\mu A^\nu\partial_\mu A_\nu-\partial^\mu A^\nu\partial_\nu A_\mu-\partial^\nu A^\mu\partial_\mu A_\nu+\partial^\nu A^\mu\partial_\nu A_\mu)\\&=-\frac{1}{2\mu_0} \frac{\partial }{\partial\partial_{0}A_\nu}(\partial^\mu A^\nu\partial_\mu A_\nu-\partial^\mu A^\nu\partial_\nu A_\mu)=-\frac{1}{2\mu_0} \frac{\partial }{\partial\partial_{0}A_\nu}(\partial^\mu A^\nu\partial_\mu A_\nu-\partial_\mu A_\nu\partial^\nu A^\mu)\\&=-\frac{1}{4\mu_0} (\partial^0A^\nu-\partial^\nu A^0)=-\frac{1}{\mu_0} F^{0\nu}=\frac{1}{\mu_0} \bigg(0,\frac{\vec E}{c}\bigg).
+\end{flalign*}
+Per proseguire nel calcolo della densità di energia è necessario valutare il prodotto scalare $\pi^\mu\partial_0 A_\mu$. Questo conto può essere semplificato utilizzando un gauge opportuno (Sezione \ref{sec:gauge}). Il gauge temporale ($\varphi=0$) infatti è tale da far valer la relazione $E^k=-\partial_t A^k$ (siccome, come detto nella Sezione \ref{sec:LagEMInt}, in generale vale $\vec E=-\vec{\nabla}\varphi-\partial_t \vec A$). Si ha quindi:
+\begin{equation*}
+    \pi^\mu\partial_0 A_\mu=\frac{1}{\mu_0}E^k\frac{1}{c}\partial_t A_k=\frac{\epsilon_0\mu_0}{\mu_0}E^kE_k=\epsilon_0 |\vec E|^2.
+\end{equation*}
+Calcolando a questo punto la trasformata di Legendre della densità di lagrangiana del campo libero si ottiene che la densità di energia è:
+\begin{flalign*}
+    \mathfrak{E} &=\pi^\mu\partial_0 A_\mu-\mathfrak{L} =\pi^\mu\partial_0 A_\mu+\frac{1}{4\mu_0} F^{\mu\nu} F_{\mu\nu}=\epsilon_0 |\vec E|^2+\frac{2}{4\mu_0}\bigg(|\vec B|^2-\frac{|\vec E|^2}{c^2}\bigg)\\&=\epsilon_0 |\vec E|^2+\frac{1}{2\mu_0}|\vec B|^2-\frac{\epsilon_0\mu_0}{2\mu_0}|\vec E|^2=\frac{1}{2}\epsilon_0|\vec E|^2+\frac{1}{2\mu_0}|\vec B|^2.
+\end{flalign*}
+Un campo elettromagnetico in una regione di spazio $\mathcal{V} $ possiede quindi un'energia data da:
+\begin{equation}
+    E=\int_{\mathcal{V} }\bigg(\frac{1}{2}\epsilon_0|\vec E|^2+\frac{1}{2\mu_0}|\vec B|^2\bigg)\ d^3x.
+\end{equation}

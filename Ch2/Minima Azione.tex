@@ -11,12 +11,12 @@ La variazione $\delta S$, data dalla variazione $\delta q$, deve risultare nulla
 \begin{equation}
     \int_{t_1}^{t_2} \mathcal{L}(q+\delta q,\dot{q}+\delta \dot{q},t)\ dt-\int_{t_1}^{t_2} \mathcal{L}(q,\dot{q},t)\ dt=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}\delta q_i+\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta \dot{q}_i \bigg]\ dt=0,
 \end{equation}
-nella quale si è espressa esplicitamente la variazione dell'azione rispetto alla variazione $\delta q$ e alla sua derivata prima $\delta \dot{q}$ tramite uno sviluppo in serie al prim'ordine con le derivate parziali della lagrangiana $\frac{\partial\mathcal{L} }{\partial q_i},\ \frac{\partial\mathcal{L} }{\partial \dot{q}_i}$.\\
+nella quale si è espressa esplicitamente la variazione dell'azione rispetto alla variazione $\delta q$ e alla sua derivata prima $\delta \dot{q}$ tramite uno sviluppo di Taylor al prim'ordine con le derivate parziali della lagrangiana $\frac{\partial\mathcal{L} }{\partial q_i},\ \frac{\partial\mathcal{L} }{\partial \dot{q}_i}$.\\
 Integrando per parti gli addendi contenenti $\delta \dot{q}_i=\frac{d}{dt}\delta q_i$ e ricordando che $\delta q (t)$ si annulla in $t_1$ e in $t_2$, si ottiene
 \begin{equation*}
     \int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}\delta q_i-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta q_i \bigg]\ dt+\sum_{i=1}^n\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta \dot{q}_i\bigg|_{t_1}^{t_2}=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i} \bigg]\delta q_i\ dt=0.
 \end{equation*}
-Poiché questo integrale deve annullarsi per ogni $\delta q$ che rispetti le ipotesi fin qui fatte è necessario che si annulli identicamente l'integrando. Nella fattispecie ogni addendo singolarmente (siccome ognuno di questi è moltiplicato per una componente di $\delta q(t)$ che è una funzione arbitraria).\\Si ottengono quindi le \emph{equazioni di Eulero Lagrange} che consentono di determinare $q(t)$:
+Poiché questo integrale deve annullarsi per ogni $\delta q$ che rispetti le ipotesi fin qui fatte è necessario che si annulli identicamente l'integranda. Nella fattispecie ogni addendo singolarmente (siccome ognuno di questi è moltiplicato per una componente di $\delta q(t)$ che è una funzione arbitraria).\\Si ottengono quindi le \emph{equazioni di Eulero-Lagrange} che consentono di determinare $q(t)$:
 \begin{equation}
     \label{eulero-lagrange}
     \frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}-\frac{\partial\mathcal{L} }{\partial q_i}=0 \qquad \forall i\in{1,2,...,n}.
@@ -27,7 +27,7 @@ Date le coordinate generalizzate $q(t)=(q_1(t),...,q_n(t))$ si definisco i momen
     p_{q_i}=\frac{\partial\mathcal{L} }{\partial \dot{q}_i}.
     \label{DefMomentoGeneralizzato}
 \end{equation}
-Se la lagrangiana non dipende esplicitamente da una coordinata $q_i(t)$ allora si dice che questa è una coordinata ciclica. Dalle equazioni di Eulero Lagrange segue che sulla curva del moto il momento associato a tale coordinata resta costante nel tempo.\\
+Se la lagrangiana non dipende esplicitamente da una coordinata $q_i$ allora si dice che questa è una coordinata ciclica. Dalle equazioni di Eulero-Lagrange segue che sulla curva del moto il momento associato a tale coordinata resta costante nel tempo.\\
 Oltre ai momenti è utile definire l'energia meccanica del sistema:
 \begin{equation}
     E=\sum_i \frac{\partial\mathcal{L} }{\partial \dot{q}_i}\dot{q}_i-\mathcal{L}.
@@ -47,7 +47,7 @@ Si consideri ora una variazione delle coordinate finale $\tilde q_i\rightarrow \
 \begin{equation*}
     \delta S=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial \dot  q_i}\delta q_i-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta q_i \bigg]\ dt+\sum_{i=1}^n+\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta q_i\bigg|_{t_1}^{t_2}.
 \end{equation*}
-Ricordando che questo integrale è calcolato su curve del moto si ha che l'integrando deve annullarsi (poiché devono essere soddisfatte le equazioni di Eulero Lagrange). Mentre, come si appena osservato, $\delta q_i(t_1)=0$ ma $\delta q_i(t_2)=\delta \tilde q\neq0$, per cui si deduce che:
+Ricordando che questo integrale è calcolato su curve del moto si ha che l'integrando deve annullarsi (poiché devono essere soddisfatte le equazioni di Eulero-Lagrange). Mentre, come si appena osservato, $\delta q_i(t_1)=0$ ma $\delta q_i(t_2)=\delta \tilde q\neq0$, per cui si deduce che:
 \begin{equation*}
     \delta S=\sum_{i=1}^n\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta q_i\bigg|_{t_2}\ \Rightarrow\ \frac{\partial S}{\partial \tilde q_i}= \frac{\partial\mathcal{L} }{\partial \dot q_i}=p_{q_i}.
 \end{equation*}
@@ -55,4 +55,4 @@ Se ora si considera la derivata totale rispetto al tempo di $S(q,t)$, per il teo
 \begin{equation*}
     \frac{dS}{dt}=\sum_{i=1}^n\frac{\partial S }{\partial  q_i}\dot{q_i}+\frac{\partial S }{\partial t}=\mathcal{L}\quad \Rightarrow\quad \frac{\partial S }{\partial t}=\mathcal{L} -\sum_{i=1}^n\frac{\partial S }{\partial  q_i}\dot{q_i}=-E.
 \end{equation*} 
-Si osservi che quanto appena descritto necessita solamente del principio di minima azione e di nessun'altra assunzione sperimentale. Per questo motivo questa trattazione della meccanica è utilizzabile anche nell'ambito della relatività dove sarà la lagrangiana a dover tenere conto di quanto descritto nel capitolo 1.
+Si osservi che quanto appena descritto necessita solamente del principio di minima azione e di nessun'altra assunzione sperimentale. Per questo motivo questa trattazione della meccanica è utilizzabile anche nell'ambito della relatività dove sarà la lagrangiana a dover tenere conto di quanto descritto nel Capitolo 1.
