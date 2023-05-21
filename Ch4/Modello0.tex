@@ -1,5 +1,5 @@
 \subsection{Il modello della corda vibrante}
-Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei campi è la corda omogenea vibrante. Un sistema di questo tipo è modellizzato come un corpo elastico esteso in una dimensione e di grandezza trascurabile nelle direzioni a questa trasversali. La corda, disposta orizzontalmente come in Figura \ref{fig:corda}, può quindi oscillare verticalmente. Per descrivere tale oscillazione si definisce un campo scalare $\varphi(t,x)$ che descrive lo spostamento del punto $x$ della corda dall'equilibrio all'istante $t$.
+Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei campi è la corda omogenea vibrante. Un sistema di questo tipo è modellizzato come un corpo elastico esteso in una dimensione e di grandezza trascurabile nelle direzioni a questa trasversali. La corda, disposta orizzontalmente come in Figura \ref{fig:corda}, può quindi oscillare verticalmente. Per descrivere tale oscillazione si definisce un campo scalare $\varphi(t,x)$ che descrive lo spostamento del punto della corda che è in $x$ dall'equilibrio all'istante $t$.
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}
@@ -35,7 +35,7 @@ Il potenziale del tratto $\Delta x$ di corda è invece:
     U_{\Delta x}=\frac{k}{2}(\Delta l)^2,
 \end{equation*}
 dove $k$ è la constante elastica di quel preciso tratto.\\
-In secondo luogo si suppone che la vibrazione della corda dia origine a piccole oscillazioni, tali che, su un tratto di corda definito come prima, valga $\varphi(t,x+\Delta x)-\varphi(t,x)\ll\Delta x$. Così facendo l'allungamento di questo tratto è approssimatile secondo Taylor con:
+In secondo luogo si supporrà che la vibrazione della corda dia origine a piccole oscillazioni, tali che, su un tratto di corda definito come prima, valga $\varphi(t,x+\Delta x)-\varphi(t,x)\ll\Delta x$. Così facendo l'allungamento di questo tratto è approssimatile secondo Taylor con:
 \begin{equation*}
     \Delta l\approx\Delta x\bigg[\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
     \bigg)^2+1\bigg]-\Delta x=\Delta x\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
@@ -61,4 +61,4 @@ In questo modo si è ottenuta una densità di lagrangiana con la quale è possib
 \begin{equation*}
     \frac{\partial^2 \varphi}{\partial t^2}=\frac{a}{\rho}\frac{\partial^2 \varphi}{\partial x^2}.
 \end{equation*}
-Le soluzioni di questa equazione sono onde che si propagano a velocità $\sqrt{\frac{a}{\rho}}$ sulla corda.
+Le soluzioni di questa equazione sono onde che si propagano a velocità $\sqrt{\frac{a}{\rho}}$ sulla corda. Questo risultato è coerente con quanto si osserva: infatti è noto che corde tese sono in grado di vibrare come avviene negli strumenti musicali a corda.
