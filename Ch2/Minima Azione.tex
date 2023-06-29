@@ -1,22 +1,22 @@
 \label{sec:MinimaAzione}
-La meccanica classica, brevemente introdotta nel capitolo \ref{sec:MC}, descrive il moto di sistemi di corpi tramite l'equazione di Newton. Si può dimostrare che questa però è del tutto equivalente ad un principio più generale noto come \emph{principio di minima azione}\footnote{Questo principio è esposto da Landau nella sua trattazione della meccanica classica \cite{Landau1}.}.\\ Questo principio assume che per ogni sistema meccanico sia possibile costruire una funzione $\mathcal{L}(q_1...q_n,\dot{q}_1...\dot{q}_n,t)$ detta \emph{lagrangiana} (dove $q_1...q_n$ sono le coordinate generalizzate e $\dot{q}_1...\dot{q}_n$ sono le velocità generalizzate date dagli $n$ gradi di libertà del sistema, che è uso comune indicare solamente con $q$ e $\dot{q}$) che lo descrive.\\ In questo modo il principio di minima azione afferma che: se si suppone che ad un istante $t_1$ iniziale e ad un istante finale $t_2$ il sistema si trovi a coordinate fissate l'evoluzione del sistema avverrà secondo un moto $(q(t),\dot{q}(t))$ tale che il funzionale 
+La meccanica classica, brevemente introdotta nel Capitolo \ref{sec:MC}, descrive il moto di corpi tramite l'equazione di Newton. Si può dimostrare che questa però è del tutto equivalente ad un principio più generale noto come \emph{principio di minima azione}\footnote{Questo principio è esposto, ad esempio, da Landau nella sua trattazione della meccanica \cite{Landau1}.}.\\ Questo principio assume che per ogni sistema meccanico sia possibile costruire una funzione $\mathcal{L}(q_1...q_n,\dot{q}_1...\dot{q}_n,t)$ detta \emph{lagrangiana} (dove $q_1...q_n$ sono le coordinate generalizzate e $\dot{q}_1...\dot{q}_n$ sono le velocità generalizzate date dagli $n$ gradi di libertà del sistema, che è uso comune indicare solamente con $q$ e $\dot{q}$) che lo descrive.\\ In questo modo il principio di minima azione afferma che: se si suppone che ad un istante iniziale, $t_1$, e ad un istante finale, $t_2$, il sistema si trovi in stati fissati l'evoluzione del sistema avverrà secondo un moto $(q(t),\dot{q}(t))$ tale che il funzionale 
 \begin{equation}
     \label{Azione}
     \mathcal{S}[q(t)] =\int_{t_1}^{t_2} \mathcal{L}(q(t),\dot{q}(t),t)\ dt,
 \end{equation}
-detto \emph{azione}, assuma un valore stazionario, Nella fattispecie si può dimostrare che per intervalli sufficientemente piccoli assume il valore minimo.\\
+detto \emph{azione}, assuma un valore stazionario. Nella fattispecie si può dimostrare che, per intervalli $t_2-t_1$ sufficientemente piccoli, assume il valore minimo.\\
 
-Si vuole ora, dato questo principio, ottenere le equazioni del moto: si consideri una funzione $q(t)=(q_1(t),...,q_n(t))$ e una seconda funzione arbitraria $\delta q(t)=(\delta q_1(t),...,\delta q_n(t))$, detta variazione di $q(t)$, tale che $\delta q (t_1)=\delta q(t_2)=0$ e che assuma valori piccoli nel suo dominio $[t_1,t_2]$. In questo modo si può costruire una seconda funzione $q(t)+\delta q(t)$ che soddisfa ancora le ipotesi per cui devono essere fissate le coordinate agli istanti $t_1$ e $ t_2$. 
+Si vuole ora, dato questo principio, ottenere le equazioni del moto: si consideri una funzione $q(t)=(q_1(t),...,q_n(t))$, con $q(t_1)$ e $q(t_2)$ fissati, e una seconda funzione arbitraria $\delta q(t)=(\delta q_1(t),...,\delta q_n(t))$ , detta variazione di $q(t)$, tale che $\delta q (t_1)=\delta q(t_2)=0$ e che assuma valori piccoli nel suo dominio $[t_1,t_2]$. In questo modo si può costruire una seconda funzione $q(t)+\delta q(t)$ che soddisfa ancora le ipotesi per cui devono essere fissate le coordinate agli istanti $t_1$ e $ t_2$. 
 La variazione $\delta S$, data dalla variazione $\delta q$, deve risultare nulla affinché $q(t)$ sia la funzione che rende stazionaria l'azione. Il principio di minima azione è quindi equivalente a richiedere:
 \begin{equation}
-    \int_{t_1}^{t_2} \mathcal{L}(q+\delta q,\dot{q}+\delta \dot{q},t)\ dt-\int_{t_1}^{t_2} \mathcal{L}(q,\dot{q},t)\ dt=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}\delta q_i+\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta \dot{q}_i \bigg]\ dt=0,
+    \int_{t_1}^{t_2} \mathcal{L}(q+\delta q,\dot{q}+\delta \dot{q},t)\ dt-\int_{t_1}^{t_2} \mathcal{L}(q,\dot{q},t)\ dt\approx\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}\delta q_i+\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta \dot{q}_i \bigg]\ dt=0.\label{VarPrima}
 \end{equation}
-nella quale si è espressa esplicitamente la variazione dell'azione rispetto alla variazione $\delta q$ e alla sua derivata prima $\delta \dot{q}$ tramite uno sviluppo di Taylor al prim'ordine con le derivate parziali della lagrangiana $\frac{\partial\mathcal{L} }{\partial q_i},\ \frac{\partial\mathcal{L} }{\partial \dot{q}_i}$.\\
+Nella \eqref{VarPrima} si è espressa esplicitamente la variazione dell'azione rispetto alla variazione $\delta q$ e alla sua derivata prima $\delta \dot{q}$ tramite uno sviluppo di Taylor al prim'ordine tramite le derivate parziali della lagrangiana $\frac{\partial\mathcal{L} }{\partial q_i},\ \frac{\partial\mathcal{L} }{\partial \dot{q}_i}$.\\
 Integrando per parti gli addendi contenenti $\delta \dot{q}_i=\frac{d}{dt}\delta q_i$ e ricordando che $\delta q (t)$ si annulla in $t_1$ e in $t_2$, si ottiene
 \begin{equation*}
     \int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}\delta q_i-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta q_i \bigg]\ dt+\sum_{i=1}^n\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta \dot{q}_i\bigg|_{t_1}^{t_2}=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial q_i}-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i} \bigg]\delta q_i\ dt=0.
 \end{equation*}
-Poiché questo integrale deve annullarsi per ogni $\delta q$ che rispetti le ipotesi fin qui fatte è necessario che si annulli identicamente l'integranda. Nella fattispecie ogni addendo singolarmente (siccome ognuno di questi è moltiplicato per una componente di $\delta q(t)$ che è una funzione arbitraria).\\Si ottengono quindi le \emph{equazioni di Eulero-Lagrange} che consentono di determinare $q(t)$:
+Poiché questo integrale deve annullarsi per ogni $\delta q$ che rispetti le ipotesi fin qui fatte è necessario che si annulli identicamente l'integranda. Nella fattispecie ogni addendo singolarmente (siccome ognuno di questi è moltiplicato per una componente di $\delta q(t)$ che è una funzione arbitraria).\\Si ottengono quindi le \emph{equazioni di Eulero-Lagrange} che consentono di determinare il moto descritto da $q(t)$:
 \begin{equation}
     \label{eulero-lagrange}
     \frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}-\frac{\partial\mathcal{L} }{\partial q_i}=0 \qquad \forall i\in{1,2,...,n}.
@@ -27,27 +27,27 @@ Date le coordinate generalizzate $q(t)=(q_1(t),...,q_n(t))$ si definisco i momen
     p_{q_i}=\frac{\partial\mathcal{L} }{\partial \dot{q}_i}.
     \label{DefMomentoGeneralizzato}
 \end{equation}
-Se la lagrangiana non dipende esplicitamente da una coordinata $q_i$ allora si dice che questa è una coordinata ciclica. Dalle equazioni di Eulero-Lagrange segue che sulla curva del moto il momento associato a tale coordinata resta costante nel tempo.\\
+Se la lagrangiana non dipende esplicitamente da una coordinata $q_i$ allora si dice che questa è una coordinata ciclica. Dalle equazioni di Eulero-Lagrange segue che, lungo curva del moto, il momento associato a tale coordinata resta costante nel tempo.\\
 Oltre ai momenti è utile definire l'energia meccanica del sistema:
 \begin{equation}
     E=\sum_i \frac{\partial\mathcal{L} }{\partial \dot{q}_i}\dot{q}_i-\mathcal{L}.
     \label{DefEnergiaMeccanica}
 \end{equation}
-Se $\mathcal{L}$ non dipende esplicitamente dal tempo $E$ risulta una quantità conservata durante il moto. Infatti derivando rispetto al tempo la lagrangiana sulla curva del moto si ha:
+Se $\mathcal{L}$ non dipende esplicitamente dal tempo $E$ risulta una quantità conservata durante il moto. Infatti, derivando rispetto al tempo la lagrangiana lungo la curva del moto, si ha:
 \begin{flalign*}
     \frac{d \mathcal{L} }{dt}\bigg|_{q(t)}&=\sum_i\frac{\partial\mathcal{L} }{\partial q_i}\dot{q}_i+\sum_i\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\ddot{q}_i+\frac{\partial\mathcal{L} }{\partial t}=\sum_i\bigg(\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q_i}}\bigg)\dot{q}_i+\sum_ip_i\ddot{q}_i+\frac{\partial\mathcal{L} }{\partial t}&&\\&=\sum_i\dot{p_i}\dot{q}_i+\sum_ip_i\ddot{q}_i+\frac{\partial\mathcal{L} }{\partial t}=\sum_i\frac{d}{dt}(p_i\dot{q_i})+\frac{\partial\mathcal{L} }{\partial t}\qquad \Rightarrow\qquad \frac{dE}{dt}\bigg|_{q(t)}=-\frac{\partial\mathcal{L} }{\partial t}.&&
 \end{flalign*}
 
-L'azione può essere intesa anche come funzione delle coordinate e del tempo. In questo caso a differenza del funzionale (\ref{Azione}) si mantengono libere le coordinate e gli istanti finali, che divengono le variabili di dipendenza dell'azione, e si calcola l'integrale lungo la curva del moto. Così facendo l'azione è la funzione
+L'azione può essere intesa anche come funzione delle coordinate e del tempo. In questo caso, a differenza del funzionale (\ref{Azione}), si mantengono libere le coordinate e gli istanti finali, che divengono le variabili di dipendenza dell'azione, e si calcola l'integrale lungo la curva del moto. Così facendo l'azione è la funzione
 \begin{equation}
     S (\tilde q,t_2)=\int_{t_1}^{\tilde q,t_2} \mathcal{L} (q,\dot q,t)\ dt.
 \end{equation}
 Questa è nota come \emph{funzione d'azione} ed è indicata con la lettera $S$ (per distinguerla dal funzionale d'azione $\mathcal{S} $).\\
-Si consideri ora una variazione delle coordinate finale $\tilde q_i\rightarrow \tilde q_i+\delta \tilde q_i$. Poiché ogni coppia di coordinate iniziali e finali determina (tramite il principio di minima azione) la traiettoria del moto, a $\delta \tilde q$ corrisponde una variazione $\delta q(t)$ di tale curva che mantiene invariate solamente le coordinate nell'istante iniziale. La variazione della funzione d'azione si calcola quindi come per il funzionale azione e si ottiene:
+Si consideri ora una variazione delle coordinate finale $\tilde q_i\rightarrow \tilde q_i+\delta \tilde q_i$. Poiché ogni coppia di coordinate iniziali e finali determina (tramite il principio di minima azione) la traiettoria del moto, a $\delta \tilde q$ corrisponde una variazione $\delta q(t)$ di tale curva che mantiene invariate solamente le coordinate nell'istante iniziale. La variazione della funzione d'azione si calcola quindi come per il funzionale d'azione e si ottiene:
 \begin{equation*}
     \delta S=\int_{t_1}^{t_2}\sum_{i=1}^{n}\bigg[\frac{\partial\mathcal{L} }{\partial \dot  q_i}\delta q_i-\frac{d}{dt}\frac{\partial\mathcal{L} }{\partial \dot{q}_i}\delta q_i \bigg]\ dt+\sum_{i=1}^n+\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta q_i\bigg|_{t_1}^{t_2}.
 \end{equation*}
-Ricordando che questo integrale è calcolato su curve del moto si ha che l'integrando deve annullarsi (poiché devono essere soddisfatte le equazioni di Eulero-Lagrange). Mentre, come si appena osservato, $\delta q_i(t_1)=0$ ma $\delta q_i(t_2)=\delta \tilde q\neq0$, per cui si deduce che:
+Ricordando che questo integrale è calcolato su curve del moto si ha che l'integranda deve annullarsi (poiché devono essere soddisfatte le equazioni di Eulero-Lagrange). Mentre, come si appena osservato, $\delta q_i(t_1)=0$ ma $\delta q_i(t_2)=\delta \tilde q\neq0$, per cui si deduce che:
 \begin{equation*}
     \delta S=\sum_{i=1}^n\frac{\partial\mathcal{L} }{\partial \dot q_i}\delta q_i\bigg|_{t_2}\ \Rightarrow\ \frac{\partial S}{\partial \tilde q_i}= \frac{\partial\mathcal{L} }{\partial \dot q_i}=p_{q_i}.
 \end{equation*}

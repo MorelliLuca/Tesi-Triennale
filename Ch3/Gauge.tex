@@ -7,7 +7,7 @@ lascia invariato il campo magnetico, poiché il rotore di un gradiente è una qu
 \begin{equation*}
     \vec B\longrightarrow\vec{B'}=\vnabla\wedge\vec {A'}=\vnabla\wedge[\vec A + \vnabla \xi]=\vnabla\wedge\vec A =\vec B.
 \end{equation*}
-La trasformazione \eqref{trasfGauge1} può però modificare la forma del campo elettrico, infatti $\xi$ può dipendere dal tempo e tramite la definizione dei potenziali \eqref{PotenzialiEM} si ha che:
+La trasformazione \eqref{trasfGauge1} può però modificare la forma del campo elettrico, infatti $\xi$ può dipendere dal tempo e, tramite la definizione dei potenziali \eqref{PotenzialiEM}, si ha che:
 \begin{equation*}
     \vec E\longrightarrow\vec{E'}=-\vnabla \varphi-\frac{\partial\vec A'}{\partial t}=-\vnabla \varphi-\frac{\partial\vec A}{\partial t}-\frac{\partial}{\partial t}\vnabla\xi=\vec{E}-\frac{\partial}{\partial t}\vnabla\xi.
 \end{equation*}
@@ -20,11 +20,11 @@ in questo modo (supponendo sufficiente regolarità di $\xi$ per scambiare l'ordi
 \begin{equation*}
     \vec E\longrightarrow\vec{E'}=-\vnabla \varphi'-\frac{\partial\vec A'}{\partial t}=-\vnabla \varphi+\frac{\partial}{\partial t}\vnabla\xi-\frac{\partial\vec A}{\partial t}-\frac{\partial}{\partial t}\vnabla\xi=\vec{E}.
 \end{equation*}
-Le due trasformazioni \eqref{trasfGauge1} e \eqref{trasfGauge2} lasciano quindi invariati campo elettrico e magnetico e prendono il nome di \emph{trasformazioni di gauge}. Si osservi che queste trasformazioni sarebbero potute esser ricavate considerando quali trasformazioni del 4-potenziale non mutano la lagrangiana di interazione \eqref{lagrangianaInt}. È noto infatti che la lagrangiana è definita a meno di derivate totali rispetto al tempo e questo consente di trasformare:
+Le due trasformazioni \eqref{trasfGauge1} e \eqref{trasfGauge2} lasciano quindi invariati campo elettrico e magnetico e prendono il nome di \emph{trasformazioni di gauge}. Si osservi che queste trasformazioni si possono ricavare considerando quali trasformazioni del 4-potenziale non mutano la lagrangiana di interazione \eqref{lagrangianaInt}. È noto infatti che la lagrangiana è definita a meno di derivate totali rispetto al tempo e questo consente di trasformare:
 \begin{equation*}
     \mathcal{L} \longrightarrow\mathcal{L} '=\mathcal{L} +q\frac{d\xi}{dt},
 \end{equation*}
-dove $\xi(t,\vec x)$ è una funzione scalare. Ne consegue che esplicitando la lagrangiana di interazione si ottiene:
+dove $\xi(t,\vec x)$ è una funzione scalare. Ne consegue che, esplicitando la lagrangiana di interazione, si ottiene:
 \begin{equation*}
     \mathcal{L}' =-q\varphi+\vec v\cdot\vec A+q\bigg(\frac{\partial \xi}{\partial t}+\vnabla\xi\cdot\vec v\bigg)=-q\bigg(\varphi-\frac{\partial \xi}{\partial t}\bigg)+\vec v\cdot\bigg(\vec A+\vnabla\xi\bigg),
 \end{equation*}
@@ -33,7 +33,7 @@ ossia le trasformazioni \eqref{trasfGauge1} e \eqref{trasfGauge2}.\\Infine si os
     A^\mu\longrightarrow  A'^\mu=A^\mu-\frac{\partial \xi}{\partial x_\mu}=A^\mu-\partial^\mu\xi.\label{4-trasfGauge}
 \end{equation}
 
-Le trasformazioni di gauge possono essere molto utili per semplificare la risoluzione delle equazioni di Maxwell. Infatti, sostituendo i potenziali \eqref{PotenzialiEM} nella prima e ultima equazione di Maxwell \eqref{EquazioniMaxwell}, si ottengono due equazioni differenziali che se risolte determinano i potenziali stessi:
+Le trasformazioni di gauge possono essere molto utili per semplificare la risoluzione delle equazioni di Maxwell. Infatti, sostituendo i potenziali \eqref{PotenzialiEM} nella prima e ultima equazione di Maxwell \eqref{EquazioniMaxwell}, si ottengono due equazioni differenziali che determinano i potenziali stessi:
 \begin{flalign}
     &\vnabla^2\varphi+\vnabla\cdot \frac{\partial \vec A}{\partial t}=-\frac{\rho}{\epsilon_0},\label{MaxwellPote1}\\
     &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}-\vnabla\bigg(\vnabla\cdot\vec A +\epsilon_0\mu_0\frac{\partial \varphi}{\partial t}\bigg)=-\mu_0\vec J.\label{MaxwellPote2}
@@ -50,7 +50,7 @@ Questa condizione è la richiesta che si annulli identicamente tutto l'addendo t
     &\vnabla^2\varphi-\epsilon_0\mu_0\frac{\partial^2 \varphi}{\partial t^2}=-\frac{\rho}{\epsilon_0},\\
     &\vnabla^2\vec A-\epsilon_0\mu_0\frac{\partial^2 \vec A}{\partial t^2}=-\mu_0\vec J.
 \end{flalign*}
-Inoltre, se si suppone l'assenza di termini di sorgente di campo, si ottengono due equazioni equivalente alle equazioni delle onde elettromagnetiche nel vuoto \eqref{OndeEMVuoto}.\\
+Inoltre, se si suppone l'assenza di termini di sorgente di campo, si ottengono due equazioni equivalenti alle equazioni delle onde elettromagnetiche nel vuoto \eqref{OndeEMVuoto}.\\
 
 Si osservi che in questo caso si ha il vantaggio di avere un'invarianza relativistica di questa condizione: infatti, utilizzando il 4-potenziale e ricordando che $\epsilon_0\mu_0=\frac{1}{c^2}$, la condizione \eqref{gaugediLorentz} diventa $\partial_\mu A^\mu=0$ (che è un'equazione invariante sotto trasformazioni di Lorentz).\\ Infine si osservi che questo gauge mantiene un certo grado di libertà nella scelta dei potenziali. Infatti se si compie un'ulteriore trasfromazione di gauge $(\varphi,\ \vec A)\longrightarrow(\varphi',\ \vec{A'})$ la condizione di gauge di Lorentz diviene:
 \begin{equation*}

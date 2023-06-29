@@ -1,6 +1,6 @@
 Lo studio del moto di una particella soggette a potenziali di forma arbitraria risulta molto complicato, in particolar modo nel contesto della relatività (nella quale le equazioni di Eulero-Lagrange danno origine ad equazioni differenziali più complesse delle loro analoghe classiche), per questo motivo, seguendo i calcoli esposti da Landau \cite{Landau}, si limiterà lo studio al caso di campi costanti. 
 \subsection{Campo elettrico costante}
-Si consideri un campo solamente elettrico, ossia in cui $\vec B=0$, costante nel tempo ed uniforme. Questo campo è orientato in una direzione spaziale determinata, il sistema quindi perde la sua proprietà di isotropia spaziale ma lo spazio permane isotropo. Per questo motivo è possibile orientare a piacere gli assi del sistema di riferimento così che: $\vec E$ risulti parallelo all'asse $x$ e l'asse $y$ parallelo alla velocità iniziale della carica e quindi il moto avvenga nel piano $xy$. Dalla \eqref{PotenzialiCostanti} si ha che il potenziale scalare può quindi essere espresso come $\varphi=|\vec E|x$, con $|\vec E|$ intensità del campo.
+Si consideri un campo solamente elettrico, ossia $\vec B=0$, costante nel tempo ed uniforme. Questo campo è orientato in una direzione spaziale determinata, il sistema quindi perde la sua proprietà di isotropia spaziale ma lo spazio permane isotropo. Per questo motivo è possibile orientare a piacere gli assi del sistema di riferimento così che $\vec E$ risulti parallelo all'asse $x$. Inoltre si assume che la velocità iniziale della particella sia parallela all'asse $y$ e che quindi il moto avvenga nel piano $xy$. Dalla \eqref{PotenzialiCostanti} si ha che il potenziale scalare può quindi essere espresso come $\varphi=|\vec E|x$, con $|\vec E|$ intensità del campo.
 Utilizzando questo potenziale dalle equazioni di Eulero-Lagrange si ha:
 \begin{equation*}
     \dot p_x=q|\vec E|,\quad\dot p_y=0,\quad\dot p_z=0 \quad \Rightarrow \quad p_x=q|\vec E|t,\quad p_y=p_0,\quad p_z=0.
@@ -54,25 +54,25 @@ Posti $x(0)=y(0)=z(0)=0$, se si esprime nell'equazione del moto \eqref{MotoECons
         \draw[scale=.5, domain=0:2.5, smooth, variable=\x, blue] plot ( {cosh(\x)-1},{\x}) node[anchor= south, color=black ]{$x(y)$};
     \end{tikzpicture}   
     \end{subfigure}
-    \caption{Rappresentazione grafica delle equazioni del moto ottenute.}
+    \caption{Rappresentazione delle equazioni del moto. Il primo e il secondo grafico rappresentano il moto nella direzione dell'asse $x$ e $y$, il terzo lo rappresenta nel piano.}
     \label{fig:motoECost}
 \end{figure}
- In figura \ref{fig:motoECost} è possibile apprezzare che per $t\rightarrow \infty$ si ha $v_x\rightarrow c$ e $v_y\rightarrow 0$: infatti anche se la forza di Lorentz è diretta solo nella direzione dell'asse $x$ la particella decelera anche nella direzione dell'asse $y$ affinché il moto  avvenga all'interno del cono di luce.
+ In figura \ref{fig:motoECost} è possibile osservare che per $t\rightarrow \infty$ si ha $v_x\rightarrow c$ e $v_y\rightarrow 0$: infatti anche se la forza di Lorentz è diretta solo nella direzione dell'asse $x$ la particella decelera anche nella direzione dell'asse $y$ affinché il moto  avvenga all'interno del cono di luce.
 
 \subsection{Campo magnetico costante}
 Se si considera solamente un campo magnetico uniforme, come si è fatto per il campo elettrico costante, è possibile orientare il sistema di riferimento in maniera tale da avere tale campo diretto lungo l'asse $z$. In questo modo il potenziale vettore dalla relazione \eqref{PotenzialiCostanti} risulta $\vec A=\frac{|\vec B|}{2}(-y,x,0)$, dove $|\vec B|$ è il modulo del campo magnetico.\\ Si osservi che, essendo la lagrangiana di questo sistema indipendente dal tempo, l'energia del sistema si conserva e dalla \eqref{energiaImpulsoIntEM} questa (in assenza di campi elettrici) è $E=mc^2\gamma$.\\Usando le equazioni di Eulero-Lagrange e la relazione \eqref{velPE} si ottiene:
 \begin{equation*}
     \dot{p}_x=qv_y |\vec B|=\frac{d}{dt}\bigg(\frac{v_xE}{c^2}\bigg),\quad \dot{p}_y=-qv_x|\vec B|=\frac{d}{dt}\bigg(\frac{v_yE}{c^2}\bigg)\Rightarrow \dot v_x=v_y\frac{|\vec B|q}{m\gamma},\quad\dot v_y=-v_x\frac{|\vec B|q}{m\gamma}.
 \end{equation*}
-Per risolvere questo sistema di equazioni differenziali si osservi che, se definisce la quantità $v_x+iv_y$, dove $i^2=-1$, è possibile ricondursi ad un'equazione differenziale a variabili separabili:
+Per risolvere questo sistema di equazioni differenziali si osservi che, se definisce la quantità $v_x+iv_y$ ($i^2=-1$) è possibile ricondursi ad un'equazione differenziale a variabili separabili:
 \begin{equation*}
-    \frac{d}{dt}(v_x+iv_y)=-i\frac{|\vec B|q}{m\gamma}(v_x+iv_y)\quad\Rightarrow\quad v_x+iv_y=v_0e^{-i\frac{|\vec B|q}{m\gamma}t+i\alpha}
+    \frac{d}{dt}(v_x+iv_y)=-i\frac{|\vec B|q}{m\gamma}(v_x+iv_y)\quad\Rightarrow\quad v_x+iv_y=v_0e^{-i\frac{|\vec B|q}{m\gamma}t+i\alpha},
 \end{equation*}
 dove $\alpha=\arctan\frac{v_y(0)}{v_x(0)}$ e $v_0^2=v_x^2(t)+v_y^2(t)$ sono due costanti da determinare.\\
 Separando la parte immaginaria e la parte reale di quanto ottenuto e integrando nuovamente si ottengono le equazioni del moto:
 \begin{flalign}
-    v_x(t)&=v_0\cos\bigg(\frac{|\vec B|q}{m\gamma}t+\alpha\bigg)\quad&\Rightarrow\quad &x(t)=x_0+\frac{v_0m\gamma}{|\vec B|q}\sin\bigg(\frac{|\vec B|q}{m\gamma}t+\alpha\bigg)&&\\
-    v_y(t)&=-v_0\sin\bigg(\frac{|\vec B|q}{m\gamma}t+\alpha\bigg)\quad&\Rightarrow\quad &y(t)=y_0+\frac{v_0m\gamma}{|\vec B|q}\cos\bigg(\frac{|\vec B|q}{m\gamma}t+\alpha\bigg)&&\\
+    v_x(t)&=v_0\cos\bigg(\frac{|\vec B|q}{m\gamma}t-\alpha\bigg)\quad&\Rightarrow\quad &x(t)=x_0+\frac{v_0m\gamma}{|\vec B|q}\sin\bigg(\frac{|\vec B|q}{m\gamma}t-\alpha\bigg)&&\\
+    v_y(t)&=-v_0\sin\bigg(\frac{|\vec B|q}{m\gamma}t-\alpha\bigg)\quad&\Rightarrow\quad &y(t)=y_0+\frac{v_0m\gamma}{|\vec B|q}\cos\bigg(\frac{|\vec B|q}{m\gamma}t-\alpha\bigg)&&\\
     v_z(t)&=v_z \quad &\Rightarrow\quad &z(t)=z_0+v_zt.&&
 \end{flalign}
 Proiettando il moto nel piano $xy$ si ottiene una circonferenza centrata in $(x_0,y_0)$ e di raggio $r=\frac{v_0m\gamma}{|\vec B|q}$ che nel complesso dà origine ad un'elica nello spazio (Fig. \ref{fig:motoBCost}).
@@ -102,7 +102,7 @@ Proiettando il moto nel piano $xy$ si ottiene una circonferenza centrata in $(x_
         \draw[decoration={aspect=0.3, segment length=3mm, amplitude=20,coil},decorate,color=blue] (-0.5,.8) -- (4,.8); 
     \end{tikzpicture}   
     \end{subfigure}
-    \caption{Rappresentazione grafica delle equazioni del moto ottenute.}
+    \caption{Rappresentazione delle equazioni del moto. Il primo grafico rappresenta il moto nel piano mentre il secondo lo rappresenta in tre dimensioni.}
     \label{fig:motoBCost}
 \end{figure}
  Il risultato ottenuto è simile a quanto è predetto dalla meccanica classica, differisce da questa per il valore esatto della frequenza di rotazione e del raggio che dipendo da $\gamma$ e si riconducono alle loro forme newtoniane nel limite classico per cui $\gamma \approx 1$.

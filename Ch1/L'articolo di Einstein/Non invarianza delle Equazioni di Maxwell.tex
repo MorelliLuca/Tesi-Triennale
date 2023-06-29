@@ -1,11 +1,11 @@
 \subsection{La non invarianza delle equazioni di Maxwell}
 \label{Sec:nonInvMax}
- Si considerino due sistemi di riferimento $K$ e $K'$, inerziali e reciprocamente in moto in maniera tale che in $K'$ l'origine del sistema $K$ risulti in moto a velocità costante $\vec{V}$. Allora in ogni sistema si misureranno rispettivamente $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$.\\ Il principio di relatività galileiana impone che questi due campi, nei loro sistemi di riferimento, soddisfino le equazioni di Maxwell (\ref{EquazioniMaxwell}). Inoltre, siccome la forza di Lorentz (\ref{ForzaLorentz}) deve essere la medesima in tutti i sistemi di riferimento inerziali, considerando una carica $q$ in moto con velocità $\vec{v}$ in $K$ e $\vec{V}+\vec{v}$ in $K'$, essendo $q$ invariante deve valere:
+ Si considerino due sistemi di riferimento $K$ e $K'$, inerziali e reciprocamente in moto in maniera tale che in $K$ l'origine del sistema $K'$ risulti in moto a velocità costante $\vec{V}$. Allora in ogni sistema si misureranno rispettivamente $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$.\\ Il principio di relatività galileiana impone che questi due campi, nei loro sistemi di riferimento, soddisfino le equazioni di Maxwell (\ref{EquazioniMaxwell}). Inoltre, siccome la forza di Lorentz (\ref{ForzaLorentz}) deve essere la medesima in tutti i sistemi di riferimento inerziali, considerando una carica $q$ in moto con velocità $\vec{v}$ in $K$ e $\vec{v}-\vec{V}$ in $K'$, essendo $q$ invariante deve valere:
  \begin{flalign*}
-		\vec{F'}=\vec{F}\quad&\Rightarrow\quad \vec{E'}+\vec{v}\wedge\vec{B'}=\vec{E}+(\vec{V}+\vec{v})\wedge\vec{B}\\
+		\vec{F'}=\vec{F}\quad&\Rightarrow\quad \vec{E'}+(\vec{v}-\vec{V})\wedge\vec{B'}=\vec{E}+\vec{v}\wedge\vec{B}\\
          &\Rightarrow\quad \vec{E'}+\vec{v}\wedge(\vec{B'}-\vec{B})=\vec{E}+\vec{V}\wedge\vec{B'}.
  \end{flalign*}
-Così facendo si possono ottenere delle relazioni tra $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$ che costituiscono quindi le trasformazioni dei campi elettrici e magnetici tra sistemi inerziali. Queste però possono dipendere esclusivamente dalle proprietà dei due sistemi di riferimento considerati e nella fattispecie dalla loro velocità reciproca. Per questo motivo, il termine contenente $\vec{v}$, ossia la velocità della carica nel sistema $K$, deve annullarsi. Quindi le trasformazioni risultano:
+Così facendo si possono ottenere delle relazioni tra $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$ che costituiscono quindi le trasformazioni dei campi elettrici e magnetici tra sistemi inerziali secondo le prescrizioni della meccanica classica. Queste però possono dipendere esclusivamente dalle proprietà dei due sistemi di riferimento considerati e nella fattispecie dalla loro velocità reciproca. Per questo motivo, il termine contenente $\vec{v}$, ossia la velocità della carica nel sistema $K$, deve annullarsi. Quindi le trasformazioni risultano:
 \begin{equation}
 	\begin{cases}
 		\vec{E'}(t,\vec{x'})=\vec{E}(t,\vec{x'})+\vec{V}\wedge\vec{B}(t,\vec{x})\\
@@ -13,16 +13,16 @@ Così facendo si possono ottenere delle relazioni tra $\vec{E},\ \vec{B}$ e $\ve
 	\end{cases}.
 	\label{TrasfGalileiEB}
 \end{equation}
-Bisogna ora studiare come si trasformino le grandezze generatici dei campi: $\rho$ e $\vec{J}$. Considerando un volume $\Delta V$, in cui è presente una carica $\Delta q$. Allora, la densità di carica è definita come
+Si considerino ora le leggi di trasformazione delle grandezze generatici dei campi: $\rho$ e $\vec{J}$. Sia $\Delta V$ un volume in cui è presente una carica $\Delta q$. Allora, la densità di carica è definita come
 \begin{equation*}
 	\rho=\lim_{\Delta V\rightarrow 0}\frac{\Delta q}{\Delta V}.
-\end{equation*} Visto che le lunghezze sono assunte essere assolute allora devono esserlo pure i volumi e, essendo la carica non dipendente dal sistema di riferimento, si conclude che pure la densità di carica non dipende dal sistema di riferimento. Per quanto riguarda la densità di corrente superficiale, definita come $\vec{J}=\rho\vec{v}$,  è sufficiente applicare le trasformazioni delle velocità tra due sistemi in moto reciproco a velocità $\vec{V}$ per ottenere:
+\end{equation*} Visto che le lunghezze sono assunte "assolute" allora devono esserlo pure i volumi e, essendo la carica non dipendente dal sistema di riferimento, si conclude che pure la densità di carica non dipende dal sistema di riferimento. Per quanto riguarda la densità di corrente superficiale, definita come $\vec{J}=\rho\vec{v}$,  è sufficiente applicare le trasformazioni delle velocità tra due sistemi in moto reciproco a velocità $\vec{V}$ per ottenere:
 \begin{equation}
 	\vec{J'}=\vec{J}-\rho\vec{V}.
 \end{equation}
 I risultati appena ottenuti consentono di studiare l'invarianza o meno delle equazioni di Maxwell per le trasformazioni di Galilei.\\
 
-Si consideri la prima equazione di Maxwell in $K'$ e la si supponga valida in $K$. Trasformando $E'$ in $E$ e per gli operatori di differenziazione secondo la (\ref{GalileiDifferenziale}), si ottiene una quantità che deve annullarsi affinché sia valida questa equazione anche in $K'$, come richiesto dal principio di relatività.
+Si consideri la prima equazione di Maxwell in $K'$ e la si supponga valida in $K$. Trasformando $E'$ in $E$ e per gli operatori di differenziazione secondo la (\ref{GalileiDifferenziale}), si ottiene una quantità che deve annullarsi affinché sia valida questa equazione anche in $K'$ (come richiesto dal principio di relatività).
 \begin{flalign*}
 	\vnabla'\cdot\vec{E'}-\frac{\rho}{\epsilon_0}&=\vnabla\cdot(\vec{E}+\vec{V}\wedge\vec{B})-\frac{\rho}{\epsilon_0}\\
 	&=\left(\vnabla\cdot\vec{E}-\frac{\rho}{\epsilon_0}\right)-\vec{V}\cdot(\vnabla\wedge\vec{B})=-\vec{V}\cdot(\vnabla\wedge\vec{B}).
@@ -41,7 +41,7 @@ Analogamente per la terza equazione:
 	&=\vnabla\wedge(\vec{E}+\vec{V}\wedge\vec{B})+\frac{\partial \vec{B}}{\partial t}+(\vec{V}\cdot\vnabla)\vec{B}\\
 	&=\left(\vnabla\wedge\vec{E}+\frac{\partial \vec{B}}{\partial t}\right)+\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0.
 \end{flalign*} 
-Infatti il termine tra parentesi è identicamente nullo poiché in $K$ vale la terza equazione di Maxwell e, ricordando che $\vec{V}$ è costante, si annullano gli addendi restanti se sviluppati tramite le regole di differenziazione:
+Infatti il termine tra parentesi è identicamente nullo (poiché in $K$ vale la terza equazione di Maxwell). Inoltre, ricordando che $\vec{V}$ è costante e usando le regole di differenziazione si ha:
 \begin{equation*}
 	\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=-(\vec{V}\cdot\vnabla)\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0.
 \end{equation*}

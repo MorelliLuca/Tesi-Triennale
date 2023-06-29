@@ -1,5 +1,5 @@
 \subsection{Il modello della corda vibrante}
-Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei campi è la corda omogenea vibrante. Un sistema di questo tipo è modellizzato come un corpo elastico esteso in una dimensione e di grandezza trascurabile nelle direzioni a questa trasversali. La corda, disposta orizzontalmente come in Figura \ref{fig:corda}, può quindi oscillare verticalmente. Per descrivere tale oscillazione si definisce un campo scalare $\varphi(t,x)$ che descrive lo spostamento del punto della corda che è in $x$ dall'equilibrio all'istante $t$.
+Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei campi è la corda omogenea vibrante. Un sistema di questo tipo è modellizzato come un corpo elastico esteso in una dimensione e di grandezza trascurabile nelle direzioni a questa trasversali. La corda, disposta orizzontalmente come in Figura \ref{fig:corda}, può quindi solo oscillare verticalmente. Per descrivere tale oscillazione si definisce un campo scalare $\varphi(t,x)$ che descrive lo spostamento dall'equilibrio del punto della corda in $x$ all'istante $t$.
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}
@@ -14,7 +14,7 @@ Uno dei sistemi più semplici per cui è possibile utilizzare la teoria dei camp
     \caption{Schema del sistema corda e del campo degli spostamenti $\varphi$.}
     \label{fig:corda}
 \end{figure} 
-Si osservi che è necessario che la corda (di lunghezza finita) sia vincolata ai suoi estremi, infatti tale richiesta rende soddisfatta l'ipotesi che il campo degli spostamenti si annulli sulla frontiera del dominio ove esso è definito. \\
+Si osservi che si usa il fatto che la corda (di lunghezza finita) sia vincolata ai suoi estremi. Infatti, tale richiesta rende soddisfatta l'ipotesi che il campo degli spostamenti si annulli sulla frontiera del dominio ove esso è definito. \\
 
 Classicamente la lagrangiana meccanica del sistema è data da un termine di energia cinetica $T(v)$ ed un termine di energia potenziale $U(x)$:
 \begin{equation*}
@@ -25,7 +25,7 @@ Si possono valutare questi due termini considerando il contributo di ogni punto 
     T=\int_{0}^{L}\frac{\rho}{2}v^2(t,x)\ dx=\int_{0}^{L}\frac{\rho}{2}\bigg[\frac{\partial \varphi}{\partial t}(t,x)\bigg]^2\ dx,
 \end{equation*}
 dove $\rho$ è la densità di massa lineare della corda.\\
-Per determinare il termine potenziale è necessario fare alcune assunzioni che semplifichino la trattazione. In primo Luogo si considererà un potenziale elastico che dipende dall'allungamento che subisce la corda. In questo modo, considerando un tratto di corda compreso tra $x$ e $x+\Delta x$, l'allungamento di tale tratto, durante un'oscillazione, è:
+Per determinare il termine potenziale è opportuno fare alcune assunzioni che semplifichino la trattazione. In primo luogo si considererà un potenziale elastico che dipende dall'allungamento che subisce la corda. In questo modo, considerando un tratto di corda compreso tra $x$ e $x+\Delta x$, l'allungamento di tale tratto, durante un'oscillazione, è:
 \begin{flalign*}
     \Delta l=\Delta x\sqrt{\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
     \bigg)^2+1}-\Delta x.
@@ -35,13 +35,13 @@ Il potenziale del tratto $\Delta x$ di corda è invece:
     U_{\Delta x}=\frac{k}{2}(\Delta l)^2,
 \end{equation*}
 dove $k$ è la constante elastica di quel preciso tratto.\\
-In secondo luogo si supporrà che la vibrazione della corda dia origine a piccole oscillazioni, tali che, su un tratto di corda definito come prima, valga $\varphi(t,x+\Delta x)-\varphi(t,x)\ll\Delta x$. Così facendo l'allungamento di questo tratto è approssimatile secondo Taylor con:
+In secondo luogo si supporrà che la vibrazione della corda dia origine a piccole oscillazioni, tali che, su un tratto di corda definito come prima, valga $\varphi(t,x+\Delta x)-\varphi(t,x)\ll\Delta x$. Così facendo l'allungamento di questo tratto è approssimabile secondo Taylor con:
 \begin{equation*}
     \Delta l\approx\Delta x\bigg[\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
     \bigg)^2+1\bigg]-\Delta x=\Delta x\bigg(\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}
     \bigg)^2.
 \end{equation*}
-Infine è necessario studiare cosa accade nel limite in cui questo tratto di corda tende ad essere infinitesimo, così da poter studiare le proprietà puntuali della corda e non di singoli tratti. In questo limite si ha che :
+Infine, occorre studiare cosa accade nel limite in cui questo tratto di corda tende ad essere infinitesimo, così da poter studiare le proprietà puntuali della corda e non di singoli tratti. In questo limite si ha che :
 \begin{equation*}
     \lim_{\Delta x\rightarrow 0}\frac{\varphi(t,x+\Delta x)-\varphi(t,x)}{\Delta x}=\frac{\partial \varphi}{\partial x}.
 \end{equation*}
@@ -61,4 +61,4 @@ In questo modo si è ottenuta una densità di lagrangiana con la quale è possib
 \begin{equation*}
     \frac{\partial^2 \varphi}{\partial t^2}=\frac{a}{\rho}\frac{\partial^2 \varphi}{\partial x^2}.
 \end{equation*}
-Le soluzioni di questa equazione sono onde che si propagano a velocità $\sqrt{\frac{a}{\rho}}$ sulla corda. Questo risultato è coerente con quanto si osserva: infatti è noto che corde tese sono in grado di vibrare come avviene negli strumenti musicali a corda.
+Le soluzioni di questa equazione sono onde che si propagano a velocità $\sqrt{\frac{a}{\rho}}$ lungo la corda. Questo risultato è coerente con quanto si osserva: infatti è noto che corde tese sono in grado di vibrare come avviene negli strumenti musicali a corda.

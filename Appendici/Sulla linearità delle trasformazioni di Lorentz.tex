@@ -88,7 +88,7 @@ Secondo il principio di relatività se si calcola $f(x)=x'$ è necessario che $x
 \begin{equation*}
     \frac{dx'}{ds'}=\gamma'=J_f(\xi+s\gamma)\frac{ds}{ds'}\gamma.
 \end{equation*}
-Si consideri ora la i-esima componente di $\gamma'$, dove $i=0,1,2,3$, e la si divida per $\gamma_0$:
+Si consideri ora la i-esima componente di $\gamma'$, dove $i=0,1,2,3$\footnote{In questa appendice non si fa uso della convenzione per cui le lettere latine rappresentano solamente gli indici $1,2,3$.}, e la si divida per $\gamma_0$:
 \begin{equation*}
     \frac{\gamma'_i}{\gamma'_0}=\frac{\sum_{k=0}^3\partial_kf_i(\xi+s\gamma)\gamma_k}{\sum_{k=0}^3\partial_kf_0(\xi+s\gamma)\gamma_k}
     \label{ARappGamma}
@@ -105,7 +105,7 @@ che può annullarsi solo se si annulla il numeratore della frazione. Da questa o
     = \left(\partial_kf_i(x)\gamma_k\right)\left(\partial^2_{hn}f_0(x)\gamma_h\gamma_n\right) \quad i=0,1,2,3  
     \label{ABigPSum}
 \end{equation}
-Siccome si è supposto inizialmente $\det J_f(x)\neq 0$ deve necessariamente esistere almeno un $j$ tale che $ \forall\gamma\in \mathbb{R}^4\quad\partial_kf_j(x)\gamma_k\neq 0$. Inoltre, se si suppone di prendere $\bar{\gamma}$ tale che $\partial_kf_0(x)\bar{\gamma}_k=0$, per la (\ref{ABigPSum}) necessariamente anche $\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$.\\
+Siccome si è supposto inizialmente $\det J_f(x)\neq 0$ deve necessariamente esistere almeno un $j$ tale che $ \forall\gamma\in \mathbb{R}^4$, non nullo, $\partial_kf_j(x)\gamma_k\neq 0$. Inoltre, se si suppone di prendere $\bar{\gamma}\neq0$ tale che $\partial_kf_0(x)\bar{\gamma}_k=0$, per la (\ref{ABigPSum}) necessariamente anche $\partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$.\\
 
 Si applichi quindi il Lemma \ref{lemm:A1} che, in virtù di quanto appena osservato ($\partial_kf_0(x)\bar{\gamma}_k=0\Rightarrow \partial^2_{hn}f_0(x)\bar{\gamma}_h\bar{\gamma}_n=0$) consente di scrivere:
 \begin{equation*}

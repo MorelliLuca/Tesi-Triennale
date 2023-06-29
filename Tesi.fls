@@ -40,6 +40,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
@@ -220,10 +224,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
@@ -440,6 +440,8 @@ INPUT /home/lyokol/Scrivania/Tesi-Triennale/Ch4/Lagrangiana del campo EM.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Ch4/Lagrangiana del campo EM.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Appendici/Sulla linearità delle trasformazioni di Lorentz.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Ringraziamenti.tex
+INPUT /home/lyokol/Scrivania/Tesi-Triennale/Ringraziamenti.tex
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.bbl
 INPUT /home/lyokol/Scrivania/Tesi-Triennale/Tesi.aux

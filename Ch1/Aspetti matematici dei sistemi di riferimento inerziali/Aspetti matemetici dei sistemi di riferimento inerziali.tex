@@ -5,7 +5,7 @@ Il primo fatto sperimentale che viene assunto è che lo spazio sia tridimensiona
 geometria euclidea mentre il tempo sia ad una sola dimensione ed anch'esso isotropo ed omogeneo.\\
 Sulla base di queste assunzioni si può scegliere un punto dello spazio-tempo come 
 origine di uno spazio vettoriale $\mathbb{R}\times\mathbb{R}^3$. In altre parole si scelgono l'origine e tre direzioni spaziali arbitrarie (linearmente indipendenti) lungo le quali sono orientati tre assi cartesiani, identificabili con una base di $\mathbb{R}^3$.
-Inoltre dall'istante corrispondente al punto spazio-temporale precedentemente scelto si inizia a misurare il tempo. Si osservi che tali scelte sono arbitrarie poiché spazio e tempo sono isotropi ed omogenei.\\
+Inoltre, dall'istante corrispondente al punto spazio-temporale precedentemente scelto si inizia a misurare il tempo. Si osservi che tali scelte sono arbitrarie poiché spazio e tempo sono isotropi ed omogenei.\\
 
 Per poter formulare delle leggi che descrivano la realtà fisica risulta necessario assumere l'esistenza di una serie di sistemi di riferimento, detti inerziali, in cui tali leggi siano valide indipendentemente dal sistema in cui sono descritte. Questi sistemi sono sperimentalmente caratterizzati dalla proprietà di essere reciprocamente in moto rettilineo uniforme, ossia il moto dell'origine di un sistema, rispetto ad un qualsiasi altro sistema di riferimento inerziale, deve essere nella forma: 
 \begin{equation}
@@ -16,7 +16,7 @@ Una volta identificati questi particolari sistemi  si può enunciare il principi
 
 \subsection{Trasformazioni di sistemi di riferimento inerziali}
 Si vuole ora studiare quali siano le più generali trasformazioni che consentono di ottenere la descrizione di un fenomeno in un sistema di riferimento inerziale $K'$ conoscendo la descrizione di tale fenomeno in un primo riferimento inerziale $K$. In questo modo la generica trasformazione da $K$ a $K'$ sarà un'applicazione $f:\mathbb{R}\times \mathbb{R}^3\rightarrow\mathbb{R}\times \mathbb{R}^3$ invertibile; quest'ultima proprietà è necessaria poiché, come deve essere possibile passare da $K$ a $K'$, deve essere possibile fare anche il contrario.\\
-Per poter caratterizzare le proprietà di tale applicazione è ora necessario tradurre matematicamente la richiesta imposta dal principio di relatività. Si osservi che, per tale principio e per la definizione di sistema inerziale, è necessario che in seguito ad una trasformazione tutti i sistemi inerziali restino tali. In altre parole $f$ deve trasformare tutte le rette in rette (nello spazio-tempo), questa condizione consente di utilizzare un teorema di geometria che consente di identificare la famiglia di queste trasformazioni (si seguirà la dimostrazione data in \cite{LostThmOfGeometry}). 
+Per poter caratterizzare le proprietà di tale applicazione è ora necessario tradurre matematicamente la richiesta imposta dal principio di relatività. Si osservi che, per tale principio e per la definizione di sistema inerziale, è necessario che in seguito ad una trasformazione tutti i sistemi inerziali restino tali. In altre parole $f$ deve trasformare tutte le rette in rette (nello spazio-tempo), questa condizione permette di utilizzare un teorema di geometria che consente di identificare la famiglia di queste trasformazioni (si seguirà la dimostrazione data in \cite{LostThmOfGeometry}). 
 
 \begin{thm}
 Sia $f:\mathbb{R}^n\rightarrow\mathbb{R}^n\ (n>1)$ una funzione biettiva che trasforma tutte le rette in rette. Allora $f$ è una trasformazione affine. 
@@ -48,7 +48,7 @@ Per procedere alla dimostrazione di questo teorema è utile iniziare dimostrando
 \begin{proof}
     Sia $A:\mathbb{R}^2\rightarrow\mathbb{R}^2$ una trasformazione affine invertibile tale che $(A\circ f)(0,0)=(0,0),\ (A\circ f)(1,0)=(1,0)$ e $(A\circ f)(0,1)=(0,1)$. Si osservi che anche $A\circ f$ trasforma rette in rette. Sia $g=A\circ f$.\\
 	
-	Si mostrerà inizialemente che $\forall x,y\in\mathbb{R} ^2$ vale la proprietà $g(x+y)=g(x)+g(y)$.\\Si considerino i punti $x,y$ e $(0,0)$ non giacenti sulla stessa retta nel piano $\mathbb{R}^2$. Si prendano due rette passanti rispettivamente per l'origine e $x$ e l'origine e $y$ e le rispettive rette parallele passanti per $y$ nel primo caso e $x$ nel secondo, come mostrato in Figura \ref{Fig:PianoLinGen}, queste ultime due rette si intersecheranno nel punto $x+y$, formando quindi un parallelogrammo.\\
+	Si mostrerà inizialemente che $\forall x,y\in\mathbb{R} ^2$ vale la proprietà $g(x+y)=g(x)+g(y)$.\\Si considerino i punti $x,y$ e $(0,0)$ non giacenti sulla stessa retta nel piano $\mathbb{R}^2$. Si prendano due rette passanti rispettivamente per l'origine e $x$ e l'origine e $y$ e le rispettive rette parallele passanti per $y$ nel primo caso e $x$ nel secondo, come mostrato in Figura \ref{Fig:PianoLinGen}. Queste ultime due rette si intersecheranno nel punto $x+y$, formando quindi un parallelogrammo.
 	\begin{figure}[h!]
 		\centering
 		\begin{tikzpicture}[scale=0.8]
@@ -79,14 +79,14 @@ Per procedere alla dimostrazione di questo teorema è utile iniziare dimostrando
 	\caption{Rappresentazione grafica di come agisce la funzione $g$ nel piano}
 	\label{Fig:PianoLinGen}
 	\end{figure}
-	Per ipotesi queste quattro rette verranno mappate in altre quattro rette da $g$ e, poiché questa funzione è biettiva, le immagini di rette parallele saranno a loro volta parallele (altrimenti nel punto di incidenza si perderebbe l'iniettività di $g$), mentre i punti di incidenza potranno essere mappati solamente in altri punti di incidenza (poiché questi appartenendo ognuno a due rette dovranno, per biettività, appartenere ad entrambe le immagini delle due rette nel codominio). Questo sta a significare che le quattro rette così ottenute formeranno un nuovo parallelogrammo di vertici $g(x),\ g(y),\ g(x+y)$ e $(0,0)$, poiché per costruzione $g(0,0)=(0,0)$. La regola del parallelogramma garantisce quindi che $g(x)+g(y)=g(x+y)$.\\
+	Per ipotesi, queste quattro rette verranno mappate in altre quattro rette da $g$ e, poiché questa funzione è biettiva, le immagini di rette parallele saranno a loro volta parallele (altrimenti nel punto di incidenza si perderebbe l'iniettività di $g$), mentre i punti di incidenza potranno essere mappati solamente in altri punti di incidenza (poiché questi appartenendo ognuno a due rette dovranno, per biettività, appartenere ad entrambe le immagini delle due rette nel codominio). Questo sta a significare che le quattro rette così ottenute formeranno un nuovo parallelogrammo di vertici $g(x),\ g(y),\ g(x+y)$ e $(0,0)$, poiché per costruzione $g(0,0)=(0,0)$. La regola del parallelogramma garantisce quindi che $g(x)+g(y)=g(x+y)$.\\
 	Se invece i punti $x,y$ e $(0,0)$ giacciono sulla stessa retta è sufficiente prendere un punto $z\in \mathbb{R}^2$ che non giaccia sulla medesima retta dei punti precedenti. Si può quindi utilizzare quanto dimostrato nel caso precedente per ottenere:
 	\begin{equation*}
 		g(x+y+z)=g(x+y)+g(z)= g(x)+g(y+z)=g(x)+g(y)+g(z)
 	\end{equation*}
 	da cui segue che $g(x+y)=g(x)+g(y)$ anche in questo caso.\\
 
-    Poiché per ipotesi $g$ conserva rette in rette e per costruzione mappa l'origine nell'origine e i punti $(0,1)$ e $(1,0)$ in se stessi allora $g$ deve trasformare gli assi $x$ e $y$ in se stessi. Si possono quindi considerare due applicazioni $\alpha,\beta:\mathbb{R} \rightarrow\mathbb{R} $ tali che $g(x,y)=(\alpha(x),\beta(y))$ con  $x,y\in\mathbb{R}$. Si osservi che, per quanto dimostrato fino ad ora, $f(1,1)=f(1,0)+f(0,1)=(1,0)+(0,1)=(1,1)$. Analogamente a come si è detto per gli assi $x$ e $y$, anche la bisettrice del primo quadrante è quindi mappata in se stessa per cui, per ogni $x\in\mathbb{R}$, $\alpha(x)=\beta(x)$. Si proseguirà quindi studiando solo una di queste due funzioni (poiché quanto si dirà per una è valido anche per l'altra).\\
+    Poiché per ipotesi $g$ trasforma tutte le rette in rette e per costruzione mappa l'origine nell'origine e i punti $(0,1)$ e $(1,0)$ in se stessi allora $g$ deve trasformare gli assi $x$ e $y$ in se stessi. Si possono quindi considerare due applicazioni $\alpha,\beta:\mathbb{R} \rightarrow\mathbb{R} $ tali che $g(x,y)=(\alpha(x),\beta(y))$ con  $x,y\in\mathbb{R}$. Si osservi che, per quanto dimostrato fino ad ora, $f(1,1)=f(1,0)+f(0,1)=(1,0)+(0,1)=(1,1)$. Analogamente a come si è detto per gli assi $x$ e $y$, anche la bisettrice del primo quadrante è quindi mappata in se stessa per cui, per ogni $x\in\mathbb{R}$, $\alpha(x)=\beta(x)$. Si proseguirà quindi studiando solo una di queste due funzioni (poiché quanto si dirà per una è valido anche per l'altra).\\
 
 	Siano $a,b\in\mathbb{R}$ e si consideri una retta passante per l'origine.
 	\begin{equation*}
@@ -100,8 +100,8 @@ Per procedere alla dimostrazione di questo teorema è utile iniziare dimostrando
 
 	Si è quindi dimostrato che per $\alpha$ e $\beta$ valgono le seguenti relazioni per ogni $x,y\in\mathbb{R}$:
 	\begin{flalign*}
-		&&\alpha(x+y)=\alpha(x)+\alpha(y)\qquad \alpha(xy)=\alpha(x)\alpha(y)&&\\
-		&&\beta(x+y)=\beta(x)+\beta(y)\qquad \beta(xy)=\beta(x)\beta(y).&&
+		&&\alpha(x+y)=\alpha(x)+\alpha(y),\qquad \alpha(xy)=\alpha(x)\alpha(y),&&\\
+		&&\beta(x+y)=\beta(x)+\beta(y),\qquad \beta(xy)=\beta(x)\beta(y).&&
 	\end{flalign*}
 	Queste relazioni implicano che $\alpha$ e $\beta$ siano due automorfismi di campo di $\mathbb{R}$ e, per la Proposizione 1, risultano entrambi l'identità, di conseguenza pure $g=A\circ f=\text{id}$. Infine applicando a $g$ la trasformazione inversa di $A$ (così da avere $A^{-1}\circ A\circ f=A^{-1}=f$) si è dimostrato che $f$ deve essere affine.
 \end{proof}
@@ -110,7 +110,7 @@ Si procederà ora generalizzando questo teorema con la dimostrazione del Teorema
 
 \begin{proof}[Dimostrazione Teorema \ref{thm:LinGenMain} $(n>2)$]
 	Si consideri la traslazione $T:\mathbb{R}^n \rightarrow\mathbb{R}^n$ tale che $(T\circ f)(0)=0$ e si definisca $g=T\circ f$.\\
-	Siano $x,y\in\mathbb{R}^n$ e $\pi$ un piano tale che $x,y\in\pi$. Si prendano due rette $r_1,r_2\in\pi$ e incidenti in $0$, e un punto $P\in\pi$. Se si considerano altre due rette $r_3$ e $r_4$ passanti per $P$ e tali che $r_3$ sia parallela a $r_1$ e $r_4$ lo sia per $r_2$, così che $r_3$ intersecherà $r_2$ in un punto $P_2$ e analogamente $r_4$ intersecherà $r_1$ in un punto $P_1$, è possibile costruire un parallelogrammo con vertice $P$ e lati giacenti sulle rette considerate (Fig. \ref{Fig:PianoLinGen2}).\\
+	Siano $x,y\in\mathbb{R}^n$ e $\pi$ un piano tale che $x,y\in\pi$. Si prendano due rette $r_1,r_2\in\pi$ e incidenti in $0$, e un punto $P\in\pi$. Se si considerano altre due rette $r_3$ e $r_4$ passanti per $P$ e tali che $r_3$ sia parallela a $r_1$ e $r_4$ lo sia per $r_2$ (così che $r_3$ intersecherà $r_2$ in un punto $P_2$ e analogamente $r_4$ intersecherà $r_1$ in un punto $P_1$) è possibile costruire un parallelogrammo con vertice $P$ e lati giacenti sulle rette considerate (Fig. \ref{Fig:PianoLinGen2}).\\
 	\begin{figure}[H]
 		\centering
 		\begin{tikzpicture}[scale=0.785]
@@ -140,12 +140,12 @@ Si procederà ora generalizzando questo teorema con la dimostrazione del Teorema
 		\node[fill=white] at (14.3,1) {$g(\pi)$};
 		
 	\end{tikzpicture}
-	\caption{Rappresentazione grafica di come agisce la funzione $g$ nel piano}
+	\caption{Rappresentazione grafica di come agisce la funzione $g$ nel piano $\pi$}
 	\label{Fig:PianoLinGen2}
 \end{figure}
-	 Poiché $g$ è biettiva e trasforma rette in rette allora, come si è già visto per dimostrare il Teorema \ref{thm:LinGen2}, questo parallelogrammo deve essere trasformato in un nuovo parallelogrammo con i lati giacenti sulle immagini delle precedenti rette e con i vertici dati dalle immagini dei vertici del precedente parallelogrammo. Detto $\pi'$ il piano contente le immagini di $r_1$ e $r_2$ allora, per costruzione del parallelogrammo, si avrà che $g(P)\in \pi'$ e, poiché $P\in\pi$ è arbitrario, si deduce che ogni punto di $\pi$ è mappato in $\pi'$ ossia $g$ trasforma piani in piani.\\
+	 Poiché $g$ è biettiva e trasforma le rette in rette allora, come si è già visto per dimostrare il Teorema \ref{thm:LinGen2}, questo parallelogrammo deve essere trasformato in un nuovo parallelogrammo con i lati giacenti sulle immagini delle precedenti rette e con i vertici dati dalle immagini dei vertici del precedente parallelogrammo. Detto $\pi'$ il piano contente le immagini di $r_1$ e $r_2$ allora, per costruzione del parallelogrammo, si avrà che $g(P)\in \pi'$ e, poiché $P\in\pi$ è arbitrario, si deduce che ogni punto di $\pi$ è mappato in $\pi'$ ossia $g$ trasforma piani in piani.\\
 
-	Si consideri ora un'applicazione lineare invertibile $L$ tale che $(L\circ g)(\pi)=\pi$, in questo modo $L\circ g\big|_{\pi}:\mathbb{R} ^2\rightarrow\mathbb{R} ^2$ è biettiva e trasforma rette in rette, per il Teorema \ref{thm:LinGen2} allora questa è un'applicazione affine, nella fattispecie poiché $g(0)=0$ per costruzione e $L$ è lineare allora $(L\circ g)(0)=0$, per cui $L\circ g$ è lineare. Risulta a questo punto sufficiente far uso dell'inversa di $L$ per ottenere:
+	Si consideri ora un'applicazione lineare invertibile $L$ tale che $(L\circ g)(\pi)=\pi$, in questo modo $L\circ g\big|_{\pi}:\mathbb{R} ^2\rightarrow\mathbb{R} ^2$ è biettiva e trasforma rette in rette, per il Teorema \ref{thm:LinGen2} allora questa è un'applicazione affine, nella fattispecie poiché $g(0)=0$ (per costruzione) e $L$ è lineare allora $(L\circ g)(0)=0$, per cui $L\circ g$ è lineare. Risulta a questo punto sufficiente far uso dell'inversa di $L$ per ottenere:
 	\begin{flalign*}
 		g(\alpha x+\beta y)&=L^{-1}((L\circ g)(\alpha x+\beta y))\\&=L^{-1}(\alpha (L\circ g)(x)+\beta (L\circ g)(y))=\alpha g(x)+ \beta g(y) \quad \alpha,\beta\in\mathbb{R}.
 	\end{flalign*}
