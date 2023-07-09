@@ -3,15 +3,15 @@ In relatività l'interazione di una particella carica con un campo elettromagnet
 \label{sec:lagCampi}
 Seguendo la monografia di Barone \cite{Barone} si vuole ora descrivere questo formalismo.
 \subsection{Il principio di minima azione per un campo}
-Per prima cosa si supponga che per un campo $\varphi(x^\mu)$ sia possibile costruire una funzione $\mathfrak{L}(\varphi,\partial_\mu\varphi,x^\mu)$, chiamata \emph{densità di lagrangiana}, che ne descrive le proprietà.
+Per prima cosa si supponga che per un campo $\varphi(x^\mu)$ sia possibile costruire una funzione $\mathfrak{L}(\varphi,\partial_\mu\varphi,x^\nu)$, chiamata \emph{densità di lagrangiana}, che ne descrive le proprietà.
 Si definisce allora l'azione di un campo il seguente funzionale:
 \begin{equation}
-    \mathcal{S}[\varphi]=\int\int_{\Omega}\mathfrak{L}(\varphi,\partial_\mu\varphi,x^\mu)\ d^3x\ dt,\label{azioneCampo}
+    \mathcal{S}[\varphi]=\int\int_{\Omega}\mathfrak{L}(\varphi,\partial_\mu\varphi,x^\nu)\ d^3x\ dt,\label{azioneCampo}
 \end{equation}
 dove l'integrale è calcolato su un dominio 4-dimensionale $\Omega$ \footnote{Questo volume può anche non essere finito.} nello spazio-tempo.\\
-Il principio di minima azione afferma in questo caso che: supponendo che $\varphi$ e $\partial_\mu\varphi$ si annullino con sufficiente rapidità sulla frontiera $\partial\Omega$, il campo $\varphi(t,x)$ realmente osservato nel sistema è tale da rendere stazionaria l'azione \eqref{azioneCampo}. Usando questo principio si possono ricavare le equazioni di Eulero-Lagrange per un campo.\\
+Il principio di minima azione afferma in questo caso che: supponendo che $\varphi$ e $\partial_\mu\varphi$ si annullino con sufficiente rapidità sulla frontiera $\partial\Omega$, il campo $\varphi(t,\vec x)$ realmente osservato nel sistema è tale da rendere stazionaria l'azione \eqref{azioneCampo}. Usando questo principio si possono ricavare le equazioni di Eulero-Lagrange per un campo.\\
 
- Si consideri un secondo campo (detto variazione di $\varphi$) $\delta\varphi(t,x)$ che assume valori piccoli in $\Omega$ e si annulla sulla sua frontiera. Il campo $\varphi+\delta\varphi$ rispetta ancora le ipotesi del principio di minima azione. Si osservi che così facendo le coordinate e il 4-volume $\Omega$ non vengono variate. Affinché $\varphi$ sia il campo che rende stazionaria l'azione deve essere nulla la variazione $\delta\mathcal{S}$ generata da $\delta\varphi$:
+ Si consideri un secondo campo (detto variazione di $\varphi$) $\delta\varphi(t,\vec x)$ che assume valori piccoli in $\Omega$ e si annulla sulla sua frontiera. Il campo $\varphi+\delta\varphi$ rispetta ancora le ipotesi del principio di minima azione. Si osservi che così facendo le coordinate e il 4-volume $\Omega$ non vengono variate. Affinché $\varphi$ sia il campo che rende stazionaria l'azione deve essere nulla la variazione $\delta\mathcal{S}$ generata da $\delta\varphi$:
 \begin{equation}
     \delta\mathcal{S}=\mathcal{S}[\varphi+\delta\varphi]-\mathcal{S}[\varphi]\approx\int\int_{\Omega}\bigg[\frac{\partial\mathfrak{L}}{\partial \varphi}\delta\varphi+\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\delta\partial_\mu\varphi\bigg]\ d^3x\ dt=0,\label{minimaAzioneCampiFull}
 \end{equation}
@@ -35,7 +35,7 @@ Utilizzando il Teorema di Gauss nel primo addendo della parte di destra di quest
 dove $d\sigma$ è l'elemento di 4-superfice di $\partial\mathcal{V}$ e $n_\mu$ è il 4-vettore normale ad esso.\\
 Integrando per parti in questo modo il secondo addendo ad integrando della \eqref{minimaAzioneCampiFull'} si ha:
 \begin{flalign*}
-    \int\int_{\Omega}\bigg[\frac{\partial\mathfrak{L}}{\partial \varphi}\delta\varphi+\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\partial_\mu\delta\varphi\bigg]& \ d^3x\ dt\\&=\int\int_{\Omega}\bigg[\frac{\partial\mathfrak{L}}{\partial \varphi}\delta\varphi-\partial_\mu\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\delta\varphi\bigg]\ d^3x\ dt+\int_{\partial\Omega }\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\delta\varphi\ d\sigma=0,
+    \int\int_{\Omega}\bigg[\frac{\partial\mathfrak{L}}{\partial \varphi}\delta\varphi+\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\partial_\mu&\delta\varphi\bigg] \ d^3x\ dt\\&=\int\int_{\Omega}\bigg[\frac{\partial\mathfrak{L}}{\partial \varphi}\delta\varphi-\partial_\mu\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}\delta\varphi\bigg]\ d^3x\ dt+\int_{\partial\Omega }\frac{\partial\mathfrak{L}}{\partial \partial_\mu\varphi}n_\mu\delta\varphi\ d\sigma=0,
 \end{flalign*}
 dove $d\sigma$ è l'elemento di 4-superfice di $\partial\Omega$ e $n_\mu$ è il 4-vettore normale ad esso.\\
 Per le ipotesi ($\delta\varphi$ si annulla su $\partial\Omega$) l'ultimo addendo si annulla e si ottiene:

@@ -8,21 +8,21 @@
 Così facendo si possono ottenere delle relazioni tra $\vec{E},\ \vec{B}$ e $\vec{E'},\ \vec{B'}$ che costituiscono quindi le trasformazioni dei campi elettrici e magnetici tra sistemi inerziali secondo le prescrizioni della meccanica classica. Queste però possono dipendere esclusivamente dalle proprietà dei due sistemi di riferimento considerati e nella fattispecie dalla loro velocità reciproca. Per questo motivo, il termine contenente $\vec{v}$, ossia la velocità della carica nel sistema $K$, deve annullarsi. Quindi le trasformazioni risultano:
 \begin{equation}
 	\begin{cases}
-		\vec{E'}(t,\vec{x'})=\vec{E}(t,\vec{x'})+\vec{V}\wedge\vec{B}(t,\vec{x})\\
+		\vec{E'}(t,\vec{x'})=\vec{E}(t,\vec{x})+\vec{V}\wedge\vec{B}(t,\vec{x})\\
 		\vec{B'}(t,\vec{x'})=\vec{B}(t,\vec{x})
 	\end{cases}.
 	\label{TrasfGalileiEB}
 \end{equation}
-Si considerino ora le leggi di trasformazione delle grandezze generatici dei campi: $\rho$ e $\vec{J}$. Sia $\Delta V$ un volume in cui è presente una carica $\Delta q$. Allora, la densità di carica è definita come
+Si considerino ora le leggi di trasformazione delle grandezze generatici dei campi: $\rho$ e $\vec{J}$. Sia $\Delta V$ un volume in cui è presente una carica $\Delta q$. Allora, la densità di carica è definita come:
 \begin{equation*}
 	\rho=\lim_{\Delta V\rightarrow 0}\frac{\Delta q}{\Delta V}.
-\end{equation*} Visto che le lunghezze sono assunte "assolute" allora devono esserlo pure i volumi e, essendo la carica non dipendente dal sistema di riferimento, si conclude che pure la densità di carica non dipende dal sistema di riferimento. Per quanto riguarda la densità di corrente superficiale, definita come $\vec{J}=\rho\vec{v}$,  è sufficiente applicare le trasformazioni delle velocità tra due sistemi in moto reciproco a velocità $\vec{V}$ per ottenere:
+\end{equation*} Siccome le lunghezze sono assunte "assolute" allora devono esserlo pure i volumi e, essendo la carica non dipendente dal sistema di riferimento, si conclude che pure la densità di carica non dipende dal sistema di riferimento. Per quanto riguarda la densità di corrente superficiale, definita come $\vec{J}=\rho\vec{v}$,  è sufficiente applicare le trasformazioni delle velocità tra due sistemi in moto reciproco a velocità $\vec{V}$ per avere:
 \begin{equation}
 	\vec{J'}=\vec{J}-\rho\vec{V}.
 \end{equation}
 I risultati appena ottenuti consentono di studiare l'invarianza o meno delle equazioni di Maxwell per le trasformazioni di Galilei.\\
 
-Si consideri la prima equazione di Maxwell in $K'$ e la si supponga valida in $K$. Trasformando $E'$ in $E$ e per gli operatori di differenziazione secondo la (\ref{GalileiDifferenziale}), si ottiene una quantità che deve annullarsi affinché sia valida questa equazione anche in $K'$ (come richiesto dal principio di relatività).
+Si si supponga valida in $K$ la prima equazione di Maxwell e si studi la medesima in $K'$. Trasformando $E'$ in $E$ e gli operatori di differenziazione secondo la (\ref{GalileiDifferenziale}), si ottiene una quantità che deve annullarsi (ossia ricondursi ad un'identità) affinché sia valida questa equazione anche in $K'$, come richiesto dal principio di relatività.
 \begin{flalign*}
 	\vnabla'\cdot\vec{E'}-\frac{\rho}{\epsilon_0}&=\vnabla\cdot(\vec{E}+\vec{V}\wedge\vec{B})-\frac{\rho}{\epsilon_0}\\
 	&=\left(\vnabla\cdot\vec{E}-\frac{\rho}{\epsilon_0}\right)-\vec{V}\cdot(\vnabla\wedge\vec{B})=-\vec{V}\cdot(\vnabla\wedge\vec{B}).
@@ -41,11 +41,11 @@ Analogamente per la terza equazione:
 	&=\vnabla\wedge(\vec{E}+\vec{V}\wedge\vec{B})+\frac{\partial \vec{B}}{\partial t}+(\vec{V}\cdot\vnabla)\vec{B}\\
 	&=\left(\vnabla\wedge\vec{E}+\frac{\partial \vec{B}}{\partial t}\right)+\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0.
 \end{flalign*} 
-Infatti il termine tra parentesi è identicamente nullo (poiché in $K$ vale la terza equazione di Maxwell). Inoltre, ricordando che $\vec{V}$ è costante e usando le regole di differenziazione si ha:
+Infatti il termine tra parentesi è identicamente nullo (poiché in $K$ vale la terza equazione di Maxwell). Inoltre, ricordando che $\vec{V}$ è costante e usando le regole di differenziazione:
 \begin{equation*}
 	\vnabla\wedge\vec{V}\wedge\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=-(\vec{V}\cdot\vnabla)\vec{B}+(\vec{V}\cdot\vnabla)\vec{B}=0.
 \end{equation*}
-L'ultima equazione di Maxwell è invece non-invariante. Infatti, sempre con il medesimo procedimento, si ottiene:
+L'ultima equazione di Maxwell è invece non-invariante. Infatti si ottiene:
 \begin{flalign*}
 	&\vnabla '\wedge\vec{B'}-\mu_0\epsilon_0\frac{\partial \vec{E'}}{\partial t'}-\mu_0\vec{J'}=
 	\vnabla\wedge\vec{B'}-\mu_0\epsilon_0\frac{\partial \vec{E'}}{\partial t}-\mu_0\epsilon_0(\vec{V}\cdot\vnabla)\vec{E'}-\mu_0\vec{J'} &&\\
@@ -56,4 +56,4 @@ L'ultima equazione di Maxwell è invece non-invariante. Infatti, sempre con il m
 \end{flalign*}
 che, con le assunzioni fin qui fatte, non è nullo in generale.\\
 
-Si è quindi giunti alla conclusione che la teoria di Maxwell e la meccanica di Newton non sono conciliabili.
+Si è quindi giunti alla conclusione che la teoria di Maxwell e la meccanica di Newton non sono conciliabili. Infatti le trasformazioni di Galieli non consentono di avere contemporaneamente invarianza della forza e delle equazioni di Maxwell.
