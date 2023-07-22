@@ -1,0 +1,359 @@
+\documentclass{beamer}
+\usetheme[hideothersubsections]{Berkeley}
+\usepackage[italian]{babel}
+\usepackage{tikz}
+
+\setbeamercovered{highly dynamic}
+
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+\resetcounteronoverlays{saveenumi}
+
+\title{Discussione della tesi: Aspetti fisici e matematici della teoria della relatività ristretta}
+\subtitle{Prova finale corso di laurea in fisica}
+\author{Luca Morelli}
+\date{21 luglio 2023}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section*{Punti chiave}
+\begin{frame}
+    \frametitle{Punti chiave:}
+    \begin{itemize}
+        \item Perché le trasformazioni tra sistemi di riferimento inerziali sono \textbf{applicazioni affini}?
+        \item Qual è l'\textbf{interpretazione geometrica} delle \textbf{trasformazioni di Lorentz}?
+        \item Quali caratteristiche deve avere una \textbf{meccanica relativistica}?
+        \item Come dedurre la formulazione \textbf{4-tensoriale} delle \textbf{equazioni di Maxwell}?
+    \end{itemize}
+\end{frame}
+
+\section*{Trasformazioni di sistemi di riferimento}
+\begin{frame}
+    \frametitle{Trasformazioni di sistemi di riferimento: Principi sperimentali}
+    Per determinare le caratteristiche di queste trasformazioni si sono utilizzati alcuni \textbf{fatti sperimentali}:
+    \begin{enumerate}
+        \item Lo spazio è \textbf{3D, isotropo e omogeneo}
+        \item Il tempo è \textbf{isotropo e omogeneo}
+        \item Esistono i \textbf{sistemi di riferimento inerziali} i quali sono reciprocamente in \textbf{moto rettilineo uniforme }
+        \item Tutte le \textbf{leggi della fisica sono identiche} in ogni sistema di riferimento inerziale
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Trasformazioni di sistemi di riferimento: Teorema}
+    \begin{columns}
+    \column{0.33\textwidth}
+    I \textbf{moti rettilinei uniformi} devono essere \textbf{tali in ogni sistema di riferimento inerziale}
+    \column{0.1\textwidth}
+    $\Longleftrightarrow$
+    \column{0.33\textwidth}
+    Una trasformazione tra sistemi di riferimento inerziali deve \textbf{trasformare le rette in rette}
+
+    \end{columns}  \vspace{10mm}  
+    \begin{block}{Teorema}
+        Sia $f:\mathbb{R}^n\longrightarrow\mathbb{R}^n $ ($n>1$) biettiva che trasforma tutte le rette in rette. Allora $f$ è una trasformazione affine.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Trasformazioni di sistemi di riferimento: Dimostrazione}
+\textbf{\large Dimostrazione del caso n=2}\normalsize
+\begin{enumerate}
+    \item \textbf{Sia $g=f\circ A$ ($A$ trasformazione affine)} tale che $g(0,0)=(0,0),\ g(0,1)=(0,1)$ e $g(1,0)=(1,0)$.
+    \item $g$ trasforma le rette in rette.
+    \item Essendo $g$ anche biettiva \textbf{deve trasformare parallelogrammi in parallelogrammi}.
+    \begin{columns}
+        \column{0.90\textwidth}
+        \begin{tikzpicture}[scale=0.6]
+            \filldraw[black] (0,0) circle (3pt) node[anchor=south east,scale=1]{$(0,0)$};
+            \filldraw[black] (.5,2) circle (3pt) node[anchor=south east,scale=1]{$y$};
+            \filldraw[black] (2,.5) circle (3pt) node[anchor=north west,scale=1]{$x$};
+            \filldraw[black] (2.5,2.5) circle (3pt) node[anchor=north west,scale=1]{$x+y$};
+        
+            \draw[black, ultra thick] (-1,-0.245) -- (3,0.75);
+            \draw[black,ultra thick] (-.5,1.755) -- (3.5,2.75);
+            \draw[black,ultra thick] (-0.257,-1) -- (0.75,3);
+            \draw[black,ultra thick] (1.61,-1) -- (2.75,3.5);
+        
+            \filldraw[black] (0+10,0) circle (3pt) node[anchor=south east,scale=1]{$(0,0)$};
+            \filldraw[black] (.5+10,2) circle (3pt) node[anchor=south east,scale=1]{$g(y)$};
+            \filldraw[black] (2+10,.5) circle (3pt) node[anchor=north west,scale=1]{$g(x)$};
+            \filldraw[black] (2.5+10,2.5) circle (3pt) node[anchor=north west,scale=1]{$g(x+y)$};
+        
+            \draw[black,ultra thick] (-1+10,-0.245) -- (3+10,0.75);
+            \draw[black,ultra thick] (-.5+10,1.755) -- (3.5+10,2.75);
+            \draw[black,ultra thick] (-0.257+10,-1) -- (0.75+10,3);
+            \draw[black,ultra thick] (1.61+10,-1) -- (2.75+10,3.5);
+        
+            \draw[black, ultra thick,->] (5,1.5) -- (8,1.5);
+            \node[fill=white] at (6.5,1.5) {$g$};
+            
+        \end{tikzpicture}
+    \end{columns}
+    \item Vale $\boxed{g(x+y)=g(x)+g(y)}$.
+    \seti
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Trasformazioni di sistemi di riferimento: Dimostrazione}
+    \begin{enumerate}
+        \conti
+        \item $g$ trasforma gli assi cartesiani e la bisettrice del primo quadrate in se stessi $\Rightarrow g(x,y)=(\alpha(x),\beta(y)),\quad\alpha(x)=\beta(y)$.
+        \item $g$ \textbf{trasforma} rette con \textbf{coefficiente angolare} $a$ in altre con coefficiente angolare $\alpha(a)$.
+        \vspace{3mm}
+        \begin{center}
+            \begin{columns}
+                \column{.9\textwidth}
+                \begin{tikzpicture}[scale=0.65]
+                    \filldraw[black] (0,0) circle (3pt) node[anchor=south east,scale=1]{$(0,0)$};
+                    \filldraw[black] (2,.5) circle (3pt) node[anchor=north west,scale=1]{$(b,ab)$};
+                
+                    \draw[black, ultra thick] (-1,-0.245) -- node[anchor=south, scale=1]{$y=ax$} (3,0.75);
+                    %\draw[black, thick] (-.5,1.755) -- (3.5,2.75);
+                    %\draw[black, thick] (-0.257,-1) -- (0.75,3);
+                    %\draw[black, thick] (1.61,-1) -- (2.75,3.5);
+                
+                    \filldraw[black] (0+10,0) circle (3pt) node[anchor=south east,scale=1]{$(0,0)$};
+                    \filldraw[black] (2+10,.5) circle (3pt) node[anchor=north ,scale=1]{$g(b,ab)$};
+                
+                    \draw[black,ultra thick] (-1+10,-0.245) -- (3+10,0.75);
+                    \node at (11.2,1) {$y=\alpha(a)x$};
+                    %\draw[black, thick] (-.5+10,1.755) -- (3.5+10,2.75);
+                    %\draw[black, thick] (-0.257+10,-1) -- (0.75+10,3);
+                    %\draw[black, thick] (1.61+10,-1) -- (2.75+10,3.5);
+                
+                    \draw[black, ultra thick,->] (5,.5) -- (8,0.5);
+                    \node[fill=white] at (6.5,.5) {$g$};
+                    
+                \end{tikzpicture} 
+            \end{columns}
+        \end{center}
+       
+        \vspace{3mm}
+        %\item Si consideri la retta $L=\{(x,y)\in\mathbb{R}^2\ \text{tali che}\ y=ax\}$.
+        %\item Trasformata in $g(L)=\{(x,y)\in\mathbb{R}^2\ \text{tali che}\ y=\alpha(a)x\}$.
+        \item Vale $\boxed{\alpha(ab)=\alpha(a)\alpha(b)}$.
+        \item Le proprietà fin qui dimostrate implicano che $g=id$ per cui $f=A^{-1}$ ed anch'essa è \textbf{affine}.
+    \end{enumerate}
+\end{frame}
+
+\section{Deduzione delle trasformazioni di Lorentz}
+\begin{frame}
+    \frametitle{Deduzione delle trasformazioni di Lorentz: Postulati di Einstein}
+    Per risolvere l'incompatibilità tra meccanica newtoniana e l'elettromagnetismo \textbf{Einstein propose due postulati}:\vspace{3mm}
+    \begin{enumerate}
+        \item \textbf{{Principio di relatività}}: tutte le leggi della fisica sono identiche in ogni sistema di riferimento inerziale
+        \item \textbf{Principio di costanza della velocità della luce}: la luce nello spazio vuoto si propaga sempre con velocità finita in modulo pari a $c$. 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deduzione delle trasformazioni di Lorentz: Trasformazioni del cono di luce}
+    La trasformazione $f:\mathbb{R}^4\rightarrow\mathbb{R}^4$ lineare e invertibile \textbf{deve trasformare coni di luce in coni di luce}.
+    \vspace{3mm}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[yellow,ultra thick,fill=yellow!20] (0,0) -- (-1,1) --  (1,1)--(0,0);
+            \draw[yellow,ultra thick,fill=yellow!40] (0,1) circle(1 and .2);
+            \draw[yellow,ultra thick,fill=yellow!20] (0,0) -- (-1,-1) --  (1,-1)--(0,0);
+            \draw[yellow,ultra thick,fill=yellow!40] (0,-1) circle(1 and .2);
+            \draw[black, thick,->](0,-1.5)--(0,1.5) node[anchor=west]{$ct$};
+            \draw[black, thick,->](-1,0)--(1,0) node[anchor=south]{$y$};
+            \draw[black, thick,<-](-0.8,-0.6)node[anchor=south east]{$x$}--(.8,0.6) ;
+
+            \draw[yellow,ultra thick,fill=yellow!20] (0+6,0) -- (-1+6,1) --  (1+6,1)--(0+6,0);
+            \draw[yellow,ultra thick,fill=yellow!40] (0+6,1) circle(1 and .2);
+            \draw[yellow,ultra thick,fill=yellow!20] (0+6,0) -- (-1+6,-1) --  (1+6,-1)--(0+6,0);
+            \draw[yellow,ultra thick,fill=yellow!40] (0+6,-1) circle(1 and .2);
+            \draw[black, thick,->](0+6,-1.5)--(0+6,1.5) node[anchor=west]{$ct'$};
+            \draw[black, thick,->](-1+6,0)--(1+6,0) node[anchor=south]{$y'$};
+            \draw[black, thick,<-](-0.8+6,-0.6)node[anchor=south east]{$x'$}--(.8+6,0.6) ;
+            \draw[->,ultra thick,black] (2,0)--(4,0);
+            \node[fill=white] at (3,0) {$f$};
+        \end{tikzpicture}
+    \end{center} 
+    \vspace{1mm}
+    Si dimostra quindi che $f$ \textbf{conserva la norma Minkowski dei vettori}. $\Rightarrow |f(r)|^2=|r|^2=c^2t^2-x^2-y^2-z^2$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deduzione delle trasformazioni di Lorentz: Trasformazioni di Lorentz}
+    Usando \textbf{l'unità immaginaria} riconduciamo la norma Minkowski a quella euclidea:$$x^2+y^2+z^2-c^2t^2=(ict,x,y,z)^2=R^2$$ 
+    deve quindi essere una rotazione.\\
+    
+    
+
+    \begin{columns}
+        \column{.3 \textwidth}
+        \textbf{Nel piano xt:}\\$r=(ict,x,y,z)$
+    \column{.65 \textwidth}
+    \begin{equation*} 
+        \begin{pmatrix}
+            ict'\\x'
+      \end{pmatrix}= 
+        \begin{pmatrix}
+            \cos\theta&-\sin\theta\\
+            \sin\theta&\cos\theta\\
+        \end{pmatrix}
+        \begin{pmatrix}
+            ict\\x
+      \end{pmatrix}
+    \end{equation*}
+    \end{columns}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.9]
+            \draw[dashed,thick,black!50] (0,0) circle (1.22); 
+            \node[scale=1] at (0,-1.7) {$(ict,x,y,z)^2=R^2$};
+            \draw[dashed,thick,black!50] (6,0) circle (1.22); 
+            \node[scale=1] at (6.4,-1.7) {$(ict',x',y',z')^2=R^2$};
+            \draw[black, thick,->](0,-1.5)--(0,1.5) node[anchor=east]{$ict$};
+            \draw[black, thick,->](-1.5,0)--(1.5,0) node[anchor=north]{$x$};
+            \draw [->] (0,0)--(1,.7)node[anchor=south west]{$r$};  
+            \draw[black, thick,->](0+6,-1.5)--(0+6,1.5) node[anchor=east]{$ict'$};
+            \draw[black, thick,->](-1.5+6,0)--(1.5+6,0) node[anchor=north]{$x'$};
+            \draw[->,ultra thick,black] (2,0)--(4,0);
+            \node[fill=white] at (3,0) {$f$};
+            \draw [->] (6,0)--(.7+6,1)node[anchor=south west]{$f(r)$};
+        \end{tikzpicture}
+    \end{center} 
+    
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deduzione delle trasformazioni di Lorentz: Trasformazioni di Lorentz}
+    Se si pongono i due sistemi di riferimento in \textbf{moto reciproco a velocità $V$} lungo l'asse x: $$V=\frac{x}{t}=-ic\tan\theta\ \Rightarrow\ \cos\theta=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}},\ \sin\theta=\frac{-i\frac{V}{c}}{\sqrt{1-\frac{V^2}{c^2}}}$$
+    Definendo $\gamma=\frac{1}{\sqrt{1-\frac{V^2}{c^2}}}$:
+    \begin{columns}
+        \column{.3 \textwidth}
+        \begin{equation*}
+            \begin{pmatrix}
+                \gamma&-i\frac{V}{c}\gamma\\i\frac{V}{c}\gamma&\gamma\\
+            \end{pmatrix}
+        \end{equation*}
+        \column{.3 \textwidth}
+        \begin{center}
+             Cambio base 
+        $$\Longrightarrow$$
+        $$ie_0\rightarrow e_0$$
+        \end{center}
+       
+        \column{.4 \textwidth}
+        \begin{equation*}\boxed{
+            \Lambda=\begin{pmatrix}
+            \gamma&-\frac{V}{c}\gamma\\-\frac{V}{c}\gamma&\gamma\\
+        \end{pmatrix}}
+    \end{equation*}
+    \end{columns}    
+\end{frame}
+
+\section*{Meccanica relativistica}
+\begin{frame}
+    \frametitle{Meccanica relativistica: La particella libera}
+    \textbf{L'azione} di una particella libera deve avere due caratteristiche:
+    \begin{itemize}
+        \item Essere \textbf{invariante} per trasformazioni di \textbf{Lorentz}
+        \item Nel \textbf{limite classico} (per $v\ll c$) $\mathcal{L} \rightarrow \frac{m}{2}v^2$
+    \end{itemize}
+    La lunghezza della traiettoria nello spazio-tempo può essere usata come azione.
+    \begin{equation*}
+            \boxed{\mathcal{S}[x^\mu(t)] =-mc^2\int\sqrt{1-\frac{|\vec v|^2}{c^2}} dt}
+        \end{equation*}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{equation*}
+            E=mc^2\gamma\qquad\vec p=m\vec v\gamma
+        \end{equation*}
+        \begin{equation*}
+            p^\mu=-\frac{\partial \mathcal{S} }{\partial x_\mu}=\bigg(\frac{E}{c},\vec p\bigg)
+        \end{equation*}
+        \column{0.5\textwidth}
+        \vspace*{3mm}
+        \begin{equation*}
+            \gamma=\frac{1}{\sqrt{1-\frac{|\vec v|^2}{c^2}}}
+        \end{equation*}
+    \end{columns}
+\end{frame}
+
+\section*{Equazioni di Maxwell nella relatività}
+
+\begin{frame}
+    \frametitle{Elettromagnetismo: 4-tensore elettromagnetico}
+    La \textbf{forza di Lorentz} contribuisce all'azione:
+    $$\mathcal{S} [x^\mu(t)]=-\int\bigg(mc|\dot x^\mu(t)|+qA^\mu\dot x_\mu(t)\bigg)dt$$
+    Il \textbf{principio di minima azione} consente di ricavare un'\textbf{equazione del moto} nello spazio-tempo:
+    $$\boxed{m\frac{du^\mu}{d\tau}=q\bigg(\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}\bigg)u_\nu}\quad\quad u^\nu=\frac{dx^\nu}{d\tau}\text{, ($\tau$ tempo proprio)}$$ Si definisce così il \textbf{4-tensore elettromagnetico}:
+    \begin{equation*}
+        F^{\mu\nu}=\bigg(\frac{\partial A^\nu}{\partial x_\mu}-\frac{\partial A^\mu}{\partial x_\nu}\bigg)=\begin{pmatrix}
+            0&-E_x/c&-E_y/c&-E_z/c\\
+            E_x/c&0&-B_z&B_y\\
+            E_y/c&B_z&0&-B_x\\
+            E_z/c&-B_y&B_x&0\\
+        \end{pmatrix}
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Elettromagnetismo: Invarianti di campo}
+    \begin{columns}
+        \column{0.80\textwidth}
+         Si può studiare un \textbf{vettore complesso che descrive il campo} elettromagnetico al posto di $F^{\mu\nu}$: 
+        \column{0.20\textwidth}
+        $$\boxed{\vec F=\frac{\vec E}{c}+i\vec B}$$
+    \end{columns}
+    \begin{columns}
+        \column{0.6\textwidth}
+    \begin{equation*}
+        \vec F'=\begin{pmatrix}
+            1&0&0\\
+            0&\gamma&-i\frac{V}{c}\gamma\\
+            0&i\frac{V}{c}\gamma&\gamma\\
+        \end{pmatrix}
+        \begin{pmatrix}
+            F_x\\F_y\\F_z
+        \end{pmatrix}
+    \end{equation*}
+
+    \column{0.4\textwidth}
+    Un \textbf{boost di Lorentz} equivale ad una \textbf{rotazione} per questo vettore.
+    \end{columns}
+    \vspace*{5mm}
+    In una rotazione un vettore \textbf{conserva il suo modulo quadro}:
+    \begin{equation*}
+        |\vec F|^2=\frac{|\vec E|^2}{c^2}-|\vec B|^2+2\frac{\vec E\cdot \vec B}{c}i\quad \Rightarrow \quad \begin{cases}
+            \Re\{|\vec F|^2\}\propto F^{\mu\nu}F_{\mu\nu}\\\Im\{|\vec F|^2\}\propto e^{\mu\nu\delta\lambda}F_{\mu\nu}F_{\delta \lambda}
+        \end{cases}
+    \end{equation*}
+
+\end{frame}
+
+    \begin{frame}
+        \frametitle{Elettromagnetismo: Teoria dei campi}
+        Utilizzando uno dei due invarianti si può \textbf{completare l'azione del sistema} contemplando cariche che generano campi EM.
+        \begin{equation*}
+            \mathcal{S} =-\int_{t_1}^{t_2}\bigg[mc\sqrt{x^\mu x_\mu}+\int_\mathcal{V} \bigg(\frac{1}{4\mu_0}F^{\mu\nu}F_{\mu\nu}+J^\mu A_\mu\bigg)d^3x\bigg]dt
+        \end{equation*}
+        Utilizzando le equazioni di \textbf{Eulero-Lagrange per un campo}:
+        \begin{equation*}
+            \partial_\mu\frac{\partial\mathfrak{L} }{\partial\partial_\mu A_\mu}-\frac{\partial \mathfrak{L} }{\partial A_\nu}=\frac{1}{\mu_0}\partial_\mu F^{\mu\nu}+J^\nu=0
+        \end{equation*}
+        Si ottengono le \textbf{equazioni di Maxwell}:
+        \begin{equation*}
+            \boxed{\partial_\mu F^{\mu\nu}=-\mu_0 J^\nu}\qquad J^\mu=(\rho c,\vec J).
+        \end{equation*}
+    
+\end{frame}
+
+
+    
+\end{document}
+
+

@@ -53,4 +53,5 @@
 \contentsline {chapter}{\numberline {A}Lemmi e teoremi per le trasformazioni di Lorentz}{55}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Risultati generali}{55}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Una dimostrazione della linearità delle trasformazioni di Lorentz}{57}{section.Alph1.2}%
-\contentsline {chapter}{Bibliografia}{61}{appendix*.10}%
+\contentsline {chapter}{Ringraziamenti}{61}{appendix*.10}%
+\contentsline {chapter}{Bibliografia}{63}{appendix*.11}%
